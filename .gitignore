@@ -19,9 +19,6 @@
 
 # production
 /build
-/docs/*
-!/docs/CNAME
-!/docs/.nojekyll
 
 # menu data
 /src/data/menu/raw/*
@@ -53,7 +50,4 @@ next-env.d.ts
 **/cache/
 **/tmp/
 
-# Specific cache directories in www
-/www/cache/
-/www/**/.eslintcache
 .github/meta/
