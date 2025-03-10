@@ -230,6 +230,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
                 className={`${styles.image} ${itemState.isLoaded ? styles.loaded : ''}`}
                 onLoad={() => handleImageLoad(item.guid)}
                 priority={index < 4}
+                loader={({ src }) => src}
               />
             </>
           ) : (
