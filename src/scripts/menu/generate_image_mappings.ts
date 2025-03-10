@@ -216,9 +216,7 @@ const findCompoundMatches = (tokens1: string[], tokens2: string[]): number => {
 };
 
 // Helper function to split filename into base and modifier parts
-const splitFileNameParts = (
-  filename: string
-): { base: string; modifier: string | null } => {
+const splitFileNameParts = (filename: string): { base: string; modifier: string | null } => {
   const parts = filename.split('__');
   // Remove any numbers at the end of the base part
   const base = parts[0].replace(/_?\d+$/, '');
@@ -257,8 +255,7 @@ const findMatchingImagesInCategories = (
   categoryDirs: string[],
   hasUnmatchedItems: boolean
 ): string[] => {
-  const allMatches: Array<{ path: string; score: number; matchType: string }> =
-    [];
+  const allMatches: Array<{ path: string; score: number; matchType: string }> = [];
 
   // Debug logging
   console.log('\nMatching item:', itemName);
@@ -379,12 +376,8 @@ const findMatchingImagesInCategories = (
 
         // Priority 3: All tokens match with synonyms
         if (
-          Array.from(expandedFileTokens).every((token) =>
-            expandedItemTokens.has(token)
-          ) ||
-          Array.from(expandedItemTokens).every((token) =>
-            expandedFileTokens.has(token)
-          )
+          Array.from(expandedFileTokens).every((token) => expandedItemTokens.has(token)) ||
+          Array.from(expandedItemTokens).every((token) => expandedFileTokens.has(token))
         ) {
           score = modifier ? 0.84 : 0.85; // Slightly lower score for variants
           matchType = 'all_tokens_with_synonyms';
@@ -466,9 +459,7 @@ const isPrefix = (shorter: string[], longer: string[]): boolean => {
 // Helper function to check if one array is a suffix of another
 const isSuffix = (shorter: string[], longer: string[]): boolean => {
   if (shorter.length > longer.length) return false;
-  return shorter.every(
-    (token, i) => token === longer[longer.length - shorter.length + i]
-  );
+  return shorter.every((token, i) => token === longer[longer.length - shorter.length + i]);
 };
 
 // Helper function to compare arrays for equality
@@ -526,11 +517,7 @@ const findMatchingImages = (
   categoryDir: string,
   hasUnmatchedItems: boolean
 ): string[] => {
-  return findMatchingImagesInCategories(
-    itemName,
-    [categoryDir],
-    hasUnmatchedItems
-  );
+  return findMatchingImagesInCategories(itemName, [categoryDir], hasUnmatchedItems);
 };
 
 /**
@@ -555,21 +542,8 @@ const removeEmojis = (text: string): string => {
 const generateImageMappings = (): void => {
   // Setup paths relative to src directory
   const rootDir = path.resolve(__dirname, '../../..');
-  const menuJsonPath = path.join(
-    rootDir,
-    'src',
-    'data',
-    'menu',
-    'processed',
-    'menu.json'
-  );
-  const mappingsJsonPath = path.join(
-    rootDir,
-    'src',
-    'data',
-    'menu',
-    'image_mappings.json'
-  );
+  const menuJsonPath = path.join(rootDir, 'src', 'data', 'menu', 'processed', 'menu.json');
+  const mappingsJsonPath = path.join(rootDir, 'src', 'data', 'menu', 'image_mappings.json');
   const imagesRoot = path.join(rootDir, 'public', 'images', 'menu', 'hd');
 
   // Load menu data
@@ -590,14 +564,8 @@ const generateImageMappings = (): void => {
   };
 
   // First pass: Find all potential matches and identify unique matches
-  const allMatches = new Map<
-    string,
-    Array<{ itemGuid: string; score: number }>
-  >();
-  const itemMatches = new Map<
-    string,
-    Array<{ imagePath: string; score: number }>
-  >();
+  const allMatches = new Map<string, Array<{ itemGuid: string; score: number }>>();
+  const itemMatches = new Map<string, Array<{ imagePath: string; score: number }>>();
 
   // Process each menu category
   const missingImages: MissingImage[] = [];
@@ -615,9 +583,7 @@ const generateImageMappings = (): void => {
 
         // Special handling for Side menu items
         if (menu.name === 'Sides') {
-          const categoryDirs = SIDE_SEARCH_CATEGORIES.map((cat) =>
-            path.join(imagesRoot, cat)
-          );
+          const categoryDirs = SIDE_SEARCH_CATEGORIES.map((cat) => path.join(imagesRoot, cat));
           potentialMatches = findMatchingImagesInCategories(
             removeEmojis(item.name), // Remove emojis only for matching
             categoryDirs,
@@ -795,9 +761,7 @@ const generateImageMappings = (): void => {
         for (const [guid, mapping] of Object.entries(mappings.item_images)) {
           if (mapping.images.includes(usedVariant)) {
             // Add all unused variants to this item's images
-            const unusedVariants = variants.filter(
-              (v) => !usedImagePaths.has(v)
-            );
+            const unusedVariants = variants.filter((v) => !usedImagePaths.has(v));
             mapping.images.push(...unusedVariants);
             // Remove these from unusedImages array
             unusedVariants.forEach((v) => {
@@ -817,9 +781,7 @@ const generateImageMappings = (): void => {
   fs.writeFileSync(mappingsJsonPath, JSON.stringify(mappings, null, 2));
 
   // Print summary
-  console.log(
-    `Generated mappings for ${Object.keys(mappings.item_images).length} items`
-  );
+  console.log(`Generated mappings for ${Object.keys(mappings.item_images).length} items`);
 
   if (missingImages.length > 0) {
     console.log('\n📸 Missing images for the following items:');
@@ -873,17 +835,11 @@ const generateImageMappings = (): void => {
       (sum, menu) =>
         menu.name === 'Other'
           ? sum
-          : sum +
-            menu.groups.reduce(
-              (groupSum, group) => groupSum + group.items.length,
-              0
-            ),
+          : sum + menu.groups.reduce((groupSum, group) => groupSum + group.items.length, 0),
       0
     )}`
   );
-  console.log(
-    `- Items with images: ${Object.keys(mappings.item_images).length}`
-  );
+  console.log(`- Items with images: ${Object.keys(mappings.item_images).length}`);
   console.log(`- Items missing images: ${missingImages.length}`);
   console.log(`- Total images available: ${allImages.size}`);
   console.log(`- Images used: ${usedImages.size}`);
@@ -919,10 +875,4 @@ if (require.main === module) {
 }
 
 // Export for potential reuse in other parts of the application
-export {
-  snakeCase,
-  findMatchingImages,
-  getCategoryDirName,
-  generateImageMappings,
-  CATEGORY_MAP,
-};
+export { snakeCase, findMatchingImages, getCategoryDirName, generateImageMappings, CATEGORY_MAP };

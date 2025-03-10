@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
+
 import Link from 'next/link';
+
+import { BUSINESS, PAGES, SOCIAL_MEDIA } from '@/config';
+import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faPhone,
-  faLocationDot,
-  faClock,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
-import { PAGES, BUSINESS, SOCIAL_MEDIA } from '@/config';
-import { margarine, geist } from '@/config/fonts';
-import { createPhoneUrl, createGoogleMapsUrl } from '@/utils/urls';
+
+import { geist, margarine } from '@/config/fonts';
+
+import { createGoogleMapsUrl, createPhoneUrl } from '@/utils/urls';
+
 import styles from '@/styles/MobileMenu.module.css';
 
 interface MobileMenuProps {
@@ -70,10 +70,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className={styles.infoItem}>
               <FontAwesomeIcon icon={faLocationDot} />
               <a
-                href={createGoogleMapsUrl(
-                  BUSINESS.name,
-                  BUSINESS.location.fullAddress
-                )}
+                href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.infoItem}
@@ -81,8 +78,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <address>
                   {BUSINESS.location.address}
                   <br />
-                  {BUSINESS.location.city}, {BUSINESS.location.state}{' '}
-                  {BUSINESS.location.zip}
+                  {BUSINESS.location.city}, {BUSINESS.location.state} {BUSINESS.location.zip}
                 </address>
               </a>
             </div>
@@ -101,18 +97,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               </div>
             </div>
 
-            <a
-              href={createPhoneUrl(BUSINESS.location.phone)}
-              className={styles.infoItem}
-            >
+            <a href={createPhoneUrl(BUSINESS.location.phone)} className={styles.infoItem}>
               <FontAwesomeIcon icon={faPhone} />
               <span>{BUSINESS.location.phone}</span>
             </a>
 
-            <a
-              href={`mailto:${BUSINESS.contact.email}`}
-              className={styles.infoItem}
-            >
+            <a href={`mailto:${BUSINESS.contact.email}`} className={styles.infoItem}>
               <FontAwesomeIcon icon={faEnvelope} />
               <span>{BUSINESS.contact.email}</span>
             </a>

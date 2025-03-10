@@ -51,9 +51,7 @@
       "item_name": "Chicago J. Omelette"
     },
     "d706c26d-dd47-4ceb-a6e7-d2a1becd427a": {
-      "images": [
-        "images/menu/hd/specialty_omelettes/la_frida_linda_omelette.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_omelettes/la_frida_linda_omelette.jpg"],
       "category": "Specialty Omelettes",
       "item_name": "La Frida Linda Omelette"
     },
@@ -73,9 +71,7 @@
       "item_name": "La Lolita Omelette"
     },
     "ee54cf27-ee66-44b8-9876-23c08aca3657": {
-      "images": [
-        "images/menu/hd/specialty_omelettes/gollo_el_gallero_omelette.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_omelettes/gollo_el_gallero_omelette.jpg"],
       "category": "Specialty Omelettes",
       "item_name": "Gollo El Gallero Omelette"
     },
@@ -135,16 +131,12 @@
       "item_name": "Biscuits & Gravy"
     },
     "a03b95bc-f7c6-4fcc-944e-1811e4a1337f": {
-      "images": [
-        "images/menu/hd/specialty_dishes/deluxe_chicken_fried_steak.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/deluxe_chicken_fried_steak.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Deluxe Chicken Fried Steak & Eggs"
     },
     "c87e5336-c778-4ad4-b112-2730432af78b": {
-      "images": [
-        "images/menu/hd/specialty_dishes/decoto_loaded_hashbrowns.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/decoto_loaded_hashbrowns.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Decoto Loaded Hash Browns"
     },
@@ -177,9 +169,7 @@
       "item_name": "Bacon & Eggs 🥓🍳"
     },
     "73641430-8571-45d3-baf2-c13080145b1f": {
-      "images": [
-        "images/menu/hd/meat_and_eggs/chicken_apple_sausage_eggs__hashbrowns.jpg"
-      ],
+      "images": ["images/menu/hd/meat_and_eggs/chicken_apple_sausage_eggs__hashbrowns.jpg"],
       "category": "Meat & Eggs",
       "item_name": "Chicken Apple Sausage & Eggs"
     },
@@ -292,9 +282,7 @@
       "item_name": "Grilled Turkey Cheese & Bacon 🦃🧀🥓"
     },
     "f8152305-f1d5-45aa-8a8c-a7347365934d": {
-      "images": [
-        "images/menu/hd/sandwiches/linguica_on_french_roll_sandwich.jpg"
-      ],
+      "images": ["images/menu/hd/sandwiches/linguica_on_french_roll_sandwich.jpg"],
       "category": "Sandwiches",
       "item_name": "Linguica on a French Roll"
     },
@@ -532,10 +520,7 @@
       "item_name": "Zucchini Fries"
     },
     "ed34e2df-6692-44dd-a790-13641da46b70": {
-      "images": [
-        "images/menu/hd/sides/mac_bites2.jpg",
-        "images/menu/hd/sides/mac_bites.jpg"
-      ],
+      "images": ["images/menu/hd/sides/mac_bites2.jpg", "images/menu/hd/sides/mac_bites.jpg"],
       "category": "Sides",
       "item_name": "Mac Bites"
     },
@@ -624,30 +609,22 @@
       "item_name": "4 Veggie Omelette"
     },
     "712225fe-3cdb-41d4-9c25-749c3571927a": {
-      "images": [
-        "images/menu/hd/specialty_dishes/mexican_chicken_fried_steak_and_eggs.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/mexican_chicken_fried_steak_and_eggs.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Mexican Chicken Fried Steak & Eggs"
     },
     "f954708d-91c2-4efc-8a32-389ccfa99d61": {
-      "images": [
-        "images/menu/hd/specialty_dishes/rafa_quintero_steak_and_eggs.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/rafa_quintero_steak_and_eggs.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Rafa Quintero Steak & Eggs"
     },
     "3ebdba0c-3096-4b57-83bd-1818e0cae0c9": {
-      "images": [
-        "images/menu/hd/specialty_dishes/billys_hamburger_steak_and_eggs.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/billys_hamburger_steak_and_eggs.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Billy's Hamburger Steak & Eggs"
     },
     "8bbe725c-5237-4568-97ee-a8e206b06308": {
-      "images": [
-        "images/menu/hd/specialty_dishes/billys_new_york_steak_and_eggs.jpg"
-      ],
+      "images": ["images/menu/hd/specialty_dishes/billys_new_york_steak_and_eggs.jpg"],
       "category": "Specialty Dishes",
       "item_name": "Billy's New York Steak & Eggs"
     },
@@ -665,9 +642,7 @@
       "item_name": "Sausage & Eggs"
     },
     "b3853fc5-2520-400b-9bd5-6cab0c1aeb23": {
-      "images": [
-        "images/menu/hd/meat_and_eggs/chicken_fried_steak_and_eggs.jpg"
-      ],
+      "images": ["images/menu/hd/meat_and_eggs/chicken_fried_steak_and_eggs.jpg"],
       "category": "Meat & Eggs",
       "item_name": "Chicken Fried Steak & Eggs"
     },
@@ -710,10 +685,7 @@
       "item_name": "Full French Toast"
     },
     "07d24eb4-42a8-44ae-ad0c-5f6005a60c28": {
-      "images": [
-        "images/menu/hd/sides/hash_browns.jpg",
-        "images/menu/hd/sides/hash_browns_2.jpg"
-      ],
+      "images": ["images/menu/hd/sides/hash_browns.jpg", "images/menu/hd/sides/hash_browns_2.jpg"],
       "category": "Sides",
       "item_name": "Hash Browns #️⃣🥔"
     },

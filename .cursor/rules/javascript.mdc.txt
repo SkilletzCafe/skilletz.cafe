@@ -1,0 +1,288 @@
+---
+description: JavaScript and TypeScript development patterns and best practices
+globs: ["**/*.{js,jsx,ts,tsx}"]
+alwaysApply: true
+---
+# JavaScript and TypeScript Development
+
+## TypeScript Patterns
+
+### Type Definitions
+- Use explicit type annotations for function parameters and return types
+- Prefer interfaces over type aliases for object shapes
+- Use type inference for simple variables
+- Example:
+  ```typescript
+  // Good: Explicit interface
+  interface MenuItem {
+    id: string;
+    name: string;
+    price: number;
+    description?: string;
+  }
+
+  // Good: Explicit function types
+  function calculateTotal(items: MenuItem[]): number {
+    return items.reduce((sum, item) => sum + item.price, 0);
+  }
+
+  // Good: Type inference for simple cases
+  const menuItems: MenuItem[] = [];
+  ```
+
+### Type Guards
+- Use type guards to narrow types in conditional blocks
+- Prefer `instanceof` for class types
+- Use type predicates for custom type guards
+- Example:
+  ```typescript
+  function isMenuItem(item: unknown): item is MenuItem {
+    return (
+      typeof item === 'object' &&
+      item !== null &&
+      'id' in item &&
+      'name' in item &&
+      'price' in item
+    );
+  }
+  ```
+
+## React Patterns
+
+### Component Structure
+- Use functional components with hooks
+- Keep components focused and single-responsibility
+- Extract reusable logic into custom hooks
+- Example:
+  ```typescript
+  // Good: Focused component with custom hook
+  function MenuItem({ item }: { item: MenuItem }) {
+    const { isInStock, checkAvailability } = useInventory(item.id);
+
+    return (
+      <div className="menuItem">
+        <h3>{item.name}</h3>
+        <p>{item.description}</p>
+        <span className={isInStock ? 'inStock' : 'outOfStock'}>
+          {item.price}
+        </span>
+      </div>
+    );
+  }
+  ```
+
+### State Management
+- Use React Context for global state
+- Prefer local state when possible
+- Use reducers for complex state logic
+- Example:
+  ```typescript
+  // Good: Context with reducer
+  interface CartState {
+    items: MenuItem[];
+    total: number;
+  }
+
+  type CartAction =
+    | { type: 'ADD_ITEM'; item: MenuItem }
+    | { type: 'REMOVE_ITEM'; id: string };
+
+  function cartReducer(state: CartState, action: CartAction): CartState {
+    switch (action.type) {
+      case 'ADD_ITEM':
+        return {
+          items: [...state.items, action.item],
+          total: state.total + action.item.price
+        };
+      // ... other cases
+    }
+  }
+  ```
+
+## Error Handling
+
+### Error Boundaries
+- Implement error boundaries for component trees
+- Provide fallback UI for error states
+- Log errors to monitoring service
+- Example:
+  ```typescript
+  class MenuErrorBoundary extends React.Component {
+    state = { hasError: false };
+
+    static getDerivedStateFromError() {
+      return { hasError: true };
+    }
+
+    componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+      logError(error, errorInfo);
+    }
+
+    render() {
+      if (this.state.hasError) {
+        return <ErrorFallback />;
+      }
+      return this.props.children;
+    }
+  }
+  ```
+
+### Async Error Handling
+- Use try/catch for async operations
+- Provide meaningful error messages
+- Handle loading and error states
+- Example:
+  ```typescript
+  async function fetchMenuItems(): Promise<MenuItem[]> {
+    try {
+      const response = await fetch('/api/menu');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Failed to fetch menu items:', error);
+      throw new Error('Unable to load menu items. Please try again later.');
+    }
+  }
+  ```
+
+## Performance Optimization
+
+### Memoization
+- Use `useMemo` for expensive computations
+- Use `useCallback` for function props
+- Avoid unnecessary re-renders
+- Example:
+  ```typescript
+  function MenuList({ items }: { items: MenuItem[] }) {
+    const sortedItems = useMemo(() =>
+      [...items].sort((a, b) => a.price - b.price),
+      [items]
+    );
+
+    const handleItemClick = useCallback((id: string) => {
+      // Handle click
+    }, []);
+
+    return (
+      <div>
+        {sortedItems.map(item => (
+          <MenuItem
+            key={item.id}
+            item={item}
+            onClick={handleItemClick}
+          />
+        ))}
+      </div>
+    );
+  }
+  ```
+
+### Code Splitting
+- Use dynamic imports for large components
+- Implement route-based code splitting
+- Lazy load non-critical components
+- Example:
+  ```typescript
+  const MenuEditor = dynamic(() => import('./MenuEditor'), {
+    loading: () => <LoadingSpinner />,
+    ssr: false
+  });
+  ```
+
+## Testing Patterns
+
+### Component Testing
+- Test component rendering and interactions
+- Mock external dependencies
+- Test error states and edge cases
+- Example:
+  ```typescript
+  describe('MenuItem', () => {
+    it('renders with correct props', () => {
+      const item = {
+        id: '1',
+        name: 'Test Item',
+        price: 10,
+        description: 'Test Description'
+      };
+
+      render(<MenuItem item={item} />);
+
+      expect(screen.getByText('Test Item')).toBeInTheDocument();
+      expect(screen.getByText('$10')).toBeInTheDocument();
+    });
+
+    it('handles out of stock state', () => {
+      const item = { ...mockItem, inStock: false };
+
+      render(<MenuItem item={item} />);
+
+      expect(screen.getByText('Out of Stock')).toBeInTheDocument();
+    });
+  });
+  ```
+
+### Hook Testing
+- Test custom hooks in isolation
+- Mock React hooks when needed
+- Test error cases and edge conditions
+- Example:
+  ```typescript
+  function useInventory(itemId: string) {
+    const [isInStock, setIsInStock] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+      async function checkStock() {
+        try {
+          const result = await fetchStockStatus(itemId);
+          setIsInStock(result.inStock);
+        } catch (error) {
+          console.error('Failed to check stock:', error);
+        } finally {
+          setIsLoading(false);
+        }
+      }
+
+      checkStock();
+    }, [itemId]);
+
+    return { isInStock, isLoading };
+  }
+  ```
+
+## Recent Learnings
+
+### TypeScript Strict Mode
+Category: TypeScript
+Date: 2024-03-10
+Context:
+- TypeScript strict mode was causing type errors
+- Some type assertions were unsafe
+- Needed better type safety
+
+Learning:
+- Enable strict mode in tsconfig.json
+- Use proper type guards instead of type assertions
+- Leverage TypeScript's type inference
+- Document complex type patterns
+
+Tags: #typescript #type-safety #best-practices
+
+### React Performance
+Category: Performance
+Date: 2024-03-10
+Context:
+- Components were re-rendering unnecessarily
+- Large lists were causing performance issues
+- State updates were triggering cascading renders
+
+Learning:
+- Use React.memo for pure components
+- Implement virtualization for long lists
+- Batch state updates
+- Profile components with React DevTools
+
+Tags: #react #performance #optimization

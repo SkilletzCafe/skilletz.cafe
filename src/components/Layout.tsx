@@ -1,9 +1,10 @@
 import Head from 'next/head';
 
 import { SEO } from '@/config';
-import { ThemeProvider } from '@/context/ThemeContext';
 
 import { geist } from '@/config/fonts';
+
+import { ThemeProvider } from '@/context/ThemeContext';
 
 import styles from '@/styles/Layout.module.css';
 

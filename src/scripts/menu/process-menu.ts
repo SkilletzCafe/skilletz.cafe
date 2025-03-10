@@ -61,20 +61,12 @@ interface ProcessedData {
  * Process the raw Toast menu export into an optimized format for the website
  */
 async function processMenu() {
-  const rawDataPath = path.join(
-    process.cwd(),
-    'src/data/menu/raw/toast-menu.json'
-  );
-  const outputPath = path.join(
-    process.cwd(),
-    'src/data/menu/processed/menu.json'
-  );
+  const rawDataPath = path.join(process.cwd(), 'src/data/menu/raw/toast-menu.json');
+  const outputPath = path.join(process.cwd(), 'src/data/menu/processed/menu.json');
 
   try {
     // Read raw data
-    const rawData: ToastData = JSON.parse(
-      await fs.promises.readFile(rawDataPath, 'utf8')
-    );
+    const rawData: ToastData = JSON.parse(await fs.promises.readFile(rawDataPath, 'utf8'));
 
     // Process the data
     const processedData: ProcessedData = {
@@ -87,10 +79,7 @@ async function processMenu() {
           guid: group.guid,
           description: group.description,
           items: group.items
-            .filter(
-              (item) =>
-                item.orderableOnline === 'YES' && item.visibility === 'ALL'
-            )
+            .filter((item) => item.orderableOnline === 'YES' && item.visibility === 'ALL')
             .map((item) => ({
               name: item.name,
               guid: item.guid,
@@ -119,22 +108,14 @@ async function processMenu() {
     await fs.promises.mkdir(path.dirname(outputPath), { recursive: true });
 
     // Write processed data
-    await fs.promises.writeFile(
-      outputPath,
-      JSON.stringify(processedData, null, 2),
-      'utf8'
-    );
+    await fs.promises.writeFile(outputPath, JSON.stringify(processedData, null, 2), 'utf8');
 
     console.log('Menu processing completed successfully!');
     console.log(`Total menus: ${processedData.menus.length}`);
     console.log(
       `Total items: ${processedData.menus.reduce(
         (sum, menu) =>
-          sum +
-          menu.groups.reduce(
-            (groupSum, group) => groupSum + group.items.length,
-            0
-          ),
+          sum + menu.groups.reduce((groupSum, group) => groupSum + group.items.length, 0),
         0
       )}`
     );

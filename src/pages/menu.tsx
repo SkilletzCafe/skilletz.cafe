@@ -1,12 +1,15 @@
+import { useEffect, useRef, useState } from 'react';
+
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
-import { useState, useRef, useEffect } from 'react';
+
 import fs from 'fs';
 import path from 'path';
 
+import { margarine } from '@/config/fonts';
+
 import BasicPageLayout from '@/components/BasicPageLayout';
 import ScrollToTop from '@/components/ScrollToTop';
-import { margarine } from '@/config/fonts';
 
 import styles from '@/styles/Menu.module.css';
 
@@ -66,9 +69,7 @@ interface MenuItemState {
 export default function Menu({ menuData, imageMappings }: MenuPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
-  const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>(
-    {}
-  );
+  const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
   const navRef = useRef<HTMLElement>(null);
   const menuItemsRef = useRef<(HTMLDivElement | null)[]>([]);
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -139,8 +140,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
   const scrollNav = (direction: 'left' | 'right') => {
     if (navRef.current) {
       const scrollAmount = 200;
-      navRef.current.scrollLeft +=
-        direction === 'left' ? -scrollAmount : scrollAmount;
+      navRef.current.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
     }
   };
 
@@ -152,11 +152,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
     }
   };
 
-  const handleMenuItemKeyDown = (
-    e: React.KeyboardEvent,
-    index: number,
-    totalItems: number
-  ) => {
+  const handleMenuItemKeyDown = (e: React.KeyboardEvent, index: number, totalItems: number) => {
     switch (e.key) {
       case 'ArrowRight':
       case 'ArrowDown':
@@ -178,11 +174,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
   // Filter out the "Other" menu
   const menus = menuData.menus.filter((menu) => menu.name !== 'Other');
 
-  const renderMenuItem = (
-    item: MenuItem,
-    index: number,
-    totalItems: number
-  ) => {
+  const renderMenuItem = (item: MenuItem, index: number, totalItems: number) => {
     const imageMapping = imageMappings.item_images[item.guid];
     const imagePath = imageMapping?.images[0];
     const itemState = itemStates[item.guid] || {
@@ -234,10 +226,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
               />
             </>
           ) : (
-            <div
-              className={styles.imagePlaceholder}
-              aria-label="No image available"
-            >
+            <div className={styles.imagePlaceholder} aria-label="No image available">
               <div className={styles.noImageIcon}>
                 <span>No image available</span>
               </div>
@@ -249,18 +238,12 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
             <h3 id={`item-name-${item.guid}`} className={styles.itemName}>
               {item.name}
             </h3>
-            <span
-              className={styles.price}
-              aria-label={`Price: $${item.price.toFixed(2)}`}
-            >
+            <span className={styles.price} aria-label={`Price: $${item.price.toFixed(2)}`}>
               ${item.price.toFixed(2)}
             </span>
           </div>
           {item.description && (
-            <p
-              className={styles.description}
-              aria-label={`Description: ${item.description}`}
-            >
+            <p className={styles.description} aria-label={`Description: ${item.description}`}>
               {item.description}
             </p>
           )}
@@ -271,21 +254,11 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
 
   // Calculate total number of menu items for keyboard navigation
   const totalMenuItems = menus.reduce((total, menu) => {
-    return (
-      total +
-      menu.groups.reduce(
-        (groupTotal, group) => groupTotal + group.items.length,
-        0
-      )
-    );
+    return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
   }, 0);
 
   return (
-    <BasicPageLayout
-      title="Menu"
-      heading="Our Menu"
-      intro="Explore our delicious offerings"
-    >
+    <BasicPageLayout title="Menu" heading="Our Menu" intro="Explore our delicious offerings">
       <div className={styles.menuContainer}>
         <nav
           className={styles.categoryNav}
@@ -296,9 +269,7 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
           tabIndex={0}
         >
           <button
-            className={`${styles.categoryButton} ${
-              !selectedCategory ? styles.active : ''
-            }`}
+            className={`${styles.categoryButton} ${!selectedCategory ? styles.active : ''}`}
             onClick={() => setSelectedCategory(null)}
             role="tab"
             aria-selected={!selectedCategory}
@@ -322,16 +293,9 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
           ))}
         </nav>
 
-        <div
-          id="menu-items"
-          className={styles.menuContent}
-          role="tabpanel"
-          aria-label="Menu items"
-        >
+        <div id="menu-items" className={styles.menuContent} role="tabpanel" aria-label="Menu items">
           {menus
-            .filter(
-              (menu) => !selectedCategory || menu.name === selectedCategory
-            )
+            .filter((menu) => !selectedCategory || menu.name === selectedCategory)
             .map((menu, index) => (
               <section
                 key={menu.guid}
@@ -358,15 +322,9 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
                     {menu.description}
                   </p>
                 )}
-                <div
-                  className={styles.menuGrid}
-                  role="list"
-                  aria-label={`${menu.name} menu items`}
-                >
+                <div className={styles.menuGrid} role="list" aria-label={`${menu.name} menu items`}>
                   {menu.groups.map((group) =>
-                    group.items.map((item, index) =>
-                      renderMenuItem(item, index, totalMenuItems)
-                    )
+                    group.items.map((item, index) => renderMenuItem(item, index, totalMenuItems))
                   )}
                 </div>
               </section>
@@ -380,19 +338,11 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
 
 export const getStaticProps: GetStaticProps<MenuPageProps> = async () => {
   // Read menu data and image mappings
-  const menuDataPath = path.join(
-    process.cwd(),
-    'src/data/menu/processed/menu.json'
-  );
-  const imageMappingsPath = path.join(
-    process.cwd(),
-    'src/data/menu/image_mappings.json'
-  );
+  const menuDataPath = path.join(process.cwd(), 'src/data/menu/processed/menu.json');
+  const imageMappingsPath = path.join(process.cwd(), 'src/data/menu/image_mappings.json');
 
   const menuData: MenuData = JSON.parse(fs.readFileSync(menuDataPath, 'utf-8'));
-  const imageMappings: ImageMappings = JSON.parse(
-    fs.readFileSync(imageMappingsPath, 'utf-8')
-  );
+  const imageMappings: ImageMappings = JSON.parse(fs.readFileSync(imageMappingsPath, 'utf-8'));
 
   return {
     props: {

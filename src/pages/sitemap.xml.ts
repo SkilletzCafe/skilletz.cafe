@@ -1,4 +1,4 @@
-import { PAGES, SITE_URL, BUILD } from '@/config';
+import { BUILD, PAGES, SITE_URL } from '@/config';
 import fs from 'fs';
 import path from 'path';
 

@@ -1,16 +1,19 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { BUSINESS, PAGES, SERVICES } from '@/config';
-import { useTheme } from '@/context/ThemeContext';
-import MobileMenu from './MobileMenu';
 
 import { geist, margarine } from '@/config/fonts';
+
+import { useTheme } from '@/context/ThemeContext';
 
 import { createPhoneUrl } from '@/utils/urls';
 
 import styles from '@/styles/Layout.module.css';
+
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -41,9 +44,7 @@ export default function Header() {
             loader={({ src }) => src}
           />
         </Link>
-        <nav
-          className={`${styles.nav} ${margarine.className} ${styles.desktopNav}`}
-        >
+        <nav className={`${styles.nav} ${margarine.className} ${styles.desktopNav}`}>
           {Object.values(PAGES)
             .filter((page) => page.showInNav)
             .map((page) => (
@@ -61,9 +62,7 @@ export default function Header() {
         </nav>
         <div className={`${styles.headerActions} ${geist.className}`}>
           <div className={styles.phone}>
-            <a href={createPhoneUrl(BUSINESS.location.phone)}>
-              {BUSINESS.location.phone}
-            </a>
+            <a href={createPhoneUrl(BUSINESS.location.phone)}>{BUSINESS.location.phone}</a>
           </div>
           <a
             href={SERVICES.doordash.url}
@@ -84,10 +83,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <MobileMenu
-        isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
-      />
+      <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
     </header>
   );
 }

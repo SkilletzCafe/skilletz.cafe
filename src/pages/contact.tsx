@@ -1,10 +1,5 @@
 import { BUSINESS } from '@/config';
-import {
-  faClock,
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from '@fortawesome/free-solid-svg-icons';
+import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import BasicPageLayout from '@/components/BasicPageLayout';
@@ -27,10 +22,7 @@ export default function Contact() {
         <FontAwesomeIcon icon={faPhone} className={styles.icon} />
         <h2>Phone</h2>
         <p>Call us for reservations or questions:</p>
-        <a
-          href={createPhoneUrl(BUSINESS.location.phone)}
-          className={styles.link}
-        >
+        <a href={createPhoneUrl(BUSINESS.location.phone)} className={styles.link}>
           {BUSINESS.location.phone}
         </a>
       </div>
@@ -51,10 +43,7 @@ export default function Contact() {
         <h2>Location</h2>
         <p>Visit us at:</p>
         <a
-          href={createGoogleMapsUrl(
-            BUSINESS.name,
-            BUSINESS.location.fullAddress
-          )}
+          href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
