@@ -35,6 +35,7 @@ export default function Header() {
             priority
             loading="eager"
             quality={100}
+            loader={({ src }) => src}
           />
         </Link>
         <nav className={`${styles.nav} ${margarine.className}`}>
