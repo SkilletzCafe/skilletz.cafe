@@ -6,4 +6,8 @@ coverage
 public
 *.log
 .env*
-package-lock.json 
+package-lock.json
+docs/
+*.min.js
+*.min.css
+*.map

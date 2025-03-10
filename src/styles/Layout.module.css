@@ -5,8 +5,7 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   transition:
-    background-color var(--theme-transition-duration)
-      var(--theme-transition-timing),
+    background-color var(--theme-transition-duration) var(--theme-transition-timing),
     color var(--theme-transition-duration) var(--theme-transition-timing);
   position: relative;
   overflow-x: hidden;
@@ -22,8 +21,7 @@
   width: 100%;
   z-index: 1001;
   transition:
-    background-color var(--theme-transition-duration)
-      var(--theme-transition-timing),
+    background-color var(--theme-transition-duration) var(--theme-transition-timing),
     box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -167,8 +165,7 @@
   color: var(--footer-text);
   width: 100%;
   transition:
-    background-color var(--theme-transition-duration)
-      var(--theme-transition-timing),
+    background-color var(--theme-transition-duration) var(--theme-transition-timing),
     color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
@@ -194,8 +191,7 @@
 .footerSection h3 {
   color: var(--footer-heading);
   margin-bottom: 0.5rem;
-  transition: color var(--theme-transition-duration)
-    var(--theme-transition-timing);
+  transition: color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
 .footerSection a {

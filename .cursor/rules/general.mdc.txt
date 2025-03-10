@@ -40,9 +40,11 @@ alwaysApply: true
   - Working copies: `*.mdc.txt` (for editing)
   - Specialized rule files:
     - `general.mdc`: Core project rules and structure
-    - `typography.mdc`: Font families, usage, and best practices
-    - `mobile.mdc`: Mobile-first development guidelines
+    - `ide.mdc`: IDE and project configuration settings
+    - `javascript.mdc`: JavaScript and TypeScript development patterns
     - `learnings.mdc`: Project-specific insights and patterns
+    - `mobile.mdc`: Mobile-first development guidelines
+    - `typography.mdc`: Font families, usage, and best practices
 - Use `make init-rules` to create working copies for editing
 - Use `make save-rules` to save changes back to source files
 
@@ -53,4 +55,4 @@ alwaysApply: true
 - Style:
   - Combine gitmoji (https://gitmoji.dev/) with Conventional Commits
   - Use backticks for code references
-  - Keep messages concise and descriptive 
+  - Keep messages concise and descriptive

@@ -42,11 +42,7 @@
   left: 50%;
   width: 150%;
   height: 150%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition:
@@ -173,9 +169,7 @@
   transform: translateY(10px) rotateX(5deg);
   opacity: 0;
   animation: itemAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  animation-delay: calc(
-    (var(--section-index, 0) * 200ms) + (var(--item-index, 0) * 100ms)
-  );
+  animation-delay: calc((var(--section-index, 0) * 200ms) + (var(--item-index, 0) * 100ms));
   transform-origin: center bottom;
 }
 
@@ -288,9 +282,7 @@
   z-index: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   animation: badgePop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-  animation-delay: calc(
-    (var(--section-index, 0) * 200ms) + (var(--item-index, 0) * 100ms) + 300ms
-  );
+  animation-delay: calc((var(--section-index, 0) * 200ms) + (var(--item-index, 0) * 100ms) + 300ms);
   opacity: 0;
   transform: scale(0.8);
   backdrop-filter: blur(4px);

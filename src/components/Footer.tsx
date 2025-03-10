@@ -1,8 +1,9 @@
 import { BUSINESS, SERVICES, SOCIAL_MEDIA } from '@/config';
-import { useTheme } from '@/context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { margarine } from '@/config/fonts';
+
+import { useTheme } from '@/context/ThemeContext';
 
 import { createGoogleMapsUrl } from '@/utils/urls';
 
@@ -12,9 +13,7 @@ export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   const currentYear = new Date().getFullYear();
   const copyrightYears =
-    currentYear > BUSINESS.founding.year
-      ? `${BUSINESS.founding.year}–${currentYear}`
-      : currentYear;
+    currentYear > BUSINESS.founding.year ? `${BUSINESS.founding.year}–${currentYear}` : currentYear;
 
   // Get social media entries in the desired order
   const socialMediaEntries = Object.entries(SOCIAL_MEDIA);
@@ -29,10 +28,7 @@ export default function Footer() {
           <h3 className={margarine.className}>Location & Hours</h3>
           <p>
             <a
-              href={createGoogleMapsUrl(
-                BUSINESS.name,
-                BUSINESS.location.fullAddress
-              )}
+              href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -2,10 +2,8 @@ export const BUSINESS = {
   name: "Skillet'z Cafe",
   branding: {
     welcome: 'Welcome to',
-    tagline:
-      'Serving delicious American breakfast & lunch in historic Niles, Fremont, California',
-    slogan:
-      "Ol' Country Cookin' - Home cooked meals in Historic Niles, Fremont, California",
+    tagline: 'Serving delicious American breakfast & lunch in historic Niles, Fremont, California',
+    slogan: "Ol' Country Cookin' - Home cooked meals in Historic Niles, Fremont, California",
   },
   founding: {
     year: 2025,

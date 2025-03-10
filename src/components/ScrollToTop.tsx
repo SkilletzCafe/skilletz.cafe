@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import styles from '@/styles/ScrollToTop.module.css';
 
 export default function ScrollToTop() {
@@ -32,11 +33,7 @@ export default function ScrollToTop() {
   return (
     <>
       {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className={styles.scrollToTop}
-          aria-label="Scroll to top"
-        >
+        <button onClick={scrollToTop} className={styles.scrollToTop} aria-label="Scroll to top">
           <svg
             width="24"
             height="24"
