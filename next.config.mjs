@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  distDir: 'www',
+  distDir: 'docs',
   trailingSlash: true, // Ensures clean URLs in static export
   images: {
     unoptimized: true,
