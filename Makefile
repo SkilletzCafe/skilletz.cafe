@@ -16,17 +16,17 @@ run: install
 
 ## clean - clean previous builds
 clean:
-	rm -rf www/
+	rm -rf docs/
 
 ## build - build the app for release
 build: clean install
 	npm run build
-	cp CNAME www/ || true
-	touch www/.nojekyll
+	cp CNAME docs/ || true
+	touch docs/.nojekyll
 
 ## deploy - build and deploy the app
 deploy: build
-	git add www
+	git add docs
 	git commit -m "Deploy `git rev-parse --verify HEAD`" --no-verify
 	git push origin master
 
