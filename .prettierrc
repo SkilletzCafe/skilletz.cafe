@@ -17,5 +17,18 @@
     "^[./]"
   ],
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 80,
+        "singleQuote": false,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "arrowParens": "always"
+      }
+    }
+  ]
 }
