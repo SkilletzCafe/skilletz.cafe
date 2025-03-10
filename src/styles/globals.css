@@ -1,0 +1,97 @@
+/* Transition configuration */
+:root {
+  --theme-transition-duration: 0.3s;
+  --theme-transition-timing: ease;
+  --hover-transition-duration: 0.2s; /* For hover effects and small interactions */
+}
+
+/* Dark theme variables (now default) */
+:root {
+  /* Header/Footer dark colors */
+  --header-bg: #242424;
+  --header-shadow: rgba(0, 0, 0, 0.3);
+  --header-text: #e0e0e0; /* New variable for header text */
+  --footer-bg: #242424;
+  --footer-text: #e0e0e0;
+  --footer-link: #b0b0b0;
+  --footer-heading: #ff7f50;
+
+  /* Main content stays light */
+  --bg-color: white;
+  --text-color: #333;
+  --button-bg: #ff7f50;
+  --button-hover: #ff6b3c;
+  --button-text: white;
+  --border-color: #eee;
+  --hero-text: #333;
+  --hero-text-shadow: rgba(0, 0, 0, 0.5);
+  --hero-bg-overlay: rgba(255, 255, 255, 0.65);
+  --link-text: #333;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: rgba(0, 0, 0, 0.25);
+  --nav-hover: #ff7f50;
+  transition: all var(--theme-transition-duration)
+    var(--theme-transition-timing);
+}
+
+/* Light theme variables */
+[data-theme='light'] {
+  /* Header/Footer light colors */
+  --header-bg: white;
+  --header-shadow: rgba(0, 0, 0, 0.1);
+  --header-text: #333; /* New variable for header text */
+  --footer-bg: #f8f8f8;
+  --footer-text: #333;
+  --footer-link: #666;
+  --footer-heading: #ff7f50;
+
+  /* Main content stays light */
+  --bg-color: white;
+  --text-color: #333;
+  --button-bg: #ff7f50;
+  --button-hover: #ff6b3c;
+  --button-text: white;
+  --border-color: #eee;
+  --hero-text: #333;
+  --hero-text-shadow: rgba(0, 0, 0, 0.5);
+  --hero-bg-overlay: rgba(255, 255, 255, 0.65);
+  --link-text: #333;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: rgba(0, 0, 0, 0.25);
+  --nav-hover: #ff7f50;
+  transition: all var(--theme-transition-duration)
+    var(--theme-transition-timing);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    background-color var(--theme-transition-duration)
+      var(--theme-transition-timing),
+    color var(--theme-transition-duration) var(--theme-transition-timing);
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,65 @@
+---
+description: Learnings Rules
+globs: *
+alwaysApply: false
+---
+# Project Learnings Rules
+
+name: project_learnings
+description: Rules for documenting and leveraging project learnings to improve AI assistance
+
+## Purpose
+- Document discoveries and insights that help the AI better understand the codebase.
+- Build up a "stdlib" of knowledge that improves AI accuracy over time.
+- Capture successful patterns and prevent repeated mistakes.
+
+## When to Update
+- After successfully resolving an AI misunderstanding.
+- When discovering non-obvious implementation details.
+- When finding undocumented dependencies or behaviors.
+- When establishing new patterns or conventions.
+- When correcting AI-generated code that didn't match project standards.
+- After teaching the AI about project-specific requirements.
+
+## Format
+Each learning should be structured as:
+
+```
+markdown
+
+Category: Brief Title
+Date: YYYY-MM-DD
+Context:
+- What was the situation/problem
+- What did the AI initially get wrong (if applicable)
+
+Learning:
+- The key insight or pattern to remember
+- The correct approach to use
+
+Example:
+// Example of correct implementation
+
+Tags: #category #subcategory
+```
+
+## Categories
+- architecture
+- patterns
+- conventions
+- dependencies
+- performance
+- testing
+- deployment
+- security
+- other project-specific categories
+
+## Integration
+- All learnings should be written in a way that helps the AI make better decisions
+- Include specific code examples where relevant
+- Reference related files and patterns
+- Tag entries for better context matching
+
+metadata:
+  priority: high
+  version: 1.0

@@ -1,0 +1,28 @@
+---
+description: General project rules
+globs: *
+alwaysApply: false
+---
+# General Rules for Cursor
+
+- Project is a website built with NextJS
+- Website will be hosted on GitHub using NextJS static export
+- Programming language: Typescript
+- Keep structure/code and data separate. Use `src/config/site.ts` to store and maintain constants, URLs, and other similar data.
+- All links away from the website domain should use `target="_blank"`
+
+## Related Rule Files
+- Glob: `*.mdc`
+- All rule files MUST live inside `PROJECT_ROOT/.cursor/rules/*`
+- Learnings rules: `PROJECT_ROOT/.cursor/rules/learnings.mdc`
+
+## Git Hygiene and Housekeeping
+- PR Template: .github/PULL_REQUEST_TEMPLATE.md
+- Diff: .github/meta/diff.txt
+- Commit Message: .github/meta/commit.txt
+- Style:
+  - Follow a hybrid of both gitmoji (https://gitmoji.dev/) and Conventional Commits (https://www.conventionalcommits.org/)
+  - Use backticks for code blocks and referencing symbols
+- Instructions:
+  - When requested, create a commit message in the commit message file using context from the diff file following the format of the PR template
+  - Brevity and conciseness should be prioritized
