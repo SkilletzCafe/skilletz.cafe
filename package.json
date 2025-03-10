@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky",
+    "prepare": "husky install",
     "menu:process": "tsx src/scripts/menu/process-menu.ts",
     "menu:images": "tsx src/scripts/menu/generate_image_mappings.ts"
   },
