@@ -9,7 +9,9 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "menu:process": "tsx src/scripts/menu/process-menu.ts",
+    "menu:images": "tsx src/scripts/menu/generate_image_mappings.ts"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -37,6 +39,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^15.2.0",
     "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
     "typescript": "5.8.2"
   }
 }
