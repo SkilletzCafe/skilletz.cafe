@@ -1,4 +1,4 @@
-import { PAGES, SITE_URL } from '@/config';
+import { PAGES, SITE_URL, BUILD } from '@/config';
 import fs from 'fs';
 import path from 'path';
 
@@ -24,7 +24,7 @@ function generateSiteMap() {
 // Generate the sitemap during build
 export async function getStaticProps() {
   const sitemap = generateSiteMap();
-  const buildDir = path.join(process.cwd(), 'www');
+  const buildDir = path.join(process.cwd(), BUILD.outputDir);
 
   // Ensure the build directory exists
   if (!fs.existsSync(buildDir)) {

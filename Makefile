@@ -2,6 +2,8 @@
 help:
 	@cat Makefile | grep '^## ' --color=never | cut -c4- | sed -e "`printf 's/ - /\t- /;'`" | column -s "`printf '\t'`" -t
 
+BUILD_DIR := docs
+
 ## install - install dependency packages
 install:
 	npm install
@@ -16,17 +18,17 @@ run: install
 
 ## clean - clean previous builds
 clean:
-	rm -rf docs/
+	rm -rf $(BUILD_DIR)/
 
 ## build - build the app for release
 build: clean install
 	npm run build
-	cp CNAME docs/ || true
-	touch docs/.nojekyll
+	cp CNAME $(BUILD_DIR)/ || true
+	touch $(BUILD_DIR)/.nojekyll
 
 ## deploy - build and deploy the app
 deploy: build
-	git add docs
+	git add $(BUILD_DIR)
 	git commit -m "Deploy `git rev-parse --verify HEAD`" --no-verify
 	git push origin master
 
