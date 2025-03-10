@@ -37,3 +37,20 @@ prepare-commit-ai:
 	touch .github/meta/diff.txt
 	touch .github/meta/commit.txt
 	git -P diff --staged > .github/meta/diff.txt
+
+## init-rules - Initialize working copies for editing (.cursor/rules/*.mdc → .cursor/rules/*.mdc.txt)
+init-rules:
+	@echo "Creating working copies for editing..."
+	@for file in .cursor/rules/*.mdc; do \
+		cp -f "$$file" "$$file.txt"; \
+	done
+	@echo "Working copies created successfully!"
+
+## save-rules - Save working copy changes back to source (.cursor/rules/*.mdc.txt → .cursor/rules/*.mdc)
+save-rules:
+	@echo "Saving changes back to source..."
+	@for file in .cursor/rules/*.mdc.txt; do \
+		basename=$$(basename "$$file" .txt); \
+		cp -f "$$file" ".cursor/rules/$$basename"; \
+	done
+	@echo "Source files updated successfully!"

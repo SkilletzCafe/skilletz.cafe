@@ -1,0 +1,252 @@
+---
+description: Mobile development rules
+globs: ["*.tsx", "*.css"]
+alwaysApply: true
+---
+# Mobile Development Rules
+
+## Core Principles
+- Mobile-first development approach
+- Test all features at 320px width minimum
+- Ensure no horizontal scrolling
+- Maintain proper aspect ratios
+
+## Layout & Responsiveness
+- All containers must respect max-width: 100vw
+- Use box-sizing: border-box universally
+- Images must scale proportionally
+- Test at key breakpoints:
+  - Mobile: 320px (minimum)
+  - Tablet: 768px
+  - Desktop: 1024px
+
+## Horizontal Scrolling Containers
+- Use `flex: 0 0 auto` on items to prevent shrinking
+- Add padding/margin on container edges instead of items
+- Keep container simple: avoid custom scrollbars if possible
+- For full-width containers within max-width parents:
+  ```css
+  .scroll-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow-x: auto;
+  }
+
+  .scroll-item {
+    flex: 0 0 auto;
+    /* Size content appropriately */
+  }
+  ```
+
+## Images & Media
+- Always provide fallbacks for missing images
+- Prefer CSS-based placeholders over placeholder images
+- Use padding-bottom technique for responsive containers
+- Maintain consistent aspect ratios across screen sizes
+
+## Recent Learnings
+
+### Image Placeholder Positioning
+Category: Mobile Development
+Date: 2024-03-26
+Context:
+- Image placeholders were not visible on mobile devices
+- Placeholders had incorrect positioning in responsive layouts
+- Needed to maintain aspect ratio while showing visual indicators
+
+Learning:
+- For responsive image containers:
+  - Use padding-bottom technique for aspect ratio
+  - Make placeholder position: absolute with top/left: 0
+  - Ensure placeholder fills entire container (width/height: 100%)
+  - Center visual indicators using transform: translate(-50%, -50%)
+- Example:
+  ```css
+  .imageContainer {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+  }
+
+  .imagePlaceholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+  }
+
+  .imagePlaceholder::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  ```
+
+Tags: #mobile #images #responsive #layout
+
+### Mobile Menu Organization
+Category: Mobile Development
+Date: 2024-03-26
+Context:
+- Mobile menu was too busy with mixed content
+- Needed clear hierarchy and spacing
+- Contact information needed logical grouping
+
+Learning:
+- Order information by importance and frequency of use:
+  1. Navigation links at top
+  2. Location/address (with map link)
+  3. Hours of operation
+  4. Contact methods (phone, email)
+  5. Social links at bottom
+- Use visual separation:
+  - Add borders between major sections
+  - Increase spacing (2-2.5rem) between distinct content groups
+  - Use consistent icon styling for visual hierarchy
+- Make contact items actionable:
+  - Link address to Google Maps
+  - Link phone to tel: protocol
+  - Link email to mailto: protocol
+- Social links should be:
+  - Visually separated (border-top + spacing)
+  - Centered and equally spaced
+  - Large enough tap targets (1.5rem+)
+
+Example:
+```css
+/* Visual separation for sections */
+.section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Social links separation */
+.socialLinks {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+}
+```
+
+Tags: #mobile #navigation #ux #accessibility
+
+## Examples
+
+### Responsive Container
+```css
+.container {
+  width: 100%;
+  max-width: 100vw;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+```
+
+### Image Placeholder
+```css
+.imagePlaceholder {
+  background: #1a1a1a;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+/* Visual indicators */
+.imagePlaceholder::before,
+.imagePlaceholder::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: #404040;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.imagePlaceholder::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+```
+
+### Responsive Image Container
+```css
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
+
+# Mobile Development Guidelines
+
+## Image Handling
+
+### Loading States and Placeholders
+- Never tie opacity transitions to entire card/container components
+- Only apply loading transitions to the image itself
+- Always ensure content remains visible even when images are missing
+- Use placeholder states that persist for missing images
+
+Example:
+```css
+// Good: Image-specific loading
+.image {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.image.loaded {
+  opacity: 1;
+}
+
+// Bad: Container-level loading
+.container {
+  opacity: 0; // Don't do this - affects all content
+  transition: opacity 0.3s ease-out;
+}
+
+// Good: Persistent placeholder
+.imagePlaceholder {
+  background: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+### Best Practices
+- Set `isLoaded: true` by default for items without images
+- Use semantic HTML structure (aria-hidden, aria-label)
+- Maintain consistent aspect ratios
+- Ensure placeholder text has sufficient contrast
+- Consider bandwidth - use loading="lazy" for non-priority images
+
+### Common Pitfalls
+- Avoid transitions that might hide content temporarily
+- Don't rely on image presence for layout stability
+- Ensure interactive elements remain accessible without images
+- Test with slow connections and missing images

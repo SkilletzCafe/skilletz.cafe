@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import { BUSINESS, PAGES, SERVICES } from '@/config';
 import { useTheme } from '@/context/ThemeContext';
+import MobileMenu from './MobileMenu';
 
 import { geist, margarine } from '@/config/fonts';
 
@@ -12,6 +14,7 @@ import styles from '@/styles/Layout.module.css';
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const logoSrc =
     theme === 'dark'
@@ -38,7 +41,9 @@ export default function Header() {
             loader={({ src }) => src}
           />
         </Link>
-        <nav className={`${styles.nav} ${margarine.className}`}>
+        <nav
+          className={`${styles.nav} ${margarine.className} ${styles.desktopNav}`}
+        >
           {Object.values(PAGES)
             .filter((page) => page.showInNav)
             .map((page) => (
@@ -68,8 +73,21 @@ export default function Header() {
           >
             Order Online
           </a>
+          <button
+            className={styles.hamburgerButton}
+            onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
     </header>
   );
 }

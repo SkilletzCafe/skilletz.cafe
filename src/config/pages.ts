@@ -15,7 +15,6 @@ export const PAGES: Record<string, Page> = {
     path: '/menu',
     name: 'Menu',
     showInNav: true,
-    openInNewTab: true,
   },
   catering: {
     path: '/catering',

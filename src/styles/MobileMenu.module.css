@@ -1,0 +1,151 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1002;
+  animation: fadeIn 0.2s ease-in-out;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: var(--header-bg);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease-in-out;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.closeButton {
+  position: fixed;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--header-text);
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--hover-transition-duration) ease;
+  z-index: 1003;
+}
+
+.closeButton:hover {
+  color: var(--nav-hover);
+}
+
+.nav {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0 0.5rem;
+}
+
+.nav a {
+  color: var(--header-text);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color var(--hover-transition-duration) ease;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav a:hover {
+  color: var(--nav-hover);
+}
+
+.info {
+  margin-top: 2rem;
+  padding: 1.5rem 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--header-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.infoItem svg {
+  width: 20px;
+  margin-top: 0.2rem;
+  color: var(--nav-hover);
+}
+
+.infoItem address {
+  font-style: normal;
+}
+
+.infoItem p {
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialLinks a {
+  color: var(--header-text);
+  transition: color var(--hover-transition-duration) ease;
+}
+
+.socialLinks a:hover {
+  color: var(--nav-hover);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
