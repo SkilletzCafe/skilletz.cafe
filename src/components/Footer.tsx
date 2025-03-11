@@ -1,4 +1,4 @@
-import { BUSINESS, SERVICES, SOCIAL_MEDIA } from '@/config';
+import { BUSINESS, FULL_ADDRESS, SERVICES, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { margarine } from '@/config/fonts';
@@ -28,11 +28,11 @@ export default function Footer() {
           <h3 className={margarine.className}>Location & Hours</h3>
           <p>
             <a
-              href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
+              href={createGoogleMapsUrl(BUSINESS.name, FULL_ADDRESS)}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {BUSINESS.location.fullAddress}
+              {FULL_ADDRESS}
             </a>
             <br />
             {BUSINESS.hours.weekday.days}: {BUSINESS.hours.weekday.open} -{' '}

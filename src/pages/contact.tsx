@@ -1,4 +1,4 @@
-import { BUSINESS } from '@/config';
+import { BUSINESS, FULL_ADDRESS } from '@/config';
 import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -43,12 +43,12 @@ export default function Contact() {
         <h2>Location</h2>
         <p>Visit us at:</p>
         <a
-          href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
+          href={createGoogleMapsUrl(BUSINESS.name, FULL_ADDRESS)}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
         >
-          {BUSINESS.location.fullAddress}
+          {FULL_ADDRESS}
         </a>
       </div>
 
