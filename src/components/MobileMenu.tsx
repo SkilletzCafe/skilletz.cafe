@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import Link from 'next/link';
 
-import { BUSINESS, PAGES, SOCIAL_MEDIA } from '@/config';
+import { BUSINESS, FULL_ADDRESS, PAGES, SOCIAL_MEDIA } from '@/config';
 import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -70,7 +70,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className={styles.infoItem}>
               <FontAwesomeIcon icon={faLocationDot} />
               <a
-                href={createGoogleMapsUrl(BUSINESS.name, BUSINESS.location.fullAddress)}
+                href={createGoogleMapsUrl(BUSINESS.name, FULL_ADDRESS)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.infoItem}

@@ -1,9 +1,14 @@
+import { buildFullAddress } from '@/utils/address';
+
 export const BUSINESS = {
+  domain: 'skilletz.cafe',
   name: "Skillet'z Cafe",
   branding: {
     welcome: 'Welcome to',
-    tagline: 'Serving delicious American breakfast & lunch in historic Niles, Fremont, California',
-    slogan: "Ol' Country Cookin' - Home cooked meals in Historic Niles, Fremont, California",
+    tagline:
+      'Family-owned Breakfast & Brunch Restaurant in Historic Niles - Fresh, Homemade American Diner Food',
+    slogan:
+      "Ol' Country Cookin' - Fresh, Homemade Breakfast & Brunch in Historic Niles, Fremont, California",
   },
   founding: {
     year: 2025,
@@ -14,7 +19,9 @@ export const BUSINESS = {
     state: 'CA',
     zip: '94536',
     neighborhood: 'Niles',
-    fullAddress: '37378 Niles Blvd, Fremont, CA 94536',
+    country_abbrev: 'US',
+    lat: 37.5773115,
+    lng: -121.9802536,
     phone: '(510) 793-8161',
   },
   contact: {
@@ -33,3 +40,5 @@ export const BUSINESS = {
     },
   },
 } as const;
+
+export const FULL_ADDRESS = buildFullAddress(BUSINESS.location);
