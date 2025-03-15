@@ -23,7 +23,7 @@ Context:
 
 Learning:
 - Keep source files as `.mdc` in version control
-- Create `.mdc.txt` working copies for editing
+- Create `.mdc.draft` working copies for editing
 - Use make targets to manage the workflow:
   - `make init-rules`: Create working copies
   - `make save-rules`: Save changes back to source
@@ -32,7 +32,7 @@ Example:
 ```bash
 # Edit workflow
 make init-rules    # Create .mdc.txt files
-# Edit .mdc.txt files
+# Edit .mdc.draft files
 make save-rules    # Save changes back to .mdc files
 ```
 
@@ -111,4 +111,4 @@ Tags: #components #organization #patterns
 - Reference specific files and patterns
 - Include code examples
 - Tag entries for better context matching
-- Update after resolving issues or discovering patterns 
+- Update after resolving issues or discovering patterns
