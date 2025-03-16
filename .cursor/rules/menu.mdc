@@ -1,0 +1,143 @@
+---
+description: Rules and patterns for menu data processing, image handling, and frontend implementation
+globs: ["src/pages/menu.tsx", "src/scripts/menu/**/*.ts", "src/styles/Menu.module.css", "src/data/menu/**/*"]
+alwaysApply: false
+---
+
+# Menu System Architecture
+
+## Overview
+The menu system processes raw Toast POS data into an optimized format for the website, handling menu items, categories, and images.
+
+## Data Flow
+1. Raw Toast Menu Data (`src/data/menu/raw/toast-menu.json`)
+   - Contains complete menu structure from Toast POS
+   - Includes item details, prices, descriptions, and image links
+   - Organized by menus → groups → items
+
+2. Processing Script (`src/scripts/menu/process-menu.ts`)
+   - Transforms raw Toast data into optimized website format
+   - Filters items based on `orderableOnline` and `visibility`
+   - Preserves direct image URLs from Toast
+   - Run via `npm run menu:process`
+
+3. Processed Menu Data (`src/data/menu/processed/menu.json`)
+   - Simplified, flattened structure
+   - Only includes necessary fields
+   - Direct image URLs from Toast
+
+## Data Structures
+
+### Raw Toast Data
+```typescript
+interface ToastMenuItem {
+  name: string;
+  guid: string;
+  description: string;
+  price: number;
+  imageLink: string | null;
+  orderableOnline: string;
+  visibility: string;
+}
+
+interface ToastData {
+  menus: ToastMenu[];
+  premodifierGroups: unknown[];
+}
+```
+
+### Processed Menu Data
+```typescript
+interface ProcessedMenuItem {
+  name: string;
+  guid: string;
+  description: string;
+  price: number;
+  imageUrl: string | null;
+}
+
+interface ProcessedData {
+  menus: ProcessedMenu[];
+}
+```
+
+## Frontend Implementation (`src/pages/menu.tsx`)
+- Mobile-first, responsive design
+- Lazy loading of images with placeholders
+- Keyboard navigation support
+- Category-based filtering
+- Intersection Observer for performance
+- Accessibility features
+
+### Key Features
+1. Image Handling
+   - Uses Next.js Image component
+   - Lazy loading with priority for first 4 items
+   - Placeholder during loading
+   - Fallback for missing images
+
+2. Navigation
+   - Horizontal scrolling category nav
+   - Keyboard navigation support
+   - Smooth scrolling
+
+3. Performance
+   - Intersection Observer for visibility tracking
+   - Staggered animations based on visibility
+   - Optimized image loading
+
+4. Accessibility
+   - ARIA labels and roles
+   - Keyboard navigation
+   - Semantic HTML structure
+
+## Best Practices
+1. Data Processing
+   - Keep processing logic separate from display logic
+   - Filter out non-orderable items during processing
+   - Maintain clear type definitions
+
+2. Image Handling
+   - Use direct image URLs from Toast
+   - Provide fallbacks for missing images
+   - Optimize loading performance
+
+3. User Experience
+   - Mobile-first design
+   - Smooth animations and transitions
+   - Clear visual hierarchy
+   - Accessible navigation
+
+## Recent Learnings
+
+### Menu Data Processing
+Category: Data Management
+Date: 2024-03-26
+Context:
+- Needed to simplify menu data processing
+- Previous system used separate image mapping
+- Toast provides direct image URLs
+
+Learning:
+- Use Toast's image URLs directly
+- Remove unnecessary image mapping system
+- Simplify data processing pipeline
+- Maintain clear separation between raw and processed data
+
+Tags: #menu #data-processing #images
+
+### Image Loading Strategy
+Category: Performance
+Date: 2024-03-26
+Context:
+- Menu items need images
+- Images can be slow to load
+- Need to handle missing images
+
+Learning:
+- Use Next.js Image component for optimization
+- Implement loading placeholders
+- Prioritize first 4 items
+- Clear fallback for missing images
+
+Tags: #images #performance #ux

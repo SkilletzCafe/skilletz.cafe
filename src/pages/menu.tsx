@@ -18,7 +18,7 @@ interface MenuItem {
   guid: string;
   description: string;
   price: number;
-  imageFilename: string | null;
+  imageUrl: string | null;
   isPopular?: boolean;
 }
 
@@ -38,27 +38,10 @@ interface Menu {
 
 interface MenuData {
   menus: Menu[];
-  menuItemImages: Record<string, string>;
-}
-
-interface ImageMapping {
-  images: string[];
-  category: string;
-  item_name: string;
-}
-
-interface ImageMappings {
-  item_images: Record<string, ImageMapping>;
-  metadata: {
-    last_updated: string;
-    version: string;
-    image_root: string;
-  };
 }
 
 interface MenuPageProps {
   menuData: MenuData;
-  imageMappings: ImageMappings;
 }
 
 interface MenuItemState {
@@ -66,7 +49,7 @@ interface MenuItemState {
   isLoaded: boolean;
 }
 
-export default function Menu({ menuData, imageMappings }: MenuPageProps) {
+export default function Menu({ menuData }: MenuPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
   const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
@@ -175,8 +158,6 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
   const menus = menuData.menus.filter((menu) => menu.name !== 'Other');
 
   const renderMenuItem = (item: MenuItem, index: number, totalItems: number) => {
-    const imageMapping = imageMappings.item_images[item.guid];
-    const imagePath = imageMapping?.images[0];
     const itemState = itemStates[item.guid] || {
       isVisible: false,
       isLoaded: true,
@@ -209,13 +190,13 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
           </div>
         )}
         <div className={styles.imageContainer}>
-          {imagePath ? (
+          {item.imageUrl ? (
             <>
               {!itemState.isLoaded && (
                 <div className={styles.imagePlaceholder} aria-hidden="true" />
               )}
               <Image
-                src={`/${imagePath}`}
+                src={item.imageUrl}
                 alt={`Photo of ${item.name}`}
                 width={1980}
                 height={1080}
@@ -337,17 +318,13 @@ export default function Menu({ menuData, imageMappings }: MenuPageProps) {
 }
 
 export const getStaticProps: GetStaticProps<MenuPageProps> = async () => {
-  // Read menu data and image mappings
+  // Read menu data
   const menuDataPath = path.join(process.cwd(), 'src/data/menu/processed/menu.json');
-  const imageMappingsPath = path.join(process.cwd(), 'src/data/menu/image_mappings.json');
-
   const menuData: MenuData = JSON.parse(fs.readFileSync(menuDataPath, 'utf-8'));
-  const imageMappings: ImageMappings = JSON.parse(fs.readFileSync(imageMappingsPath, 'utf-8'));
 
   return {
     props: {
       menuData,
-      imageMappings,
     },
   };
 };

@@ -11,7 +11,7 @@ This directory contains rules that guide Cursor's AI in understanding and mainta
 ## File Types
 
 - `*.mdc` - Source rule files (version controlled)
-- `*.mdc.txt` - Working copies for editing
+- `*.mdc.draft` - Working copies for editing
 
 ## Workflow
 
@@ -23,7 +23,7 @@ To edit rules:
 make init-rules
 ```
 
-2. Edit the `.mdc.txt` files in this directory
+2. Edit the `.mdc.draft` files in this directory
 
 3. Save changes back to source:
 

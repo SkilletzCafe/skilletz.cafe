@@ -37,7 +37,7 @@ alwaysApply: true
 ## File Structure
 - Rule files live in `.cursor/rules/`
   - Source files: `*.mdc` (version controlled)
-  - Working copies: `*.mdc.txt` (for editing)
+  - Working copies: `*.mdc.draft` (for editing)
   - Specialized rule files:
     - `general.mdc`: Core project rules and structure
     - `ide.mdc`: IDE and project configuration settings

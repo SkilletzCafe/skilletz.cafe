@@ -6,7 +6,7 @@ This directory contains Cursor IDE-specific configuration and helper files.
 
 - `rules/` - Contains Cursor AI rules that help guide code generation and maintenance
   - `*.mdc` - Source rule files (version controlled)
-  - `*.mdc.txt` - Working copies for editing
+  - `*.mdc.draft` - Working copies for editing
   - See `rules/README.md` for more details
 
 ## Usage

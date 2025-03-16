@@ -6,7 +6,7 @@ interface ToastMenuItem {
   guid: string;
   description: string;
   price: number;
-  imageLink?: string | null;
+  imageLink: string | null;
   orderableOnline: string;
   visibility: string;
 }
@@ -35,7 +35,7 @@ interface ProcessedMenuItem {
   guid: string;
   description: string;
   price: number;
-  imageFilename: string | null;
+  imageUrl: string | null;
 }
 
 interface ProcessedMenuGroup {
@@ -54,7 +54,6 @@ interface ProcessedMenu {
 
 interface ProcessedData {
   menus: ProcessedMenu[];
-  menuItemImages: Record<string, string | null>; // guid -> filename mapping
 }
 
 /**
@@ -85,11 +84,10 @@ async function processMenu() {
               guid: item.guid,
               description: item.description,
               price: item.price,
-              imageFilename: null, // To be populated later with image mapping
+              imageUrl: item.imageLink, // Use the imageLink directly from Toast
             })),
         })),
       })),
-      menuItemImages: {}, // To be populated later with image mapping
     };
 
     // Create a summary of the menu structure
