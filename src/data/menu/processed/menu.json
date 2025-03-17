@@ -22,7 +22,7 @@
               "guid": "91e0cb9b-5ef9-47a4-887c-614cdf63f72e",
               "description": "Honey stung chicken with waffle, delicious homemade mac & cheese, bacon, potatoes. Available Tuesdays!",
               "price": 21.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000498893372_1742192364.jpg"
             },
             {
               "name": "Carne Asada Chilaquiles Rojos",
@@ -50,14 +50,14 @@
               "guid": "3c05fccd-6814-47c4-8521-6647f475d6fd",
               "description": "Link sausage, country sausage, bacon, ham.",
               "price": 21.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000840223551_1742140848.jpg"
             },
             {
               "name": "Special Spicy New York Steak",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
-              "description": "",
+              "description": "New York Steak with chorizo and chopped serranos.",
               "price": 23.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
             }
           ]
         }
@@ -400,7 +400,7 @@
               "guid": "6e6a5da2-f7f2-482b-a1f2-3d3434bf7695",
               "description": "",
               "price": 18.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000001195139683_1742184007.jpg"
             }
           ]
         }
@@ -1114,14 +1114,14 @@
               "guid": "4b7e5f0d-03db-4c1b-b58f-e2a9711caaf7",
               "description": "",
               "price": 2.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000631141127_1742140172.jpg"
             },
             {
               "name": "1/2 Biscuit & Gravy",
               "guid": "5d3232ab-ff32-4901-85ae-d3d80b01e17f",
               "description": "",
               "price": 3.95,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000001186653174_1742184053.jpg"
             }
           ]
         }
@@ -1168,7 +1168,7 @@
             {
               "name": "Milkshake 🍨",
               "guid": "da2ed00c-1044-4487-94ba-63319e0b3992",
-              "description": "",
+              "description": "Our delicious milkshakes come in a variety of flavors: Vanilla 🍦, Chocolate 🍫, Oreo, Banana 🍌, Strawberry 🍓, Matcha 🍵, Strawberry Matcha 🍓🍵, and Banana Matcha 🍌🍵",
               "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000341599584_1734991360.jpg"
             },
@@ -1203,9 +1203,9 @@
             {
               "name": "Iced Tea 🧊🌿",
               "guid": "7278398a-9de6-4104-b432-d32dad30f1e2",
-              "description": "",
+              "description": "Refreshing freshly brewed black tea with lemon wedge. Customizations: Make it an Arnold Palmer (with lemonade!)",
               "price": 4,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000561456150_1742140394.jpg"
             },
             {
               "name": "Fountain Soda (24 oz)",
