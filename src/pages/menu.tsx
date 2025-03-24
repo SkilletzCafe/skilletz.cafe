@@ -3,50 +3,21 @@ import { useEffect, useRef, useState } from 'react';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
 
-import fs from 'fs';
-import path from 'path';
+import { MenuData, MenuItemState } from '@/types/menu';
 
 import { margarine } from '@/config/fonts';
 
 import BasicPageLayout from '@/components/BasicPageLayout';
+import MenuItem from '@/components/MenuItem';
 import ScrollToTop from '@/components/ScrollToTop';
+
+import { getMainMenus, imageLoader } from '@/utils/menu';
+import { loadMenuData } from '@/utils/menu_static';
 
 import styles from '@/styles/Menu.module.css';
 
-interface MenuItem {
-  name: string;
-  guid: string;
-  description: string;
-  price: number;
-  imageUrl: string | null;
-  isPopular?: boolean;
-}
-
-interface MenuGroup {
-  name: string;
-  guid: string;
-  description: string;
-  items: MenuItem[];
-}
-
-interface Menu {
-  name: string;
-  guid: string;
-  description: string;
-  groups: MenuGroup[];
-}
-
-interface MenuData {
-  menus: Menu[];
-}
-
 interface MenuPageProps {
   menuData: MenuData;
-}
-
-interface MenuItemState {
-  isVisible: boolean;
-  isLoaded: boolean;
 }
 
 export default function Menu({ menuData }: MenuPageProps) {
@@ -154,84 +125,8 @@ export default function Menu({ menuData }: MenuPageProps) {
     }
   };
 
-  // Filter out the "Other" menu
-  const menus = menuData.menus.filter((menu) => menu.name !== 'Other');
-
-  const renderMenuItem = (item: MenuItem, index: number, totalItems: number) => {
-    const itemState = itemStates[item.guid] || {
-      isVisible: false,
-      isLoaded: true,
-    };
-
-    // Set up observer for this item
-    const setItemRef = (el: HTMLDivElement | null) => {
-      menuItemsRef.current[index] = el;
-      if (el && observerRef.current) {
-        observerRef.current.observe(el);
-        // Set the item index for staggered animation
-        el.style.setProperty('--item-index', index.toString());
-      }
-    };
-
-    return (
-      <div
-        key={item.guid}
-        className={`${styles.menuItem} ${itemState.isLoaded ? styles.loaded : ''}`}
-        role="article"
-        aria-labelledby={`item-name-${item.guid}`}
-        tabIndex={0}
-        ref={setItemRef}
-        data-item-id={item.guid}
-        onKeyDown={(e) => handleMenuItemKeyDown(e, index, totalItems)}
-      >
-        {item.isPopular && (
-          <div className={styles.itemBadge} aria-label="Popular item">
-            Popular
-          </div>
-        )}
-        <div className={styles.imageContainer}>
-          {item.imageUrl ? (
-            <>
-              {!itemState.isLoaded && (
-                <div className={styles.imagePlaceholder} aria-hidden="true" />
-              )}
-              <Image
-                src={item.imageUrl}
-                alt={`Photo of ${item.name}`}
-                width={1980}
-                height={1080}
-                className={`${styles.image} ${itemState.isLoaded ? styles.loaded : ''}`}
-                onLoad={() => handleImageLoad(item.guid)}
-                priority={index < 4}
-                loader={({ src }) => src}
-              />
-            </>
-          ) : (
-            <div className={styles.imagePlaceholder} aria-label="No image available">
-              <div className={styles.noImageIcon}>
-                <span>No image available</span>
-              </div>
-            </div>
-          )}
-        </div>
-        <div className={styles.itemDetails}>
-          <div className={styles.itemHeader}>
-            <h3 id={`item-name-${item.guid}`} className={styles.itemName}>
-              {item.name}
-            </h3>
-            <span className={styles.price} aria-label={`Price: $${item.price.toFixed(2)}`}>
-              ${item.price.toFixed(2)}
-            </span>
-          </div>
-          {item.description && (
-            <p className={styles.description} aria-label={`Description: ${item.description}`}>
-              {item.description}
-            </p>
-          )}
-        </div>
-      </div>
-    );
-  };
+  // Get main menus (excluding "Other")
+  const menus = getMainMenus(menuData);
 
   // Calculate total number of menu items for keyboard navigation
   const totalMenuItems = menus.reduce((total, menu) => {
@@ -305,7 +200,35 @@ export default function Menu({ menuData }: MenuPageProps) {
                 )}
                 <div className={styles.menuGrid} role="list" aria-label={`${menu.name} menu items`}>
                   {menu.groups.map((group) =>
-                    group.items.map((item, index) => renderMenuItem(item, index, totalMenuItems))
+                    group.items.map((item, itemIndex) => {
+                      const itemState = itemStates[item.guid] || {
+                        isVisible: false,
+                        isLoaded: true,
+                      };
+
+                      // Set up observer for this item
+                      const setItemRef = (el: HTMLDivElement | null) => {
+                        menuItemsRef.current[itemIndex] = el;
+                        if (el && observerRef.current) {
+                          observerRef.current.observe(el);
+                          // Set the item index for staggered animation
+                          el.style.setProperty('--item-index', itemIndex.toString());
+                        }
+                      };
+
+                      return (
+                        <MenuItem
+                          key={item.guid}
+                          item={item}
+                          index={itemIndex}
+                          totalItems={totalMenuItems}
+                          itemState={itemState}
+                          onImageLoad={handleImageLoad}
+                          onKeyDown={handleMenuItemKeyDown}
+                          setRef={setItemRef}
+                        />
+                      );
+                    })
                   )}
                 </div>
               </section>
@@ -318,9 +241,7 @@ export default function Menu({ menuData }: MenuPageProps) {
 }
 
 export const getStaticProps: GetStaticProps<MenuPageProps> = async () => {
-  // Read menu data
-  const menuDataPath = path.join(process.cwd(), 'src/data/menu/processed/menu.json');
-  const menuData: MenuData = JSON.parse(fs.readFileSync(menuDataPath, 'utf-8'));
+  const menuData = loadMenuData();
 
   return {
     props: {

@@ -141,3 +141,24 @@ Learning:
 - Clear fallback for missing images
 
 Tags: #images #performance #ux
+
+### TV Display Feature
+Category: User Experience
+Date: 2024-03-27
+Context:
+- Need to showcase featured menu items in a TV display format
+- Images need to transition smoothly
+- Display needs to be configurable in real-time
+- Screen needs to stay awake
+
+Learning:
+- Implement configurable transition delays (3-30 seconds)
+- Use keyboard shortcuts for real-time control:
+  - Left/Right arrows for manual navigation
+  - +/- keys for adjusting transition speed
+- Use Wake Lock API to prevent screen sleep
+- Maintain consistent transition animations with CSS
+- Use clear naming conventions for timing constants (e.g., `*_MILLIS` suffix)
+- Separate client-side menu utilities from server-side data loading
+
+Tags: #tv-display #ux #animations #keyboard-shortcuts
