@@ -117,7 +117,7 @@ export default function TV({ featuredItems }: TVPageProps) {
   if (!currentItem) return null;
 
   return (
-    <div className={styles.tvContainer}>
+    <div className={`${styles.tvContainer} ${styles.hideCursor}`}>
       <div
         className={`${styles.slide} ${isTransitioning ? styles.transitioning : ''}`}
         key={currentItem.guid}

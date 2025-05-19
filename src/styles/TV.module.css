@@ -101,3 +101,7 @@
 .tvContainer:hover .delay {
   opacity: 1;
 }
+
+.hideCursor {
+  cursor: none;
+}
