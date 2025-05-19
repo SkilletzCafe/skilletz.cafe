@@ -14,7 +14,7 @@
               "name": "Special Dulce of the Day",
               "guid": "b30e18b1-249d-404a-8f1d-38b48ae52e1a",
               "description": "Our daily rotating special sweet! Pictured: Nutella, chocolate chips, Oreo, banana waffle.",
-              "price": 14.95,
+              "price": 15.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000586626924_1742080585.jpg"
             },
             {
@@ -39,9 +39,9 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000000621744735_1737920176.jpg"
             },
             {
-              "name": "Special Billy's New York Steak and Eggs with Onions and Mushrooms",
+              "name": "Deluxe Billy's New York Steak and Eggs",
               "guid": "088b46a3-5221-4573-b69b-fae4ae7a39fc",
-              "description": "",
+              "description": "New York Steak and Eggs with Grilled Onions and Mushrooms",
               "price": 23.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000796161419_1742080485.jpg"
             },
@@ -53,11 +53,39 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000840223551_1742140848.jpg"
             },
             {
-              "name": "Special Spicy New York Steak",
+              "name": "Special New York Michocano",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
               "description": "New York Steak with chorizo and chopped serranos.",
-              "price": 23.95,
+              "price": 25.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
+            },
+            {
+              "name": "Veggie Chilaquiles",
+              "guid": "4a6ab01e-3359-4a0a-89bd-923c6e90687e",
+              "description": "Veggie chilaquiles comes with refried beans, tortilla chips, feta cheese, with fresh red salsa (Saturdays) or green salsa (Sundays) with avocado 🥑 and choice of eggs. Available weekends.",
+              "price": 20.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000001422031100_1742754091.jpg"
+            },
+            {
+              "name": "Veggie Quesadilla",
+              "guid": "89e94fd9-a9de-43c5-af29-1921b52a7042",
+              "description": "Eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
+              "price": 18.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000001422031101_1742754202.jpg"
+            },
+            {
+              "name": "Quinas Quezadilla",
+              "guid": "365f4ab0-b281-4c79-afb7-38c04ec3dcbd",
+              "description": "Sliced ham, scrambled eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
+              "price": 19.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002570672509_1747540744.jpg"
+            },
+            {
+              "name": "Rib Eye Steak & Eggs",
+              "guid": "3183b9fc-b8d6-4193-b784-f0ee944dbae6",
+              "description": "Rib Eye Steak & Eggs. Available as a special only.",
+              "price": 26.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000002570839675_1747546126.jpg"
             }
           ]
         }
@@ -378,7 +406,7 @@
               "name": "Billy's New York Steak & Eggs",
               "guid": "8bbe725c-5237-4568-97ee-a8e206b06308",
               "description": "New York strip steak topped with cheddar cheese, avocado. Choice of potatoes and eggs.",
-              "price": 21.95,
+              "price": 23.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352031890_1734993138.jpg"
             },
             {
@@ -427,7 +455,7 @@
               "name": "Bacon & Eggs 🥓🍳",
               "guid": "bb0401d2-0188-4165-bafa-607bee4754f9",
               "description": "Bacon, eggs. A classic.",
-              "price": 14.95,
+              "price": 15.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352422696_1735407933.jpg"
             },
             {
@@ -462,7 +490,7 @@
               "name": "New York Steak & Eggs",
               "guid": "c88faf5d-053f-41d3-9577-f716b8628e38",
               "description": "New York strip steak, eggs.",
-              "price": 20.95,
+              "price": 21.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352423356_1734992872.jpg"
             },
             {
@@ -791,7 +819,7 @@
               "name": "Skillet'z Special",
               "guid": "c97ef511-56b5-450d-8b0b-1da334259c84",
               "description": "2 pancakes, 2 French toast, or 1 waffle choice of sausage or bacon and two eggs.",
-              "price": 14.95,
+              "price": 15.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000352916859_1735408724.jpg"
             },
             {
@@ -1241,6 +1269,20 @@
               "description": "",
               "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000001279682597_1742080291.jpg"
+            },
+            {
+              "name": "Kid's Soda",
+              "guid": "53943cb0-1caf-4f7f-af2f-18c1ef523c9f",
+              "description": "",
+              "price": 2.95,
+              "imageUrl": null
+            },
+            {
+              "name": "Cold Brew",
+              "guid": "d78d2dcc-d8fe-4291-b17e-308d5873e425",
+              "description": "",
+              "price": 6,
+              "imageUrl": null
             }
           ]
         }
@@ -1255,22 +1297,7 @@
           "name": "Other",
           "guid": "73cc821d-1572-4a26-b747-9586df70349b",
           "description": "",
-          "items": [
-            {
-              "name": "$25 Gift Certificate",
-              "guid": "af8afd0e-203b-4650-a3ef-b198feff25d8",
-              "description": "",
-              "price": 25,
-              "imageUrl": null
-            },
-            {
-              "name": "Item Customizations",
-              "guid": "1beb0d28-afcb-483b-92df-f1ba5bf5b6dc",
-              "description": "",
-              "price": 1,
-              "imageUrl": null
-            }
-          ]
+          "items": []
         }
       ]
     }
