@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BUSINESS } from '@/config';
 
 import { geist, margarine } from '@/config/fonts';
+import { SERVICES } from '@/config/social';
 
 import Layout from '@/components/Layout';
 
@@ -20,6 +21,14 @@ export default function Home() {
           <div className={`${styles.cta} ${geist.className}`}>
             <Link href="/menu" className={styles.button}>
               View Menu
+            </Link>
+            <Link
+              href={SERVICES.reservations.url}
+              className={styles.button}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {SERVICES.reservations.label}
             </Link>
             <Link href="/catering" className={styles.button}>
               Catering Menu
