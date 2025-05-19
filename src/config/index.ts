@@ -4,4 +4,5 @@ export * from './business';
 export * from './fonts';
 export * from './pages';
 export * from './seo';
+export * from './services';
 export * from './social';

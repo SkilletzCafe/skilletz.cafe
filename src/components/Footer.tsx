@@ -1,10 +1,9 @@
 import Link from 'next/link';
 
-import { BUSINESS, FULL_ADDRESS, SOCIAL_MEDIA } from '@/config';
+import { BUSINESS, FULL_ADDRESS, SERVICES, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { margarine } from '@/config/fonts';
-import { SERVICES } from '@/config/services';
 
 import { useTheme } from '@/context/ThemeContext';
 
