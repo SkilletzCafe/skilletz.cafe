@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 import { BUSINESS } from '@/config';
-import { SERVICES } from '@/config';
 
 import { geist, margarine } from '@/config/fonts';
 
@@ -19,14 +18,14 @@ export default function Home() {
           </h1>
           <p className={`${styles.tagline} ${geist.className}`}>{BUSINESS.branding.tagline}</p>
           <div className={`${styles.cta} ${geist.className}`}>
-            <Link href="/menu" className={styles.button}>
-              View Menu
+            <Link href="/order-online" className={styles.button}>
+              Order Online
             </Link>
             <Link href="/reservations" className={styles.button} target="_blank" rel="noopener">
-              {SERVICES.reservations.label}
+              Reservations
             </Link>
-            <Link href="/catering" className={styles.button} target="_blank" rel="noopener">
-              Catering Menu
+            <Link href="/menu" className={styles.button}>
+              View Menu
             </Link>
           </div>
         </div>

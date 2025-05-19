@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { BUSINESS, FULL_ADDRESS, SERVICES, SOCIAL_MEDIA } from '@/config';
+import { BUSINESS, FULL_ADDRESS, QUICK_LINKS, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { margarine } from '@/config/fonts';
@@ -19,9 +19,6 @@ export default function Footer() {
 
   // Get social media entries in the desired order
   const socialMediaEntries = Object.entries(SOCIAL_MEDIA);
-
-  // Get service entries in the desired order
-  const serviceEntries = Object.entries(SERVICES);
 
   return (
     <footer className={styles.footer}>
@@ -65,23 +62,20 @@ export default function Footer() {
 
         <div className={styles.footerSection}>
           <h3 className={margarine.className}>Quick Links</h3>
-          {serviceEntries.map(([key, service]) =>
-            service.localPath ? (
-              <Link
-                key={key}
-                href={service.localPath}
+          {QUICK_LINKS.map((link) => {
+            const LinkComponent = link.isInternal ? Link : 'a';
+            return (
+              <LinkComponent
+                key={link.label}
+                href={link.href}
                 className={styles.link}
-                target="_blank"
-                rel="noopener"
+                {...(link.target ? { target: link.target } : {})}
+                {...(link.rel ? { rel: link.rel } : {})}
               >
-                {service.label}
-              </Link>
-            ) : (
-              <a key={key} href={service.url} target="_blank" rel="noopener noreferrer">
-                {service.label}
-              </a>
-            )
-          )}
+                {link.label}
+              </LinkComponent>
+            );
+          })}
         </div>
       </div>
       <div className={styles.copyright}>

@@ -64,14 +64,9 @@ export default function Header() {
           <div className={styles.phone}>
             <a href={createPhoneUrl(BUSINESS.location.phone)}>{BUSINESS.location.phone}</a>
           </div>
-          <a
-            href={SERVICES.doordash.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.orderButton}
-          >
+          <Link href="/order-online" className={styles.orderButton}>
             Order Online
-          </a>
+          </Link>
           <button
             className={styles.hamburgerButton}
             onClick={() => setIsMobileMenuOpen(true)}

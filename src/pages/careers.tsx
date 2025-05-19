@@ -9,7 +9,7 @@ import styles from '@/styles/BasicPage.module.css';
 export default function Careers() {
   useEffect(() => {
     // Redirect after component mounts
-    window.location.href = SERVICES.careers.url;
+    window.location.href = SERVICES.careers;
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export default function Careers() {
     >
       <div className={styles.card}>
         <a
-          href={SERVICES.careers.url}
+          href={SERVICES.careers}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}

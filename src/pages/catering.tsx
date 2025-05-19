@@ -9,7 +9,7 @@ import styles from '@/styles/BasicPage.module.css';
 export default function Catering() {
   useEffect(() => {
     // Redirect after component mounts
-    window.location.href = SERVICES.catering.url;
+    window.location.href = SERVICES.catering;
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export default function Catering() {
     >
       <div className={styles.card}>
         <a
-          href={SERVICES.catering.url}
+          href={SERVICES.catering}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}

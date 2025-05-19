@@ -9,7 +9,7 @@ import styles from '@/styles/BasicPage.module.css';
 export default function Reservations() {
   useEffect(() => {
     // Redirect after component mounts
-    window.location.href = SERVICES.reservations.url;
+    window.location.href = SERVICES.reservations;
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export default function Reservations() {
     >
       <div className={styles.card}>
         <a
-          href={SERVICES.reservations.url}
+          href={SERVICES.reservations}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
