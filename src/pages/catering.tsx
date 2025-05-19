@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { SERVICES } from '@/config';
+import { SERVICES } from '@/config/services';
 
 import BasicPageLayout from '@/components/BasicPageLayout';
 

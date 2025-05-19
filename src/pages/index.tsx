@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BUSINESS } from '@/config';
 
 import { geist, margarine } from '@/config/fonts';
-import { SERVICES } from '@/config/social';
+import { SERVICES } from '@/config/services';
 
 import Layout from '@/components/Layout';
 
