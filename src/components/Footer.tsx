@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { BUSINESS, FULL_ADDRESS, SERVICES, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -63,11 +65,23 @@ export default function Footer() {
 
         <div className={styles.footerSection}>
           <h3 className={margarine.className}>Quick Links</h3>
-          {serviceEntries.map(([key, { url, label }]) => (
-            <a key={key} href={url} target="_blank" rel="noopener noreferrer">
-              {label}
-            </a>
-          ))}
+          {serviceEntries.map(([key, service]) =>
+            service.localPath ? (
+              <Link
+                key={key}
+                href={service.localPath}
+                className={styles.link}
+                target="_blank"
+                rel="noopener"
+              >
+                {service.label}
+              </Link>
+            ) : (
+              <a key={key} href={service.url} target="_blank" rel="noopener noreferrer">
+                {service.label}
+              </a>
+            )
+          )}
         </div>
       </div>
       <div className={styles.copyright}>

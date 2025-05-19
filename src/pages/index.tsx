@@ -22,15 +22,10 @@ export default function Home() {
             <Link href="/menu" className={styles.button}>
               View Menu
             </Link>
-            <Link
-              href={SERVICES.reservations.url}
-              className={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/reservations" className={styles.button} target="_blank" rel="noopener">
               {SERVICES.reservations.label}
             </Link>
-            <Link href="/catering" className={styles.button}>
+            <Link href="/catering" className={styles.button} target="_blank" rel="noopener">
               Catering Menu
             </Link>
           </div>
