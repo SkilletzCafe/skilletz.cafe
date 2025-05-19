@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/SkilletzCafe/skilletz.cafe/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SkilletzCafe/skilletz.cafe/actions/workflows/pages/pages-build-deployment)
+
 # Skillet'z Cafe Website
 
 Welcome to the official repository for [Skillet'z Cafe](https://skilletz.cafe), a beloved restaurant in the historic Niles district of Fremont, California.
