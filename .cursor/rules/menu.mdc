@@ -150,6 +150,7 @@ Context:
 - Images need to transition smoothly
 - Display needs to be configurable in real-time
 - Screen needs to stay awake
+- Display runs on Raspberry Pi in kiosk mode
 
 Learning:
 - Implement configurable transition delays (3-30 seconds)
@@ -160,5 +161,9 @@ Learning:
 - Maintain consistent transition animations with CSS
 - Use clear naming conventions for timing constants (e.g., `*_MILLIS` suffix)
 - Separate client-side menu utilities from server-side data loading
+- Shuffle featured items on client-side for variety
+- Auto-reload page every 30 minutes for fresh content
+- Hide cursor for kiosk mode display
+- Use client-side state for shuffled items to maintain order during session
 
-Tags: #tv-display #ux #animations #keyboard-shortcuts
+Tags: #tv-display #ux #animations #keyboard-shortcuts #kiosk-mode

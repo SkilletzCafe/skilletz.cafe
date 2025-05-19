@@ -286,3 +286,61 @@ Learning:
 - Profile components with React DevTools
 
 Tags: #react #performance #optimization
+
+## Kiosk Mode Patterns
+
+### Client-Side State Management
+- Use client-side state for dynamic content that needs to change on each page load
+- Keep server-side data loading separate from client-side transformations
+- Example:
+  ```typescript
+  function TVDisplay({ featuredItems }: { featuredItems: MenuItem[] }) {
+    const [shuffledItems, setShuffledItems] = useState<MenuItem[]>([]);
+
+    // Shuffle items on mount
+    useEffect(() => {
+      setShuffledItems(shuffleArray(featuredItems));
+    }, [featuredItems]);
+
+    return (
+      // Render shuffled items
+    );
+  }
+  ```
+
+### Kiosk Mode Features
+- Implement auto-reload for fresh content
+- Hide cursor for kiosk display
+- Use Wake Lock API to prevent screen sleep
+- Example:
+  ```typescript
+  function KioskDisplay() {
+    // Prevent screen sleep
+    useEffect(() => {
+      const preventSleep = async () => {
+        try {
+          const wakeLock = await navigator.wakeLock.request('screen');
+          return () => wakeLock.release();
+        } catch (err) {
+          console.log('Wake Lock not supported:', err);
+        }
+      };
+      preventSleep();
+    }, []);
+
+    // Auto-reload every 30 minutes
+    useEffect(() => {
+      const RELOAD_INTERVAL = 30 * 60 * 1000;
+      const timer = setInterval(() => {
+        window.location.reload();
+      }, RELOAD_INTERVAL);
+      return () => clearInterval(timer);
+    }, []);
+
+    return (
+      <div className="kiosk-container hide-cursor">
+        {/* Kiosk content */}
+      </div>
+    );
+  }
+  ```
