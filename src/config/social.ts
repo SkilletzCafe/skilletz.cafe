@@ -60,12 +60,16 @@ export const SOCIAL_MEDIA: Record<string, SocialMediaLink> = {
 } as const;
 
 export const SERVICES: Record<string, ServiceLink> = {
+  reservations: {
+    url: 'https://yelp.to/2WkMWZOf0j',
+    label: 'Reservations',
+  },
   doordash: {
     url: "https://www.doordash.com/store/skillet'z-cafe-fremont-31854517/",
     label: 'Order on DoorDash',
   },
   careers: {
-    url: 'https://www.zippyapp.com/biz/skilletz',
+    url: 'https://zippyapp.com/biz/skilletz',
     label: 'Careers',
   },
   tripadvisor: {
