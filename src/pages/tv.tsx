@@ -7,6 +7,7 @@ import { MenuItem } from '@/types/menu';
 
 import { margarine } from '@/config/fonts';
 
+import { shuffleArray } from '@/utils/algo';
 import { getFeaturedItems, imageLoader } from '@/utils/menu';
 import { loadMenuData } from '@/utils/menu_static';
 
@@ -25,22 +26,28 @@ export default function TV({ featuredItems }: TVPageProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [transitionDelay, setTransitionDelay] = useState(DEFAULT_DELAY_MILLIS);
+  const [shuffledItems, setShuffledItems] = useState<MenuItem[]>([]);
+
+  // Shuffle items on mount
+  useEffect(() => {
+    setShuffledItems(shuffleArray(featuredItems));
+  }, [featuredItems]);
 
   const goToNext = useCallback(() => {
     setIsTransitioning(true);
     setTimeout(() => {
-      setCurrentIndex((current) => (current + 1) % featuredItems.length);
+      setCurrentIndex((current) => (current + 1) % shuffledItems.length);
       setIsTransitioning(false);
     }, 1000); // Match this with CSS transition duration
-  }, [featuredItems.length]);
+  }, [shuffledItems.length]);
 
   const goToPrevious = useCallback(() => {
     setIsTransitioning(true);
     setTimeout(() => {
-      setCurrentIndex((current) => (current - 1 + featuredItems.length) % featuredItems.length);
+      setCurrentIndex((current) => (current - 1 + shuffledItems.length) % shuffledItems.length);
       setIsTransitioning(false);
     }, 1000);
-  }, [featuredItems.length]);
+  }, [shuffledItems.length]);
 
   const adjustDelay = useCallback((amount: number) => {
     setTransitionDelay((current) => {
@@ -95,7 +102,17 @@ export default function TV({ featuredItems }: TVPageProps) {
     preventSleep();
   }, []);
 
-  const currentItem = featuredItems[currentIndex];
+  // Reload page every 30 minutes to get fresh content
+  useEffect(() => {
+    const RELOAD_INTERVAL_MILLIS = 30 * 60 * 1000; // 30 minutes
+    const reloadTimer = setInterval(() => {
+      window.location.reload();
+    }, RELOAD_INTERVAL_MILLIS);
+
+    return () => clearInterval(reloadTimer);
+  }, []);
+
+  const currentItem = shuffledItems[currentIndex];
 
   if (!currentItem) return null;
 
