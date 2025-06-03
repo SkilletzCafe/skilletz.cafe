@@ -94,6 +94,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <p>
                   {BUSINESS.hours.weekend.open} - {BUSINESS.hours.weekend.close}
                 </p>
+                <p>
+                  Breakfast until {BUSINESS.hours.weekend.breakfast_ends}, Dinner from{' '}
+                  {BUSINESS.hours.weekend.dinner_starts}
+                </p>
               </div>
             </div>
 

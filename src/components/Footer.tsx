@@ -39,6 +39,9 @@ export default function Footer() {
             <br />
             {BUSINESS.hours.weekend.days}: {BUSINESS.hours.weekend.open} -{' '}
             {BUSINESS.hours.weekend.close}
+            <br />
+            Breakfast until {BUSINESS.hours.weekend.breakfast_ends}, Dinner from{' '}
+            {BUSINESS.hours.weekend.dinner_starts}
           </p>
         </div>
 

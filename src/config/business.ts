@@ -29,14 +29,16 @@ export const BUSINESS = {
   },
   hours: {
     weekday: {
-      days: 'Monday-Friday',
+      days: 'Monday-Wednesday',
       open: '8am',
       close: '2pm',
     },
     weekend: {
-      days: 'Saturday-Sunday',
+      days: 'Thursday-Sunday',
       open: '8am',
-      close: '3pm',
+      close: '8pm',
+      breakfast_ends: '3pm',
+      dinner_starts: '3pm',
     },
   },
 } as const;
