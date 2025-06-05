@@ -558,3 +558,52 @@
     transform: none;
   }
 }
+
+.tabNav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.5rem;
+}
+
+.tabButton {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem 2rem 0 0;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  outline: none;
+}
+
+.tabButton:focus {
+  outline: 2px solid #0070f3;
+  outline-offset: 2px;
+}
+
+.activeTab {
+  background: #fff;
+  color: #111;
+  border-bottom: 2px solid #0070f3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .tabNav {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .tabButton {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+  }
+}

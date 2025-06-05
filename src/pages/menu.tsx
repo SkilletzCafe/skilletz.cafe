@@ -8,7 +8,9 @@ import { MenuData, MenuItemState } from '@/types/menu';
 import { margarine } from '@/config/fonts';
 
 import BasicPageLayout from '@/components/BasicPageLayout';
+import MenuCategorySwitcher from '@/components/MenuCategorySwitcher';
 import MenuItem from '@/components/MenuItem';
+import MenuSections from '@/components/MenuSections';
 import ScrollToTop from '@/components/ScrollToTop';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
@@ -21,6 +23,8 @@ interface MenuPageProps {
 }
 
 export default function Menu({ menuData }: MenuPageProps) {
+  // Add tab state for Brunch/Dinner
+  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Dinner'>('Brunch');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
   const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
@@ -28,6 +32,12 @@ export default function Menu({ menuData }: MenuPageProps) {
   const menuItemsRef = useRef<(HTMLDivElement | null)[]>([]);
   const observerRef = useRef<IntersectionObserver | null>(null);
   const categoryRefs = useRef<(HTMLHeadingElement | null)[]>([]);
+
+  // Separate Dinner and Brunch menus
+  const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
+  const brunchMenus = menuData.menus.filter(
+    (menu) => menu.name !== 'Dinner' && menu.groups.length === 1
+  );
 
   // Set up intersection observer
   useEffect(() => {
@@ -126,113 +136,76 @@ export default function Menu({ menuData }: MenuPageProps) {
   };
 
   // Get main menus (excluding "Other")
-  const menus = getMainMenus(menuData);
-
+  // const menus = getMainMenus(menuData);
   // Calculate total number of menu items for keyboard navigation
+  const menus = selectedTab === 'Dinner' && dinnerMenu ? [dinnerMenu] : brunchMenus;
   const totalMenuItems = menus.reduce((total, menu) => {
     return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
   }, 0);
 
+  const isDinner = selectedTab === 'Dinner' && dinnerMenu;
+  // Compute category options for MenuCategorySwitcher
+  const categoryOptions = isDinner
+    ? dinnerMenu.groups.map((g) => ({ key: g.guid, label: g.name }))
+    : brunchMenus.map((m) => ({ key: m.guid, label: m.name }));
+
+  // Compute sections and getItems for MenuSections
+  const sections = isDinner
+    ? dinnerMenu.groups
+    : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
+  const getItems = isDinner ? (g: any) => g.items : (m: any) => m.items;
+
   return (
     <BasicPageLayout title="Menu" heading="Our Menu" intro="Explore our delicious offerings">
       <div className={styles.menuContainer}>
-        <nav
-          className={styles.categoryNav}
-          ref={navRef}
-          aria-label="Menu categories"
-          role="tablist"
-          onKeyDown={handleKeyDown}
-          tabIndex={0}
-        >
+        {/* Top-level tab navigation */}
+        <div className={styles.tabNav} role="tablist" aria-label="Menu type">
           <button
-            className={`${styles.categoryButton} ${!selectedCategory ? styles.active : ''}`}
-            onClick={() => setSelectedCategory(null)}
+            className={`${styles.tabButton} ${selectedTab === 'Brunch' ? styles.activeTab : ''}`}
+            onClick={() => {
+              setSelectedTab('Brunch');
+              setSelectedCategory(null);
+            }}
             role="tab"
-            aria-selected={!selectedCategory}
-            aria-controls="menu-items"
+            aria-selected={selectedTab === 'Brunch'}
+            tabIndex={selectedTab === 'Brunch' ? 0 : -1}
           >
-            All Categories
+            Brunch
           </button>
-          {menus.map((menu) => (
-            <button
-              key={menu.guid}
-              className={`${styles.categoryButton} ${
-                selectedCategory === menu.name ? styles.active : ''
-              }`}
-              onClick={() => setSelectedCategory(menu.name)}
-              role="tab"
-              aria-selected={selectedCategory === menu.name}
-              aria-controls="menu-items"
-            >
-              {menu.name}
-            </button>
-          ))}
-        </nav>
-
+          <button
+            className={`${styles.tabButton} ${selectedTab === 'Dinner' ? styles.activeTab : ''}`}
+            onClick={() => {
+              setSelectedTab('Dinner');
+              setSelectedCategory(null);
+            }}
+            role="tab"
+            aria-selected={selectedTab === 'Dinner'}
+            tabIndex={selectedTab === 'Dinner' ? 0 : -1}
+          >
+            Dinner
+          </button>
+        </div>
+        {/* Category navigation */}
+        <MenuCategorySwitcher
+          options={categoryOptions}
+          selected={selectedCategory}
+          onSelect={setSelectedCategory}
+          navRef={navRef}
+          onKeyDown={handleKeyDown}
+        />
         <div id="menu-items" className={styles.menuContent} role="tabpanel" aria-label="Menu items">
-          {menus
-            .filter((menu) => !selectedCategory || menu.name === selectedCategory)
-            .map((menu, index) => (
-              <section
-                key={menu.guid}
-                className={styles.menuSection}
-                aria-labelledby={`category-${menu.guid}`}
-                style={{ '--section-index': index } as React.CSSProperties}
-              >
-                <h2
-                  id={`category-${menu.guid}`}
-                  className={`${styles.categoryTitle} ${margarine.className}`}
-                  ref={(el) => {
-                    categoryRefs.current[index] = el;
-                  }}
-                >
-                  <span className={styles.categoryDecoration}>✦</span>
-                  {menu.name}
-                  <span className={styles.categoryDecoration}>✦</span>
-                </h2>
-                {menu.description && (
-                  <p
-                    className={styles.categoryDescription}
-                    aria-label={`${menu.name} category description`}
-                  >
-                    {menu.description}
-                  </p>
-                )}
-                <div className={styles.menuGrid} role="list" aria-label={`${menu.name} menu items`}>
-                  {menu.groups.map((group) =>
-                    group.items.map((item, itemIndex) => {
-                      const itemState = itemStates[item.guid] || {
-                        isVisible: false,
-                        isLoaded: true,
-                      };
-
-                      // Set up observer for this item
-                      const setItemRef = (el: HTMLDivElement | null) => {
-                        menuItemsRef.current[itemIndex] = el;
-                        if (el && observerRef.current) {
-                          observerRef.current.observe(el);
-                          // Set the item index for staggered animation
-                          el.style.setProperty('--item-index', itemIndex.toString());
-                        }
-                      };
-
-                      return (
-                        <MenuItem
-                          key={item.guid}
-                          item={item}
-                          index={itemIndex}
-                          totalItems={totalMenuItems}
-                          itemState={itemState}
-                          onImageLoad={handleImageLoad}
-                          onKeyDown={handleMenuItemKeyDown}
-                          setRef={setItemRef}
-                        />
-                      );
-                    })
-                  )}
-                </div>
-              </section>
-            ))}
+          <MenuSections
+            sections={sections}
+            selected={selectedCategory}
+            getItems={getItems}
+            itemStates={itemStates}
+            menuItemsRef={menuItemsRef}
+            observerRef={observerRef}
+            handleImageLoad={handleImageLoad}
+            handleMenuItemKeyDown={handleMenuItemKeyDown}
+            totalMenuItems={totalMenuItems}
+            categoryRefs={categoryRefs}
+          />
         </div>
       </div>
       <ScrollToTop />

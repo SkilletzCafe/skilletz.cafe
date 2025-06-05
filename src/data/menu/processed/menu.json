@@ -1,6 +1,209 @@
 {
   "menus": [
     {
+      "name": "Dinner",
+      "guid": "eda7fcea-bf77-47f2-8419-07cc22ad3779",
+      "description": "",
+      "groups": [
+        {
+          "name": "Drinks",
+          "guid": "e3dc0955-a6d5-4e98-b46b-4ac802e35f13",
+          "description": "",
+          "items": [
+            {
+              "name": "Fountain Soda (24 oz)",
+              "guid": "30552090-64ab-4322-8bd1-0ea7861ff251",
+              "description": "Refreshing fountain soda served ice-cold. Choose from your favorite Pepsi products, including Pepsi, Diet Pepsi, Tropicana Lemonade, Crush Orange, and Dr. Pepper.",
+              "price": 4,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000341599589_1734991417.jpg"
+            },
+            {
+              "name": "Milkshake 🍨",
+              "guid": "da2ed00c-1044-4487-94ba-63319e0b3992",
+              "description": "Our delicious milkshakes come in a variety of flavors: Vanilla 🍦, Chocolate 🍫, Oreo, Banana 🍌, Strawberry 🍓, Matcha 🍵, Strawberry Matcha 🍓🍵, and Banana Matcha 🍌🍵",
+              "price": 8,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000341599584_1734991360.jpg"
+            },
+            {
+              "name": "Iced Coffee 🧊☕️",
+              "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
+              "description": "",
+              "price": 8,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Appetizers",
+          "guid": "9108aa67-bdf2-4c62-ac8f-57c6e633b88d",
+          "description": "",
+          "items": [
+            {
+              "name": "Zucchini Fries",
+              "guid": "95a85262-8601-49a3-b1a7-0b74919ccc30",
+              "description": "",
+              "price": 12,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000353206778_1734991616.jpg"
+            },
+            {
+              "name": "Guacamole and Chips",
+              "guid": "3c9bc9c9-ba36-4a44-b934-fe2a7656a24a",
+              "description": "Fresh guacamole, tortilla chips",
+              "price": 12,
+              "imageUrl": null
+            },
+            {
+              "name": "Mozarella Sticks",
+              "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
+              "description": "",
+              "price": 10,
+              "imageUrl": null
+            },
+            {
+              "name": "Cheese Fries",
+              "guid": "9b67698b-e30c-4351-9acc-f1630eba240e",
+              "description": "French fries, cheese, bacon, chives, jalapeño, and sour cream",
+              "price": 10,
+              "imageUrl": null
+            },
+            {
+              "name": "Onion Rings",
+              "guid": "b2aeda93-acbd-4391-982f-256411fa87ca",
+              "description": "",
+              "price": 10,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "guid": "b804dd39-3d51-4e42-8c6a-00a92ed97295",
+          "description": "",
+          "items": [
+            {
+              "name": "Grilled Chicken Caesar Salad",
+              "guid": "6704ed50-9cac-43e5-a2f3-09fa2a4914d5",
+              "description": "Romaine, grilled chicken, bacon, avocado, parmesan cheese, and croutons.",
+              "price": 17,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353183284_1734991668.jpg"
+            },
+            {
+              "name": "Greek Chicken Salad",
+              "guid": "b04da2b2-5368-4d23-b00a-765d729a149e",
+              "description": "Grilled chicken, bacon, avocado, tomatoes, cucumbers, strawberries, blueberries, feta cheese, and croutons.",
+              "price": 18,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353183282_1734991656.jpg"
+            },
+            {
+              "name": "Grilled Chicken Salad",
+              "guid": "f28a4446-4022-4c5d-ab29-8f864eb17927",
+              "description": "Romaine lettuce, grilled chicken, tomatoes, cucumbers, cheddar cheese, and croutons.",
+              "price": 17,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000353183280_1734991647.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Burgers",
+          "guid": "f4756c52-66a4-4571-8cc4-47db6b0e7154",
+          "description": "All served with french fries.",
+          "items": [
+            {
+              "name": "Niles Burger",
+              "guid": "61ef2056-4262-463b-8160-51390f0a591b",
+              "description": "7 oz ground beef patty, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
+              "price": 12,
+              "imageUrl": null
+            },
+            {
+              "name": "Skillet'z Burger (Cheeseburger)",
+              "guid": "b348a587-8a7e-43ac-a2e3-be2e2de6a560",
+              "description": "7 oz ground beef patty, American cheese, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
+              "price": 13,
+              "imageUrl": null
+            },
+            {
+              "name": "El Toro Burger (Spicy) 🌶️",
+              "guid": "ad06a415-b48b-47a9-acfc-4b57fe0c916a",
+              "description": "7 oz ground beef patty, bacon, guacamole, jalapeños, pepper jack cheese, lettuce, tomatoes, onion, pickles. Served with a side of french fries.",
+              "price": 16,
+              "imageUrl": null
+            },
+            {
+              "name": "Charlie Chaplin Burger (Chicken) 🎩",
+              "guid": "03a591a7-bd1c-4234-bc2f-9f869a28a16a",
+              "description": "7oz ground chicken patty, swiss cheese, bacon, avocado, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
+              "price": 16,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Skillet'z Hand-Cut Steaks",
+          "guid": "fc87d65f-f0ac-46ef-9807-b6e52e90a8e0",
+          "description": "All steaks are served with a side salad, loaded baked potato, and veggies",
+          "items": [
+            {
+              "name": "Rib-Eye Steak",
+              "guid": "52114e0e-939a-4a4d-9c2d-4f2c4ca22450",
+              "description": "14 oz hand-cut steak",
+              "price": 32,
+              "imageUrl": null
+            },
+            {
+              "name": "Coulotte Steak",
+              "guid": "7a8e1fb1-1d2c-41b9-be22-e6e6328e219c",
+              "description": "16 oz hand-cut steak",
+              "price": 28,
+              "imageUrl": null
+            },
+            {
+              "name": "New York Steak",
+              "guid": "4999b9d3-2677-48ea-bfff-a8176e5a4d5c",
+              "description": "12 oz hand-cut steak",
+              "price": 26,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Kids/Niños Menu",
+          "guid": "174295d0-2549-466a-a0e5-36fb9e7f20fe",
+          "description": "",
+          "items": [
+            {
+              "name": "Grilled Cheese with Fries",
+              "guid": "c5a85c8f-b3a1-4ce4-82aa-9058e64decad",
+              "description": "Served with fries",
+              "price": 12,
+              "imageUrl": null
+            },
+            {
+              "name": "Chicken Critters & Fries",
+              "guid": "aef296b5-d52b-433e-b67f-795f50b855eb",
+              "description": "Crispy chicken strips paired with golden fries.",
+              "price": 12,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352997367_1734991737.jpg"
+            },
+            {
+              "name": "Mac and Cheese Bites with Fries",
+              "guid": "efd3c45e-8ce5-4fd0-b4cc-935d4c0972a2",
+              "description": "",
+              "price": 12,
+              "imageUrl": null
+            },
+            {
+              "name": "Kid's Spaghetti with Garlic Bread",
+              "guid": "351c9aa9-4f52-4ad1-ac36-ea24e64fb5e5",
+              "description": "",
+              "price": 14,
+              "imageUrl": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Specials",
       "guid": "d5c774a4-9e62-4226-9b3d-a6301c85ef48",
       "description": "",
@@ -14,7 +217,7 @@
               "name": "Special Dulce of the Day",
               "guid": "b30e18b1-249d-404a-8f1d-38b48ae52e1a",
               "description": "Our daily rotating special sweet! Pictured: Nutella, chocolate chips, Oreo, banana waffle.",
-              "price": 15.95,
+              "price": 14.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000586626924_1742080585.jpg"
             },
             {
@@ -53,39 +256,53 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000840223551_1742140848.jpg"
             },
             {
-              "name": "Special New York Michocano",
+              "name": "Ribeye Steak & Eggs w Mushrooms & Onions",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
               "description": "New York Steak with chorizo and chopped serranos.",
-              "price": 25.95,
+              "price": 27.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
             },
             {
-              "name": "Veggie Chilaquiles",
+              "name": "CHICKEN + CHORIZO Chilaquiles",
               "guid": "4a6ab01e-3359-4a0a-89bd-923c6e90687e",
               "description": "Veggie chilaquiles comes with refried beans, tortilla chips, feta cheese, with fresh red salsa (Saturdays) or green salsa (Sundays) with avocado 🥑 and choice of eggs. Available weekends.",
-              "price": 20.95,
+              "price": 21.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000001422031100_1742754091.jpg"
             },
             {
-              "name": "Veggie Quesadilla",
+              "name": "Special Omlt",
               "guid": "89e94fd9-a9de-43c5-af29-1921b52a7042",
               "description": "Eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
-              "price": 18.95,
+              "price": 21.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000001422031101_1742754202.jpg"
             },
             {
               "name": "Quinas Quezadilla",
               "guid": "365f4ab0-b281-4c79-afb7-38c04ec3dcbd",
               "description": "Sliced ham, scrambled eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
-              "price": 19.95,
+              "price": 18.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002570672509_1747540744.jpg"
             },
             {
-              "name": "Rib Eye Steak & Eggs",
+              "name": "Coulotte Steak & Eggs w Mushrooms & Onions",
               "guid": "3183b9fc-b8d6-4193-b784-f0ee944dbae6",
               "description": "Rib Eye Steak & Eggs. Available as a special only.",
-              "price": 26.95,
+              "price": 27.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000002570839675_1747546126.jpg"
+            },
+            {
+              "name": "Rafa Quintero Steak & Eggs",
+              "guid": "f954708d-91c2-4efc-8a32-389ccfa99d61",
+              "description": "Ground beef, gravy, chorizo, cheddar cheese, serrano.",
+              "price": 18.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352031880_1734993057.jpg"
+            },
+            {
+              "name": "Filet Mignon & Eggs w Mushrooms & Onions",
+              "guid": "fbc8415d-055a-4e56-b76f-93f8f1815c29",
+              "description": "",
+              "price": 31.95,
+              "imageUrl": null
             }
           ]
         }
@@ -527,6 +744,13 @@
               "description": "Try our special corned beef hash recipe including grilled onions, bell peppers, & mushrooms. Absolutely delicious!",
               "price": 16.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352423366_1735408613.jpg"
+            },
+            {
+              "name": "Country Sausage & Eggs",
+              "guid": "262d5ab0-a94d-44b1-9eb3-27f1ef04347c",
+              "description": "",
+              "price": 14.95,
+              "imageUrl": null
             }
           ]
         }
@@ -545,21 +769,21 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes. Potatoes are wrapped in the burrito.",
+              "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 13.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
-              "description": "All veggies and cheese. Potatoes are wrapped into the burrito.",
+              "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 14.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
               "name": "Tupac Wrap",
               "guid": "aa3256eb-2a6c-44d6-86f9-1311ea1741c3",
-              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño. Potatoes are wrapped into the burrito. Potatoes are wrapped into the burrito.",
+              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 18.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352567940_1735409122.jpg"
             }
@@ -958,21 +1182,21 @@
             {
               "name": "Grilled Chicken Salad",
               "guid": "f28a4446-4022-4c5d-ab29-8f864eb17927",
-              "description": "Lettuce, grilled chicken, tomatoes, onions, shredded cheese, and croutons.",
+              "description": "Romaine lettuce, grilled chicken, tomatoes, cucumbers, cheddar cheese, and croutons.",
               "price": 14.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000353183280_1734991647.jpg"
             },
             {
-              "name": "Greek Salad",
+              "name": "Greek Chicken Salad",
               "guid": "b04da2b2-5368-4d23-b00a-765d729a149e",
-              "description": "Grilled chicken, feta cheese, strawberries, bacon, blueberries, avocado, and croutons.",
+              "description": "Grilled chicken, bacon, avocado, tomatoes, cucumbers, strawberries, blueberries, feta cheese, and croutons.",
               "price": 16.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353183282_1734991656.jpg"
             },
             {
-              "name": "Chicken Caesar Salad",
+              "name": "Grilled Chicken Caesar Salad",
               "guid": "6704ed50-9cac-43e5-a2f3-09fa2a4914d5",
-              "description": "Grilled chicken, parmesan cheese, and croutons.",
+              "description": "Romaine, grilled chicken, bacon, avocado, parmesan cheese, and croutons.",
               "price": 15.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353183284_1734991668.jpg"
             }
