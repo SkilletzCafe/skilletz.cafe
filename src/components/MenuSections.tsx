@@ -40,6 +40,7 @@ const MenuSections: React.FC<MenuSectionsProps> = ({
 }) =>
   sections
     .filter((section) => !selected || section.name === selected)
+    .filter((section) => getItems(section).length > 0)
     .map((section, index) => (
       <section
         key={section.guid}

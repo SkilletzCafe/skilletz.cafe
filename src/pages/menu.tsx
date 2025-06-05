@@ -146,8 +146,12 @@ export default function Menu({ menuData }: MenuPageProps) {
   const isDinner = selectedTab === 'Dinner' && dinnerMenu;
   // Compute category options for MenuCategorySwitcher
   const categoryOptions = isDinner
-    ? dinnerMenu.groups.map((g) => ({ key: g.guid, label: g.name }))
-    : brunchMenus.map((m) => ({ key: m.guid, label: m.name }));
+    ? dinnerMenu.groups
+        .filter((g) => g.items && g.items.length > 0)
+        .map((g) => ({ key: g.guid, label: g.name }))
+    : brunchMenus
+        .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
+        .map((m) => ({ key: m.guid, label: m.name }));
 
   // Compute sections and getItems for MenuSections
   const sections = isDinner
