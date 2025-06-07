@@ -139,7 +139,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
         if (!group) return null;
         // Only show 'Soup of the Day' for Daily Specials
         const items = groupName.startsWith('Daily Specials')
-          ? group.items.filter((item) => item.name === 'Soup of the Day')
+          ? group.items.filter((item) => item.name.startsWith('Soup of the Day'))
           : group.items;
         if (items.length === 0) return null;
         return (
@@ -213,6 +213,8 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
             @page {
               size: ${PAGE_WIDTH_IN}in ${PAGE_HEIGHT_IN}in;
               margin: 0;
+              margin-top: 0.25in;
+              margin-bottom: 0.25in;
             }
             html, body {
               width: ${PAGE_WIDTH_IN}in;
@@ -224,7 +226,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
               page-break-before: always;
             }
             .footer-print-bar {
-              /* No extra positioning or margin needed */
+              border-top: none !important;
             }
           }
           @media screen {
@@ -274,7 +276,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
             letter-spacing: 0.02em;
           }
           .section-desc {
-            font-size: 0.98rem;
+            font-size: 0.85rem;
             color: #555;
             margin-bottom: 0.3rem;
           }

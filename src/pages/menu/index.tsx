@@ -160,7 +160,7 @@ export default function Menu({ menuData }: MenuPageProps) {
   const getItems = isDinner
     ? (g: any) =>
         g.name && g.name.startsWith('Daily Specials')
-          ? g.items.filter((item: any) => item.name === 'Soup of the Day')
+          ? g.items.filter((item: any) => item.name.startsWith('Soup of the Day'))
           : g.items
     : (m: any) =>
         m.name && m.name.startsWith('Daily Specials')

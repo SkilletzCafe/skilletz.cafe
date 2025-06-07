@@ -32,7 +32,7 @@
               "imageUrl": null
             },
             {
-              "name": "Soup of the Day",
+              "name": "Soup of the Day 🍲",
               "guid": "f902ad87-7669-4eb2-bc6d-7302de519ab2",
               "description": "",
               "price": 8,
@@ -46,35 +46,35 @@
           "description": "",
           "items": [
             {
-              "name": "Zucchini Fries",
+              "name": "Zucchini Fries 🥒",
               "guid": "95a85262-8601-49a3-b1a7-0b74919ccc30",
               "description": "",
               "price": 12,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000353206778_1734991616.jpg"
             },
             {
-              "name": "Guacamole and Chips",
+              "name": "Guacamole and Chips 🥑🫓",
               "guid": "3c9bc9c9-ba36-4a44-b934-fe2a7656a24a",
               "description": "Fresh guacamole, tortilla chips",
               "price": 12,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000002960527784_1749274917.jpg"
             },
             {
-              "name": "Mozarella Sticks",
+              "name": "Mozarella Sticks 🧀",
               "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
               "description": "",
               "price": 10,
               "imageUrl": null
             },
             {
-              "name": "Cheese Fries",
+              "name": "Cheese Fries 🧀🍟",
               "guid": "9b67698b-e30c-4351-9acc-f1630eba240e",
               "description": "French fries, cheese, bacon, chives, jalapeño, and sour cream",
               "price": 10,
               "imageUrl": null
             },
             {
-              "name": "Onion Rings",
+              "name": "Onion Rings 🧅",
               "guid": "b2aeda93-acbd-4391-982f-256411fa87ca",
               "description": "",
               "price": 10,
@@ -120,7 +120,7 @@
         {
           "name": "Burgers 🍔",
           "guid": "f4756c52-66a4-4571-8cc4-47db6b0e7154",
-          "description": "All served with french fries; upgrade available to zucchini fries/onion rings.",
+          "description": "Served with 🍟. Upgrade 🥒 or 🧅 rings por $2 mas.",
           "items": [
             {
               "name": "Niles Burger 🛤️",
@@ -211,7 +211,7 @@
         {
           "name": "Sandwiches 🥪",
           "guid": "7c09a956-95e0-47b3-8db8-0b940c4ac6e6",
-          "description": "",
+          "description": "Served with 🍟. Upgrade 🥒 or 🧅 rings por $2 mas.",
           "items": [
             {
               "name": "BLT 🥓🥬🍅",
