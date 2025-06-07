@@ -157,7 +157,15 @@ export default function Menu({ menuData }: MenuPageProps) {
   const sections = isDinner
     ? dinnerMenu.groups
     : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
-  const getItems = isDinner ? (g: any) => g.items : (m: any) => m.items;
+  const getItems = isDinner
+    ? (g: any) =>
+        g.name && g.name.startsWith('Daily Specials')
+          ? g.items.filter((item: any) => item.name === 'Soup of the Day')
+          : g.items
+    : (m: any) =>
+        m.name && m.name.startsWith('Daily Specials')
+          ? m.items.filter((item: any) => item.name === 'Soup of the Day')
+          : m.items;
 
   return (
     <BasicPageLayout title="Menu" heading="Our Menu" intro="Explore our delicious offerings">

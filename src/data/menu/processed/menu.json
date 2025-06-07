@@ -155,27 +155,27 @@
         {
           "name": "From the Grill 🔥",
           "guid": "fc87d65f-f0ac-46ef-9807-b6e52e90a8e0",
-          "description": "Hand-cut steaks and more. All entrees are served with a side salad, loaded baked potato, and veggies",
+          "description": "Hand-cut steaks and more. All entrees are served with a side salad, loaded baked potato, and veggies.",
           "items": [
             {
               "name": "Rib-Eye Steak",
               "guid": "52114e0e-939a-4a4d-9c2d-4f2c4ca22450",
               "description": "14 oz hand-cut steak",
-              "price": 32,
+              "price": 35,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960573049_1749274942.jpg"
             },
             {
               "name": "Coulotte Steak",
               "guid": "7a8e1fb1-1d2c-41b9-be22-e6e6328e219c",
               "description": "16 oz hand-cut steak",
-              "price": 28,
+              "price": 30,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960573901_1749274950.jpg"
             },
             {
               "name": "New York Steak",
               "guid": "4999b9d3-2677-48ea-bfff-a8176e5a4d5c",
               "description": "12 oz hand-cut steak",
-              "price": 26,
+              "price": 28,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960573903_1749274980.jpg"
             },
             {
@@ -184,6 +184,27 @@
               "description": "",
               "price": 21,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002982303153_1749275023.jpg"
+            },
+            {
+              "name": "Bone-In Pork Chop",
+              "guid": "fake-1234-5683",
+              "description": null,
+              "price": 22,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Comfort Favorites 🍽️",
+          "guid": "fake-1234-5687",
+          "description": "Comfort food classics",
+          "items": [
+            {
+              "name": "Spaghetti Dinner with Garlic Bread",
+              "guid": "fake-1234-5686",
+              "description": "Spaghetti, homemade ground beef marinara sauce, garlic bread, parmesan cheese.",
+              "price": 20,
+              "imageUrl": null
             }
           ]
         },
@@ -340,7 +361,7 @@
               "imageUrl": null
             },
             {
-              "name": "Kid's Spaghetti with Garlic Bread",
+              "name": "Kid's Spaghetti with Garlic Bread 🍝",
               "guid": "351c9aa9-4f52-4ad1-ac36-ea24e64fb5e5",
               "description": "",
               "price": 14,
@@ -349,7 +370,7 @@
           ]
         },
         {
-          "name": "Drinks",
+          "name": "Drinks 🥤",
           "guid": "e3dc0955-a6d5-4e98-b46b-4ac802e35f13",
           "description": "",
           "items": [
@@ -373,6 +394,40 @@
               "description": "Flavors: Vanilla 🤍, Mocha 🤎, Caramel 🧡, Oreo 🖤",
               "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Desserts 🍰",
+          "guild": "fake-1234-5678",
+          "items": [
+            {
+              "name": "Beignets 🍩",
+              "guid": "fake-1234-5679",
+              "description": null,
+              "price": 9,
+              "imageUrl": null
+            },
+            {
+              "name": "Oreo Cheesecake 🖤🍰",
+              "guid": "fake-1234-5680",
+              "description": null,
+              "price": 9,
+              "imageUrl": null
+            },
+            {
+              "name": "Vanilla Ice Cream 🍨 (Single Scoop)",
+              "guid": "fake-1234-5681",
+              "description": null,
+              "price": 3,
+              "imageUrl": null
+            },
+            {
+              "name": "Ice Cream Sundae 🍨🍒",
+              "guid": "fake-1234-5682",
+              "description": null,
+              "price": 6,
+              "imageUrl": null
             }
           ]
         }
@@ -1281,7 +1336,7 @@
               "name": "Beignets",
               "guid": "9bbd344c-a207-4582-b663-f1908e48445f",
               "description": "Each serving comes with 3 pieces of beignets with a delicious creme filling, served piping hot (careful!) and topped with drizzled chocolate and powdered sugar.",
-              "price": 7.95,
+              "price": 8.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000669461541_1738542113.jpg"
             }
           ]
