@@ -6,30 +6,37 @@
       "description": "",
       "groups": [
         {
-          "name": "Drinks",
-          "guid": "e3dc0955-a6d5-4e98-b46b-4ac802e35f13",
+          "name": "Specials",
+          "guid": "3cca2830-0691-412b-8d71-5eba7be3f946",
           "description": "",
           "items": [
             {
-              "name": "Fountain Soda (24 oz)",
-              "guid": "30552090-64ab-4322-8bd1-0ea7861ff251",
-              "description": "Refreshing fountain soda served ice-cold. Choose from your favorite Pepsi products, including Pepsi, Diet Pepsi, Tropicana Lemonade, Crush Orange, and Dr. Pepper.",
-              "price": 4,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000341599589_1734991417.jpg"
+              "name": "Loaded fries",
+              "guid": "6588d1ef-f74c-43db-8b81-65a8098ee472",
+              "description": "",
+              "price": 16.95,
+              "imageUrl": null
             },
             {
-              "name": "Milkshake 🍨",
-              "guid": "da2ed00c-1044-4487-94ba-63319e0b3992",
-              "description": "Our delicious milkshakes come in a variety of flavors: Vanilla 🍦, Chocolate 🍫, Oreo, Banana 🍌, Strawberry 🍓, Matcha 🍵, Strawberry Matcha 🍓🍵, and Banana Matcha 🍌🍵",
-              "price": 8,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000341599584_1734991360.jpg"
+              "name": "Spaghetti & chicken",
+              "guid": "afd28ec7-fe10-4892-b3f8-309f494b78b9",
+              "description": "",
+              "price": 18.95,
+              "imageUrl": null
             },
             {
-              "name": "Iced Coffee 🧊☕️",
-              "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
-              "description": "Flavors: Vanilla, Mocha, Caramel, Oreo",
+              "name": "Special coulotte W/ Mash",
+              "guid": "f0b18092-7c0b-4bff-862a-b0073d5c1bee",
+              "description": "",
+              "price": 29.95,
+              "imageUrl": null
+            },
+            {
+              "name": "Soup of the Day",
+              "guid": "f902ad87-7669-4eb2-bc6d-7302de519ab2",
+              "description": "",
               "price": 8,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
+              "imageUrl": null
             }
           ]
         },
@@ -123,7 +130,7 @@
               "imageUrl": null
             },
             {
-              "name": "Skillet'z Burger (Cheeseburger)",
+              "name": "Skillet'z Burger 🍔 (Cheeseburger)",
               "guid": "b348a587-8a7e-43ac-a2e3-be2e2de6a560",
               "description": "7 oz ground beef patty, American cheese, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
               "price": 13,
@@ -142,6 +149,41 @@
               "description": "7oz ground chicken patty, swiss cheese, bacon, avocado, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
               "price": 16,
               "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "From the Grill",
+          "guid": "fc87d65f-f0ac-46ef-9807-b6e52e90a8e0",
+          "description": "All steaks are served with a side salad, loaded baked potato, and veggies",
+          "items": [
+            {
+              "name": "Hand-Cut Rib-Eye Steak",
+              "guid": "52114e0e-939a-4a4d-9c2d-4f2c4ca22450",
+              "description": "14 oz hand-cut steak",
+              "price": 32,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960573049_1749274942.jpg"
+            },
+            {
+              "name": "Hand-Cut Coulotte Steak",
+              "guid": "7a8e1fb1-1d2c-41b9-be22-e6e6328e219c",
+              "description": "16 oz hand-cut steak",
+              "price": 28,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960573901_1749274950.jpg"
+            },
+            {
+              "name": "Hand-Cut New York Steak",
+              "guid": "4999b9d3-2677-48ea-bfff-a8176e5a4d5c",
+              "description": "12 oz hand-cut steak",
+              "price": 26,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960573903_1749274980.jpg"
+            },
+            {
+              "name": "Grilled Chicken Breast",
+              "guid": "f6cd5458-4c8a-4272-9617-434f9dac4ddb",
+              "description": "",
+              "price": 21,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002982303153_1749275023.jpg"
             }
           ]
         },
@@ -272,7 +314,7 @@
           ]
         },
         {
-          "name": "Kids/Niños Menu",
+          "name": "Kids/Niños",
           "guid": "174295d0-2549-466a-a0e5-36fb9e7f20fe",
           "description": "",
           "items": [
@@ -307,72 +349,30 @@
           ]
         },
         {
-          "name": "Skillet'z Hand-Cut Steaks",
-          "guid": "fc87d65f-f0ac-46ef-9807-b6e52e90a8e0",
-          "description": "All steaks are served with a side salad, loaded baked potato, and veggies",
-          "items": [
-            {
-              "name": "Rib-Eye Steak",
-              "guid": "52114e0e-939a-4a4d-9c2d-4f2c4ca22450",
-              "description": "14 oz hand-cut steak",
-              "price": 32,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960573049_1749274942.jpg"
-            },
-            {
-              "name": "Coulotte Steak",
-              "guid": "7a8e1fb1-1d2c-41b9-be22-e6e6328e219c",
-              "description": "16 oz hand-cut steak",
-              "price": 28,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960573901_1749274950.jpg"
-            },
-            {
-              "name": "New York Steak",
-              "guid": "4999b9d3-2677-48ea-bfff-a8176e5a4d5c",
-              "description": "12 oz hand-cut steak",
-              "price": 26,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960573903_1749274980.jpg"
-            },
-            {
-              "name": "Grilled Chicken Breast",
-              "guid": "f6cd5458-4c8a-4272-9617-434f9dac4ddb",
-              "description": "",
-              "price": 21,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002982303153_1749275023.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Specials",
-          "guid": "3cca2830-0691-412b-8d71-5eba7be3f946",
+          "name": "Drinks",
+          "guid": "e3dc0955-a6d5-4e98-b46b-4ac802e35f13",
           "description": "",
           "items": [
             {
-              "name": "Loaded fries",
-              "guid": "6588d1ef-f74c-43db-8b81-65a8098ee472",
-              "description": "",
-              "price": 16.95,
-              "imageUrl": null
+              "name": "Fountain Soda (24 oz)",
+              "guid": "30552090-64ab-4322-8bd1-0ea7861ff251",
+              "description": "Refreshing fountain soda served ice-cold. Choose from your favorite Pepsi products, including Pepsi, Diet Pepsi, Tropicana Lemonade, Crush Orange, and Dr. Pepper.",
+              "price": 4,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000341599589_1734991417.jpg"
             },
             {
-              "name": "Spaghetti & chicken",
-              "guid": "afd28ec7-fe10-4892-b3f8-309f494b78b9",
-              "description": "",
-              "price": 18.95,
-              "imageUrl": null
-            },
-            {
-              "name": "Special coulotte W/ Mash",
-              "guid": "f0b18092-7c0b-4bff-862a-b0073d5c1bee",
-              "description": "",
-              "price": 29.95,
-              "imageUrl": null
-            },
-            {
-              "name": "Soup of the Day",
-              "guid": "f902ad87-7669-4eb2-bc6d-7302de519ab2",
-              "description": "",
+              "name": "Milkshake 🍨",
+              "guid": "da2ed00c-1044-4487-94ba-63319e0b3992",
+              "description": "Our delicious milkshakes come in a variety of flavors: Vanilla 🍦, Chocolate 🍫, Oreo, Banana 🍌, Strawberry 🍓, Matcha 🍵, Strawberry Matcha 🍓🍵, and Banana Matcha 🍌🍵",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000341599584_1734991360.jpg"
+            },
+            {
+              "name": "Iced Coffee 🧊☕️",
+              "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
+              "description": "Flavors: Vanilla, Mocha, Caramel, Oreo",
+              "price": 8,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
             }
           ]
         }
