@@ -36,7 +36,7 @@ export const BUSINESS = {
     weekend: {
       days: 'Thursday-Sunday',
       open: '8am',
-      close: '8pm',
+      close: '9pm',
       breakfast_ends: '3pm',
       dinner_starts: '3pm',
     },
