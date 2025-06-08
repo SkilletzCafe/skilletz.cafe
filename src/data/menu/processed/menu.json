@@ -64,14 +64,14 @@
               "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
               "description": "",
               "price": 10,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960531439_1749359883.jpg"
             },
             {
               "name": "Cheese Fries 🧀🍟",
               "guid": "9b67698b-e30c-4351-9acc-f1630eba240e",
               "description": "French fries, cheese, bacon, chives, jalapeño, and sour cream",
               "price": 10,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960531441_1749359809.jpg"
             },
             {
               "name": "Onion Rings 🧅",
@@ -127,35 +127,35 @@
               "guid": "61ef2056-4262-463b-8160-51390f0a591b",
               "description": "7 oz ground beef patty, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
               "price": 12,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000002960554980_1749359537.jpg"
             },
             {
               "name": "Skillet'z Burger 🍔 (Cheeseburger)",
               "guid": "b348a587-8a7e-43ac-a2e3-be2e2de6a560",
               "description": "7 oz ground beef patty, American cheese, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
               "price": 13,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000002960554982_1749359678.jpg"
             },
             {
               "name": "El Toro Burger (Spicy) 🌶️",
               "guid": "ad06a415-b48b-47a9-acfc-4b57fe0c916a",
               "description": "7 oz ground beef patty, bacon, guacamole, jalapeños, pepper jack cheese, lettuce, tomatoes, onion, pickles. Served with a side of french fries.",
               "price": 16,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000002960554984_1749359714.jpg"
             },
             {
               "name": "Charlie Chaplin Burger (Chicken) 🎩",
               "guid": "03a591a7-bd1c-4234-bc2f-9f869a28a16a",
               "description": "7oz ground chicken patty, swiss cheese, bacon, avocado, lettuce, tomatoes, onions, pickles. Served with a side of french fries.",
               "price": 16,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000002960554986_1749359726.jpg"
             }
           ]
         },
         {
           "name": "From the Grill 🔥",
           "guid": "fc87d65f-f0ac-46ef-9807-b6e52e90a8e0",
-          "description": "Hand-cut steaks and more. All entrees are served with a side salad, loaded baked potato, and veggies.",
+          "description": "All entrees are served with a side salad, loaded baked potato, and veggies.",
           "items": [
             {
               "name": "Rib-Eye Steak",
@@ -187,24 +187,10 @@
             },
             {
               "name": "Bone-In Pork Chop",
-              "guid": "fake-1234-5683",
-              "description": null,
+              "guid": "ea3b46b1-deab-4e7c-8c7a-91bf0d656db6",
+              "description": "",
               "price": 22,
-              "imageUrl": null
-            }
-          ]
-        },
-        {
-          "name": "Comfort Favorites 🍽️",
-          "guid": "fake-1234-5687",
-          "description": "Comfort food classics",
-          "items": [
-            {
-              "name": "Spaghetti Dinner with Garlic Bread",
-              "guid": "fake-1234-5686",
-              "description": "Spaghetti, homemade ground beef marinara sauce, garlic bread, parmesan cheese.",
-              "price": 20,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000003026466448_1749360337.jpg"
             }
           ]
         },
@@ -340,11 +326,11 @@
           "description": "",
           "items": [
             {
-              "name": "Grilled Cheese with Fries",
+              "name": "Kids Grilled Cheese with Fries",
               "guid": "c5a85c8f-b3a1-4ce4-82aa-9058e64decad",
               "description": "Served with fries",
               "price": 12,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960581273_1749360046.jpg"
             },
             {
               "name": "Chicken Critters & Fries",
@@ -365,7 +351,7 @@
               "guid": "351c9aa9-4f52-4ad1-ac36-ea24e64fb5e5",
               "description": "",
               "price": 14,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000002960581277_1749360114.jpg"
             }
           ]
         },
@@ -391,42 +377,64 @@
             {
               "name": "Iced Coffee 🧊☕️",
               "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
-              "description": "Flavors: Vanilla 🤍, Mocha 🤎, Caramel 🧡, Oreo 🖤",
+              "description": "Flavors: Vanilla, Mocha, Caramel, Oreo",
               "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
             }
           ]
         },
         {
-          "name": "Desserts 🍰",
-          "guild": "fake-1234-5678",
+          "name": "Desserts 🍩✨",
+          "guid": "e635a339-22c2-493b-bfbd-34f71bcf7003",
+          "description": "",
           "items": [
             {
               "name": "Beignets 🍩",
-              "guid": "fake-1234-5679",
-              "description": null,
+              "guid": "9bbd344c-a207-4582-b663-f1908e48445f",
+              "description": "Each serving comes with 3 pieces of beignets with a delicious creme filling, served piping hot (careful!) and topped with drizzled chocolate and powdered sugar.",
               "price": 9,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000669461541_1738542113.jpg"
             },
             {
               "name": "Oreo Cheesecake 🖤🍰",
-              "guid": "fake-1234-5680",
-              "description": null,
-              "price": 9,
+              "guid": "25883d3e-112f-4cf2-ad74-8074d102080a",
+              "description": "",
+              "price": 8.95,
+              "imageUrl": null
+            },
+            {
+              "name": "Sweet Surprise 🎁",
+              "guid": "8033710e-c228-4fbc-89ba-7b10a84d2d0f",
+              "description": "Ask your server what's sweet today!",
+              "price": 8.95,
               "imageUrl": null
             },
             {
               "name": "Vanilla Ice Cream 🍨 (Single Scoop)",
-              "guid": "fake-1234-5681",
-              "description": null,
+              "guid": "133043e4-4074-40b1-8525-5d6840a49b04",
+              "description": "",
               "price": 3,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000003026621527_1749360415.jpg"
             },
             {
               "name": "Ice Cream Sundae 🍨🍒",
-              "guid": "fake-1234-5682",
-              "description": null,
+              "guid": "81d1ec7a-ccfa-4105-9547-1d58943977ca",
+              "description": "",
               "price": 6,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000003027017963_1749360488.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Comfort Favorites 🍽️",
+          "guid": "690ca217-0e48-4442-939d-e5d7ae081c8d",
+          "description": "",
+          "items": [
+            {
+              "name": "Spaghetti Dinner with Garlic Bread",
+              "guid": "1df05c19-8dac-48da-90d5-96c20b2695ed",
+              "description": "Spaghetti, homemade ground beef marinara sauce, garlic bread, parmesan cheese.",
+              "price": 20,
               "imageUrl": null
             }
           ]
@@ -447,7 +455,7 @@
               "name": "Special Dulce of the Day",
               "guid": "b30e18b1-249d-404a-8f1d-38b48ae52e1a",
               "description": "Our daily rotating special sweet! Pictured: Nutella, chocolate chips, Oreo, banana waffle.",
-              "price": 14.95,
+              "price": 15.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000586626924_1742080585.jpg"
             },
             {
@@ -489,7 +497,7 @@
               "name": "Ribeye Steak & Eggs w Mushrooms & Onions",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
               "description": "New York Steak with chorizo and chopped serranos.",
-              "price": 27.95,
+              "price": 28.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
             },
             {
@@ -500,7 +508,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000001422031100_1742754091.jpg"
             },
             {
-              "name": "Special Omlt",
+              "name": "Special linguica",
               "guid": "89e94fd9-a9de-43c5-af29-1921b52a7042",
               "description": "Eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
               "price": 21.95,
@@ -1333,7 +1341,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000567574728_1737918898.jpg"
             },
             {
-              "name": "Beignets",
+              "name": "Beignets 🍩",
               "guid": "9bbd344c-a207-4582-b663-f1908e48445f",
               "description": "Each serving comes with 3 pieces of beignets with a delicious creme filling, served piping hot (careful!) and topped with drizzled chocolate and powdered sugar.",
               "price": 8.95,
@@ -1550,7 +1558,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000353206776_1734991606.jpg"
             },
             {
-              "name": "Zucchini Fries",
+              "name": "Zucchini Fries 🥒",
               "guid": "95a85262-8601-49a3-b1a7-0b74919ccc30",
               "description": "",
               "price": 10.95,
