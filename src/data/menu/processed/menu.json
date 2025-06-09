@@ -11,31 +11,38 @@
           "description": "Ask your server about today's chef's specials!",
           "items": [
             {
-              "name": "Loaded fries",
+              "name": "Soup of the Day 🍲",
+              "guid": "f902ad87-7669-4eb2-bc6d-7302de519ab2",
+              "description": "Rotating chef's special soup. Pictured: Cream of broccoli topped with cheddar, bacon, and crackers.",
+              "price": 8,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000002982299057_1749451022.jpg"
+            },
+            {
+              "name": "Carne Asada Tacos",
+              "guid": "6326e653-b957-4c60-8810-110b308ba1e5",
+              "description": "Three carne asada tacos with homemade spicy guacamole.",
+              "price": 24,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000003064750857_1749450833.jpg"
+            },
+            {
+              "name": "Loaded Fries",
               "guid": "6588d1ef-f74c-43db-8b81-65a8098ee472",
               "description": "",
               "price": 16.95,
               "imageUrl": null
             },
             {
-              "name": "Spaghetti & chicken",
+              "name": "Spaghetti & Chicken",
               "guid": "afd28ec7-fe10-4892-b3f8-309f494b78b9",
               "description": "",
               "price": 18.95,
               "imageUrl": null
             },
             {
-              "name": "Special coulotte W/ Mash",
+              "name": "Special Coulotte Steak with Mashed Potatoes",
               "guid": "f0b18092-7c0b-4bff-862a-b0073d5c1bee",
               "description": "",
               "price": 29.95,
-              "imageUrl": null
-            },
-            {
-              "name": "Soup of the Day 🍲",
-              "guid": "f902ad87-7669-4eb2-bc6d-7302de519ab2",
-              "description": "",
-              "price": 8,
               "imageUrl": null
             }
           ]
@@ -64,7 +71,7 @@
               "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
               "description": "",
               "price": 10,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960531439_1749359883.jpg"
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960531439_1749451722.jpg"
             },
             {
               "name": "Cheese Fries 🧀🍟",
@@ -191,6 +198,20 @@
               "description": "",
               "price": 22,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000003026466448_1749360337.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Comfort Favorites 🍽️",
+          "guid": "690ca217-0e48-4442-939d-e5d7ae081c8d",
+          "description": "",
+          "items": [
+            {
+              "name": "Spaghetti Dinner with Garlic Bread 🍝",
+              "guid": "1df05c19-8dac-48da-90d5-96c20b2695ed",
+              "description": "Spaghetti, homemade ground beef marinara sauce, garlic bread, parmesan cheese.",
+              "price": 20,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000003029388408_1749451754.jpg"
             }
           ]
         },
@@ -326,7 +347,7 @@
           "description": "",
           "items": [
             {
-              "name": "Kids Grilled Cheese with Fries",
+              "name": "Kid's Grilled Cheese with Fries",
               "guid": "c5a85c8f-b3a1-4ce4-82aa-9058e64decad",
               "description": "Served with fries",
               "price": 12,
@@ -340,14 +361,14 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352997367_1734991737.jpg"
             },
             {
-              "name": "Mac and Cheese Bites with Fries",
-              "guid": "efd3c45e-8ce5-4fd0-b4cc-935d4c0972a2",
-              "description": "",
+              "name": "Kid's Mac and Cheese Bites & Fries",
+              "guid": "2b5481d6-1b26-4cb7-be14-abadb130258b",
+              "description": "Macaroni and cheese bites with a choice of potatoes or fruit.",
               "price": 12,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000391461134_1735494218.jpg"
             },
             {
-              "name": "Kid's Spaghetti with Garlic Bread 🍝",
+              "name": "Kid's Spaghetti with Garlic Bread",
               "guid": "351c9aa9-4f52-4ad1-ac36-ea24e64fb5e5",
               "description": "",
               "price": 14,
@@ -377,9 +398,23 @@
             {
               "name": "Iced Coffee 🧊☕️",
               "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
-              "description": "Flavors: Vanilla, Mocha, Caramel, Oreo",
+              "description": "Flavors: Vanilla 🤍, Mocha 🤎, Caramel 🧡, Oreo 🖤",
               "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
+            },
+            {
+              "name": "Fresh Squeezed Orange Juice 🍊",
+              "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
+              "description": "",
+              "price": 8,
+              "imageUrl": null
+            },
+            {
+              "name": "Hot Coffee ☕️",
+              "guid": "c6563ad7-22f7-4ef9-b984-89e1ff09f273",
+              "description": "",
+              "price": 4,
+              "imageUrl": null
             }
           ]
         },
@@ -398,15 +433,15 @@
             {
               "name": "Oreo Cheesecake 🖤🍰",
               "guid": "25883d3e-112f-4cf2-ad74-8074d102080a",
-              "description": "",
-              "price": 8.95,
-              "imageUrl": null
+              "description": "Smooth, creamy cheesecake with a chocolate Oreo crust, topped with a rich chocolate shell and a drizzle of white chocolate. Served with whipped cream and chocolate sauce. 🍫✨",
+              "price": 9,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000003026621525_1749451289.jpg"
             },
             {
               "name": "Sweet Surprise 🎁",
               "guid": "8033710e-c228-4fbc-89ba-7b10a84d2d0f",
               "description": "Ask your server what's sweet today!",
-              "price": 8.95,
+              "price": 9,
               "imageUrl": null
             },
             {
@@ -417,25 +452,18 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000003026621527_1749360415.jpg"
             },
             {
+              "name": "Mini Ice Cream Sundae 🍨🍒",
+              "guid": "6dfc6c69-cfcf-4c4b-8a29-52d6de932adf",
+              "description": "Single scoop ice cream sundae in a small cup.",
+              "price": 5,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000003064765051_1749451488.jpg"
+            },
+            {
               "name": "Ice Cream Sundae 🍨🍒",
               "guid": "81d1ec7a-ccfa-4105-9547-1d58943977ca",
-              "description": "",
-              "price": 6,
+              "description": "Double scoop ice cream sundae in a bowl.",
+              "price": 8,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000003027017963_1749360488.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Comfort Favorites 🍽️",
-          "guid": "690ca217-0e48-4442-939d-e5d7ae081c8d",
-          "description": "",
-          "items": [
-            {
-              "name": "Spaghetti Dinner with Garlic Bread",
-              "guid": "1df05c19-8dac-48da-90d5-96c20b2695ed",
-              "description": "Spaghetti, homemade ground beef marinara sauce, garlic bread, parmesan cheese.",
-              "price": 20,
-              "imageUrl": null
             }
           ]
         }
@@ -497,7 +525,7 @@
               "name": "Ribeye Steak & Eggs w Mushrooms & Onions",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
               "description": "New York Steak with chorizo and chopped serranos.",
-              "price": 28.95,
+              "price": 27.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
             },
             {
@@ -508,7 +536,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000001422031100_1742754091.jpg"
             },
             {
-              "name": "Special linguica",
+              "name": "Special omlt",
               "guid": "89e94fd9-a9de-43c5-af29-1921b52a7042",
               "description": "Eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
               "price": 21.95,
@@ -1397,7 +1425,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000352997369_1734991776.jpg"
             },
             {
-              "name": "Mac Bites Kids Meal",
+              "name": "Kid's Mac and Cheese Bites & Fries",
               "guid": "2b5481d6-1b26-4cb7-be14-abadb130258b",
               "description": "Macaroni and cheese bites with a choice of potatoes or fruit.",
               "price": 10.95,
