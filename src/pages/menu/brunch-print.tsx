@@ -15,11 +15,11 @@ import PrintMenuHeader from '@/components/PrintMenuHeader';
 import { loadMenuData } from '@/utils/menu_static';
 
 interface BrunchPrintProps {
-  brunchMenus: {
+  brunchMenu: {
     name: string;
     description: string;
     groups: MenuGroup[];
-  }[];
+  };
 }
 
 const PAGE_WIDTH_IN = 8.5;
@@ -35,13 +35,13 @@ const PADDING_TOTAL_IN = (PADDING_TOP_REM + PADDING_BOTTOM_REM) * 0.0625; // Con
 const GRID_ORDER = [
   // Page 1
   [
-    ['Meat & Eggs 🥩🍳', 'Pancakes, Waffles & More 🥞'], // Left column
-    ['Sandwiches 🥪', 'Kids Menu 👶'], // Right column
+    ['Specials 🌟', 'Traditional Omelettes 🍳', 'Specialty Omelettes 🥘', 'Scrambles 🥚'], // Left column
+    ['Specialty Dishes 🍽️', 'Meat & Eggs 🥩🍳', 'Burritos 🌯'], // Right column
   ],
   // Page 2
   [
-    ['Salads 🥗'], // Left column
-    ['Drinks 🥤', 'Sides 🍟'], // Right column
+    ['Sandwiches 🥪', 'Burgers 🍔', 'Pancakes, Waffles & More 🥞'], // Left column
+    ['Kids Menu 👶', 'Salads 🥗', 'Sides 🍟', 'Drinks 🥤'], // Right column
   ],
 ];
 
@@ -49,12 +49,12 @@ function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
   return groups.find((g) => g.name === name && g.items.length > 0) || null;
 }
 
-const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
+const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenu }) => {
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
       {sectionNames.map((groupName) => {
-        const group = brunchMenus.flatMap((menu) => menu.groups).find((g) => g.name === groupName);
+        const group = getGroupByName(brunchMenu.groups, groupName);
         if (!group) return null;
         return (
           <div className="menu-section" key={group.guid} style={{ breakInside: 'avoid' }}>
@@ -138,18 +138,29 @@ const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
 
 export const getStaticProps: GetStaticProps<BrunchPrintProps> = async () => {
   const menuData = loadMenuData();
-  // Get all menus except Dinner
-  const brunchMenus = menuData.menus.filter((menu) => menu.name !== 'Dinner');
+  // Get all menus except Dinner that have exactly one group
+  const brunchMenus = menuData.menus.filter(
+    (menu) => menu.name !== 'Dinner' && menu.groups.length === 1
+  );
   if (!brunchMenus.length) {
     return { notFound: true };
   }
+
+  // Create a single menu with all groups from brunch menus
+  const allGroups = brunchMenus.map((menu) => ({
+    name: menu.name,
+    guid: menu.guid,
+    description: menu.description,
+    items: menu.groups[0].items,
+  }));
+
   return {
     props: {
-      brunchMenus: brunchMenus.map((menu) => ({
-        name: menu.name,
-        description: menu.description,
-        groups: menu.groups,
-      })),
+      brunchMenu: {
+        name: 'Brunch',
+        description: '',
+        groups: allGroups,
+      },
     },
   };
 };

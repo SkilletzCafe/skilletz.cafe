@@ -39,10 +39,10 @@
               "imageUrl": null
             },
             {
-              "name": "Special Coulotte Steak with Mashed Potatoes",
+              "name": "Special Ribeye Steak with Mashed Potatoes",
               "guid": "f0b18092-7c0b-4bff-862a-b0073d5c1bee",
               "description": "",
-              "price": 29.95,
+              "price": 34.95,
               "imageUrl": null
             }
           ]
@@ -368,7 +368,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000391461134_1735494218.jpg"
             },
             {
-              "name": "Kid's Spaghetti with Garlic Bread",
+              "name": "Kid's Spaghetti with Garlic Bread 🍝",
               "guid": "351c9aa9-4f52-4ad1-ac36-ea24e64fb5e5",
               "description": "",
               "price": 14,
@@ -414,6 +414,41 @@
               "guid": "c6563ad7-22f7-4ef9-b984-89e1ff09f273",
               "description": "",
               "price": 4,
+              "imageUrl": null
+            },
+            {
+              "name": "Hot Chocolate ☕️🍫",
+              "guid": "2fddaaba-4398-4e62-b870-fc187edb693c",
+              "description": "",
+              "price": 4,
+              "imageUrl": null
+            },
+            {
+              "name": "Iced Tea 🧊🌿",
+              "guid": "7278398a-9de6-4104-b432-d32dad30f1e2",
+              "description": "Refreshing freshly brewed black tea with lemon wedge. Customizations: Make it an Arnold Palmer (with lemonade!)",
+              "price": 4,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000561456150_1742140394.jpg"
+            },
+            {
+              "name": "Hot Tea 🫖",
+              "guid": "1051cce8-fe81-42b9-a6f0-54d81beba2f9",
+              "description": "",
+              "price": 4,
+              "imageUrl": null
+            },
+            {
+              "name": "Cranberry Juice",
+              "guid": "db9bb293-d42d-47c4-afec-6dc2d193f6d2",
+              "description": "",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "Apple Juice 🍎",
+              "guid": "a373c70e-c29d-436a-a9f1-b4bc16901a7e",
+              "description": "",
+              "price": 6,
               "imageUrl": null
             }
           ]
@@ -470,7 +505,7 @@
       ]
     },
     {
-      "name": "Specials",
+      "name": "Specials 🌟",
       "guid": "d5c774a4-9e62-4226-9b3d-a6301c85ef48",
       "description": "",
       "groups": [
@@ -525,21 +560,21 @@
               "name": "Ribeye Steak & Eggs w Mushrooms & Onions",
               "guid": "025f230f-eca1-4e87-bf75-19284116efd2",
               "description": "New York Steak with chorizo and chopped serranos.",
-              "price": 27.95,
+              "price": 31.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000001279962836_1742140748.jpg"
             },
             {
-              "name": "CHICKEN + CHORIZO Chilaquiles",
+              "name": "Veggie Chilaquiles",
               "guid": "4a6ab01e-3359-4a0a-89bd-923c6e90687e",
               "description": "Veggie chilaquiles comes with refried beans, tortilla chips, feta cheese, with fresh red salsa (Saturdays) or green salsa (Sundays) with avocado 🥑 and choice of eggs. Available weekends.",
-              "price": 21.95,
+              "price": 19.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000001422031100_1742754091.jpg"
             },
             {
-              "name": "Special omlt",
+              "name": "Veggie Quesadilla",
               "guid": "89e94fd9-a9de-43c5-af29-1921b52a7042",
               "description": "Eggs, veggies, cheese in a perfectly crispy tortilla. Topped with sliced avocado.",
-              "price": 21.95,
+              "price": 19.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000001422031101_1742754202.jpg"
             },
             {
@@ -575,7 +610,7 @@
       ]
     },
     {
-      "name": "Traditional Omelettes",
+      "name": "Traditional Omelettes 🍳",
       "guid": "5492bd25-8d7f-45dc-b8c1-a0b52a50db9c",
       "description": "",
       "groups": [
@@ -673,7 +708,7 @@
       ]
     },
     {
-      "name": "Specialty Omelettes",
+      "name": "Specialty Omelettes 🥘",
       "guid": "09fc2928-4722-4de3-a68f-38f2a421cefd",
       "description": "",
       "groups": [
@@ -750,7 +785,7 @@
       ]
     },
     {
-      "name": "Scrambles",
+      "name": "Scrambles 🥚",
       "guid": "e0c024cd-66f9-4b17-95d2-793f81634433",
       "description": "",
       "groups": [
@@ -820,7 +855,7 @@
       ]
     },
     {
-      "name": "Specialty Dishes",
+      "name": "Specialty Dishes 🍽️",
       "guid": "c1ae4256-fdad-4a03-941c-4eded94d10af",
       "description": "",
       "groups": [
@@ -918,7 +953,7 @@
       ]
     },
     {
-      "name": "Meat & Eggs",
+      "name": "Meat & Eggs 🥩🍳",
       "guid": "fa9d54c1-36d0-4a72-b339-99123c36eb39",
       "description": "",
       "groups": [
@@ -1023,7 +1058,7 @@
       ]
     },
     {
-      "name": "Burritos",
+      "name": "Burritos 🌯",
       "guid": "6b8cba77-3fc4-4675-ad8a-717e6db2860b",
       "description": "",
       "groups": [
@@ -1058,7 +1093,7 @@
       ]
     },
     {
-      "name": "Sandwiches",
+      "name": "Sandwiches 🥪",
       "guid": "b9c448bb-e09b-4e64-abd1-918344473807",
       "description": "",
       "groups": [
@@ -1240,7 +1275,7 @@
       ]
     },
     {
-      "name": "Burgers",
+      "name": "Burgers 🍔",
       "guid": "d1ff222a-3eb3-447e-97b3-613885d8b69c",
       "description": "",
       "groups": [
@@ -1296,7 +1331,7 @@
       ]
     },
     {
-      "name": "Pancakes, Waffles & More",
+      "name": "Pancakes, Waffles & More 🥞",
       "guid": "2d382aa0-9b72-4093-8e83-469394ad0913",
       "description": "",
       "groups": [
@@ -1380,7 +1415,7 @@
       ]
     },
     {
-      "name": "Kids Menu",
+      "name": "Kids Menu 👶",
       "guid": "b9d42c46-93d7-4c99-96d6-70e963c7d890",
       "description": "",
       "groups": [
@@ -1436,7 +1471,7 @@
       ]
     },
     {
-      "name": "Salads",
+      "name": "Salads 🥗",
       "guid": "c28fe194-d7d2-43b8-9c09-cb5abbda87a8",
       "description": "",
       "groups": [
@@ -1471,7 +1506,7 @@
       ]
     },
     {
-      "name": "Sides",
+      "name": "Sides 🍟",
       "guid": "5c732ceb-5356-4468-8d55-fc8c1c8ebe22",
       "description": "",
       "groups": [
@@ -1646,7 +1681,7 @@
       ]
     },
     {
-      "name": "Drinks",
+      "name": "Drinks 🥤",
       "guid": "1d94cd15-3761-4d77-9b81-2715164a3496",
       "description": "",
       "groups": [
