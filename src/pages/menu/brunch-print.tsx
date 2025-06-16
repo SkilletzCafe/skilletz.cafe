@@ -9,6 +9,8 @@ import { BUSINESS, FULL_ADDRESS } from '@/config/business';
 import { geist, margarine } from '@/config/fonts';
 import { LEGAL_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
+import PrintMenuFooter from '@/components/PrintMenuFooter';
+
 import { loadMenuData } from '@/utils/menu_static';
 
 interface BrunchPrintProps {
@@ -87,49 +89,6 @@ const BrunchMenuHeader: React.FC<{ description?: string }> = ({ description }) =
   </>
 );
 
-// Footer component
-const BrunchMenuFooter: React.FC = () => (
-  <div
-    style={{
-      marginTop: 'auto', // Push to bottom of flex container
-      marginBottom: 0,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontSize: '0.87rem',
-      color: '#666',
-      borderTop: '1px solid #ddd',
-      paddingTop: '0.3rem',
-      lineHeight: 1.22,
-      flexShrink: 0, // Prevent shrinking
-      minHeight: '0.5in', // Minimum height for QR code clearance
-      gap: '0.75rem', // Space between QR code and text
-    }}
-    className="footer-print-bar"
-  >
-    <img
-      src="/images/qrcodes/brunch-menu.png"
-      alt="QR Code for Brunch Menu"
-      style={{
-        width: '0.5in',
-        height: '0.5in',
-        flexShrink: 0,
-      }}
-    />
-    <span>
-      See menu photos online:{' '}
-      <a
-        href="https://skilletz.cafe/menu"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: '#444', textDecoration: 'underline' }}
-      >
-        skilletz.cafe/menu
-      </a>
-    </span>
-  </div>
-);
-
 const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
@@ -193,7 +152,10 @@ const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
           {renderColumn(leftCol)}
           {renderColumn(rightCol)}
         </div>
-        <BrunchMenuFooter />
+        <PrintMenuFooter
+          qrCodePath="/images/qrcodes/brunch-menu.png"
+          qrCodeAlt="QR Code for Brunch Menu"
+        />
       </div>
     );
   });

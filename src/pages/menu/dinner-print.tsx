@@ -9,6 +9,8 @@ import { BUSINESS, FULL_ADDRESS } from '@/config/business';
 import { geist, margarine } from '@/config/fonts';
 import { LETTER_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
+import PrintMenuFooter from '@/components/PrintMenuFooter';
+
 import { loadMenuData } from '@/utils/menu_static';
 
 interface DinnerPrintProps {
@@ -76,49 +78,6 @@ const DinnerMenuHeader: React.FC<{ description?: string }> = ({ description }) =
     </div>
     {description && <div className="menu-desc">{description}</div>}
   </>
-);
-
-// Footer component
-const DinnerMenuFooter: React.FC = () => (
-  <div
-    style={{
-      marginTop: 'auto', // Push to bottom of flex container
-      marginBottom: 0,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontSize: '0.87rem',
-      color: '#666',
-      borderTop: '1px solid #ddd',
-      paddingTop: '0.3rem',
-      lineHeight: 1.22,
-      flexShrink: 0, // Prevent shrinking
-      minHeight: '0.5in', // Minimum height for QR code clearance
-      gap: '0.75rem', // Space between QR code and text
-    }}
-    className="footer-print-bar"
-  >
-    <img
-      src="/images/qrcodes/dinner-menu.png"
-      alt="QR Code for Dinner Menu"
-      style={{
-        width: '0.5in',
-        height: '0.5in',
-        flexShrink: 0,
-      }}
-    />
-    <span>
-      See menu photos online:{' '}
-      <a
-        href="https://skilletz.cafe/menu"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: '#444', textDecoration: 'underline' }}
-      >
-        skilletz.cafe/menu
-      </a>
-    </span>
-  </div>
 );
 
 const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
@@ -189,7 +148,10 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
           {renderColumn(leftCol)}
           {renderColumn(rightCol)}
         </div>
-        <DinnerMenuFooter />
+        <PrintMenuFooter
+          qrCodePath="/images/qrcodes/dinner-menu.png"
+          qrCodeAlt="QR Code for Dinner Menu"
+        />
       </div>
     );
   });
