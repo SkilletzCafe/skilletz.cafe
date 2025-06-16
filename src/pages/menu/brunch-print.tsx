@@ -10,6 +10,7 @@ import { geist, margarine } from '@/config/fonts';
 import { LEGAL_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
 import PrintMenuFooter from '@/components/PrintMenuFooter';
+import PrintMenuHeader from '@/components/PrintMenuHeader';
 
 import { loadMenuData } from '@/utils/menu_static';
 
@@ -47,47 +48,6 @@ const GRID_ORDER = [
 function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
   return groups.find((g) => g.name === name && g.items.length > 0) || null;
 }
-
-// Header component
-const BrunchMenuHeader: React.FC<{ description?: string }> = ({ description }) => (
-  <>
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        marginBottom: '1.5rem',
-        gap: '2rem',
-      }}
-    >
-      <div style={{ flex: '0 0 auto' }}>
-        <img
-          src="/images/logos/skilletz_logo_colored_flames.png"
-          alt="Skillet'z Cafe Logo"
-          style={{
-            maxWidth: '180px',
-            width: '40vw',
-            height: 'auto',
-            display: 'block',
-          }}
-        />
-      </div>
-      <div
-        style={{
-          flex: '1 1 auto',
-          textAlign: 'right',
-          fontFamily: margarine.style.fontFamily,
-          fontSize: '2.2rem',
-          color: '#444',
-          lineHeight: 1.2,
-        }}
-      >
-        Breakfast made with ❤️ and huevos 🥚
-      </div>
-    </div>
-    {description && <div className="menu-desc">{description}</div>}
-  </>
-);
 
 const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
   // Helper to render a column of sections
@@ -136,7 +96,9 @@ const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
           paddingTop: pageIdx > 0 ? '0.5in' : '0',
         }}
       >
-        {pageIdx === 0 && <BrunchMenuHeader />}
+        {pageIdx === 0 && (
+          <PrintMenuHeader tagline="Breakfast made with ❤️ and huevos 🥚" fontSize="2rem" />
+        )}
         <div
           style={{
             flex: '1 1 auto',
