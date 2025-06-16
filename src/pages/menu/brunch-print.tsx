@@ -7,29 +7,38 @@ import { MenuData, MenuGroup, MenuItem } from '@/types/menu';
 
 import { BUSINESS, FULL_ADDRESS } from '@/config/business';
 import { geist, margarine } from '@/config/fonts';
-import { LETTER_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
+import { LEGAL_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
 import { loadMenuData } from '@/utils/menu_static';
 
-interface DinnerPrintProps {
-  dinnerMenu: {
+interface BrunchPrintProps {
+  brunchMenus: {
     name: string;
     description: string;
     groups: MenuGroup[];
-  };
+  }[];
 }
+
+const PAGE_WIDTH_IN = 8.5;
+const PAGE_HEIGHT_IN = 11;
+const DPI = 96;
+const PAGE_WIDTH_PX = PAGE_WIDTH_IN * DPI;
+const PAGE_HEIGHT_PX = PAGE_HEIGHT_IN * DPI;
+const PADDING_TOP_REM = 1.2;
+const PADDING_BOTTOM_REM = 1.2;
+const PADDING_TOTAL_IN = (PADDING_TOP_REM + PADDING_BOTTOM_REM) * 0.0625; // Convert rem to inches (1rem ≈ 16px, 16px ≈ 0.167in)
 
 // New structure: each page is an array of [leftCol, rightCol]
 const GRID_ORDER = [
   // Page 1
   [
-    ['Appetizers 🧀', 'Daily Specials 🌟', 'Burgers 🍔'], // Left column
-    ['Salads 🥗', 'From the Grill 🔥', 'Comfort Favorites 🍽️'], // Right column
+    ['Meat & Eggs 🥩🍳', 'Pancakes, Waffles & More 🥞'], // Left column
+    ['Sandwiches 🥪', 'Kids Menu 👶'], // Right column
   ],
   // Page 2
   [
-    ['Sandwiches 🥪'], // Left column
-    ['Drinks 🥤', 'Kids/Niños 👶', 'Desserts 🍰'], // Right column
+    ['Salads 🥗'], // Left column
+    ['Drinks 🥤', 'Sides 🍟'], // Right column
   ],
 ];
 
@@ -38,7 +47,7 @@ function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
 }
 
 // Header component
-const DinnerMenuHeader: React.FC<{ description?: string }> = ({ description }) => (
+const BrunchMenuHeader: React.FC<{ description?: string }> = ({ description }) => (
   <>
     <div
       style={{
@@ -71,7 +80,7 @@ const DinnerMenuHeader: React.FC<{ description?: string }> = ({ description }) =
           lineHeight: 1.2,
         }}
       >
-        Dinner made with ❤️ and fuego 🔥
+        Breakfast made with ❤️ and huevos 🥚
       </div>
     </div>
     {description && <div className="menu-desc">{description}</div>}
@@ -79,7 +88,7 @@ const DinnerMenuHeader: React.FC<{ description?: string }> = ({ description }) =
 );
 
 // Footer component
-const DinnerMenuFooter: React.FC = () => (
+const BrunchMenuFooter: React.FC = () => (
   <div
     style={{
       marginTop: 'auto', // Push to bottom of flex container
@@ -99,8 +108,8 @@ const DinnerMenuFooter: React.FC = () => (
     className="footer-print-bar"
   >
     <img
-      src="/images/qrcodes/dinner-menu.png"
-      alt="QR Code for Dinner Menu"
+      src="/images/qrcodes/brunch-menu.png"
+      alt="QR Code for Brunch Menu"
       style={{
         width: '0.5in',
         height: '0.5in',
@@ -121,23 +130,18 @@ const DinnerMenuFooter: React.FC = () => (
   </div>
 );
 
-const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
+const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenus }) => {
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
       {sectionNames.map((groupName) => {
-        const group = getGroupByName(dinnerMenu.groups, groupName);
+        const group = brunchMenus.flatMap((menu) => menu.groups).find((g) => g.name === groupName);
         if (!group) return null;
-        // Only show 'Soup of the Day' for Daily Specials
-        const items = groupName.startsWith('Daily Specials')
-          ? group.items.filter((item) => item.name.startsWith('Soup of the Day'))
-          : group.items;
-        if (items.length === 0) return null;
         return (
           <div className="menu-section" key={group.guid} style={{ breakInside: 'avoid' }}>
             <div className={`section-title ${margarine.className}`}>{group.name}</div>
             {group.description && <div className="section-desc">{group.description}</div>}
-            {items.map((item) => (
+            {group.items.map((item) => (
               <div key={item.guid} style={{ marginBottom: '0.2rem' }}>
                 <div className="item-row">
                   <span className="item-name">{item.name}</span>
@@ -166,14 +170,14 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          minHeight: `${LETTER_HEIGHT_SAFE_IN}in`,
-          maxHeight: `${LETTER_HEIGHT_SAFE_IN}in`,
+          minHeight: `${LEGAL_HEIGHT_SAFE_IN}in`,
+          maxHeight: `${LEGAL_HEIGHT_SAFE_IN}in`,
           boxSizing: 'border-box',
           overflow: 'hidden',
           paddingTop: pageIdx > 0 ? '0.5in' : '0',
         }}
       >
-        {pageIdx === 0 && <DinnerMenuHeader description={dinnerMenu.description} />}
+        {pageIdx === 0 && <BrunchMenuHeader />}
         <div
           style={{
             flex: '1 1 auto',
@@ -189,7 +193,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
           {renderColumn(leftCol)}
           {renderColumn(rightCol)}
         </div>
-        <DinnerMenuFooter />
+        <BrunchMenuFooter />
       </div>
     );
   });
@@ -197,7 +201,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
   return (
     <>
       <Head>
-        <title>Dinner Menu (Printable) | Skillet&#39;z Cafe</title>
+        <title>Brunch Menu (Printable) | Skillet&#39;z Cafe</title>
         <meta name="robots" content="noindex, nofollow" />
         <style>{printMenuStyles}</style>
       </Head>
@@ -208,21 +212,22 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<DinnerPrintProps> = async () => {
+export const getStaticProps: GetStaticProps<BrunchPrintProps> = async () => {
   const menuData = loadMenuData();
-  const dinnerMenu = menuData.menus.find((m) => m.name === 'Dinner');
-  if (!dinnerMenu) {
+  // Get all menus except Dinner
+  const brunchMenus = menuData.menus.filter((menu) => menu.name !== 'Dinner');
+  if (!brunchMenus.length) {
     return { notFound: true };
   }
   return {
     props: {
-      dinnerMenu: {
-        name: dinnerMenu.name,
-        description: dinnerMenu.description,
-        groups: dinnerMenu.groups,
-      },
+      brunchMenus: brunchMenus.map((menu) => ({
+        name: menu.name,
+        description: menu.description,
+        groups: menu.groups,
+      })),
     },
   };
 };
 
-export default DinnerPrint;
+export default BrunchPrint;
