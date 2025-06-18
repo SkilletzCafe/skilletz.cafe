@@ -518,7 +518,7 @@
               "name": "Special Dulce of the Day",
               "guid": "b30e18b1-249d-404a-8f1d-38b48ae52e1a",
               "description": "Our daily rotating special sweet! Pictured: Nutella, chocolate chips, Oreo, banana waffle.",
-              "price": 15.95,
+              "price": 16.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000586626924_1742080585.jpg"
             },
             {
@@ -546,7 +546,7 @@
               "name": "Deluxe Billy's New York Steak and Eggs",
               "guid": "088b46a3-5221-4573-b69b-fae4ae7a39fc",
               "description": "New York Steak and Eggs with Grilled Onions and Mushrooms",
-              "price": 23.95,
+              "price": 25.95,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000796161419_1742080485.jpg"
             },
             {

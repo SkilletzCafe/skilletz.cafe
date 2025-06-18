@@ -106,7 +106,7 @@ async function processMenu() {
     await fs.promises.mkdir(path.dirname(outputPath), { recursive: true });
 
     // Write processed data
-    await fs.promises.writeFile(outputPath, JSON.stringify(processedData, null, 2), 'utf8');
+    await fs.promises.writeFile(outputPath, JSON.stringify(processedData, null, 2) + '\n', 'utf8');
 
     console.log('Menu processing completed successfully!');
     console.log(`Total menus: ${processedData.menus.length}`);
