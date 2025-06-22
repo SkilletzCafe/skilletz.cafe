@@ -22,6 +22,11 @@ export const PAGES: Record<string, Page> = {
     showInNav: true,
     openInNewTab: true,
   },
+  blog: {
+    path: '/blog',
+    name: 'Blog',
+    showInNav: true,
+  },
   press: {
     path: '/press',
     name: 'Press',

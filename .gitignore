@@ -51,3 +51,4 @@ next-env.d.ts
 **/tmp/
 
 .github/meta/
+src/posts/drafts/
