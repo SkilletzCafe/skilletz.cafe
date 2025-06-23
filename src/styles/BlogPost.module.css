@@ -96,6 +96,15 @@
   font-style: italic;
 }
 
+.postContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px var(--box-shadow);
+}
+
 /* Tags */
 .postTags {
   margin-bottom: 3rem;
