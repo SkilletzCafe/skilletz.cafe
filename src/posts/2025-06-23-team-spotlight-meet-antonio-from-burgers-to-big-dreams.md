@@ -14,7 +14,7 @@ At Skillet'z, we believe in good food, great people, and stories worth sharing. 
 
 ![Meet Antonio – Skilletz Marketing Intern + Future Finance Mogul](/images/blog/meet-antonio-arroyo/1.png)
 
-Antonio is currently a student at **Ohlone College**, where he's laying the foundation for a future he's determined to build—one that includes getting into his dream school: **Harvard**.
+Antonio is currently a student at [**Ohlone College**](https://www.ohlone.edu/), where he's laying the foundation for a future he's determined to build—one that includes getting into his dream school: [**Harvard**](https://www.harvard.edu/).
 
 > "My goal is to one day run my own private equity firm," Antonio shares. "Not just for the business side of things—but because I genuinely love helping people."
 
