@@ -4,7 +4,7 @@ interface RestaurantSchemaProps {
   description: string;
 }
 
-export default function RestaurantSchema({ description }: RestaurantSchemaProps) {
+export const RestaurantSchema = ({ description }: RestaurantSchemaProps) => {
   const schemaOrg = {
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
@@ -50,4 +50,4 @@ export default function RestaurantSchema({ description }: RestaurantSchemaProps)
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
     />
   );
-}
+};

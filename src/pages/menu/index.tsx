@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { GetStaticProps } from 'next';
-import Image from 'next/image';
 
 import { MenuData, MenuItemState } from '@/types/menu';
 
 import { margarine } from '@/config/fonts';
 
-import BasicPageLayout from '@/components/BasicPageLayout';
-import MenuCategorySwitcher from '@/components/MenuCategorySwitcher';
-import MenuItem from '@/components/MenuItem';
-import MenuSections from '@/components/MenuSections';
-import ScrollToTop from '@/components/ScrollToTop';
+import { BasicPageLayout } from '@/components/BasicPageLayout';
+import { RestaurantSchema } from '@/components/RestaurantSchema';
+import { ScrollToTop } from '@/components/ScrollToTop';
+import { MenuCategorySwitcher } from '@/components/menu/MenuCategorySwitcher';
+import { MenuItem } from '@/components/menu/MenuItem';
+import { MenuSections } from '@/components/menu/MenuSections';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
 import { loadMenuData } from '@/utils/menu_static';

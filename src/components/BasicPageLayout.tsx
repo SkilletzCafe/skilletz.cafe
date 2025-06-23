@@ -13,7 +13,7 @@ interface BasicPageLayoutProps {
   children?: ReactNode;
 }
 
-export default function BasicPageLayout({ title, heading, intro, children }: BasicPageLayoutProps) {
+export const BasicPageLayout = ({ title, heading, intro, children }: BasicPageLayoutProps) => {
   return (
     <Layout title={title}>
       <div className={styles.page}>
@@ -25,4 +25,4 @@ export default function BasicPageLayout({ title, heading, intro, children }: Bas
       </div>
     </Layout>
   );
-}
+};

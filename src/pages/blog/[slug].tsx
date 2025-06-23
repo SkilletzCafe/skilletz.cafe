@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import BasicPageLayout from '@/components/BasicPageLayout';
+import { BasicPageLayout } from '@/components/BasicPageLayout';
 
 import { getPost, getPostsStaticPaths } from '@/utils/posts';
 

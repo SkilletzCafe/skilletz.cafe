@@ -9,10 +9,12 @@ import { BUSINESS, FULL_ADDRESS } from '@/config/business';
 import { geist, margarine } from '@/config/fonts';
 import { LEGAL_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
-import PrintMenuFooter from '@/components/PrintMenuFooter';
-import PrintMenuHeader from '@/components/PrintMenuHeader';
+import { PrintMenuFooter } from '@/components/menu/PrintMenuFooter';
+import { PrintMenuHeader } from '@/components/menu/PrintMenuHeader';
 
 import { loadMenuData } from '@/utils/menu_static';
+
+import styles from '@/styles/Menu.module.css';
 
 interface BrunchPrintProps {
   brunchMenu: {

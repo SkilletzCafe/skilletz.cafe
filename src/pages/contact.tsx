@@ -2,7 +2,7 @@ import { BUSINESS, FULL_ADDRESS } from '@/config';
 import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import BasicPageLayout from '@/components/BasicPageLayout';
+import { BasicPageLayout } from '@/components/BasicPageLayout';
 
 import { emailUtils } from '@/utils/email';
 import { createGoogleMapsUrl, createPhoneUrl } from '@/utils/urls';

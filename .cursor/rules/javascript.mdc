@@ -344,3 +344,28 @@ Tags: #react #performance #optimization
     );
   }
   ```
+
+## Modules and Exports
+
+### Export Style
+- **Always use named exports instead of default exports.** This practice promotes consistency, improves discoverability and auto-imports, and avoids the potential for naming conflicts that can arise from default exports.
+
+- Example:
+  ```typescript
+  // Good: Using a named export
+  export const MyComponent = () => {
+    return <div>...</div>;
+  };
+
+  // Bad: Using a default export
+  export default function MyComponent() {
+    return <div>...</div>;
+  }
+  ```
+  ```typescript
+  // Good: Importing a named export is explicit.
+  import { MyComponent } from './MyComponent';
+
+  // Bad: Importing a default can lead to inconsistent naming.
+  import AnyCustomName from './MyComponent';
+  ```
