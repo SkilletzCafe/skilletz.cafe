@@ -50,8 +50,10 @@ export function getPostMetadata(
   // Automatically parse date from filename (e.g., "2025-06-08-...")
   const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})/);
   if (dateMatch && dateMatch[1]) {
-    // Add time to avoid timezone issues, assuming start of day in UTC
-    post.meta.date = new Date(`${dateMatch[1]}T00:00:00Z`).toISOString();
+    // Add 12 hours to ensure the date from filename represents the actual date in Pacific Time
+    // This accounts for the timezone difference and ensures the date doesn't shift
+    const utcDate = new Date(`${dateMatch[1]}T12:00:00Z`);
+    post.meta.date = utcDate.toISOString();
   } else {
     // This should ideally not happen if filenames are correct.
     // Fallback to current date or throw an error.
