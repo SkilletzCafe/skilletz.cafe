@@ -1,6 +1,6 @@
 import { ORDERING_PARTNERS } from '@/config';
 
-import BasicPageLayout from '@/components/BasicPageLayout';
+import { BasicPageLayout } from '@/components/BasicPageLayout';
 
 import styles from '@/styles/BasicPage.module.css';
 

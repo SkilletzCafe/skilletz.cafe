@@ -2,7 +2,7 @@ import React from 'react';
 
 import { margarine } from '@/config/fonts';
 
-import MenuItem from '@/components/MenuItem';
+import { MenuItem } from '@/components/menu/MenuItem';
 
 import styles from '@/styles/Menu.module.css';
 
@@ -26,7 +26,7 @@ interface MenuSectionsProps {
   categoryRefs: React.MutableRefObject<(HTMLHeadingElement | null)[]>;
 }
 
-const MenuSections: React.FC<MenuSectionsProps> = ({
+export const MenuSections: React.FC<MenuSectionsProps> = ({
   sections,
   selected,
   getItems,
@@ -96,5 +96,3 @@ const MenuSections: React.FC<MenuSectionsProps> = ({
         </div>
       </section>
     ));
-
-export default MenuSections;

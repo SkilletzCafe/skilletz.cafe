@@ -15,7 +15,7 @@ interface MenuCategorySwitcherProps {
   onKeyDown?: (e: React.KeyboardEvent) => void;
 }
 
-const MenuCategorySwitcher: React.FC<MenuCategorySwitcherProps> = ({
+export const MenuCategorySwitcher: React.FC<MenuCategorySwitcherProps> = ({
   options,
   selected,
   onSelect,
@@ -53,5 +53,3 @@ const MenuCategorySwitcher: React.FC<MenuCategorySwitcherProps> = ({
     ))}
   </nav>
 );
-
-export default MenuCategorySwitcher;

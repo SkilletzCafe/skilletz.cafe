@@ -14,7 +14,7 @@ interface MenuItemProps {
   setRef?: (el: HTMLDivElement | null) => void;
 }
 
-export default function MenuItem({
+export function MenuItem({
   item,
   index,
   totalItems,

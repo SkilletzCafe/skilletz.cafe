@@ -5,7 +5,7 @@ interface PrintMenuFooterProps {
   qrCodeAlt: string;
 }
 
-const PrintMenuFooter: React.FC<PrintMenuFooterProps> = ({ qrCodePath, qrCodeAlt }) => (
+export const PrintMenuFooter: React.FC<PrintMenuFooterProps> = ({ qrCodePath, qrCodeAlt }) => (
   <div
     style={{
       marginTop: 'auto', // Push to bottom of flex container
@@ -46,5 +46,3 @@ const PrintMenuFooter: React.FC<PrintMenuFooterProps> = ({ qrCodePath, qrCodeAlt
     </span>
   </div>
 );
-
-export default PrintMenuFooter;

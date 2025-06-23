@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import styles from '@/styles/ScrollToTop.module.css';
 
-export default function ScrollToTop() {
+export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Show button when page is scrolled up to given distance
@@ -50,4 +50,4 @@ export default function ScrollToTop() {
       )}
     </>
   );
-}
+};

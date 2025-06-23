@@ -8,7 +8,7 @@ interface PrintMenuHeaderProps {
   fontSize?: string;
 }
 
-const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
+export const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
   tagline,
   description,
   fontSize = '2.2rem', // Default to 2.2rem if not specified
@@ -51,5 +51,3 @@ const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
     {description && <div className="menu-desc">{description}</div>}
   </>
 );
-
-export default PrintMenuHeader;
