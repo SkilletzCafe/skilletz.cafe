@@ -15,6 +15,7 @@ import { MenuSections } from '@/components/menu/MenuSections';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
 import { loadMenuData } from '@/utils/menu_static';
+import { getUrlParam } from '@/utils/urls';
 
 import styles from '@/styles/Menu.module.css';
 
@@ -23,8 +24,22 @@ interface MenuPageProps {
 }
 
 export default function Menu({ menuData }: MenuPageProps) {
+  // Check for utm_campaign parameter to determine initial tab
+  const getInitialTab = (): 'Brunch' | 'Dinner' => {
+    let initialTab: 'Brunch' | 'Dinner' = 'Brunch';
+
+    if (typeof window !== 'undefined') {
+      const utmCampaign = getUrlParam('utm_campaign');
+      if (utmCampaign && utmCampaign.toLowerCase().startsWith('dinner')) {
+        initialTab = 'Dinner';
+      }
+    }
+
+    return initialTab;
+  };
+
   // Add tab state for Brunch/Dinner
-  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Dinner'>('Brunch');
+  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Dinner'>(getInitialTab);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
   const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
@@ -67,6 +82,14 @@ export default function Menu({ menuData }: MenuPageProps) {
         observerRef.current.disconnect();
       }
     };
+  }, []);
+
+  // Check for utm_campaign parameter changes and update tab accordingly
+  useEffect(() => {
+    const utmCampaign = getUrlParam('utm_campaign');
+    if (utmCampaign && utmCampaign.toLowerCase().startsWith('dinner')) {
+      setSelectedTab('Dinner');
+    }
   }, []);
 
   // Add parallax effect to category headings
