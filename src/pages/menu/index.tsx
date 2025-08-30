@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import { GetStaticProps } from 'next';
 
-import { MenuData, MenuItemState } from '@/types/menu';
+import { MenuData, MenuItemState, MenuOptionGroupsData } from '@/types/menu';
 
 import { margarine } from '@/config/fonts';
 import { MenuTab } from '@/config/menuTabs';
@@ -16,16 +16,17 @@ import { MenuSections } from '@/components/menu/MenuSections';
 import { MenuTabNavigation } from '@/components/menu/MenuTabNavigation';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
-import { loadMenuData } from '@/utils/menu_static';
+import { loadMenuData, loadMenuOptionGroupsData } from '@/utils/menu_static';
 import { getUrlParam } from '@/utils/urls';
 
 import styles from '@/styles/Menu.module.css';
 
 interface MenuPageProps {
   menuData: MenuData;
+  menuOptionGroupsData: MenuOptionGroupsData;
 }
 
-export default function Menu({ menuData }: MenuPageProps) {
+export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) {
   // Check for utm_campaign parameter to determine initial tab
   const getInitialTab = (): MenuTab => {
     let initialTab: MenuTab = 'Brunch';
@@ -54,6 +55,11 @@ export default function Menu({ menuData }: MenuPageProps) {
   const observerRef = useRef<IntersectionObserver | null>(null);
   const categoryRefs = useRef<(HTMLHeadingElement | null)[]>([]);
 
+  // Find the boba tea toppings option group
+  const bobaToppingsGroup = menuOptionGroupsData.optionGroups.find(
+    (group) => group.guid === '9145a88a-16f0-4a02-bccd-d227ed2e8f87'
+  );
+
   // Separate Dinner, Happy Hour, Tea Rek'z, and Brunch menus
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
@@ -65,6 +71,40 @@ export default function Menu({ menuData }: MenuPageProps) {
       menu.name !== "Tea Rek'z 🧋🦖" &&
       menu.groups.length === 1
   );
+
+  // Create a special "Toppings" group for Tea Rek'z if we have the data
+  const createTeaRekzWithToppings = () => {
+    if (!teaRekzMenu || !bobaToppingsGroup) return teaRekzMenu;
+
+    // Create a copy of the Tea Rek'z menu
+    const teaRekzWithToppings = {
+      ...teaRekzMenu,
+      groups: [...teaRekzMenu.groups],
+    };
+
+    // Add the Toppings group if it doesn't already exist
+    if (!teaRekzWithToppings.groups.find((g) => g.name === 'Toppings')) {
+      const toppingsGroup = {
+        name: 'Toppings 🧋',
+        guid: 'toppings-special-group',
+        description: 'Customize your bubble tea with these delicious toppings',
+        items: bobaToppingsGroup.items.map((item) => ({
+          name: item.name,
+          guid: item.guid,
+          description: item.description,
+          price: item.price,
+          imageUrl: null,
+        })),
+      };
+
+      // Insert Toppings after the first group (House Favorites)
+      teaRekzWithToppings.groups.push(toppingsGroup);
+    }
+
+    return teaRekzWithToppings;
+  };
+
+  const teaRekzMenuWithToppings = createTeaRekzWithToppings();
 
   // Set up intersection observer
   useEffect(() => {
@@ -182,8 +222,8 @@ export default function Menu({ menuData }: MenuPageProps) {
       ? [dinnerMenu]
       : selectedTab === 'Happy Hour' && happyHourMenu
         ? [happyHourMenu]
-        : selectedTab === "Tea Rek'z" && teaRekzMenu
-          ? [teaRekzMenu]
+        : selectedTab === "Tea Rek'z" && teaRekzMenuWithToppings
+          ? [teaRekzMenuWithToppings]
           : brunchMenus;
   const totalMenuItems = menus.reduce((total, menu) => {
     return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
@@ -191,7 +231,7 @@ export default function Menu({ menuData }: MenuPageProps) {
 
   const isDinner = selectedTab === 'Dinner' && dinnerMenu;
   const isHappyHour = selectedTab === 'Happy Hour' && happyHourMenu;
-  const isTeaRekz = selectedTab === "Tea Rek'z" && teaRekzMenu;
+  const isTeaRekz = selectedTab === "Tea Rek'z" && teaRekzMenuWithToppings;
   // Compute category options for MenuCategorySwitcher
   const categoryOptions = isDinner
     ? dinnerMenu.groups
@@ -202,7 +242,7 @@ export default function Menu({ menuData }: MenuPageProps) {
           .filter((g) => g.items && g.items.length > 0)
           .map((g) => ({ key: g.guid, label: g.name }))
       : isTeaRekz
-        ? teaRekzMenu.groups
+        ? teaRekzMenuWithToppings.groups
             .filter((g) => g.items && g.items.length > 0 && g.name !== 'Grab n Go')
             .map((g) => ({ key: g.guid, label: g.name }))
         : brunchMenus
@@ -215,7 +255,7 @@ export default function Menu({ menuData }: MenuPageProps) {
     : isHappyHour
       ? happyHourMenu.groups
       : isTeaRekz
-        ? teaRekzMenu.groups.filter((g) => g.name !== 'Grab n Go')
+        ? teaRekzMenuWithToppings.groups.filter((g) => g.name !== 'Grab n Go')
         : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
   const getItems = isDinner
     ? (g: any) =>
@@ -271,10 +311,12 @@ export default function Menu({ menuData }: MenuPageProps) {
 
 export const getStaticProps: GetStaticProps<MenuPageProps> = async () => {
   const menuData = loadMenuData();
+  const menuOptionGroupsData = loadMenuOptionGroupsData();
 
   return {
     props: {
       menuData,
+      menuOptionGroupsData,
     },
   };
 };

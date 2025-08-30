@@ -29,3 +29,25 @@ export interface MenuItemState {
   isVisible: boolean;
   isLoaded: boolean;
 }
+
+export interface MenuOptionGroupItem {
+  name: string;
+  guid: string;
+  description: string;
+  price: number;
+  orderableOnline: string;
+  visibility: string;
+}
+
+export interface MenuOptionGroup {
+  name: string;
+  guid: string;
+  minSelections: number;
+  maxSelections: number | null;
+  pricingMode: string;
+  items: MenuOptionGroupItem[];
+}
+
+export interface MenuOptionGroupsData {
+  optionGroups: MenuOptionGroup[];
+}
