@@ -25,21 +25,23 @@ interface MenuPageProps {
 
 export default function Menu({ menuData }: MenuPageProps) {
   // Check for utm_campaign parameter to determine initial tab
-  const getInitialTab = (): 'Brunch' | 'Dinner' => {
-    let initialTab: 'Brunch' | 'Dinner' = 'Brunch';
+  const getInitialTab = (): 'Brunch' | 'Happy Hour' | 'Dinner' => {
+    let initialTab: 'Brunch' | 'Happy Hour' | 'Dinner' = 'Brunch';
 
     if (typeof window !== 'undefined') {
       const utmCampaign = getUrlParam('utm_campaign');
       if (utmCampaign && utmCampaign.toLowerCase().startsWith('dinner')) {
         initialTab = 'Dinner';
+      } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
+        initialTab = 'Happy Hour';
       }
     }
 
     return initialTab;
   };
 
-  // Add tab state for Brunch/Dinner
-  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Dinner'>(getInitialTab);
+  // Add tab state for Brunch/Happy Hour/Dinner
+  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Happy Hour' | 'Dinner'>(getInitialTab);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
   const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
@@ -48,10 +50,11 @@ export default function Menu({ menuData }: MenuPageProps) {
   const observerRef = useRef<IntersectionObserver | null>(null);
   const categoryRefs = useRef<(HTMLHeadingElement | null)[]>([]);
 
-  // Separate Dinner and Brunch menus
+  // Separate Dinner, Happy Hour, and Brunch menus
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
+  const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const brunchMenus = menuData.menus.filter(
-    (menu) => menu.name !== 'Dinner' && menu.groups.length === 1
+    (menu) => menu.name !== 'Dinner' && menu.name !== 'Happy Hour' && menu.groups.length === 1
   );
 
   // Set up intersection observer
@@ -89,6 +92,8 @@ export default function Menu({ menuData }: MenuPageProps) {
     const utmCampaign = getUrlParam('utm_campaign');
     if (utmCampaign && utmCampaign.toLowerCase().startsWith('dinner')) {
       setSelectedTab('Dinner');
+    } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
+      setSelectedTab('Happy Hour');
     }
   }, []);
 
@@ -161,34 +166,48 @@ export default function Menu({ menuData }: MenuPageProps) {
   // Get main menus (excluding "Other")
   // const menus = getMainMenus(menuData);
   // Calculate total number of menu items for keyboard navigation
-  const menus = selectedTab === 'Dinner' && dinnerMenu ? [dinnerMenu] : brunchMenus;
+  const menus =
+    selectedTab === 'Dinner' && dinnerMenu
+      ? [dinnerMenu]
+      : selectedTab === 'Happy Hour' && happyHourMenu
+        ? [happyHourMenu]
+        : brunchMenus;
   const totalMenuItems = menus.reduce((total, menu) => {
     return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
   }, 0);
 
   const isDinner = selectedTab === 'Dinner' && dinnerMenu;
+  const isHappyHour = selectedTab === 'Happy Hour' && happyHourMenu;
   // Compute category options for MenuCategorySwitcher
   const categoryOptions = isDinner
     ? dinnerMenu.groups
         .filter((g) => g.items && g.items.length > 0)
         .map((g) => ({ key: g.guid, label: g.name }))
-    : brunchMenus
-        .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
-        .map((m) => ({ key: m.guid, label: m.name }));
+    : isHappyHour
+      ? happyHourMenu.groups
+          .filter((g) => g.items && g.items.length > 0)
+          .map((g) => ({ key: g.guid, label: g.name }))
+      : brunchMenus
+          .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
+          .map((m) => ({ key: m.guid, label: m.name }));
 
   // Compute sections and getItems for MenuSections
   const sections = isDinner
     ? dinnerMenu.groups
-    : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
+    : isHappyHour
+      ? happyHourMenu.groups
+      : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
   const getItems = isDinner
     ? (g: any) =>
         g.name && g.name.startsWith('Daily Specials')
           ? g.items.filter((item: any) => item.name.startsWith('Soup of the Day'))
           : g.items
-    : (m: any) =>
-        m.name && m.name.startsWith('Daily Specials')
-          ? m.items.filter((item: any) => item.name === 'Soup of the Day')
-          : m.items;
+    : isHappyHour
+      ? (g: any) => g.items
+      : (m: any) =>
+          m.name && m.name.startsWith('Daily Specials')
+            ? m.items.filter((item: any) => item.name === 'Soup of the Day')
+            : m.items;
 
   return (
     <BasicPageLayout title="Menu" heading="Our Menu" intro="Explore our delicious offerings">
@@ -206,6 +225,18 @@ export default function Menu({ menuData }: MenuPageProps) {
             tabIndex={selectedTab === 'Brunch' ? 0 : -1}
           >
             Brunch
+          </button>
+          <button
+            className={`${styles.tabButton} ${selectedTab === 'Happy Hour' ? styles.activeTab : ''}`}
+            onClick={() => {
+              setSelectedTab('Happy Hour');
+              setSelectedCategory(null);
+            }}
+            role="tab"
+            aria-selected={selectedTab === 'Happy Hour'}
+            tabIndex={selectedTab === 'Happy Hour' ? 0 : -1}
+          >
+            Happy Hour
           </button>
           <button
             className={`${styles.tabButton} ${selectedTab === 'Dinner' ? styles.activeTab : ''}`}
