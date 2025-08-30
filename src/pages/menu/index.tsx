@@ -5,6 +5,7 @@ import { GetStaticProps } from 'next';
 import { MenuData, MenuItemState } from '@/types/menu';
 
 import { margarine } from '@/config/fonts';
+import { MenuTab } from '@/config/menuTabs';
 
 import { BasicPageLayout } from '@/components/BasicPageLayout';
 import { RestaurantSchema } from '@/components/RestaurantSchema';
@@ -12,6 +13,7 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import { MenuCategorySwitcher } from '@/components/menu/MenuCategorySwitcher';
 import { MenuItem } from '@/components/menu/MenuItem';
 import { MenuSections } from '@/components/menu/MenuSections';
+import { MenuTabNavigation } from '@/components/menu/MenuTabNavigation';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
 import { loadMenuData } from '@/utils/menu_static';
@@ -25,8 +27,8 @@ interface MenuPageProps {
 
 export default function Menu({ menuData }: MenuPageProps) {
   // Check for utm_campaign parameter to determine initial tab
-  const getInitialTab = (): 'Brunch' | 'Happy Hour' | 'Dinner' => {
-    let initialTab: 'Brunch' | 'Happy Hour' | 'Dinner' = 'Brunch';
+  const getInitialTab = (): MenuTab => {
+    let initialTab: MenuTab = 'Brunch';
 
     if (typeof window !== 'undefined') {
       const utmCampaign = getUrlParam('utm_campaign');
@@ -34,14 +36,16 @@ export default function Menu({ menuData }: MenuPageProps) {
         initialTab = 'Dinner';
       } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
         initialTab = 'Happy Hour';
+      } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('tea')) {
+        initialTab = "Tea Rek'z";
       }
     }
 
     return initialTab;
   };
 
-  // Add tab state for Brunch/Happy Hour/Dinner
-  const [selectedTab, setSelectedTab] = useState<'Brunch' | 'Happy Hour' | 'Dinner'>(getInitialTab);
+  // Add tab state for Brunch/Happy Hour/Dinner/Tea Rek'z
+  const [selectedTab, setSelectedTab] = useState<MenuTab>(getInitialTab);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
   const [itemStates, setItemStates] = useState<Record<string, MenuItemState>>({});
@@ -50,11 +54,16 @@ export default function Menu({ menuData }: MenuPageProps) {
   const observerRef = useRef<IntersectionObserver | null>(null);
   const categoryRefs = useRef<(HTMLHeadingElement | null)[]>([]);
 
-  // Separate Dinner, Happy Hour, and Brunch menus
+  // Separate Dinner, Happy Hour, Tea Rek'z, and Brunch menus
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
+  const teaRekzMenu = menuData.menus.find((menu) => menu.name === "Tea Rek'z 🧋🦖");
   const brunchMenus = menuData.menus.filter(
-    (menu) => menu.name !== 'Dinner' && menu.name !== 'Happy Hour' && menu.groups.length === 1
+    (menu) =>
+      menu.name !== 'Dinner' &&
+      menu.name !== 'Happy Hour' &&
+      menu.name !== "Tea Rek'z 🧋🦖" &&
+      menu.groups.length === 1
   );
 
   // Set up intersection observer
@@ -94,6 +103,8 @@ export default function Menu({ menuData }: MenuPageProps) {
       setSelectedTab('Dinner');
     } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
       setSelectedTab('Happy Hour');
+    } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('tea')) {
+      setSelectedTab("Tea Rek'z");
     }
   }, []);
 
@@ -171,13 +182,16 @@ export default function Menu({ menuData }: MenuPageProps) {
       ? [dinnerMenu]
       : selectedTab === 'Happy Hour' && happyHourMenu
         ? [happyHourMenu]
-        : brunchMenus;
+        : selectedTab === "Tea Rek'z" && teaRekzMenu
+          ? [teaRekzMenu]
+          : brunchMenus;
   const totalMenuItems = menus.reduce((total, menu) => {
     return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
   }, 0);
 
   const isDinner = selectedTab === 'Dinner' && dinnerMenu;
   const isHappyHour = selectedTab === 'Happy Hour' && happyHourMenu;
+  const isTeaRekz = selectedTab === "Tea Rek'z" && teaRekzMenu;
   // Compute category options for MenuCategorySwitcher
   const categoryOptions = isDinner
     ? dinnerMenu.groups
@@ -187,16 +201,22 @@ export default function Menu({ menuData }: MenuPageProps) {
       ? happyHourMenu.groups
           .filter((g) => g.items && g.items.length > 0)
           .map((g) => ({ key: g.guid, label: g.name }))
-      : brunchMenus
-          .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
-          .map((m) => ({ key: m.guid, label: m.name }));
+      : isTeaRekz
+        ? teaRekzMenu.groups
+            .filter((g) => g.items && g.items.length > 0 && g.name !== 'Grab n Go')
+            .map((g) => ({ key: g.guid, label: g.name }))
+        : brunchMenus
+            .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
+            .map((m) => ({ key: m.guid, label: m.name }));
 
   // Compute sections and getItems for MenuSections
   const sections = isDinner
     ? dinnerMenu.groups
     : isHappyHour
       ? happyHourMenu.groups
-      : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
+      : isTeaRekz
+        ? teaRekzMenu.groups.filter((g) => g.name !== 'Grab n Go')
+        : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
   const getItems = isDinner
     ? (g: any) =>
         g.name && g.name.startsWith('Daily Specials')
@@ -204,53 +224,23 @@ export default function Menu({ menuData }: MenuPageProps) {
           : g.items
     : isHappyHour
       ? (g: any) => g.items
-      : (m: any) =>
-          m.name && m.name.startsWith('Daily Specials')
-            ? m.items.filter((item: any) => item.name === 'Soup of the Day')
-            : m.items;
+      : isTeaRekz
+        ? (g: any) => g.items
+        : (m: any) =>
+            m.name && m.name.startsWith('Daily Specials')
+              ? m.items.filter((item: any) => item.name === 'Soup of the Day')
+              : m.items;
+
+  const handleTabChange = (tab: MenuTab) => {
+    setSelectedTab(tab);
+    setSelectedCategory(null);
+  };
 
   return (
     <BasicPageLayout title="Menu" heading="Our Menu" intro="Explore our delicious offerings">
       <div className={styles.menuContainer}>
         {/* Top-level tab navigation */}
-        <div className={styles.tabNav} role="tablist" aria-label="Menu type">
-          <button
-            className={`${styles.tabButton} ${selectedTab === 'Brunch' ? styles.activeTab : ''}`}
-            onClick={() => {
-              setSelectedTab('Brunch');
-              setSelectedCategory(null);
-            }}
-            role="tab"
-            aria-selected={selectedTab === 'Brunch'}
-            tabIndex={selectedTab === 'Brunch' ? 0 : -1}
-          >
-            Brunch
-          </button>
-          <button
-            className={`${styles.tabButton} ${selectedTab === 'Happy Hour' ? styles.activeTab : ''}`}
-            onClick={() => {
-              setSelectedTab('Happy Hour');
-              setSelectedCategory(null);
-            }}
-            role="tab"
-            aria-selected={selectedTab === 'Happy Hour'}
-            tabIndex={selectedTab === 'Happy Hour' ? 0 : -1}
-          >
-            Happy Hour
-          </button>
-          <button
-            className={`${styles.tabButton} ${selectedTab === 'Dinner' ? styles.activeTab : ''}`}
-            onClick={() => {
-              setSelectedTab('Dinner');
-              setSelectedCategory(null);
-            }}
-            role="tab"
-            aria-selected={selectedTab === 'Dinner'}
-            tabIndex={selectedTab === 'Dinner' ? 0 : -1}
-          >
-            Dinner
-          </button>
-        </div>
+        <MenuTabNavigation selectedTab={selectedTab} onTabChange={handleTabChange} />
         {/* Category navigation */}
         <MenuCategorySwitcher
           options={categoryOptions}
