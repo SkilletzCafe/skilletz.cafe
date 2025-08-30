@@ -78,7 +78,10 @@ async function processMenu() {
           guid: group.guid,
           description: group.description,
           items: group.items
-            .filter((item) => item.orderableOnline === 'YES' && item.visibility === 'ALL')
+            .filter(
+              (item) =>
+                item.orderableOnline === 'YES' && item.visibility === 'ALL' && item.name !== null
+            )
             .map((item) => ({
               name: item.name,
               guid: item.guid,
