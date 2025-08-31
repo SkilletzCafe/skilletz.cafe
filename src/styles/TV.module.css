@@ -1,3 +1,4 @@
+/* Main TV page styles - includes base styles for compatibility */
 .tvContainer {
   position: fixed;
   top: 0;
@@ -22,6 +23,38 @@
   opacity: 0;
 }
 
+.content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.delay {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tvContainer:hover .delay {
+  opacity: 1;
+}
+
+.hideCursor {
+  cursor: none;
+}
+
+/* Image-specific styles */
 .imageContainer {
   position: relative;
   width: 100%;
@@ -38,16 +71,6 @@
   height: 40%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
   z-index: 1;
-}
-
-.content {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  right: 40px;
-  color: white;
-  z-index: 2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -83,25 +106,4 @@
 
 .logo:hover {
   opacity: 1;
-}
-
-.delay {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.tvContainer:hover .delay {
-  opacity: 1;
-}
-
-.hideCursor {
-  cursor: none;
 }

@@ -37,7 +37,11 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
         initialTab = 'Dinner';
       } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
         initialTab = 'Happy Hour';
-      } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('tea')) {
+      } else if (
+        utmCampaign &&
+        (utmCampaign.toLowerCase().startsWith('tea') ||
+          utmCampaign.toLowerCase().startsWith('grabngo'))
+      ) {
         initialTab = "Tea Rek'z";
       }
     }

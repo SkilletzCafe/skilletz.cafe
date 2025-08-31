@@ -6,12 +6,18 @@ interface PrintMenuHeaderProps {
   tagline: string;
   description?: string;
   fontSize?: string;
+  logoPath?: string;
+  logoAlt?: string;
+  headerMarginBottom?: string;
 }
 
 export const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
   tagline,
   description,
   fontSize = '2.2rem', // Default to 2.2rem if not specified
+  logoPath = '/images/logos/skilletz_logo_colored_flames.png',
+  logoAlt = "Skillet'z Cafe Logo",
+  headerMarginBottom = '1.5rem',
 }) => (
   <>
     <div
@@ -19,14 +25,14 @@ export const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: '1.5rem',
+        marginBottom: headerMarginBottom,
         gap: '2rem',
       }}
     >
       <div style={{ flex: '0 0 auto' }}>
         <img
-          src="/images/logos/skilletz_logo_colored_flames.png"
-          alt="Skillet'z Cafe Logo"
+          src={logoPath}
+          alt={logoAlt}
           style={{
             maxWidth: '180px',
             width: '40vw',

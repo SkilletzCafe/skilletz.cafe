@@ -52,6 +52,16 @@ export const PAGES: Record<string, Page> = {
     name: 'Reservations',
     showInNav: false,
   },
+  tvrekz: {
+    path: '/tvrekz',
+    name: "TV Rek'z",
+    showInNav: false,
+  },
+  grabngoPrint: {
+    path: '/menu/grabngo-print',
+    name: 'Grab n Go Print',
+    showInNav: false,
+  },
 } as const;
 
 export const SITE_URL = 'https://skilletz.cafe';
