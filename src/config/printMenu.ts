@@ -41,6 +41,21 @@ export const printMenuStyles = `
     }
     .footer-print-bar {
       border-top: none !important;
+      display: block !important;
+      visibility: visible !important;
+      position: relative !important;
+      page-break-inside: avoid !important;
+      background-color: white !important;
+      margin-top: auto !important;
+      flex-shrink: 0 !important;
+    }
+    .footer-print-bar span,
+    .footer-print-bar a {
+      display: inline !important;
+      visibility: visible !important;
+      color: #666 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
     }
   }
   @media screen {

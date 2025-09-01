@@ -113,10 +113,12 @@ const GrabNGoPrint: React.FC<GrabNGoPrintProps> = ({ grabNGoMenu }) => {
       <div id="print-area" className={geist.className}>
         <div
           style={{
-            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
             height: `${LETTER_HEIGHT_SAFE_IN}in`,
             boxSizing: 'border-box',
-            overflow: 'hidden',
+            paddingTop: '0',
+            position: 'relative',
           }}
         >
           <PrintMenuHeader
@@ -124,17 +126,17 @@ const GrabNGoPrint: React.FC<GrabNGoPrintProps> = ({ grabNGoMenu }) => {
             description="Convenient drinks and snacks for on-the-go"
             logoPath="/images/logos/tearekz_logo.png"
             logoAlt="Tea Rek'z Logo"
-            headerMarginBottom="1rem"
+            headerMarginBottom="0.5rem"
           />
           <div
             style={{
+              flex: '1 1 auto',
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
-              columnGap: '2.5rem',
-              rowGap: '0.3rem',
+              columnGap: '2rem',
+              rowGap: '0.2rem',
               width: '100%',
-              paddingBottom: '0.5rem',
-              marginBottom: '0.5in', // Reserve space for footer
+              overflow: 'hidden',
             }}
           >
             {renderColumn(GRID_ORDER[0])}
@@ -143,10 +145,11 @@ const GrabNGoPrint: React.FC<GrabNGoPrintProps> = ({ grabNGoMenu }) => {
           <div
             style={{
               position: 'absolute',
-              bottom: 0,
-              left: 0,
-              right: 0,
+              bottom: '0.2in',
+              left: '0',
+              right: '0',
               backgroundColor: 'white',
+              zIndex: 10,
             }}
           >
             <PrintMenuFooter

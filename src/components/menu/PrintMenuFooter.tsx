@@ -15,12 +15,14 @@ export const PrintMenuFooter: React.FC<PrintMenuFooterProps> = ({ qrCodePath, qr
       alignItems: 'center',
       fontSize: '0.87rem',
       color: '#666',
-      borderTop: '1px solid #ddd',
       paddingTop: '0.3rem',
       lineHeight: 1.22,
       flexShrink: 0, // Prevent shrinking
       minHeight: '0.5in', // Minimum height for QR code clearance
       gap: '0.75rem', // Space between QR code and text
+      backgroundColor: 'white',
+      position: 'relative',
+      zIndex: 10,
     }}
     className="footer-print-bar"
   >
@@ -31,15 +33,32 @@ export const PrintMenuFooter: React.FC<PrintMenuFooterProps> = ({ qrCodePath, qr
         width: '0.5in',
         height: '0.5in',
         flexShrink: 0,
+        display: 'block',
+        printColorAdjust: 'exact',
+        WebkitPrintColorAdjust: 'exact',
       }}
     />
-    <span>
+    <span
+      style={{
+        color: '#666',
+        fontSize: '0.87rem',
+        fontWeight: '500',
+        whiteSpace: 'nowrap',
+        printColorAdjust: 'exact',
+        WebkitPrintColorAdjust: 'exact',
+      }}
+    >
       See menu photos online:{' '}
       <a
         href="https://skilletz.cafe/menu"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ color: '#444', textDecoration: 'underline' }}
+        style={{
+          color: '#444',
+          textDecoration: 'underline',
+          printColorAdjust: 'exact',
+          WebkitPrintColorAdjust: 'exact',
+        }}
       >
         skilletz.cafe/menu
       </a>
