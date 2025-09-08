@@ -159,7 +159,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           return (
             <div className="menu-section" key="tea-selections" style={{ breakInside: 'avoid' }}>
               <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront('Tea Selections 🌱')}
+                {moveEmojisToFront(groupName)}
               </div>
               {teaSelections.map((selection, index) => (
                 <div key={index} style={{ marginBottom: '0.15rem' }}>
@@ -181,7 +181,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           return (
             <div className="menu-section" key="flavors" style={{ breakInside: 'avoid' }}>
               <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront('Flavors 🍓')}
+                {moveEmojisToFront(groupName)}
               </div>
               <div style={{ fontSize: '0.7rem', color: '#666' }}>{flavors.join(' · ')}</div>
             </div>
@@ -192,7 +192,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           return (
             <div className="menu-section" key="toppings" style={{ breakInside: 'avoid' }}>
               <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront('Toppings 🌈')}
+                {moveEmojisToFront(groupName)}
               </div>
               <div
                 className="section-desc"
@@ -215,7 +215,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           return (
             <div className="menu-section" key="ice-levels" style={{ breakInside: 'avoid' }}>
               <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront('Ice Levels 🧊')}
+                {moveEmojisToFront(groupName)}
               </div>
               <div style={{ fontSize: '0.7rem', color: '#666' }}>{iceLevels.join(' · ')}</div>
             </div>
@@ -226,7 +226,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           return (
             <div className="menu-section" key="sweetness-levels" style={{ breakInside: 'avoid' }}>
               <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront('Sweetness Levels 🍯')}
+                {moveEmojisToFront(groupName)}
               </div>
               <div style={{ fontSize: '0.7rem', color: '#666' }}>{sweetnessLevels.join(' · ')}</div>
             </div>
