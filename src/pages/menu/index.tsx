@@ -42,14 +42,14 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
         (utmCampaign.toLowerCase().startsWith('tea') ||
           utmCampaign.toLowerCase().startsWith('grabngo'))
       ) {
-        initialTab = "Tea Rek'z";
+        initialTab = "Tea-Rek'z";
       }
     }
 
     return initialTab;
   };
 
-  // Add tab state for Brunch/Happy Hour/Dinner/Tea Rek'z
+  // Add tab state for Brunch/Happy Hour/Dinner/Tea-Rek'z
   const [selectedTab, setSelectedTab] = useState<MenuTab>(getInitialTab);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [focusedItemIndex, setFocusedItemIndex] = useState<number>(-1);
@@ -64,19 +64,15 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     (group) => group.guid === '9145a88a-16f0-4a02-bccd-d227ed2e8f87'
   );
 
-  // Separate Dinner, Happy Hour, Tea Rek'z, and Brunch menus
-  const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
+  // Separate menus in semantic order: Brunch, Happy Hour, Dinner, Drinks, Tea-Rek'z, Alcoholic Beverages
+  const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
-  const teaRekzMenu = menuData.menus.find((menu) => menu.name === "Tea Rek'z 🧋🦖");
-  const brunchMenus = menuData.menus.filter(
-    (menu) =>
-      menu.name !== 'Dinner' &&
-      menu.name !== 'Happy Hour' &&
-      menu.name !== "Tea Rek'z 🧋🦖" &&
-      menu.groups.length === 1
-  );
+  const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
+  const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
+  const teaRekzMenu = menuData.menus.find((menu) => menu.name === "Tea-Rek'z 🧋🦖");
+  const alcoholicBeveragesMenu = menuData.menus.find((menu) => menu.name === 'Alcoholic Beverages');
 
-  // Create a special "Toppings" group for Tea Rek'z if we have the data
+  // Create a special "Toppings" group for Tea-Rek'z if we have the data
   const createTeaRekzWithToppings = () => {
     if (!teaRekzMenu || !bobaToppingsGroup) return teaRekzMenu;
 
@@ -89,7 +85,7 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     // Add the Toppings group if it doesn't already exist
     if (!teaRekzWithToppings.groups.find((g) => g.name === 'Toppings')) {
       const toppingsGroup = {
-        name: 'Toppings 🧋',
+        name: 'Toppings 🌈',
         guid: 'toppings-special-group',
         description: 'Customize your bubble tea with these delicious toppings',
         items: bobaToppingsGroup.items.map((item) => ({
@@ -109,6 +105,12 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   };
 
   const teaRekzMenuWithToppings = createTeaRekzWithToppings();
+
+  // Define excluded menu groups by selected tab
+  const excludedGroups: Partial<Record<MenuTab, string[]>> = {
+    "Tea-Rek'z": ['Grab n Go', 'Archived Items (Not Displayed)'],
+    // Add other exclusions as needed
+  };
 
   // Set up intersection observer
   useEffect(() => {
@@ -148,7 +150,7 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('happy')) {
       setSelectedTab('Happy Hour');
     } else if (utmCampaign && utmCampaign.toLowerCase().startsWith('tea')) {
-      setSelectedTab("Tea Rek'z");
+      setSelectedTab("Tea-Rek'z");
     }
   }, []);
 
@@ -218,62 +220,63 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     }
   };
 
-  // Get main menus (excluding "Other")
-  // const menus = getMainMenus(menuData);
-  // Calculate total number of menu items for keyboard navigation
-  const menus =
-    selectedTab === 'Dinner' && dinnerMenu
-      ? [dinnerMenu]
-      : selectedTab === 'Happy Hour' && happyHourMenu
-        ? [happyHourMenu]
-        : selectedTab === "Tea Rek'z" && teaRekzMenuWithToppings
-          ? [teaRekzMenuWithToppings]
-          : brunchMenus;
+  // Get the current menu based on selected tab
+  const getCurrentMenu = () => {
+    const menuMap = {
+      Brunch: brunchMenu,
+      'Happy Hour': happyHourMenu,
+      Dinner: dinnerMenu,
+      Drinks: drinksMenu,
+      "Tea-Rek'z": teaRekzMenuWithToppings,
+      'Alcoholic Beverages': alcoholicBeveragesMenu,
+    };
+
+    const currentMenu = menuMap[selectedTab];
+    return currentMenu ? [currentMenu] : [];
+  };
+
+  const menus = getCurrentMenu();
   const totalMenuItems = menus.reduce((total, menu) => {
     return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
   }, 0);
 
-  const isDinner = selectedTab === 'Dinner' && dinnerMenu;
-  const isHappyHour = selectedTab === 'Happy Hour' && happyHourMenu;
-  const isTeaRekz = selectedTab === "Tea Rek'z" && teaRekzMenuWithToppings;
-  // Compute category options for MenuCategorySwitcher
-  const categoryOptions = isDinner
-    ? dinnerMenu.groups
-        .filter((g) => g.items && g.items.length > 0)
-        .map((g) => ({ key: g.guid, label: g.name }))
-    : isHappyHour
-      ? happyHourMenu.groups
-          .filter((g) => g.items && g.items.length > 0)
-          .map((g) => ({ key: g.guid, label: g.name }))
-      : isTeaRekz
-        ? teaRekzMenuWithToppings.groups
-            .filter((g) => g.items && g.items.length > 0 && g.name !== 'Grab n Go')
-            .map((g) => ({ key: g.guid, label: g.name }))
-        : brunchMenus
-            .filter((m) => m.groups[0].items && m.groups[0].items.length > 0)
-            .map((m) => ({ key: m.guid, label: m.name }));
+  // Get category options for MenuCategorySwitcher
+  const getCategoryOptions = () => {
+    const currentMenu = menus[0];
+    if (!currentMenu) return [];
 
-  // Compute sections and getItems for MenuSections
-  const sections = isDinner
-    ? dinnerMenu.groups
-    : isHappyHour
-      ? happyHourMenu.groups
-      : isTeaRekz
-        ? teaRekzMenuWithToppings.groups.filter((g) => g.name !== 'Grab n Go')
-        : brunchMenus.map((m) => ({ ...m, items: m.groups[0].items }));
-  const getItems = isDinner
-    ? (g: any) =>
-        g.name && g.name.startsWith('Daily Specials')
-          ? g.items.filter((item: any) => item.name.startsWith('Soup of the Day'))
-          : g.items
-    : isHappyHour
-      ? (g: any) => g.items
-      : isTeaRekz
-        ? (g: any) => g.items
-        : (m: any) =>
-            m.name && m.name.startsWith('Daily Specials')
-              ? m.items.filter((item: any) => item.name === 'Soup of the Day')
-              : m.items;
+    const excludedGroupNames = excludedGroups[selectedTab] || [];
+
+    const groups = currentMenu.groups
+      .filter((g) => g.items && g.items.length > 0)
+      .filter((g) => !excludedGroupNames.includes(g.name));
+
+    return groups.map((g) => ({ key: g.guid, label: g.name }));
+  };
+
+  const categoryOptions = getCategoryOptions();
+
+  // Get sections for MenuSections
+  const getSections = () => {
+    const currentMenu = menus[0];
+    if (!currentMenu) return [];
+
+    const excludedGroupNames = excludedGroups[selectedTab] || [];
+
+    return currentMenu.groups.filter((g) => !excludedGroupNames.includes(g.name));
+  };
+
+  const sections = getSections();
+  // Get items for a group with special handling for Dinner menu
+  const getItems = (g: any) => {
+    // Special case for Dinner menu - filter Daily Specials to only show Soup of the Day
+    if (selectedTab === 'Dinner' && g.name && g.name.startsWith('Daily Specials')) {
+      return g.items.filter((item: any) => item.name.startsWith('Soup of the Day'));
+    }
+
+    // Default case - return all items
+    return g.items;
+  };
 
   const handleTabChange = (tab: MenuTab) => {
     setSelectedTab(tab);

@@ -1,408 +1,6 @@
 {
   "optionGroups": [
     {
-      "name": "Meat Temperature",
-      "guid": "b6a99038-6ca7-4fd0-bf12-109e8b0297a6",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Rare",
-          "guid": "3adeafd7-57ef-41e5-9b9e-7d9df0d93c43",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Medium Rare",
-          "guid": "d63f6da7-d7f6-4b4c-b40e-d9bb5f92f777",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Medium",
-          "guid": "2ede8230-e203-4b9c-8a6c-937007f14dbe",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Medium Well",
-          "guid": "24908215-c58d-4600-aad2-1545d38a5f34",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Well Done",
-          "guid": "d7d7a60d-06f4-4925-9535-63bec1a0d361",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Soup Or Salad",
-      "guid": "8926ee23-c664-4b93-952a-416d2fec7b14",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Soup",
-          "guid": "93609e6a-6d37-4b4d-a6b2-88a7dda254ab",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Salad",
-          "guid": "0ea9d6d8-cbbd-4a95-91ad-f3f918879602",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Burger & Sandwich Sides",
-      "guid": "ab6aad6d-e775-462f-a2b7-edd3db40957b",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "French Fries",
-          "guid": "03221a6c-e117-46d2-8d31-c1a442a2aaa0",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Zuchinni",
-          "guid": "3520358b-c68d-4163-b804-b7641d1911d6",
-          "description": "",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Onion Rings",
-          "guid": "9f5dc4a4-07c4-4d93-afd8-2c4cdd67b35f",
-          "description": "",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Side",
-          "guid": "6d7f0c42-2ab0-4344-9588-8f812aec331c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Burger MOD",
-      "guid": "bf826925-0fd5-49f6-b9b2-5aa61e24c04d",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "No Lettuce",
-          "guid": "a12c26c5-155c-4dc1-917d-b2f0352b236d",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Tomatoes",
-          "guid": "79dbc3f4-c392-428f-bdd7-c3a854292032",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Pickles",
-          "guid": "288e15f8-2098-4761-8baf-527ccd56c223",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Onions",
-          "guid": "0820a7b8-2df9-4843-87b1-3d64faa7e4c7",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Cheese",
-          "guid": "202f82ab-ba44-46c3-82ce-45fac3f1238d",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Burger Add Ons",
-      "guid": "39af49fc-3e9a-47f5-ae8b-d65e44e07b71",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Add Bacon",
-          "guid": "125c1ba1-0a14-4a9b-98c7-20111b0a0a4a",
-          "description": "",
-          "price": 2.95,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Add Avocado",
-          "guid": "011d96de-67fd-45bb-974d-e608c44ef86c",
-          "description": "",
-          "price": 2.95,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Add Avocado (Burgers) 🥑",
-      "guid": "324329e5-3177-4eff-814c-32271c0c3b6c",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Avocado",
-          "guid": "a34543b5-824e-43b5-9241-25dc93205027",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Add Bacon (Burgers) 🥓",
-      "guid": "69022c7c-4b53-41e4-b1c1-7f69658d203f",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Bacon",
-          "guid": "91c48d4d-4ea3-423b-9ba7-5d2a0bb2f98e",
-          "description": "",
-          "price": 2.95,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Add Grilled Onions 🧅 and Mushrooms 🍄‍🟫",
-      "guid": "4f22de25-0d97-4d78-acaa-062976d4e8be",
-      "minSelections": 0,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Grilled Onions",
-          "guid": "dd70ccd6-43bb-463f-8872-46418a3d9f23",
-          "description": "",
-          "price": 1,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Mushrooms",
-          "guid": "9c2c2028-2eca-4ecd-a6d1-d51a950f480c",
-          "description": "",
-          "price": 1,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Potato MOD",
-      "guid": "b7bc1bf8-08a4-424c-b86a-b30c91a4d0d3",
-      "minSelections": 0,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "No Sour Cream",
-          "guid": "e49e615d-722a-4d23-95c1-4c62101b83c3",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Bacon",
-          "guid": "0fb4c0a2-cc4b-4bd8-9037-f14931c5a614",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Chives",
-          "guid": "2f2a74ec-761e-4d43-897b-4ca72d0ca3fb",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Cheese",
-          "guid": "9c646a2d-8afa-4a6d-8ec8-9b298e8cd6c1",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Butter",
-          "guid": "cd812cef-dd3c-4ef5-bd12-6d90f6775fea",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choice of Sandwich Bread",
-      "guid": "9bfe3a55-74fd-4bc4-be9d-02b6ee67205a",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "White",
-          "guid": "16ef61cc-ff63-4e38-b288-7ce009ed6df1",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Wheat",
-          "guid": "4133fe26-e6ce-4d6c-b9b8-7841923ac748",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Sourdough",
-          "guid": "1c5c5b10-a17a-4439-8ed3-e745baec051f",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Rye",
-          "guid": "e4498e09-d9ef-4eec-90bb-5eebf1a0a7db",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "French Roll",
-          "guid": "bf440542-0fad-4389-bd63-ebf399290a0e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choice of Cheese 🧀",
-      "guid": "716e103f-c611-4dfd-90d9-f558a1608592",
-      "minSelections": 1,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "American",
-          "guid": "9123be89-6088-4755-84c1-ed3f1241f1be",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Cheddar",
-          "guid": "9172c3cb-9963-43ce-ac23-5fb8e069328e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Pepper Jack",
-          "guid": "d1a47953-0329-41e0-943b-6ec43794c7f0",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Swiss",
-          "guid": "e1f06851-19cf-4379-af13-572b07d48896",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Feta",
-          "guid": "aa4d4f29-a6ed-42e9-8d7e-9a7ee3465587",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Cheese",
-          "guid": "49b94423-2508-46f8-9920-b131cea75881",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Protein Choice (Sandwich)",
-      "guid": "e4aac0af-cd63-4180-bb72-15328d669887",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Turkey 🦃",
-          "guid": "ca184498-a36e-4b9c-98ca-5b52c3344823",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Ham 🐷",
-          "guid": "cde92b38-3de4-496e-8e90-40dff48ab137",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Turkey & Ham 🦃🐷",
-          "guid": "a2a8137f-3363-4d72-a32c-b73766e014b0",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Chicken 🐓",
-          "guid": "dbaebaa3-deeb-45fc-a11f-72b60873b589",
-          "description": "",
-          "price": 3,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
       "name": "Choice of Potatoes 🥔, Fruit 🍓, or Salad",
       "guid": "b73e802e-7fcb-4c3e-a353-5c4a72274c8c",
       "minSelections": 1,
@@ -461,386 +59,6 @@
         {
           "name": "Fried Zuchinni",
           "guid": "eb7eaaad-5976-4737-8c08-1591d7058159",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Excluded Ingredients",
-      "guid": "ff9780fb-01b4-4679-9e46-72492dbfd684",
-      "minSelections": 0,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "NO Jalapeños",
-          "guid": "7ad0d4e7-66d0-41d1-ac70-637594f46679",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Lettuce",
-          "guid": "5f4ee986-def7-43ef-99cb-37be837f36d8",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Tomatoes",
-          "guid": "6fe00351-8036-4a1a-8479-2b47e23ffc83",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Bell Peppers",
-          "guid": "914f7c61-134f-4d05-aa52-8ae192162879",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Onions",
-          "guid": "027eadc8-25cb-4153-b364-8bbfb9d261a9",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Spinach",
-          "guid": "1d84fa7e-8b2f-43f6-8bd9-60749aba57c9",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Zucchini",
-          "guid": "f49f32e0-3fcd-4c29-be66-d5640ed96d43",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Mushrooms",
-          "guid": "2bb3f1ae-473f-4b10-96a8-cb9dbec091c2",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Avocado",
-          "guid": "e2e32447-31d5-436d-b71f-f10eb662745a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Meat",
-          "guid": "b8597d40-f4b1-4be8-9c3c-2358dae8f5a5",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Queso",
-          "guid": "3b50439a-6f5a-4a7a-95d4-0d65e4009e64",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Crema",
-          "guid": "e2f7b226-c05e-4af8-bd45-f3a04dd92e91",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "NO Salsa",
-          "guid": "9c7707e9-c392-4140-8058-6a3bdf96fef0",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Savory Toppings (for Steak, Pork Chops)",
-      "guid": "fc95e940-9413-4341-a956-c6952129fbb2",
-      "minSelections": 0,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Mushrooms 🍄‍🟫",
-          "guid": "cf38e9c0-76b5-4fbc-9525-e7053f6beaf8",
-          "description": "",
-          "price": 1.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Grilled Onions 🧅",
-          "guid": "ad43cf7b-03b8-43ff-873b-5aba28502e47",
-          "description": "",
-          "price": 1.5,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choose Your Flavor (Fountain Soda)",
-      "guid": "7cea08a3-f706-4a73-9de5-0ec1b690c16f",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Pepsi",
-          "guid": "3f6d901a-a39d-40de-96e2-a158bc1ef33c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Diet Pepsi",
-          "guid": "97ca2260-3024-4d9c-bbee-49faa17ebb1b",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Tropicana Lemonade",
-          "guid": "f83b9667-3b53-426b-96fe-5fc61d361ca5",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Crush Orange",
-          "guid": "a9f4f6a1-869f-4073-af74-f46d44bd49ee",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Dr. Pepper",
-          "guid": "c1dec9e3-993b-458a-aed5-5aafa6f94d6a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Starry",
-          "guid": "e7faa6af-88ab-42c7-8bed-fd00dfe7912f",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Soda Water",
-          "guid": "f3a5dd9c-7aa9-4ead-982c-d54fd7c1e9bf",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Milkshake Flavor",
-      "guid": "1f2540ea-4ee9-41de-a0fe-fba47e3b073f",
-      "minSelections": 1,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Vanilla 🍦",
-          "guid": "0ce5f404-f79f-47ff-8e27-39aed60a7a74",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Chocolate 🍫",
-          "guid": "014d98b2-c775-4b54-8fd0-668a757964dc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Oreo",
-          "guid": "4ab32f03-8168-4afd-952c-587b7df8e23e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Banana 🍌",
-          "guid": "e50bae89-b48d-49e9-a40b-c35acbc6da6b",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Strawberry 🍓",
-          "guid": "cbaaf0b8-f700-4ee4-a72a-80db3b050e66",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Matcha 🍵",
-          "guid": "6fd3e525-d398-4a37-af46-f33125b20fd3",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Strawberry Matcha 🍓🍵",
-          "guid": "fb4dd373-fc0c-4968-b7c9-3270f752f1cf",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Banana Matcha 🍌🍵",
-          "guid": "a97cc5f7-bf72-4452-bae0-424fe28774c3",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Iced Coffee Flavor",
-      "guid": "48453cec-aa41-4002-8ef6-e61dd7e4714f",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Vanilla 🤍",
-          "guid": "abd3adda-e700-418e-85ce-5f659e677c1e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Mocha 🤎",
-          "guid": "ef8259ca-e80f-4748-9a58-d58d9e63c7b1",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Caramel 🧡",
-          "guid": "3fd7bb39-7959-417f-a67f-8a350f8e6108",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Oreo 🖤",
-          "guid": "6dc05509-656f-4eb9-9658-d27b2756f96c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Iced Tea Mod",
-      "guid": "b343b3ca-a4b1-49f9-a4a1-83b37a177b27",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Arnold Palmer",
-          "guid": "39e295ce-2aa8-45a1-9336-eed403a835da",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Ice Cream Toppings",
-      "guid": "741f097f-7f11-4730-97e5-5a9b1af0d65c",
-      "minSelections": 0,
-      "maxSelections": 3,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Chocolate Syrup",
-          "guid": "ce7eb9c6-36cf-4498-add8-95b6b39be674",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Caramel Syrup",
-          "guid": "b2d93592-669a-47ac-b60f-3d6a87a59499",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Oreo Crumbs",
-          "guid": "5d514557-8a61-41e1-8aa5-7d9ec9043207",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Chocolate Sprinkles",
-          "guid": "0bc7b7ac-c08b-4eef-a39b-cca92f38cb30",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Rainbow Sprinkles",
-          "guid": "168029f9-f7d0-4702-91b7-e089035c4abd",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choice of Beer 🍺",
-      "guid": "be697f2b-bb64-4d0b-8e10-d6f652b7d908",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Blue Moon",
-          "guid": "2e0263b1-0a95-4a0b-a7ba-6edfc12bd2bf",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Corona",
-          "guid": "bf3e6cc8-d0d5-4785-aafd-bd1ce6844235",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Lagunitas",
-          "guid": "68758dcb-daa2-4502-89bb-b385423381ac",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Modelo",
-          "guid": "1e7a5878-fc96-4a97-b847-3a83680d24c2",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -1073,6 +291,150 @@
       ]
     },
     {
+      "name": "Excluded Ingredients",
+      "guid": "ff9780fb-01b4-4679-9e46-72492dbfd684",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "NO Jalapeños",
+          "guid": "7ad0d4e7-66d0-41d1-ac70-637594f46679",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Lettuce",
+          "guid": "5f4ee986-def7-43ef-99cb-37be837f36d8",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Tomatoes",
+          "guid": "6fe00351-8036-4a1a-8479-2b47e23ffc83",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Bell Peppers",
+          "guid": "914f7c61-134f-4d05-aa52-8ae192162879",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Onions",
+          "guid": "027eadc8-25cb-4153-b364-8bbfb9d261a9",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Spinach",
+          "guid": "1d84fa7e-8b2f-43f6-8bd9-60749aba57c9",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Zucchini",
+          "guid": "f49f32e0-3fcd-4c29-be66-d5640ed96d43",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Mushrooms",
+          "guid": "2bb3f1ae-473f-4b10-96a8-cb9dbec091c2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Avocado",
+          "guid": "e2e32447-31d5-436d-b71f-f10eb662745a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Meat",
+          "guid": "b8597d40-f4b1-4be8-9c3c-2358dae8f5a5",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Queso",
+          "guid": "3b50439a-6f5a-4a7a-95d4-0d65e4009e64",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Crema",
+          "guid": "e2f7b226-c05e-4af8-bd45-f3a04dd92e91",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "NO Salsa",
+          "guid": "9c7707e9-c392-4140-8058-6a3bdf96fef0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Meat Temperature",
+      "guid": "b6a99038-6ca7-4fd0-bf12-109e8b0297a6",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Rare",
+          "guid": "3adeafd7-57ef-41e5-9b9e-7d9df0d93c43",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Medium Rare",
+          "guid": "d63f6da7-d7f6-4b4c-b40e-d9bb5f92f777",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Medium",
+          "guid": "2ede8230-e203-4b9c-8a6c-937007f14dbe",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Medium Well",
+          "guid": "24908215-c58d-4600-aad2-1545d38a5f34",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Well Done",
+          "guid": "d7d7a60d-06f4-4925-9535-63bec1a0d361",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Choice of Cheese 🧀 (Copy)",
       "guid": "4202383b-59dd-4e1f-a6cb-928e49433fc9",
       "minSelections": 1,
@@ -1261,6 +623,57 @@
         {
           "name": "Dry Biscuit",
           "guid": "0fa03742-be08-4c1c-8322-510c6742d829",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choice of Cheese 🧀",
+      "guid": "716e103f-c611-4dfd-90d9-f558a1608592",
+      "minSelections": 1,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "American",
+          "guid": "9123be89-6088-4755-84c1-ed3f1241f1be",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Cheddar",
+          "guid": "9172c3cb-9963-43ce-ac23-5fb8e069328e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Pepper Jack",
+          "guid": "d1a47953-0329-41e0-943b-6ec43794c7f0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Swiss",
+          "guid": "e1f06851-19cf-4379-af13-572b07d48896",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Feta",
+          "guid": "aa4d4f29-a6ed-42e9-8d7e-9a7ee3465587",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Cheese",
+          "guid": "49b94423-2508-46f8-9920-b131cea75881",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -1609,6 +1022,29 @@
       ]
     },
     {
+      "name": "Savory Toppings (for Steak, Pork Chops)",
+      "guid": "fc95e940-9413-4341-a956-c6952129fbb2",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Mushrooms 🍄‍🟫",
+          "guid": "cf38e9c0-76b5-4fbc-9525-e7053f6beaf8",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Grilled Onions 🧅",
+          "guid": "ad43cf7b-03b8-43ff-873b-5aba28502e47",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Make it Deluxe (Corned Beef Hash)",
       "guid": "f23021a7-d5b5-4e24-b97b-222432f5e951",
       "minSelections": 0,
@@ -1704,6 +1140,50 @@
       ]
     },
     {
+      "name": "Choice of Sandwich Bread",
+      "guid": "9bfe3a55-74fd-4bc4-be9d-02b6ee67205a",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "White",
+          "guid": "16ef61cc-ff63-4e38-b288-7ce009ed6df1",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Wheat",
+          "guid": "4133fe26-e6ce-4d6c-b9b8-7841923ac748",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Sourdough",
+          "guid": "1c5c5b10-a17a-4439-8ed3-e745baec051f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rye",
+          "guid": "e4498e09-d9ef-4eec-90bb-5eebf1a0a7db",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "French Roll",
+          "guid": "bf440542-0fad-4389-bd63-ebf399290a0e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "No Meat",
       "guid": "7551d75a-7675-4a84-a3e0-20bd81bfbacb",
       "minSelections": 0,
@@ -1715,6 +1195,43 @@
           "guid": "68540277-dae9-4e87-8689-d9ff1b0882e0",
           "description": "",
           "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Protein Choice (Sandwich)",
+      "guid": "e4aac0af-cd63-4180-bb72-15328d669887",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Turkey 🦃",
+          "guid": "ca184498-a36e-4b9c-98ca-5b52c3344823",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Ham 🐷",
+          "guid": "cde92b38-3de4-496e-8e90-40dff48ab137",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Turkey & Ham 🦃🐷",
+          "guid": "a2a8137f-3363-4d72-a32c-b73766e014b0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chicken 🐓",
+          "guid": "dbaebaa3-deeb-45fc-a11f-72b60873b589",
+          "description": "",
+          "price": 3,
           "orderableOnline": "YES"
         }
       ]
@@ -1951,6 +1468,415 @@
       ]
     },
     {
+      "name": "Choice of Beer 🍺",
+      "guid": "be697f2b-bb64-4d0b-8e10-d6f652b7d908",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Blue Moon",
+          "guid": "2e0263b1-0a95-4a0b-a7ba-6edfc12bd2bf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Corona",
+          "guid": "bf3e6cc8-d0d5-4785-aafd-bd1ce6844235",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lagunitas",
+          "guid": "68758dcb-daa2-4502-89bb-b385423381ac",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Modelo",
+          "guid": "1e7a5878-fc96-4a97-b847-3a83680d24c2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Soup Or Salad",
+      "guid": "8926ee23-c664-4b93-952a-416d2fec7b14",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Soup",
+          "guid": "93609e6a-6d37-4b4d-a6b2-88a7dda254ab",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Salad",
+          "guid": "0ea9d6d8-cbbd-4a95-91ad-f3f918879602",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Burger & Sandwich Sides",
+      "guid": "ab6aad6d-e775-462f-a2b7-edd3db40957b",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "French Fries",
+          "guid": "03221a6c-e117-46d2-8d31-c1a442a2aaa0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Zuchinni",
+          "guid": "3520358b-c68d-4163-b804-b7641d1911d6",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Onion Rings",
+          "guid": "9f5dc4a4-07c4-4d93-afd8-2c4cdd67b35f",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Side",
+          "guid": "6d7f0c42-2ab0-4344-9588-8f812aec331c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Burger MOD",
+      "guid": "bf826925-0fd5-49f6-b9b2-5aa61e24c04d",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Lettuce",
+          "guid": "a12c26c5-155c-4dc1-917d-b2f0352b236d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Tomatoes",
+          "guid": "79dbc3f4-c392-428f-bdd7-c3a854292032",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Pickles",
+          "guid": "288e15f8-2098-4761-8baf-527ccd56c223",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Onions",
+          "guid": "0820a7b8-2df9-4843-87b1-3d64faa7e4c7",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Cheese",
+          "guid": "202f82ab-ba44-46c3-82ce-45fac3f1238d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Burger Add Ons",
+      "guid": "39af49fc-3e9a-47f5-ae8b-d65e44e07b71",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Add Bacon",
+          "guid": "125c1ba1-0a14-4a9b-98c7-20111b0a0a4a",
+          "description": "",
+          "price": 2.95,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Add Avocado",
+          "guid": "011d96de-67fd-45bb-974d-e608c44ef86c",
+          "description": "",
+          "price": 2.95,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Avocado (Burgers) 🥑",
+      "guid": "324329e5-3177-4eff-814c-32271c0c3b6c",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Avocado",
+          "guid": "a34543b5-824e-43b5-9241-25dc93205027",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Bacon (Burgers) 🥓",
+      "guid": "69022c7c-4b53-41e4-b1c1-7f69658d203f",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Bacon",
+          "guid": "91c48d4d-4ea3-423b-9ba7-5d2a0bb2f98e",
+          "description": "",
+          "price": 2.95,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Grilled Onions 🧅 and Mushrooms 🍄‍🟫",
+      "guid": "4f22de25-0d97-4d78-acaa-062976d4e8be",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Grilled Onions",
+          "guid": "dd70ccd6-43bb-463f-8872-46418a3d9f23",
+          "description": "",
+          "price": 1,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mushrooms",
+          "guid": "9c2c2028-2eca-4ecd-a6d1-d51a950f480c",
+          "description": "",
+          "price": 1,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Potato MOD",
+      "guid": "b7bc1bf8-08a4-424c-b86a-b30c91a4d0d3",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Sour Cream",
+          "guid": "e49e615d-722a-4d23-95c1-4c62101b83c3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Bacon",
+          "guid": "0fb4c0a2-cc4b-4bd8-9037-f14931c5a614",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Chives",
+          "guid": "2f2a74ec-761e-4d43-897b-4ca72d0ca3fb",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Cheese",
+          "guid": "9c646a2d-8afa-4a6d-8ec8-9b298e8cd6c1",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Butter",
+          "guid": "cd812cef-dd3c-4ef5-bd12-6d90f6775fea",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Cream Toppings",
+      "guid": "741f097f-7f11-4730-97e5-5a9b1af0d65c",
+      "minSelections": 0,
+      "maxSelections": 3,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Chocolate Syrup",
+          "guid": "ce7eb9c6-36cf-4498-add8-95b6b39be674",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Caramel Syrup",
+          "guid": "b2d93592-669a-47ac-b60f-3d6a87a59499",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oreo Crumbs",
+          "guid": "5d514557-8a61-41e1-8aa5-7d9ec9043207",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chocolate Sprinkles",
+          "guid": "0bc7b7ac-c08b-4eef-a39b-cca92f38cb30",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rainbow Sprinkles",
+          "guid": "168029f9-f7d0-4702-91b7-e089035c4abd",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced Coffee Flavor",
+      "guid": "48453cec-aa41-4002-8ef6-e61dd7e4714f",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Vanilla 🤍",
+          "guid": "abd3adda-e700-418e-85ce-5f659e677c1e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mocha 🤎",
+          "guid": "ef8259ca-e80f-4748-9a58-d58d9e63c7b1",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Caramel 🧡",
+          "guid": "3fd7bb39-7959-417f-a67f-8a350f8e6108",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oreo 🖤",
+          "guid": "6dc05509-656f-4eb9-9658-d27b2756f96c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Milkshake Flavor",
+      "guid": "1f2540ea-4ee9-41de-a0fe-fba47e3b073f",
+      "minSelections": 1,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Vanilla 🍦",
+          "guid": "0ce5f404-f79f-47ff-8e27-39aed60a7a74",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chocolate 🍫",
+          "guid": "014d98b2-c775-4b54-8fd0-668a757964dc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oreo",
+          "guid": "4ab32f03-8168-4afd-952c-587b7df8e23e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Banana 🍌",
+          "guid": "e50bae89-b48d-49e9-a40b-c35acbc6da6b",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Strawberry 🍓",
+          "guid": "cbaaf0b8-f700-4ee4-a72a-80db3b050e66",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Matcha 🍵",
+          "guid": "6fd3e525-d398-4a37-af46-f33125b20fd3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Strawberry Matcha 🍓🍵",
+          "guid": "fb4dd373-fc0c-4968-b7c9-3270f752f1cf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Banana Matcha 🍌🍵",
+          "guid": "a97cc5f7-bf72-4452-bae0-424fe28774c3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Choice of Tea",
       "guid": "4ce95414-9470-4b2a-9256-2f5d8b84ca21",
       "minSelections": 1,
@@ -1967,6 +1893,80 @@
         {
           "name": "Black",
           "guid": "e9e0ea0b-1950-4a9d-a71a-4b7e99faaac4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced Tea Mod",
+      "guid": "b343b3ca-a4b1-49f9-a4a1-83b37a177b27",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Arnold Palmer",
+          "guid": "39e295ce-2aa8-45a1-9336-eed403a835da",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose Your Flavor (Fountain Soda)",
+      "guid": "7cea08a3-f706-4a73-9de5-0ec1b690c16f",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Pepsi",
+          "guid": "3f6d901a-a39d-40de-96e2-a158bc1ef33c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Diet Pepsi",
+          "guid": "97ca2260-3024-4d9c-bbee-49faa17ebb1b",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Tropicana Lemonade",
+          "guid": "f83b9667-3b53-426b-96fe-5fc61d361ca5",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Crush Orange",
+          "guid": "a9f4f6a1-869f-4073-af74-f46d44bd49ee",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Dr. Pepper",
+          "guid": "c1dec9e3-993b-458a-aed5-5aafa6f94d6a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Starry",
+          "guid": "e7faa6af-88ab-42c7-8bed-fd00dfe7912f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Soda Water",
+          "guid": "f3a5dd9c-7aa9-4ead-982c-d54fd7c1e9bf",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2085,87 +2085,152 @@
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Honey Boba",
+          "name": "Honey Boba ⚫️",
           "guid": "9c4c60b3-b0be-4326-93a2-31eedd3e37db",
-          "description": "",
-          "price": 0.8,
+          "description": "Classic honey-sweetened tapioca pearls",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Mango Popping Boba",
+          "name": "Mango Popping Boba 🟠",
           "guid": "523809b3-a4f8-4cfc-8061-175bd38c601c",
-          "description": "",
-          "price": 1,
+          "description": "Bursting mango-flavored boba",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Strawberry Popping Boba",
+          "name": "Strawberry Popping Boba 🔴",
           "guid": "1684ef1f-2f3f-409d-bba6-ead4d692ce59",
-          "description": "",
-          "price": 1,
+          "description": "Bursting strawberry-flavored boba",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Popping Boba",
+          "name": "Lychee Popping Boba ⚪️",
           "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
-          "description": "",
-          "price": 1,
+          "description": "Bursting lychee-flavored boba",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Mango Star Jelly",
+          "name": "Mango Star Jelly ⭐️",
           "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
-          "description": "",
-          "price": 1,
+          "description": "Star-shaped mango jelly",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Strawberry Heart Jelly",
+          "name": "Strawberry Heart Jelly ❤️",
           "guid": "125f5ecb-0668-412d-8458-b62652de53b1",
-          "description": "",
-          "price": 1,
+          "description": "Heart-shaped strawberry jelly",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Jelly",
+          "name": "Lychee Jelly 🤍",
           "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
-          "description": "",
-          "price": 1,
+          "description": "Delicate lychee jelly",
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Pudding",
+          "name": "Pudding 🍮",
           "guid": "a0b49da2-3ecb-432d-afd8-18cb97571f33",
-          "description": "",
+          "description": "Creamy custard pudding",
           "price": 1,
           "orderableOnline": "YES"
         }
       ]
     },
     {
-      "name": "Choose a Fruit Flavor (Fruit Tea)",
-      "guid": "af572cd1-112a-48a0-87fe-98336bfe0df1",
+      "name": "Sweetness Level (Taro)",
+      "guid": "751bfa68-5e64-4bbf-8f1a-b4072c4d997d",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Strawberry 🍓",
-          "guid": "9224056f-3461-4da6-ac74-3aceb321c3cf",
+          "name": "100%",
+          "guid": "029da031-0b3a-4b37-bab6-1649442edefa",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Mango 🥭",
-          "guid": "ba3b9935-6374-4d35-8dad-987a66971e4f",
+          "name": "75%",
+          "guid": "95e4347e-302b-419e-aa49-5e00d3e00634",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50%",
+          "guid": "c4abd138-ec07-4065-b79e-a8a3b9c77fb4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose a Flavor",
+      "guid": "b5c04508-4892-4f9f-9188-c0e61d5bf601",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Original",
+          "guid": "7c451b4e-ac4c-4814-96b5-22c51a427e81",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Brown Sugar",
+          "guid": "1718168d-9692-4122-b003-358a3ba8c5a4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Strawberry",
+          "guid": "6dbf0f8f-cbbb-41a9-ae3a-786a1a21aafa",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango",
+          "guid": "4bb9807f-b785-494d-b35d-abfef13ad8e4",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Lychee",
-          "guid": "12bdddcd-4b45-4bb3-9d64-db779b2591ba",
+          "guid": "a26d14d2-b2f5-404c-99d0-d04e39076bc0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Peach",
+          "guid": "ed5e2626-580d-4c9f-a80a-f5f2bfca34b7",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Passion Fruit",
+          "guid": "5daa4413-601e-4c64-890e-9134d30f4fd6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Guava",
+          "guid": "b3bff0cc-0557-4f04-9540-271dcee3b9c4",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2173,29 +2238,22 @@
       ]
     },
     {
-      "name": "Choose a Tea Base (Fruit Tea)",
-      "guid": "8091333b-7e84-4a91-9d20-7552a4a582bb",
+      "name": "Ice Level (Smash Lemon Tea)",
+      "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Assam Black",
-          "guid": "f87e12c4-870c-46c1-8790-64f35d4119d1",
+          "name": "100%",
+          "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Roasted Oolong",
-          "guid": "7a84af9a-9bd4-4541-8140-36361995947e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Jasmine Green",
-          "guid": "25eef72a-ce56-4b32-856f-1f6905ad8848",
+          "name": "50%",
+          "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"

@@ -140,28 +140,19 @@ const BrunchPrint: React.FC<BrunchPrintProps> = ({ brunchMenu }) => {
 
 export const getStaticProps: GetStaticProps<BrunchPrintProps> = async () => {
   const menuData = loadMenuData();
-  // Get all menus except Dinner that have exactly one group
-  const brunchMenus = menuData.menus.filter(
-    (menu) => menu.name !== 'Dinner' && menu.groups.length === 1
-  );
-  if (!brunchMenus.length) {
+  // Get only the "Brunch Thu-Sun" menu
+  const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
+
+  if (!brunchMenu) {
     return { notFound: true };
   }
-
-  // Create a single menu with all groups from brunch menus
-  const allGroups = brunchMenus.map((menu) => ({
-    name: menu.name,
-    guid: menu.guid,
-    description: menu.description,
-    items: menu.groups[0].items,
-  }));
 
   return {
     props: {
       brunchMenu: {
         name: 'Brunch',
-        description: '',
-        groups: allGroups,
+        description: 'Breakfast and brunch favorites',
+        groups: brunchMenu.groups,
       },
     },
   };
