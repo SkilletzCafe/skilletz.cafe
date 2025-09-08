@@ -64,13 +64,12 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     (group) => group.guid === '9145a88a-16f0-4a02-bccd-d227ed2e8f87'
   );
 
-  // Separate menus in semantic order: Brunch, Happy Hour, Dinner, Drinks, Tea-Rek'z, Alcoholic Beverages
+  // Separate menus in semantic order: Brunch, Happy Hour, Dinner, Drinks, Tea-Rek'z
   const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
   const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
   const teaRekzMenu = menuData.menus.find((menu) => menu.name === "Tea-Rek'z 🧋🦖");
-  const alcoholicBeveragesMenu = menuData.menus.find((menu) => menu.name === 'Alcoholic Beverages');
 
   // Create a special "Toppings" group for Tea-Rek'z if we have the data
   const createTeaRekzWithToppings = () => {
@@ -228,7 +227,6 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
       Dinner: dinnerMenu,
       Drinks: drinksMenu,
       "Tea-Rek'z": teaRekzMenuWithToppings,
-      'Alcoholic Beverages': alcoholicBeveragesMenu,
     };
 
     const currentMenu = menuMap[selectedTab];

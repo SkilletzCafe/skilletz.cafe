@@ -1,10 +1,4 @@
-export type MenuTab =
-  | 'Brunch'
-  | 'Happy Hour'
-  | 'Dinner'
-  | 'Drinks'
-  | "Tea-Rek'z"
-  | 'Alcoholic Beverages';
+export type MenuTab = 'Brunch' | 'Happy Hour' | 'Dinner' | 'Drinks' | "Tea-Rek'z";
 
 export interface TabConfig {
   key: MenuTab;
@@ -17,5 +11,4 @@ export const MENU_TAB_CONFIG: TabConfig[] = [
   { key: 'Dinner', label: 'Dinner' },
   { key: 'Drinks', label: 'Drinks 🥤' },
   { key: "Tea-Rek'z", label: "Tea-Rek'z 🧋🦖" },
-  { key: 'Alcoholic Beverages', label: 'Alcoholic Beverages' },
 ];
