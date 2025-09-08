@@ -3,7 +3,7 @@ import React from 'react';
 import { margarine } from '@/config/fonts';
 
 interface PrintMenuHeaderProps {
-  tagline: string;
+  tagline?: string;
   description?: string;
   fontSize?: string;
   logoPath?: string;
@@ -41,18 +41,20 @@ export const PrintMenuHeader: React.FC<PrintMenuHeaderProps> = ({
           }}
         />
       </div>
-      <div
-        style={{
-          flex: '1 1 auto',
-          textAlign: 'right',
-          fontFamily: margarine.style.fontFamily,
-          fontSize,
-          color: '#444',
-          lineHeight: 1.2,
-        }}
-      >
-        {tagline}
-      </div>
+      {tagline && (
+        <div
+          style={{
+            flex: '1 1 auto',
+            textAlign: 'right',
+            fontFamily: margarine.style.fontFamily,
+            fontSize,
+            color: '#444',
+            lineHeight: 1.2,
+          }}
+        >
+          {tagline}
+        </div>
+      )}
     </div>
     {description && <div className="menu-desc">{description}</div>}
   </>
