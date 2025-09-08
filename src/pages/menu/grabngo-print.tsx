@@ -165,7 +165,7 @@ const GrabNGoPrint: React.FC<GrabNGoPrintProps> = ({ grabNGoMenu }) => {
 
 export const getStaticProps: GetStaticProps<GrabNGoPrintProps> = async () => {
   const menuData = loadMenuData();
-  const teaRekzMenu = menuData.menus.find((m) => m.name === "Tea Rek'z 🧋🦖");
+  const teaRekzMenu = menuData.menus.find((m) => m.name === "Tea-Rek'z 🧋🦖");
 
   if (!teaRekzMenu) {
     return { notFound: true };
