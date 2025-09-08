@@ -201,7 +201,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 Each topping $0.75; Pudding $1
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.3rem' }}>
-                {toppings.map((topping, index) => (
+                {toppings.map((topping: string, index: number) => (
                   <div key={index} style={{ fontSize: '0.7rem', color: '#666' }}>
                     {topping}
                   </div>
@@ -256,12 +256,14 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 price: freshlyBrewedGroup!.items[0].price,
                 description:
                   'Freshly brewed teaspresso with a wide selection of teas, and option of adding fruity twists.',
+                imageUrl: null,
               },
               {
                 guid: 'fresh-brewed-milk',
                 name: 'Fresh Brewed Milk Tea',
                 price: milkTeaGroup!.items[0].price,
                 description: milkTeaGroup!.items[0].description.replace(', floral,', ''),
+                imageUrl: null,
               },
               {
                 guid: 'fresh-brewed-dino',
@@ -270,6 +272,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 description: dinoGroup!.items[0].description
                   .replace('jasmine green', '')
                   .replace(', floral,', ''),
+                imageUrl: null,
               },
             ],
           };
