@@ -10,7 +10,7 @@ export const ORDERING_PARTNERS: OrderingPartner[] = [
   {
     key: 'toast',
     label: 'Order Pickup (Toast)',
-    url: 'https://order.toasttab.com/online/skillet-z-cafe-37378-niles-blvd',
+    url: 'https://order.toasttab.com/online/skilletz-cafe',
     type: 'pickup',
     bgColor: '#f5a623',
   },
