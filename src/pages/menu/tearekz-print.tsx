@@ -357,10 +357,12 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
               </div>
 
               {/* Menu sections */}
-              <div style={{ flex: '1' }}>{renderColumn(GRID_ORDER[0])}</div>
+              <div style={{ flex: '0.3', marginBottom: '0.5rem' }}>
+                {renderColumn(GRID_ORDER[0])}
+              </div>
 
               {/* Order Online Section - Bottom */}
-              <div style={{ textAlign: 'center', marginTop: 'auto' }}>
+              <div style={{ textAlign: 'center' }}>
                 <img
                   src="/images/qrcodes/order-online-toast.png"
                   alt="Order Online QR Code"
