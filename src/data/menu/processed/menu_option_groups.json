@@ -2143,6 +2143,82 @@
       ]
     },
     {
+      "name": "Creamer Option (Bubble Tea)",
+      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "House Cream (Plant Based)",
+          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Fresh Dairy (Half and Half)",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0.25,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Creamer Option (Thai Tea)",
+      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Fresh Half and Half",
+          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Milk Option (Bubble Tea)",
+      "guid": "57043f81-0f04-4fef-ad9f-12e5620b6ab6",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Fresh MIlk (Dairy)",
+          "guid": "448a1886-1f94-4596-a453-17017277db60",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oat Milk",
+          "guid": "1cc82a8b-6c62-4f5b-a9e1-41781dd5a054",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Sweetness Level (Taro)",
       "guid": "751bfa68-5e64-4bbf-8f1a-b4072c4d997d",
       "minSelections": 1,
@@ -2238,7 +2314,79 @@
       ]
     },
     {
-      "name": "Ice Level (Smash Lemon Tea)",
+      "name": "Choose a Tea (Bubble Tea)",
+      "guid": "40bf70c3-ccaf-4fe2-9ace-71336bb2ba63",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Assam Black",
+          "guid": "3d7ea7fa-bc9d-4067-b8a7-928752befbb3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Earl Grey Black",
+          "guid": "6dfbd281-f515-4ffa-8ee6-ec478b2966d8",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee Black",
+          "guid": "42223723-e60c-4cb0-90c0-4a7e3caea7a5",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Jasmine Green",
+          "guid": "a441e2f1-f7c4-49ca-8bad-1b33621be035",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Four Seasons Jade",
+          "guid": "583216b9-c605-4d86-8927-7569e7461092",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Roasted Oolong",
+          "guid": "46dfeb9d-a47b-4a68-b1b8-2ffe33f31f4a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "White Peach Oolong",
+          "guid": "8d9d96f8-3498-449a-b0da-3c59e61e83ec",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "White Grape Oolong",
+          "guid": "5e976dd8-e5f0-4a34-a770-61a2ed006bb2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rooibos",
+          "guid": "b70c5983-31fa-436c-a04f-8c244c8ca880",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Level (Smash Lemon)",
       "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
       "minSelections": 1,
       "maxSelections": 1,

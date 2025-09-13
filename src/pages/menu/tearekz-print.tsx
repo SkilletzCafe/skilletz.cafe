@@ -25,9 +25,14 @@ interface TeaRekzPrintProps {
 // Structure: landscape layout with three columns for Tea Rek'z items
 const GRID_ORDER = [
   // Left column
-  ["Tea-Rek'z Favorites ❤️"],
+  ["Tea-Rek'z Favorites ❤️", 'Freshly Brewed Teas 🌱'],
   // Middle column
-  ['Freshly Brewed Teas 🌱', 'Classic Milk Teas 🧋', 'Matcha Creations🍵'],
+  [
+    'Classic Milk Teas 🧋',
+    'Creme Brulee 🍮',
+    'Dino Refreshers (Caffeine-Free 🌙)',
+    'Matcha Creations 🍵',
+  ],
   // Right column
   ['Tea Selections 🌱', 'Flavors 🍓', 'Toppings 🌈', 'Ice Levels 🧊', 'Sweetness Levels 🍯'],
 ];
@@ -152,7 +157,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
 
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
       {sectionNames.map((groupName) => {
         // Handle special sections
         if (groupName === 'Tea Selections 🌱') {
@@ -278,14 +283,6 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
           };
         }
 
-        // Special case: Filter out "Classic Thai Tea" from Classic Milk Teas
-        if (groupName === 'Classic Milk Teas 🧋' && group) {
-          group = {
-            ...group,
-            items: group.items.filter((item) => !item.name.startsWith('Classic Thai Tea')),
-          };
-        }
-
         if (!group) return null;
 
         return (
@@ -304,7 +301,6 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                       : item.price.toFixed(2).replace(/\.00$/, '')}
                   </span>
                 </div>
-                {item.description && <div className="item-desc">{item.description}</div>}
               </div>
             ))}
           </div>
@@ -337,12 +333,14 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
               display: 'grid',
               gridTemplateColumns: '1fr 1fr 1fr',
               columnGap: '1rem',
-              rowGap: '0.1rem',
+              rowGap: '0.6rem',
               width: '100%',
               overflow: 'hidden',
             }}
           >
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.1rem' }}>
+            <div
+              style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', height: '100%' }}
+            >
               {/* Logo in first column */}
               <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
                 <img
@@ -357,7 +355,27 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                   }}
                 />
               </div>
-              {renderColumn(GRID_ORDER[0])}
+
+              {/* Menu sections */}
+              <div style={{ flex: '1' }}>{renderColumn(GRID_ORDER[0])}</div>
+
+              {/* Order Online Section - Bottom */}
+              <div style={{ textAlign: 'center', marginTop: 'auto' }}>
+                <img
+                  src="/images/qrcodes/order-online-toast.png"
+                  alt="Order Online QR Code"
+                  style={{
+                    maxWidth: '80px',
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto 0.5rem auto',
+                  }}
+                />
+                <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#333' }}>
+                  Order and Pay Online
+                </div>
+              </div>
             </div>
             {renderColumn(GRID_ORDER[1])}
             {renderColumn(GRID_ORDER[2])}
