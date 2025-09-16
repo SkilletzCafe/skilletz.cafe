@@ -29,7 +29,7 @@ const GRID_ORDER = [
   // Middle column
   [
     'Classic Milk Teas 🧋',
-    'Creme Brulee 🍮',
+    'Crème Brûlée 🍮',
     'Dino Refreshers (Caffeine-Free 🌙)',
     'Matcha Creations 🍵',
   ],
@@ -79,7 +79,7 @@ function moveEmojisToFront(name: string): string {
 function getToppingsFromOptionGroups(optionGroupsData: any) {
   const optionGroups = optionGroupsData.optionGroups || [];
   const toppingsGroup = optionGroups.find(
-    (group: any) => group.name === 'Add Toppings (Bubble Tea)'
+    (group: any) => group.name === "Add Toppings (Tea-Rek'z)"
   );
 
   if (!toppingsGroup || !toppingsGroup.items) {
@@ -92,14 +92,14 @@ function getToppingsFromOptionGroups(optionGroupsData: any) {
 // Helper function to get ice level options from menu option groups
 function getIceLevelsFromOptionGroups(optionGroupsData: any) {
   const optionGroups = optionGroupsData.optionGroups || [];
-  const iceLevelGroup = optionGroups.find((group: any) => group.name === 'Ice Level (Bubble Tea)');
+  const iceLevelGroup = optionGroups.find((group: any) => group.name === "Ice Level (Tea-Rek'z)");
 
   if (!iceLevelGroup || !iceLevelGroup.items) {
     return [];
   }
 
   return iceLevelGroup.items
-    .map((item: any) => moveEmojisToFront(item.name))
+    .map((item: any) => item.name.replace(' ice', ''))
     .sort((a: string, b: string) => {
       const aNum = parseInt(a.replace(/\D/g, '')) || 0;
       const bNum = parseInt(b.replace(/\D/g, '')) || 0;
@@ -111,7 +111,7 @@ function getIceLevelsFromOptionGroups(optionGroupsData: any) {
 function getSweetnessLevelsFromOptionGroups(optionGroupsData: any) {
   const optionGroups = optionGroupsData.optionGroups || [];
   const sweetnessGroup = optionGroups.find(
-    (group: any) => group.name === 'Sweetness Level (Bubble Tea)'
+    (group: any) => group.name === 'Sweetness Level (Cane Sugar)'
   );
 
   if (!sweetnessGroup || !sweetnessGroup.items) {
@@ -119,7 +119,7 @@ function getSweetnessLevelsFromOptionGroups(optionGroupsData: any) {
   }
 
   return sweetnessGroup.items
-    .map((item: any) => moveEmojisToFront(item.name))
+    .map((item: any) => item.name.replace(' sweet', ''))
     .sort((a: string, b: string) => {
       const aNum = parseInt(a.replace(/\D/g, '')) || 0;
       const bNum = parseInt(b.replace(/\D/g, '')) || 0;
@@ -130,7 +130,9 @@ function getSweetnessLevelsFromOptionGroups(optionGroupsData: any) {
 // Helper function to get flavor options from menu option groups
 function getFlavorsFromOptionGroups(optionGroupsData: any) {
   const optionGroups = optionGroupsData.optionGroups || [];
-  const flavorsGroup = optionGroups.find((group: any) => group.name.startsWith('Choose a Flavor'));
+  const flavorsGroup = optionGroups.find(
+    (group: any) => group.name === "Choose a Flavor (Tea-Rek'z)"
+  );
 
   if (!flavorsGroup || !flavorsGroup.items) {
     return [];

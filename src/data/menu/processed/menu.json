@@ -1110,20 +1110,6 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000498893372_1742192364.jpg"
             },
             {
-              "name": "Carne Asada Chilaquiles Rojos",
-              "guid": "3a9acb98-7b01-492d-86a2-f7aa1423777c",
-              "description": "Carne asada, tortilla chips, potatoes, red salsa, avocado, with choice of eggs. Available Saturdays!",
-              "price": 21.95,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000477030608_1742080390.jpg"
-            },
-            {
-              "name": "Carne Asada Chilaquiles Verdes",
-              "guid": "d6f3c062-38e5-4d20-8e55-41c8e8fab038",
-              "description": "Carne asada, tortilla chips, potatoes, green salsa, avocado, with choice of eggs. Available Sundays!",
-              "price": 21.95,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000000621744735_1737920176.jpg"
-            },
-            {
               "name": "Deluxe Billy's New York Steak and Eggs",
               "guid": "088b46a3-5221-4573-b69b-fae4ae7a39fc",
               "description": "New York Steak and Eggs with Grilled Onions and Mushrooms",
@@ -3943,13 +3929,6 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
-              "name": "Classic Thai Tea with Honey Boba 🇹🇭🫖",
-              "guid": "5b5e969a-bf1d-44f2-a67c-69fd5f704731",
-              "description": "Bold, spiced Thai black tea layered with creamy half & half — smooth, rich, and served at fixed sweetness.",
-              "price": 6.75,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1756747296.jpg"
-            },
-            {
               "name": "Tiger Milk Tea with Honey Boba 🐯🍯",
               "guid": "9425092e-89e9-472f-b7af-1a5991df3de3",
               "description": "Velvety fresh milk streaked with brown sugar “tiger stripes” and chewy honey boba — naturally caffeine-free 🌙.",
@@ -3983,6 +3962,27 @@
               "description": "Smooth oolong with delicate lychee jelly",
               "price": 6.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000004993591035_1757235493.jpg"
+            },
+            {
+              "name": "Classic Thai Tea with Honey Boba 🇹🇭🫖",
+              "guid": "8b1c97f9-f4ef-460a-a2b4-121b2ebf915e",
+              "description": "Bold, spiced Thai black tea layered with creamy half & half — smooth, rich, and served at fixed sweetness.",
+              "price": 6.75,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1756747296.jpg"
+            },
+            {
+              "name": "Mango Grapefruit Crystal 🥭🥥💎",
+              "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
+              "description": "A tropical blend of mango, coconut milk, and jasmine green tea, with chewy crystal boba inside and a bright scoop of grapefruit pulp on top.",
+              "price": 8.25,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1757836118.png"
+            },
+            {
+              "name": "Boba Sundae 🧋🍨",
+              "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
+              "description": "Our delicious honey boba, two large scoops of vanilla cream, and paired with syrup and and toppings to your hearts delight!",
+              "price": 6.5,
+              "imageUrl": null
             }
           ]
         },
@@ -4197,54 +4197,54 @@
           ]
         },
         {
-          "name": "Creme Brulee 🍮",
+          "name": "Crème Brûlée 🍮",
           "guid": "b15c9c65-26fc-4e71-9323-455c17930045",
           "description": "",
           "items": [
             {
-              "name": "Boba Brulee",
+              "name": "Boba Brûlée",
               "guid": "e6a38e7f-4e92-48c4-b104-6a7a6f23d811",
               "description": "boba, fresh milk, creme brulee with torched sugar",
               "price": 7.75,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Milk Tea",
+              "name": "Crème Brûlée Milk Tea",
               "guid": "47f61471-6087-4b52-930e-d54bf6c19ed9",
               "description": "",
               "price": 8,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Vietnamese Coffee",
+              "name": "Crème Brûlée Vietnamese Coffee",
               "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
               "description": "",
               "price": 7.75,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Matcha Milk Tea",
+              "name": "Crème Brûlée Matcha Milk Tea",
               "guid": "3564507e-b274-4326-9adf-c47e1231b330",
               "description": "",
               "price": 8,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Taro Milk Tea",
+              "name": "Crème Brûlée Taro Milk Tea",
               "guid": "fbb72129-b5eb-47fe-8ba8-ba203a7911cf",
               "description": "",
-              "price": 7.75,
+              "price": 7.5,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Tiger Milk Tea",
+              "name": "Crème Brûlée Tiger Milk Tea",
               "guid": "1fb0f791-c680-46f4-abb7-293098107381",
               "description": "",
-              "price": 7.75,
+              "price": 7.5,
               "imageUrl": null
             },
             {
-              "name": "Creme Brulee Thai Tea",
+              "name": "Crème Brûlée Thai Tea",
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "",
               "price": 7.5,
@@ -4328,9 +4328,44 @@
           "description": "",
           "items": [
             {
-              "name": "Dino Smash Lemonade🌙",
+              "name": "Dino Smash Lemonade 🌙",
               "guid": "19c3f8bd-1fc8-41f9-a148-5ed5334b3513",
-              "description": "Fresh lemon fun in a cup — icy, sweet, and made for adventurers of all ages!",
+              "description": "fresh lemon + pure cane sugar",
+              "price": 5.75,
+              "imageUrl": null
+            },
+            {
+              "name": "Strawberry Dino Smash Lemonade 🌙",
+              "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
+              "description": "fresh lemon + pure cane sugar",
+              "price": 5.75,
+              "imageUrl": null
+            },
+            {
+              "name": "Mango Dino Smash Lemonade 🌙",
+              "guid": "21e5141b-a3ec-4df9-a367-7d0aa7b9ea2a",
+              "description": "fresh lemon + pure cane sugar",
+              "price": 5.75,
+              "imageUrl": null
+            },
+            {
+              "name": "Passion Fruit Dino Smash Lemonade 🌙",
+              "guid": "eb3d2a9c-ae85-4319-b895-688a8b8f3f1b",
+              "description": "fresh lemon + pure cane sugar",
+              "price": 5.75,
+              "imageUrl": null
+            },
+            {
+              "name": "Peach Dino Smash Lemonade 🌙",
+              "guid": "4b2ee7b3-a3ba-4ddd-a2ec-a3e8681565e2",
+              "description": "fresh lemon + pure cane sugar",
+              "price": 5.75,
+              "imageUrl": null
+            },
+            {
+              "name": "Lychee Dino Smash Lemonade 🌙",
+              "guid": "ca7febdb-1224-43fc-b2c0-c2984f3820d9",
+              "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
               "imageUrl": null
             },
@@ -4473,27 +4508,6 @@
               "description": "",
               "price": 1.5,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000004993710391_1756746646.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Archived Items (Not Displayed)",
-          "guid": "3f7d844c-e4a6-451f-867d-ef456f0a388b",
-          "description": "",
-          "items": [
-            {
-              "name": "Fruit Tea",
-              "guid": "5e64e4d0-7a33-4efb-852f-55c1bff17f0c",
-              "description": "",
-              "price": 5.25,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000004994044114_1756746845.jpg"
-            },
-            {
-              "name": "Brown Sugar Assam Black Milk Tea",
-              "guid": "506c54a1-c741-41db-b724-10c593139ccb",
-              "description": "Rich black tea with brown sugar",
-              "price": 5.95,
-              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000004994025824_1756747211.jpg"
             }
           ]
         }

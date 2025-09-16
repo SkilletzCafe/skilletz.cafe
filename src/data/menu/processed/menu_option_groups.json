@@ -1997,28 +1997,28 @@
       ]
     },
     {
-      "name": "Ice Level (Bubble Tea)",
+      "name": "Ice Level (Tea-Rek'z)",
       "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100%",
+          "name": "100% ice",
           "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50%",
+          "name": "50% ice",
           "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "0%",
+          "name": "0% ice",
           "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
           "description": "",
           "price": 0,
@@ -2027,49 +2027,49 @@
       ]
     },
     {
-      "name": "Sweetness Level (Bubble Tea)",
+      "name": "Sweetness Level (Cane Sugar)",
       "guid": "df1b2c56-6a3c-49a4-ae24-d7fbaf11aca7",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100%",
+          "name": "100% sweet",
           "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "75%",
+          "name": "75% sweet",
           "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50%",
+          "name": "50% sweet",
           "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "25%",
+          "name": "25% sweet",
           "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "10%",
+          "name": "10% sweet",
           "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "0%",
+          "name": "0% sweet",
           "guid": "0f960c7f-4f10-4d4c-af4c-745b98d5128e",
           "description": "",
           "price": 0,
@@ -2078,7 +2078,37 @@
       ]
     },
     {
-      "name": "Add Toppings (Bubble Tea)",
+      "name": "Creamer Option (Tea-Rek'z)",
+      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "House Cream (Plant Based)",
+          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Fresh Dairy (Half and Half)",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0.25,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Toppings (Tea-Rek'z)",
       "guid": "9145a88a-16f0-4a02-bccd-d227ed2e8f87",
       "minSelections": 0,
       "maxSelections": null,
@@ -2134,6 +2164,20 @@
           "orderableOnline": "YES"
         },
         {
+          "name": "Agar Crystal Boba 💎",
+          "guid": "aa42fe8c-a3f7-4dbe-8950-5d7799e2b227",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Agar Brown Sugar Boba 🍯",
+          "guid": "53b21d05-a78f-4af0-9bc7-c4f5f2ed10b4",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
           "name": "Pudding 🍮",
           "guid": "a0b49da2-3ecb-432d-afd8-18cb97571f33",
           "description": "Creamy custard pudding",
@@ -2143,67 +2187,37 @@
       ]
     },
     {
-      "name": "Creamer Option (Bubble Tea)",
-      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
-      "minSelections": 0,
+      "name": "Sweetness Level (Flavored Drinks)",
+      "guid": "b399d4f7-56fd-4285-86a1-85ecfe79ca69",
+      "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "House Cream (Plant Based)",
-          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "name": "100% sweet",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Fresh Dairy (Half and Half)",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0.25,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Creamer Option (Thai Tea)",
-      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Fresh Half and Half",
-          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "name": "50% sweet",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
         }
       ]
     },
     {
-      "name": "Milk Option (Bubble Tea)",
+      "name": "Milk Option (Tea-Rek'z)",
       "guid": "57043f81-0f04-4fef-ad9f-12e5620b6ab6",
-      "minSelections": 0,
+      "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Fresh MIlk (Dairy)",
+          "name": "Fresh Milk (Dairy)",
           "guid": "448a1886-1f94-4596-a453-17017277db60",
           "description": "",
           "price": 0,
@@ -2226,21 +2240,21 @@
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100%",
+          "name": "100% sweet",
           "guid": "029da031-0b3a-4b37-bab6-1649442edefa",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "75%",
+          "name": "75% sweet",
           "guid": "95e4347e-302b-419e-aa49-5e00d3e00634",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50%",
+          "name": "50% sweet",
           "guid": "c4abd138-ec07-4065-b79e-a8a3b9c77fb4",
           "description": "",
           "price": 0,
@@ -2249,7 +2263,46 @@
       ]
     },
     {
-      "name": "Choose a Flavor (Bubble Tea)",
+      "name": "Creamer Option (Thai Tea)",
+      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Fresh Half and Half",
+          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Caffeine Free",
+      "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "No Jasmine Tea",
+          "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose a Flavor (Tea-Rek'z)",
       "guid": "b5c04508-4892-4f9f-9188-c0e61d5bf601",
       "minSelections": 1,
       "maxSelections": 1,
@@ -2393,14 +2446,14 @@
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100%",
+          "name": "100% ice",
           "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50%",
+          "name": "50% ice",
           "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
           "description": "",
           "price": 0,
