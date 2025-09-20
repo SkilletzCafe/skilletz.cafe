@@ -3979,7 +3979,7 @@
             },
             {
               "name": "Boba Sundae 🧋🍨",
-              "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
+              "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
               "description": "Our delicious honey boba, two large scoops of vanilla cream, and paired with syrup and and toppings to your hearts delight!",
               "price": 6.5,
               "imageUrl": null
@@ -4127,7 +4127,7 @@
           ]
         },
         {
-          "name": "Matcha Creations 🍵",
+          "name": "Matcha Creations🍵",
           "guid": "43a1d2f7-f0ab-4941-8831-a1e1228edb5c",
           "description": "",
           "items": [
@@ -4206,49 +4206,49 @@
               "guid": "e6a38e7f-4e92-48c4-b104-6a7a6f23d811",
               "description": "boba, fresh milk, creme brulee with torched sugar",
               "price": 7.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005291450185_1758274497.jpg"
             },
             {
               "name": "Crème Brûlée Milk Tea",
               "guid": "47f61471-6087-4b52-930e-d54bf6c19ed9",
               "description": "",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291450187_1758274532.jpg"
             },
             {
               "name": "Crème Brûlée Vietnamese Coffee",
               "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
               "description": "",
               "price": 7.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005291458123_1758274537.jpg"
             },
             {
               "name": "Crème Brûlée Matcha Milk Tea",
               "guid": "3564507e-b274-4326-9adf-c47e1231b330",
               "description": "",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005291461628_1758274577.jpg"
             },
             {
               "name": "Crème Brûlée Taro Milk Tea",
               "guid": "fbb72129-b5eb-47fe-8ba8-ba203a7911cf",
               "description": "",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005291464000_1758274588.jpg"
             },
             {
               "name": "Crème Brûlée Tiger Milk Tea",
               "guid": "1fb0f791-c680-46f4-abb7-293098107381",
               "description": "",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291465639_1758274611.jpg"
             },
             {
               "name": "Crème Brûlée Thai Tea",
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1758274678.jpg"
             }
           ]
         },
@@ -4328,74 +4328,74 @@
           "description": "",
           "items": [
             {
-              "name": "Dino Smash Lemonade 🌙",
+              "name": "Dino Smash Lemonade🌙",
               "guid": "19c3f8bd-1fc8-41f9-a148-5ed5334b3513",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000005291429206_1758274070.jpg"
             },
             {
-              "name": "Strawberry Dino Smash Lemonade 🌙",
+              "name": "Strawberry Dino Smash Lemonade🌙",
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
             },
             {
-              "name": "Mango Dino Smash Lemonade 🌙",
+              "name": "Mango Dino Smash Lemonade🌙",
               "guid": "21e5141b-a3ec-4df9-a367-7d0aa7b9ea2a",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355804257_1758274181.jpg"
             },
             {
-              "name": "Passion Fruit Dino Smash Lemonade 🌙",
+              "name": "Passion Fruit Dino Smash Lemonade🌙",
               "guid": "eb3d2a9c-ae85-4319-b895-688a8b8f3f1b",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-              "name": "Peach Dino Smash Lemonade 🌙",
+              "name": "Peach Dino Smash Lemonade🌙",
               "guid": "4b2ee7b3-a3ba-4ddd-a2ec-a3e8681565e2",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355824027_1758274241.jpg"
             },
             {
-              "name": "Lychee Dino Smash Lemonade 🌙",
+              "name": "Lychee Dino Smash Lemonade🌙",
               "guid": "ca7febdb-1224-43fc-b2c0-c2984f3820d9",
               "description": "fresh lemon + pure cane sugar",
               "price": 5.75,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005355824029_1758274261.jpg"
             },
             {
               "name": "Strawberry Mango Dino Freeze 🦖❄️",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "",
               "price": 5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291571397_1758274306.jpg"
             },
             {
               "name": "Passion Fruit Mango Dino Freeze 🦖❄️",
               "guid": "b000ae43-3e93-4b3b-9922-2e82a208dd05",
               "description": "",
               "price": 5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291571399_1758274354.jpg"
             },
             {
               "name": "Lychee Guava Dino Freeze 🦖❄️",
               "guid": "dce8e115-fb31-4cb8-9559-4d3423040ccc",
               "description": "",
               "price": 5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291572851_1758274365.jpg"
             },
             {
               "name": "Peach Lychee Dino Freeze 🦖❄️",
               "guid": "827b9e61-9aba-4ee5-87ff-97523c5a9406",
               "description": "",
               "price": 5,
-              "imageUrl": null
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005291572855_1758274457.jpg"
             }
           ]
         },
@@ -4508,6 +4508,272 @@
               "description": "",
               "price": 1.5,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000004993710391_1756746646.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dino Bites M-W (11a-2pm)",
+      "guid": "439a8424-6cbc-4563-92f1-bd7a6c084d2d",
+      "description": "",
+      "groups": [
+        {
+          "name": "Sweet Bites",
+          "guid": "9a550d49-e75e-4f65-91c7-d89ff9cbd279",
+          "description": "",
+          "items": [
+            {
+              "name": "1 Pancake",
+              "guid": "d35ef3aa-3478-4145-934f-2045e767fb00",
+              "description": "1 fluffy pancake.",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000352916861_1734992096.jpg"
+            },
+            {
+              "name": "Short Stack",
+              "guid": "f59835c2-71a6-4af6-84c5-4ab775d7a721",
+              "description": "2 fluffy pancakes!",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000352916863_1735408714.jpg"
+            },
+            {
+              "name": "1/2 French Toast",
+              "guid": "35a18281-0251-47c3-884d-c158126bda0b",
+              "description": "Two pieces of French toast.",
+              "price": 9.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352916867_1735408680.jpg"
+            },
+            {
+              "name": "Full French Toast",
+              "guid": "479773d3-1dff-49c2-b692-8bc42b08e2cd",
+              "description": "Three pieces of French toast.",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000352916869_1735408673.jpg"
+            },
+            {
+              "name": "Waffle",
+              "guid": "b7b1ac71-62b7-4b3c-b8de-03a335c7b737",
+              "description": "Homemade waffle with served with butter and syrup. Option to customize with various toppings.",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000352916871_1735408702.jpg"
+            },
+            {
+              "name": "Beignets 🍩",
+              "guid": "9bbd344c-a207-4582-b663-f1908e48445f",
+              "description": "Each serving comes with 3 pieces of beignets with a delicious creme filling, served piping hot (careful!) and topped with drizzled chocolate and powdered sugar.",
+              "price": 8.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000669461541_1738542113.jpg"
+            },
+            {
+              "name": "Fruit 🍇🍓🍌",
+              "guid": "e5151112-28eb-4cd2-94a1-941f811b93f6",
+              "description": "",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353206774_1734991588.jpg"
+            },
+            {
+              "name": "Berries Bowl 🫐🍓",
+              "guid": "ec53b87b-6e7f-4248-97ef-b765de82170c",
+              "description": "Fresh bowl of mixed berries including blueberries, blackberries, and sliced strawberries.",
+              "price": 6.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000418394076_1737919348.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Savory Bites",
+          "guid": "d1c1a79f-40c3-46cb-ae65-c5f61bf9f5c6",
+          "description": "",
+          "items": [
+            {
+              "name": "French Fries 🍟",
+              "guid": "4eb4feda-6d97-49a2-b06d-8b5411b86ae2",
+              "description": "",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353206772_1734991580.jpg"
+            },
+            {
+              "name": "Cheese Fries 🧀🍟",
+              "guid": "9b67698b-e30c-4351-9acc-f1630eba240e",
+              "description": "French fries, cheese, bacon, chives, jalapeño, and sour cream",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960531441_1749359809.jpg"
+            },
+            {
+              "name": "Chicken Critters & Fries",
+              "guid": "aef296b5-d52b-433e-b67f-795f50b855eb",
+              "description": "Crispy chicken strips paired with golden fries.",
+              "price": 9.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352997367_1734991737.jpg"
+            },
+            {
+              "name": "Zucchini Fries 🥒",
+              "guid": "95a85262-8601-49a3-b1a7-0b74919ccc30",
+              "description": "",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000353206778_1734991616.jpg"
+            },
+            {
+              "name": "Mac Bites",
+              "guid": "ed34e2df-6692-44dd-a790-13641da46b70",
+              "description": "",
+              "price": 6.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000383737778_1735494293.jpg"
+            },
+            {
+              "name": "Mozarella Sticks 🧀",
+              "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
+              "description": "",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960531439_1749451722.jpg"
+            },
+            {
+              "name": "Onion Rings 🧅",
+              "guid": "b2aeda93-acbd-4391-982f-256411fa87ca",
+              "description": "",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960531443_1749274927.jpg"
+            },
+            {
+              "name": "Grilled Cheese Sandwich 🧀",
+              "guid": "61f837a2-3beb-4789-b39d-89856ee11462",
+              "description": "Our take on a classic. Customize with choice of cheese and bread.",
+              "price": 12.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000537386397_1737239983.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dino Bites Th-Sun (11a-9pm)",
+      "guid": "33695567-03d7-42a0-a4db-39d0c817a626",
+      "description": "",
+      "groups": [
+        {
+          "name": "Sweet Bites",
+          "guid": "dcc5d044-10f1-476b-b5e1-979d2cc0873c",
+          "description": "",
+          "items": [
+            {
+              "name": "1 Pancake",
+              "guid": "d35ef3aa-3478-4145-934f-2045e767fb00",
+              "description": "1 fluffy pancake.",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000352916861_1734992096.jpg"
+            },
+            {
+              "name": "Short Stack",
+              "guid": "f59835c2-71a6-4af6-84c5-4ab775d7a721",
+              "description": "2 fluffy pancakes!",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000352916863_1735408714.jpg"
+            },
+            {
+              "name": "1/2 French Toast",
+              "guid": "35a18281-0251-47c3-884d-c158126bda0b",
+              "description": "Two pieces of French toast.",
+              "price": 9.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352916867_1735408680.jpg"
+            },
+            {
+              "name": "Full French Toast",
+              "guid": "479773d3-1dff-49c2-b692-8bc42b08e2cd",
+              "description": "Three pieces of French toast.",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000352916869_1735408673.jpg"
+            },
+            {
+              "name": "Waffle",
+              "guid": "b7b1ac71-62b7-4b3c-b8de-03a335c7b737",
+              "description": "Homemade waffle with served with butter and syrup. Option to customize with various toppings.",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000352916871_1735408702.jpg"
+            },
+            {
+              "name": "Beignets 🍩",
+              "guid": "9bbd344c-a207-4582-b663-f1908e48445f",
+              "description": "Each serving comes with 3 pieces of beignets with a delicious creme filling, served piping hot (careful!) and topped with drizzled chocolate and powdered sugar.",
+              "price": 8.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000669461541_1738542113.jpg"
+            },
+            {
+              "name": "Fruit 🍇🍓🍌",
+              "guid": "e5151112-28eb-4cd2-94a1-941f811b93f6",
+              "description": "",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353206774_1734991588.jpg"
+            },
+            {
+              "name": "Berries Bowl 🫐🍓",
+              "guid": "ec53b87b-6e7f-4248-97ef-b765de82170c",
+              "description": "Fresh bowl of mixed berries including blueberries, blackberries, and sliced strawberries.",
+              "price": 6.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000418394076_1737919348.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Savory Bites",
+          "guid": "a31209ed-2a22-4de1-90c3-65b0d81f0159",
+          "description": "",
+          "items": [
+            {
+              "name": "French Fries 🍟",
+              "guid": "4eb4feda-6d97-49a2-b06d-8b5411b86ae2",
+              "description": "",
+              "price": 5.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353206772_1734991580.jpg"
+            },
+            {
+              "name": "Cheese Fries 🧀🍟",
+              "guid": "9b67698b-e30c-4351-9acc-f1630eba240e",
+              "description": "French fries, cheese, bacon, chives, jalapeño, and sour cream",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000002960531441_1749359809.jpg"
+            },
+            {
+              "name": "Chicken Critters & Fries",
+              "guid": "aef296b5-d52b-433e-b67f-795f50b855eb",
+              "description": "Crispy chicken strips paired with golden fries.",
+              "price": 9.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000352997367_1734991737.jpg"
+            },
+            {
+              "name": "Zucchini Fries 🥒",
+              "guid": "95a85262-8601-49a3-b1a7-0b74919ccc30",
+              "description": "",
+              "price": 10.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000353206778_1734991616.jpg"
+            },
+            {
+              "name": "Mac Bites",
+              "guid": "ed34e2df-6692-44dd-a790-13641da46b70",
+              "description": "",
+              "price": 6.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000383737778_1735494293.jpg"
+            },
+            {
+              "name": "Mozarella Sticks 🧀",
+              "guid": "1d312f6d-c5e0-4f11-965a-280371fe6835",
+              "description": "",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000002960531439_1749451722.jpg"
+            },
+            {
+              "name": "Onion Rings 🧅",
+              "guid": "b2aeda93-acbd-4391-982f-256411fa87ca",
+              "description": "",
+              "price": 10,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000002960531443_1749274927.jpg"
+            },
+            {
+              "name": "Grilled Cheese Sandwich 🧀",
+              "guid": "61f837a2-3beb-4789-b39d-89856ee11462",
+              "description": "Our take on a classic. Customize with choice of cheese and bread.",
+              "price": 12.95,
+              "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000537386397_1737239983.jpg"
             }
           ]
         }
