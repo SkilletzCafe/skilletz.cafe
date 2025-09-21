@@ -47,6 +47,12 @@ export const PAGES: Record<string, Page> = {
     name: 'Order Online',
     showInNav: false,
   },
+  orderOnlineTeaRekz: {
+    path: '/order-online-tearekz',
+    name: "Order Online - Tea Rek'z",
+    showInNav: false,
+    openInNewTab: true,
+  },
   reservations: {
     path: '/reservations',
     name: 'Reservations',

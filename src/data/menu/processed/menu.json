@@ -4202,7 +4202,7 @@
           "description": "",
           "items": [
             {
-              "name": "Boba Brûlée",
+              "name": "Boba Brûlée 🌙",
               "guid": "e6a38e7f-4e92-48c4-b104-6a7a6f23d811",
               "description": "boba, fresh milk, creme brulee with torched sugar",
               "price": 7.75,
@@ -4230,14 +4230,14 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005291461628_1758274577.jpg"
             },
             {
-              "name": "Crème Brûlée Taro Milk Tea",
+              "name": "Crème Brûlée Taro Milk Tea 🌙",
               "guid": "fbb72129-b5eb-47fe-8ba8-ba203a7911cf",
               "description": "",
               "price": 7.5,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005291464000_1758274588.jpg"
             },
             {
-              "name": "Crème Brûlée Tiger Milk Tea",
+              "name": "Crème Brûlée Tiger Milk Tea 🌙",
               "guid": "1fb0f791-c680-46f4-abb7-293098107381",
               "description": "",
               "price": 7.5,
