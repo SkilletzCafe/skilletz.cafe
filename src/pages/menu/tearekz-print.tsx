@@ -19,11 +19,16 @@ interface TeaRekzPrintProps {
     description: string;
     groups: MenuGroup[];
   };
+  dinoBitesMenu: {
+    name: string;
+    description: string;
+    groups: MenuGroup[];
+  };
   optionGroups: any;
 }
 
 // Structure: landscape layout with three columns for Tea Rek'z items
-const GRID_ORDER = [
+const TEA_REKZ_GRID_ORDER = [
   // Left column
   ["Tea-Rek'z Favorites ❤️", 'Freshly Brewed Teas 🌱'],
   // Middle column
@@ -32,9 +37,21 @@ const GRID_ORDER = [
     'Crème Brûlée 🍮',
     'Dino Refreshers (Caffeine-Free 🌙)',
     'Matcha Creations 🍵',
+    'Milk Options 🥛',
+    'Creamer Options ☕',
   ],
   // Right column
   ['Tea Selections 🌱', 'Flavors 🍓', 'Toppings 🌈', 'Ice Levels 🧊', 'Sweetness Levels 🍯'],
+];
+
+// Structure: landscape layout with three columns for Dino Bites items
+const DINO_BITES_GRID_ORDER = [
+  // Left column
+  ['Sweet Bites'],
+  // Middle column
+  ['Savory Bites'],
+  // Right column
+  [],
 ];
 
 function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
@@ -141,7 +158,36 @@ function getFlavorsFromOptionGroups(optionGroupsData: any) {
   return flavorsGroup.items.map((item: any) => moveEmojisToFront(item.name));
 }
 
-const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }) => {
+// Helper function to get milk options from menu option groups
+function getMilkOptionsFromOptionGroups(optionGroupsData: any) {
+  const optionGroups = optionGroupsData.optionGroups || [];
+  const milkGroup = optionGroups.find((group: any) => group.name === "Milk Option (Tea-Rek'z)");
+
+  if (!milkGroup || !milkGroup.items) {
+    return [];
+  }
+
+  return milkGroup.items.map((item: any) => moveEmojisToFront(item.name));
+}
+
+// Helper function to get creamer options from menu option groups
+function getCreamerOptionsFromOptionGroups(optionGroupsData: any) {
+  const optionGroups = optionGroupsData.optionGroups || [];
+  const creamerGroup = optionGroups.find(
+    (group: any) => group.name === "Creamer Option (Tea-Rek'z)"
+  );
+
+  if (!creamerGroup || !creamerGroup.items) {
+    return [];
+  }
+
+  return creamerGroup.items.map((item: any) => moveEmojisToFront(item.name));
+}
+const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({
+  teaRekzMenu,
+  dinoBitesMenu,
+  optionGroups,
+}) => {
   // Get tea selections
   const teaSelections = createTeaSelections(teaRekzMenu.groups);
 
@@ -157,8 +203,14 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
   // Get flavors
   const flavors = getFlavorsFromOptionGroups(optionGroups);
 
+  // Get milk options
+  const milkOptions = getMilkOptionsFromOptionGroups(optionGroups);
+
+  // Get creamer options
+  const creamerOptions = getCreamerOptionsFromOptionGroups(optionGroups);
+
   // Helper to render a column of sections
-  const renderColumn = (sectionNames: string[]) => (
+  const renderColumn = (sectionNames: string[], menuGroups: MenuGroup[]) => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
       {sectionNames.map((groupName) => {
         // Handle special sections
@@ -191,6 +243,28 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 {moveEmojisToFront(groupName)}
               </div>
               <div style={{ fontSize: '0.7rem', color: '#666' }}>{flavors.join(' · ')}</div>
+            </div>
+          );
+        }
+
+        if (groupName === 'Creamer Options ☕') {
+          return (
+            <div className="menu-section" key="creamer-options" style={{ breakInside: 'avoid' }}>
+              <div className={`section-title ${margarine.className}`}>
+                {moveEmojisToFront(groupName)}
+              </div>
+              <div style={{ fontSize: '0.7rem', color: '#666' }}>{creamerOptions.join(' · ')}</div>
+            </div>
+          );
+        }
+
+        if (groupName === 'Milk Options 🥛') {
+          return (
+            <div className="menu-section" key="milk-options" style={{ breakInside: 'avoid' }}>
+              <div className={`section-title ${margarine.className}`}>
+                {moveEmojisToFront(groupName)}
+              </div>
+              <div style={{ fontSize: '0.7rem', color: '#666' }}>{milkOptions.join(' · ')}</div>
             </div>
           );
         }
@@ -241,13 +315,13 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
         }
 
         // Handle regular menu groups
-        let group = getGroupByName(teaRekzMenu.groups, groupName);
+        let group = getGroupByName(menuGroups, groupName);
 
         // Special case: Create faux items for Freshly Brewed Teas group
         if (groupName === 'Freshly Brewed Teas 🌱') {
-          const freshlyBrewedGroup = getGroupByName(teaRekzMenu.groups, 'Freshly Brewed Teas 🌱');
-          const milkTeaGroup = getGroupByName(teaRekzMenu.groups, 'Freshly Brewed Milk Teas 🧋');
-          const dinoGroup = getGroupByName(teaRekzMenu.groups, 'Dino Smash Fresh Lemon Teas 🍋');
+          const freshlyBrewedGroup = getGroupByName(menuGroups, 'Freshly Brewed Teas 🌱');
+          const milkTeaGroup = getGroupByName(menuGroups, 'Freshly Brewed Milk Teas 🧋');
+          const dinoGroup = getGroupByName(menuGroups, 'Dino Smash Fresh Lemon Teas 🍋');
 
           group = {
             name: 'Fresh Brewed Teas 🌱',
@@ -318,8 +392,10 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
         <meta name="robots" content="noindex, nofollow" />
         <style>{printMenuLandscapeStyles}</style>
       </Head>
-      <div id="print-area" className={geist.className}>
+      <div className={geist.className}>
+        {/* First Page - Tea Rek'z */}
         <div
+          id="print-area"
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -360,7 +436,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
 
               {/* Menu sections */}
               <div style={{ flex: '0.3', marginBottom: '0.5rem' }}>
-                {renderColumn(GRID_ORDER[0])}
+                {renderColumn(TEA_REKZ_GRID_ORDER[0], teaRekzMenu.groups)}
               </div>
 
               {/* Order Online Section - Bottom */}
@@ -381,8 +457,60 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 </div>
               </div>
             </div>
-            {renderColumn(GRID_ORDER[1])}
-            {renderColumn(GRID_ORDER[2])}
+            {renderColumn(TEA_REKZ_GRID_ORDER[1], teaRekzMenu.groups)}
+            {renderColumn(TEA_REKZ_GRID_ORDER[2], teaRekzMenu.groups)}
+          </div>
+        </div>
+
+        {/* Second Page - Dino Bites */}
+        <div
+          id="print-area"
+          className="page-break"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            height: `${LANDSCAPE_HEIGHT_SAFE_IN}in`,
+            boxSizing: 'border-box',
+            paddingTop: '0',
+            position: 'relative',
+          }}
+        >
+          <div
+            style={{
+              flex: '1 1 auto',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr 1fr',
+              columnGap: '1rem',
+              rowGap: '0.6rem',
+              width: '100%',
+              overflow: 'hidden',
+            }}
+          >
+            <div
+              style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', height: '100%' }}
+            >
+              {/* Logo in first column */}
+              <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
+                <img
+                  src="/images/logos/tearekz_logo.png"
+                  alt="Tea Rek'z Logo"
+                  style={{
+                    maxWidth: '90px',
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto',
+                  }}
+                />
+              </div>
+
+              {/* Dino Bites sections */}
+              <div style={{ flex: '1' }}>
+                {renderColumn(DINO_BITES_GRID_ORDER[0], dinoBitesMenu.groups)}
+              </div>
+            </div>
+            {renderColumn(DINO_BITES_GRID_ORDER[1], dinoBitesMenu.groups)}
+            {renderColumn(DINO_BITES_GRID_ORDER[2], dinoBitesMenu.groups)}
           </div>
         </div>
       </div>
@@ -394,8 +522,9 @@ export const getStaticProps: GetStaticProps<TeaRekzPrintProps> = async () => {
   const menuData = loadMenuData();
   const optionGroups = loadMenuOptionGroupsData();
   const teaRekzMenu = menuData.menus.find((m) => m.name === "Tea-Rek'z 🧋🦖");
+  const dinoBitesMenu = menuData.menus.find((m) => m.name === 'Dino Bites Th-Sun (11a-9pm)');
 
-  if (!teaRekzMenu) {
+  if (!teaRekzMenu || !dinoBitesMenu) {
     return { notFound: true };
   }
 
@@ -405,6 +534,11 @@ export const getStaticProps: GetStaticProps<TeaRekzPrintProps> = async () => {
         name: 'Tea-Rek&apos;z',
         description: 'Premium boba tea and fresh tea selections',
         groups: teaRekzMenu.groups,
+      },
+      dinoBitesMenu: {
+        name: 'Dino Bites',
+        description: 'Sweet and savory bites',
+        groups: dinoBitesMenu.groups,
       },
       optionGroups,
     },
