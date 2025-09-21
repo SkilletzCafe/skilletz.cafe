@@ -25,16 +25,18 @@ interface TeaRekzPrintProps {
 // Structure: landscape layout with three columns for Tea Rek'z items
 const GRID_ORDER = [
   // Left column
-  ["Tea-Rek'z Favorites ❤️", 'Freshly Brewed Teas 🌱'],
+  ["Tea-Rek'z Favorites ❤️", 'Freshly Brewed Teas 🌱', 'Flavors 🍓'],
   // Middle column
   [
     'Classic Milk Teas 🧋',
     'Crème Brûlée 🍮',
     'Dino Refreshers (Caffeine-Free 🌙)',
     'Matcha Creations 🍵',
+    'Milk Options 🥛',
+    'Creamer Options ☕',
   ],
   // Right column
-  ['Tea Selections 🌱', 'Flavors 🍓', 'Toppings 🌈', 'Ice Levels 🧊', 'Sweetness Levels 🍯'],
+  ['Tea Selections 🌱', 'Toppings 🌈', 'Ice Levels 🧊', 'Sweetness Levels 🍯'],
 ];
 
 function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
@@ -141,6 +143,38 @@ function getFlavorsFromOptionGroups(optionGroupsData: any) {
   return flavorsGroup.items.map((item: any) => moveEmojisToFront(item.name));
 }
 
+// Helper function to get milk options from menu option groups
+function getMilkOptionsFromOptionGroups(optionGroupsData: any) {
+  const optionGroups = optionGroupsData.optionGroups || [];
+  const milkGroup = optionGroups.find((group: any) => group.name === "Milk Option (Tea-Rek'z)");
+
+  if (!milkGroup || !milkGroup.items) {
+    return [];
+  }
+
+  return milkGroup.items.map((item: any) => ({
+    name: item.name,
+    price: item.price,
+  }));
+}
+
+// Helper function to get creamer options from menu option groups
+function getCreamerOptionsFromOptionGroups(optionGroupsData: any) {
+  const optionGroups = optionGroupsData.optionGroups || [];
+  const creamerGroup = optionGroups.find(
+    (group: any) => group.name === "Creamer Option (Tea-Rek'z)"
+  );
+
+  if (!creamerGroup || !creamerGroup.items) {
+    return [];
+  }
+
+  return creamerGroup.items.map((item: any) => ({
+    name: item.name,
+    price: item.price,
+  }));
+}
+
 const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }) => {
   // Get tea selections
   const teaSelections = createTeaSelections(teaRekzMenu.groups);
@@ -156,6 +190,12 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
 
   // Get flavors
   const flavors = getFlavorsFromOptionGroups(optionGroups);
+
+  // Get milk options
+  const milkOptions = getMilkOptionsFromOptionGroups(optionGroups);
+
+  // Get creamer options
+  const creamerOptions = getCreamerOptionsFromOptionGroups(optionGroups);
 
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
@@ -236,6 +276,46 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
                 {moveEmojisToFront(groupName)}
               </div>
               <div style={{ fontSize: '0.7rem', color: '#666' }}>{sweetnessLevels.join(' · ')}</div>
+            </div>
+          );
+        }
+
+        if (groupName === 'Milk Options 🥛') {
+          return (
+            <div className="menu-section" key="milk-options" style={{ breakInside: 'avoid' }}>
+              <div className={`section-title ${margarine.className}`}>
+                {moveEmojisToFront(groupName)}
+              </div>
+              {milkOptions.map((option: { name: string; price: number }, index: number) => (
+                <div key={index} style={{ marginBottom: '0.1rem' }}>
+                  <div className="item-row">
+                    <span className="item-name">{option.name}</span>
+                    <span className="item-price" style={{ fontWeight: 700 }}>
+                      {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          );
+        }
+
+        if (groupName === 'Creamer Options ☕') {
+          return (
+            <div className="menu-section" key="creamer-options" style={{ breakInside: 'avoid' }}>
+              <div className={`section-title ${margarine.className}`}>
+                {moveEmojisToFront(groupName)}
+              </div>
+              {creamerOptions.map((option: { name: string; price: number }, index: number) => (
+                <div key={index} style={{ marginBottom: '0.1rem' }}>
+                  <div className="item-row">
+                    <span className="item-name">{option.name}</span>
+                    <span className="item-price" style={{ fontWeight: 700 }}>
+                      {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           );
         }
@@ -359,24 +439,28 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
               </div>
 
               {/* Menu sections */}
-              <div style={{ flex: '0.3', marginBottom: '0.5rem' }}>
-                {renderColumn(GRID_ORDER[0])}
-              </div>
+              <div style={{ flex: '1', marginBottom: '0.5rem' }}>{renderColumn(GRID_ORDER[0])}</div>
 
-              {/* Order Online Section - Bottom */}
-              <div style={{ textAlign: 'center' }}>
+              {/* Order Online Section - After flavors */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  marginTop: '-1.5rem',
+                }}
+              >
                 <img
-                  src="/images/qrcodes/order-online-toast.png"
+                  src="/images/qrcodes/order-online-tearekz.png"
                   alt="Order Online QR Code"
                   style={{
-                    maxWidth: '80px',
+                    maxWidth: '90px',
                     width: '100%',
                     height: 'auto',
-                    display: 'block',
-                    margin: '0 auto 0.5rem auto',
+                    flex: '0 0 auto',
                   }}
                 />
-                <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#333' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 600, color: '#333', flex: '1' }}>
                   Order and Pay Online
                 </div>
               </div>
