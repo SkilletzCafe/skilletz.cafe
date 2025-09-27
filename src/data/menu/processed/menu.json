@@ -3973,25 +3973,15 @@
             {
               "name": "Mango Grapefruit Crystal 🥭🥥💎",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
-<<<<<<< HEAD
-              "description": "A tropical blend of mango, coconut milk, and jasmine green tea, with chewy crystal boba inside and a bright scoop of grapefruit pulp on top.",
-              "price": 8.25,
-=======
               "description": "Organic mango blended with jasmine green tea, layered with organic coconut milk, with agar crystal boba inside and a bright scoop of grapefruit pulp on top.",
               "price": 8.5,
->>>>>>> 2971b0c (update menu)
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1758396666.jpg"
             },
             {
               "name": "Boba Sundae 🧋🍨🌙",
               "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
-<<<<<<< HEAD
-              "description": "Our delicious honey boba, two large scoops of vanilla cream, and paired with syrup and and toppings to your hearts delight!",
-              "price": 6.5,
-=======
               "description": "Our delicious honey boba, two large scoops of vanilla ice cream, and paired with syrup and and toppings to your hearts delight!",
               "price": 7,
->>>>>>> 2971b0c (update menu)
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1758396638.jpg"
             }
           ]
@@ -4058,7 +4048,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000005129561866_1757235605.jpg"
             },
             {
-              "name": "Rooibos Tea 🌙",
+              "name": "Rooibos Tea🌙",
               "guid": "47d3cd45-c531-4553-a20a-7054195b565b",
               "description": "Naturally caffeine-free🌙 herbal tea from South Africa, with a smooth, earthy flavor and gentle notes of honey and vanilla.",
               "price": 6,
@@ -4338,110 +4328,70 @@
           "description": "",
           "items": [
             {
-<<<<<<< HEAD
-              "name": "Dino Smash Lemonade 🌙",
-=======
               "name": "Dino Smash Lemonade 🍋🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "19c3f8bd-1fc8-41f9-a148-5ed5334b3513",
               "description": "Fresh-squeezed lemons, balanced with pure cane sugar for the perfect sweet-tart sip.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000005291429206_1758274070.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Strawberry Dino Smash Lemonade 🌙",
-=======
               "name": "Strawberry Dino Smash Lemonade 🍓🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "Sweet strawberry syrup meets freshly smashed lemon slices for a bright, fruity burst.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Mango Dino Smash Lemonade 🌙",
-=======
               "name": "Mango Dino Smash Lemonade 🥭🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "21e5141b-a3ec-4df9-a367-7d0aa7b9ea2a",
               "description": "Tropical mango syrup blended with zesty smashed lemons for sunshine in every sip.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355804257_1758274181.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Passion Fruit Dino Smash Lemonade 🌙",
-=======
               "name": "Passion Fruit Dino Smash Lemonade 🍍🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "eb3d2a9c-ae85-4319-b895-688a8b8f3f1b",
               "description": "Tangy passion fruit syrup and fresh lemon collide for a bold, exotic smash.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Peach Dino Smash Lemonade 🌙",
-=======
               "name": "Peach Dino Smash Lemonade 🍑🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "4b2ee7b3-a3ba-4ddd-a2ec-a3e8681565e2",
               "description": "Juicy peach syrup shaken with smashed lemons for a smooth, summery refresher.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355824027_1758274241.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Lychee Dino Smash Lemonade 🌙",
-=======
               "name": "Lychee Dino Smash Lemonade 🤍🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "ca7febdb-1224-43fc-b2c0-c2984f3820d9",
               "description": "Delicate lychee syrup paired with citrusy smashed lemons for a floral, refreshing twist.",
               "price": 6.25,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005355824029_1758274261.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Strawberry Mango Dino Freeze 🦖❄️🌙",
-=======
               "name": "Strawberry Mango Dino Freeze 🍓🥭🦖❄️🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of strawberry and mango syrups blended into the ultimate sweet chill.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291571397_1758274306.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Passion Fruit Mango Dino Freeze 🦖❄️🌙",
-=======
               "name": "Passion Fruit Mango Dino Freeze 🍍🥭🦖❄️🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "b000ae43-3e93-4b3b-9922-2e82a208dd05",
               "description": "Tangy passion fruit syrup swirled with tropical mango for a bold, icy refresher.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291571399_1758274354.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Lychee Guava Dino Freeze 🦖❄️🌙",
-=======
               "name": "Lychee Guava Dino Freeze 🤍🍈🦖❄️🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "dce8e115-fb31-4cb8-9559-4d3423040ccc",
               "description": "Smooth lychee and guava syrups blended into a light, floral, tropical freeze.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291572851_1758274365.jpg"
             },
             {
-<<<<<<< HEAD
-              "name": "Peach Lychee Dino Freeze 🦖❄️🌙",
-=======
               "name": "Peach Lychee Dino Freeze 🍑🤍🦖❄️🌙",
->>>>>>> 2971b0c (update menu)
               "guid": "827b9e61-9aba-4ee5-87ff-97523c5a9406",
               "description": "Sweet peach and delicate lychee syrups come together in a frosty, refreshing blend.",
               "price": 5.75,
@@ -4456,7 +4406,6 @@
           "items": [
             {
               "name": "Smart Water",
-
               "guid": "533a7ae5-71c0-4298-8b17-46cbbfc4bc43",
               "description": "",
               "price": 3.25,
