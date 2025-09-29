@@ -190,7 +190,8 @@
   gap: 0.5rem;
 
   /* Adjust these values if needed to additionally raise or lower the QR code */
-  top: -0.7rem;
+  /* Note to also check the print dialog, and not just the browser, to see if the QR code is visible */
+  top: -1.4rem;
   position: relative;
 }
 
