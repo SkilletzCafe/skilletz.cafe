@@ -6,12 +6,151 @@ import Head from 'next/head';
 import { MenuData, MenuGroup, MenuItem } from '@/types/menu';
 
 import { BUSINESS, FULL_ADDRESS } from '@/config/business';
+import { CSS_COLOR_VARS } from '@/config/colors';
 import { geist, margarine } from '@/config/fonts';
 import { LANDSCAPE_HEIGHT_SAFE_IN, printMenuLandscapeStyles } from '@/config/printMenu';
 
 import { PrintMenuHeader } from '@/components/menu/PrintMenuHeader';
 
 import { loadMenuData, loadMenuOptionGroupsData } from '@/utils/menu_static';
+
+import styles from '@/styles/TeaRekzPrint.module.css';
+
+const TeaSelectionsSection: React.FC<{ teaRekzMenu: { groups: MenuGroup[] } }> = ({
+  teaRekzMenu,
+}) => {
+  const teaSelections = createTeaSelections(teaRekzMenu.groups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Tea Selections 🌱')}
+      </div>
+      {teaSelections.map((tea, index) => (
+        <div key={index} className={styles.teaSelectionItem}>
+          <div className={styles.teaSelectionName}>{tea.name}</div>
+          {tea.description && <div className={styles.teaSelectionDesc}>{tea.description}</div>}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const FlavorsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const flavors = getFlavorsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Flavors 🍓')}
+      </div>
+      <div className={styles.flavorsList}>{flavors.join(' · ')}</div>
+    </div>
+  );
+};
+
+const ToppingsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const toppings = getToppingsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Toppings 🌈')}
+      </div>
+      <div className={`${styles.sectionDesc} section-desc ${styles.toppingsDesc}`}>
+        Each topping $0.75; Pudding $1
+      </div>
+      <div className={styles.toppingsGrid}>
+        {toppings.map((topping: string, index: number) => (
+          <div key={index} className={styles.toppingItem}>
+            {topping}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const IceLevelsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const iceLevels = getIceLevelsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Ice Levels 🧊')}
+      </div>
+      <div className={styles.levelsList}>{iceLevels.join(' · ')}</div>
+    </div>
+  );
+};
+
+const SweetnessLevelsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const sweetnessLevels = getSweetnessLevelsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Sweetness Levels 🍯')}
+      </div>
+      <div className={styles.levelsList}>{sweetnessLevels.join(' · ')}</div>
+    </div>
+  );
+};
+
+const MilkOptionsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const milkOptions = getMilkOptionsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Milk Options 🥛')}
+      </div>
+      {milkOptions.map((option: { name: string; price: number }, index: number) => (
+        <div key={index} className={styles.optionItem}>
+          <div className={`${styles.optionRow} item-row`}>
+            <span className={`${styles.optionName} item-name`}>{option.name}</span>
+            <span className={`${styles.optionPrice} item-price`}>
+              {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const CreamerOptionsSection: React.FC<{ optionGroups: any }> = ({ optionGroups }) => {
+  const creamerOptions = getCreamerOptionsFromOptionGroups(optionGroups);
+
+  return (
+    <div className={`${styles.menuSection} menu-section`}>
+      <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
+        {moveEmojisToFront('Creamer Options ☕')}
+      </div>
+      {creamerOptions.map((option: { name: string; price: number }, index: number) => (
+        <div key={index} className={styles.optionItem}>
+          <div className={`${styles.optionRow} item-row`}>
+            <span className={`${styles.optionName} item-name`}>{option.name}</span>
+            <span className={`${styles.optionPrice} item-price`}>
+              {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// Mapping of special section group names for easy lookup
+const SPECIAL_SECTIONS = new Set([
+  'Tea Selections 🌱',
+  'Flavors 🍓',
+  'Toppings 🌈',
+  'Ice Levels 🧊',
+  'Sweetness Levels 🍯',
+  'Milk Options 🥛',
+  'Creamer Options ☕',
+]);
 
 interface TeaRekzPrintProps {
   teaRekzMenu: {
@@ -30,7 +169,7 @@ const GRID_ORDER = [
   [
     'Classic Milk Teas 🧋',
     'Crème Brûlée 🍮',
-    'Dino Refreshers (Caffeine-Free 🌙)',
+    'Dino Refreshers 🦖 (Caffeine-Free 🌙)',
     'Matcha Creations 🍵',
     'Milk Options 🥛',
     'Creamer Options ☕',
@@ -57,24 +196,33 @@ function createTeaSelections(groups: MenuGroup[]) {
 
 // Helper function to move emojis from end to front of a name
 function moveEmojisToFront(name: string): string {
+  // First, split off any parenthetical phrases (including nested parentheses)
+  const parentheticalMatch = name.match(/^(.+?)\s*(\([^)]*(?:\([^)]*\)[^)]*)*\))\s*$/);
+
+  let mainText = name;
+  let parenthetical = '';
+
+  if (parentheticalMatch) {
+    mainText = parentheticalMatch[1].trim();
+    parenthetical = parentheticalMatch[2].trim();
+  }
+
   // Try multiple approaches to catch all emoji types
   // First try the comprehensive Unicode ranges
-  let emojiMatch = name.match(
+  let emojiMatch = mainText.match(
     /(.*?)([\u{1F000}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{1F1E6}-\u{1F1FF}])+$/u
   );
 
   // If that doesn't work, try a broader approach that catches any character outside basic ASCII
   if (!emojiMatch) {
-    emojiMatch = name.match(/(.*?)([^\x00-\x7F]+)$/u);
+    emojiMatch = mainText.match(/(.*?)([^\x00-\x7F]+)$/u);
   }
 
-  if (emojiMatch) {
-    const textPart = emojiMatch[1].trim();
-    const emojiPart = emojiMatch[2];
-    return `${emojiPart} ${textPart}`;
-  }
+  const rearranged = emojiMatch ? `${emojiMatch[2]} ${emojiMatch[1].trim()}` : mainText;
+  const parentheticalSeparator = parenthetical ? ' ' : '';
+  const result = `${rearranged}${parentheticalSeparator}${parenthetical}`;
 
-  return name;
+  return result;
 }
 
 // Helper function to get toppings from menu option groups
@@ -176,148 +324,36 @@ function getCreamerOptionsFromOptionGroups(optionGroupsData: any) {
 }
 
 const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }) => {
-  // Get tea selections
-  const teaSelections = createTeaSelections(teaRekzMenu.groups);
-
-  // Get toppings
-  const toppings = getToppingsFromOptionGroups(optionGroups);
-
-  // Get ice levels
-  const iceLevels = getIceLevelsFromOptionGroups(optionGroups);
-
-  // Get sweetness levels
-  const sweetnessLevels = getSweetnessLevelsFromOptionGroups(optionGroups);
-
-  // Get flavors
-  const flavors = getFlavorsFromOptionGroups(optionGroups);
-
-  // Get milk options
-  const milkOptions = getMilkOptionsFromOptionGroups(optionGroups);
-
-  // Get creamer options
-  const creamerOptions = getCreamerOptionsFromOptionGroups(optionGroups);
-
   // Helper to render a column of sections
   const renderColumn = (sectionNames: string[]) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+    <div className={styles.column}>
       {sectionNames.map((groupName) => {
-        // Handle special sections
-        if (groupName === 'Tea Selections 🌱') {
-          return (
-            <div className="menu-section" key="tea-selections" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              {teaSelections.map((selection, index) => (
-                <div key={index} style={{ marginBottom: '0.15rem' }}>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 500, marginBottom: '0.05rem' }}>
-                    {selection.name}
-                  </div>
-                  {selection.description && (
-                    <div style={{ fontSize: '0.7rem', color: '#888', marginLeft: '0.5rem' }}>
-                      {selection.description}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          );
-        }
+        // Handle special sections using the mapping
+        if (SPECIAL_SECTIONS.has(groupName)) {
+          const key = groupName
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w-]/g, '');
 
-        if (groupName === 'Flavors 🍓') {
-          return (
-            <div className="menu-section" key="flavors" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              <div style={{ fontSize: '0.7rem', color: '#666' }}>{flavors.join(' · ')}</div>
-            </div>
-          );
-        }
-
-        if (groupName === 'Toppings 🌈') {
-          return (
-            <div className="menu-section" key="toppings" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              <div
-                className="section-desc"
-                style={{ fontSize: '0.7rem', color: '#666', marginBottom: '0.3rem' }}
-              >
-                Each topping $0.75; Pudding $1
-              </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.3rem' }}>
-                {toppings.map((topping: string, index: number) => (
-                  <div key={index} style={{ fontSize: '0.7rem', color: '#666' }}>
-                    {topping}
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-        }
-
-        if (groupName === 'Ice Levels 🧊') {
-          return (
-            <div className="menu-section" key="ice-levels" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              <div style={{ fontSize: '0.7rem', color: '#666' }}>{iceLevels.join(' · ')}</div>
-            </div>
-          );
-        }
-
-        if (groupName === 'Sweetness Levels 🍯') {
-          return (
-            <div className="menu-section" key="sweetness-levels" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              <div style={{ fontSize: '0.7rem', color: '#666' }}>{sweetnessLevels.join(' · ')}</div>
-            </div>
-          );
-        }
-
-        if (groupName === 'Milk Options 🥛') {
-          return (
-            <div className="menu-section" key="milk-options" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              {milkOptions.map((option: { name: string; price: number }, index: number) => (
-                <div key={index} style={{ marginBottom: '0.1rem' }}>
-                  <div className="item-row">
-                    <span className="item-name">{option.name}</span>
-                    <span className="item-price" style={{ fontWeight: 700 }}>
-                      {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          );
-        }
-
-        if (groupName === 'Creamer Options ☕') {
-          return (
-            <div className="menu-section" key="creamer-options" style={{ breakInside: 'avoid' }}>
-              <div className={`section-title ${margarine.className}`}>
-                {moveEmojisToFront(groupName)}
-              </div>
-              {creamerOptions.map((option: { name: string; price: number }, index: number) => (
-                <div key={index} style={{ marginBottom: '0.1rem' }}>
-                  <div className="item-row">
-                    <span className="item-name">{option.name}</span>
-                    <span className="item-price" style={{ fontWeight: 700 }}>
-                      {option.price > 0 ? `+${option.price.toFixed(2)}` : 'Included'}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          );
+          // Render the appropriate component with proper props
+          switch (groupName) {
+            case 'Tea Selections 🌱':
+              return <TeaSelectionsSection key={key} teaRekzMenu={teaRekzMenu} />;
+            case 'Flavors 🍓':
+              return <FlavorsSection key={key} optionGroups={optionGroups} />;
+            case 'Toppings 🌈':
+              return <ToppingsSection key={key} optionGroups={optionGroups} />;
+            case 'Ice Levels 🧊':
+              return <IceLevelsSection key={key} optionGroups={optionGroups} />;
+            case 'Sweetness Levels 🍯':
+              return <SweetnessLevelsSection key={key} optionGroups={optionGroups} />;
+            case 'Milk Options 🥛':
+              return <MilkOptionsSection key={key} optionGroups={optionGroups} />;
+            case 'Creamer Options ☕':
+              return <CreamerOptionsSection key={key} optionGroups={optionGroups} />;
+            default:
+              return null;
+          }
         }
 
         // Handle regular menu groups
@@ -327,7 +363,7 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
         if (groupName === 'Freshly Brewed Teas 🌱') {
           const freshlyBrewedGroup = getGroupByName(teaRekzMenu.groups, 'Freshly Brewed Teas 🌱');
           const milkTeaGroup = getGroupByName(teaRekzMenu.groups, 'Freshly Brewed Milk Teas 🧋');
-          const dinoGroup = getGroupByName(teaRekzMenu.groups, 'Dino Smash Fresh Lemon Teas 🍋');
+          const dinoGroup = getGroupByName(teaRekzMenu.groups, 'Dino Smash Fresh Lemon Teas 🦖🍋');
 
           group = {
             name: 'Fresh Brewed Teas 🌱',
@@ -368,23 +404,32 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
         if (!group) return null;
 
         return (
-          <div className="menu-section" key={group.guid} style={{ breakInside: 'avoid' }}>
-            <div className={`section-title ${margarine.className}`}>
+          <div className={`${styles.menuSection} menu-section`} key={group.guid}>
+            <div className={`${styles.sectionTitle} section-title ${margarine.className}`}>
               {moveEmojisToFront(group.name)}
             </div>
-            {group.description && <div className="section-desc">{group.description}</div>}
-            {group.items.map((item) => (
-              <div key={item.guid} style={{ marginBottom: '0.1rem' }}>
-                <div className="item-row">
-                  <span className="item-name">{item.name}</span>
-                  <span className="item-price" style={{ fontWeight: 700 }}>
-                    {Number.isInteger(item.price)
-                      ? item.price
-                      : item.price.toFixed(2).replace(/\.00$/, '')}
-                  </span>
+            {group.description && (
+              <div className={`${styles.sectionDesc} section-desc`}>{group.description}</div>
+            )}
+            {group.items.map((item) => {
+              // Special case: Remove 🌙 from item names in Dino Refreshers group
+              const itemDisplayName = group.name.includes('Dino Refreshers')
+                ? item.name.replace(/🌙\s*$/, '')
+                : item.name;
+
+              return (
+                <div key={item.guid} className={styles.menuItem}>
+                  <div className={`${styles.itemRow} item-row`}>
+                    <span className={`${styles.itemName} item-name`}>{itemDisplayName}</span>
+                    <span className={`${styles.itemPrice} item-price`}>
+                      {Number.isInteger(item.price)
+                        ? item.price
+                        : item.price.toFixed(2).replace(/\.00$/, '')}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         );
       })}
@@ -398,71 +443,39 @@ const TeaRekzPrint: React.FC<TeaRekzPrintProps> = ({ teaRekzMenu, optionGroups }
         <meta name="robots" content="noindex, nofollow" />
         <style>{printMenuLandscapeStyles}</style>
       </Head>
-      <div id="print-area" className={geist.className}>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            height: `${LANDSCAPE_HEIGHT_SAFE_IN}in`,
-            boxSizing: 'border-box',
-            paddingTop: '0',
-            position: 'relative',
-          }}
-        >
-          <div
-            style={{
-              flex: '1 1 auto',
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr 1fr',
-              columnGap: '1rem',
-              rowGap: '0.6rem',
-              width: '100%',
-              overflow: 'hidden',
-            }}
-          >
-            <div
-              style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', height: '100%' }}
-            >
+      <div
+        id="print-area"
+        className={`${styles.printArea} ${geist.className}`}
+        style={
+          {
+            '--landscape-height-safe': `${LANDSCAPE_HEIGHT_SAFE_IN}in`,
+            ...CSS_COLOR_VARS,
+          } as React.CSSProperties
+        }
+      >
+        <div className={styles.printContainer}>
+          <div className={styles.printGrid}>
+            <div className={styles.column}>
               {/* Logo in first column */}
-              <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
+              <div className={styles.logoSection}>
                 <img
                   src="/images/logos/tearekz_logo.png"
                   alt="Tea Rek'z Logo"
-                  style={{
-                    maxWidth: '90px',
-                    width: '100%',
-                    height: 'auto',
-                    display: 'block',
-                    margin: '0 auto',
-                  }}
+                  className={styles.logo}
                 />
               </div>
 
               {/* Menu sections */}
-              <div style={{ flex: '1', marginBottom: '0.5rem' }}>{renderColumn(GRID_ORDER[0])}</div>
+              {renderColumn(GRID_ORDER[0])}
 
               {/* Order Online Section - After flavors */}
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  marginTop: '-1.5rem',
-                }}
-              >
+              <div className={styles.orderOnlineSection}>
                 <img
                   src="/images/qrcodes/order-online-tearekz.png"
                   alt="Order Online QR Code"
-                  style={{
-                    maxWidth: '90px',
-                    width: '100%',
-                    height: 'auto',
-                    flex: '0 0 auto',
-                  }}
+                  className={styles.orderOnlineQR}
                 />
-                <div style={{ fontSize: '1rem', fontWeight: 600, color: '#333', flex: '1' }}>
-                  Order and Pay Online
-                </div>
+                <div className={styles.orderOnlineText}>Order and Pay Online</div>
               </div>
             </div>
             {renderColumn(GRID_ORDER[1])}

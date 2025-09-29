@@ -31,6 +31,18 @@ export const LANDSCAPE_HEIGHT_SAFE_IN = LANDSCAPE_HEIGHT_IN - PRINT_MARGIN_IN - 
 
 // Common styles for print menu pages
 export const printMenuStyles = `
+  :root {
+    --print-text: #222;
+    --print-text-secondary: #444;
+    --print-text-muted: #555;
+    --print-text-light: #666;
+    --print-text-very-light: #888;
+    --print-border: #bbb;
+    --print-background: #ffffff;
+    --print-background-light: #f8f8f8;
+    --print-shadow: rgba(0,0,0,0.08);
+  }
+
   @media print {
     @page {
       size: ${PAGE_WIDTH_IN}in ${LETTER_HEIGHT_IN}in;
@@ -41,7 +53,7 @@ export const printMenuStyles = `
       width: ${PAGE_WIDTH_IN}in;
       margin: 0;
       padding: 0;
-      background: #fff !important;
+      background: var(--print-background) !important;
     }
     .page-break {
       page-break-before: always;
@@ -52,7 +64,7 @@ export const printMenuStyles = `
       visibility: visible !important;
       position: relative !important;
       page-break-inside: avoid !important;
-      background-color: white !important;
+      background-color: var(--print-background) !important;
       margin-top: auto !important;
       flex-shrink: 0 !important;
     }
@@ -60,29 +72,29 @@ export const printMenuStyles = `
     .footer-print-bar a {
       display: inline !important;
       visibility: visible !important;
-      color: #666 !important;
+      color: var(--print-text-light) !important;
       print-color-adjust: exact !important;
       -webkit-print-color-adjust: exact !important;
     }
   }
   @media screen {
     html, body {
-      background: #f8f8f8;
+      background: var(--print-background-light);
     }
     #print-area {
-      border: 1px solid #222;
+      border: 1px solid var(--print-text);
       margin: 2rem auto;
       max-width: ${PAGE_WIDTH_PX}px;
       min-height: ${LETTER_HEIGHT_PX}px;
-      background: #fff;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      background: var(--print-background);
+      box-shadow: 0 2px 16px var(--print-shadow);
       padding: 2rem 2.5rem;
     }
   }
   #print-area {
     font-family: 'Geist', Arial, sans-serif;
     font-size: 0.87rem;
-    color: #222;
+    color: var(--print-text);
     line-height: 1.22;
     padding: 1.2rem 1.5rem;
   }
@@ -97,7 +109,7 @@ export const printMenuStyles = `
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #444;
+    color: var(--print-text-secondary);
   }
   .menu-section {
     margin-bottom: 1.2rem;
@@ -107,13 +119,13 @@ export const printMenuStyles = `
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid var(--print-border);
     padding-bottom: 0.1rem;
     letter-spacing: 0.02em;
   }
   .section-desc {
     font-size: 0.85rem;
-    color: #555;
+    color: var(--print-text-muted);
     margin-bottom: 0.3rem;
   }
   .item-row {
@@ -139,7 +151,7 @@ export const printMenuStyles = `
   }
   .item-desc {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--print-text-very-light);
     margin-left: 0.5rem;
     margin-bottom: 0.1rem;
     font-weight: 400;
@@ -148,6 +160,18 @@ export const printMenuStyles = `
 
 // Landscape-specific print styles
 export const printMenuLandscapeStyles = `
+  :root {
+    --print-text: #222;
+    --print-text-secondary: #444;
+    --print-text-muted: #555;
+    --print-text-light: #666;
+    --print-text-very-light: #888;
+    --print-border: #bbb;
+    --print-background: #ffffff;
+    --print-background-light: #f8f8f8;
+    --print-shadow: rgba(0,0,0,0.08);
+  }
+
   @media print {
     @page {
       size: ${LANDSCAPE_WIDTH_IN}in ${LANDSCAPE_HEIGHT_IN}in;
@@ -159,7 +183,7 @@ export const printMenuLandscapeStyles = `
       height: ${LANDSCAPE_HEIGHT_IN}in;
       margin: 0;
       padding: 0;
-      background: #fff !important;
+      background: var(--print-background) !important;
       overflow: hidden;
     }
     .page-break {
@@ -175,7 +199,7 @@ export const printMenuLandscapeStyles = `
       visibility: visible !important;
       position: relative !important;
       page-break-inside: avoid !important;
-      background-color: white !important;
+      background-color: var(--print-background) !important;
       margin-top: auto !important;
       flex-shrink: 0 !important;
     }
@@ -183,29 +207,29 @@ export const printMenuLandscapeStyles = `
     .footer-print-bar a {
       display: inline !important;
       visibility: visible !important;
-      color: #666 !important;
+      color: var(--print-text-light) !important;
       print-color-adjust: exact !important;
       -webkit-print-color-adjust: exact !important;
     }
   }
   @media screen {
     html, body {
-      background: #f8f8f8;
+      background: var(--print-background-light);
     }
     #print-area {
-      border: 1px solid #222;
+      border: 1px solid var(--print-text);
       margin: 2rem auto;
       max-width: ${LANDSCAPE_WIDTH_PX}px;
       min-height: ${LANDSCAPE_HEIGHT_PX}px;
-      background: #fff;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      background: var(--print-background);
+      box-shadow: 0 2px 16px var(--print-shadow);
       padding: 2rem 2.5rem;
     }
   }
   #print-area {
     font-family: 'Geist', Arial, sans-serif;
     font-size: 0.87rem;
-    color: #222;
+    color: var(--print-text);
     line-height: 1.22;
     padding: 0.8rem 1.2rem;
     height: ${LANDSCAPE_HEIGHT_SAFE_IN}in;
@@ -224,7 +248,7 @@ export const printMenuLandscapeStyles = `
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
-    color: #444;
+    color: var(--print-text-secondary);
   }
   .menu-section {
     margin-bottom: 0.6rem;
@@ -234,13 +258,13 @@ export const printMenuLandscapeStyles = `
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.1rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid var(--print-border);
     padding-bottom: 0.05rem;
     letter-spacing: 0.02em;
   }
   .section-desc {
     font-size: 0.85rem;
-    color: #555;
+    color: var(--print-text-muted);
     margin-bottom: 0.2rem;
   }
   .item-row {
@@ -266,7 +290,7 @@ export const printMenuLandscapeStyles = `
   }
   .item-desc {
     font-size: 0.8rem;
-    color: #888;
+    color: var(--print-text-very-light);
     margin-left: 0.5rem;
     margin-bottom: 0.1rem;
     font-weight: 400;

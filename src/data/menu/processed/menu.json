@@ -4048,9 +4048,9 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000005129561866_1757235605.jpg"
             },
             {
-              "name": "Rooibos Tea🌙",
+              "name": "Rooibos Tea 🌙",
               "guid": "47d3cd45-c531-4553-a20a-7054195b565b",
-              "description": "Naturally caffeine-free🌙 herbal tea from South Africa, with a smooth, earthy flavor and gentle notes of honey and vanilla.",
+              "description": "Naturally caffeine-free 🌙 herbal tea from South Africa, with a smooth, earthy flavor and gentle notes of honey and vanilla.",
               "price": 6,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005129561858_1757235645.jpg"
             }
@@ -4253,7 +4253,7 @@
           ]
         },
         {
-          "name": "Dino Smash Fresh Lemon Teas 🍋",
+          "name": "Dino Smash Fresh Lemon Teas 🦖🍋",
           "guid": "2ca49140-1e1a-49ac-b9a7-443933fd9841",
           "description": "A bold, refreshing citrus explosion! Freshly smashed lemons shaken with tea for a tangy kick that’s dino-sized in flavor. Perfectly balanced between sweet and tart — guaranteed to roar away your thirst.\r\n\r\n0% ice not available.",
           "items": [
@@ -4314,7 +4314,7 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005129712343_1757235457.jpg"
             },
             {
-              "name": "Rooibos Smash Lemon Tea🌙",
+              "name": "Rooibos Smash Lemon Tea 🌙",
               "guid": "7ba1898d-5253-4b92-88ee-782610e4d800",
               "description": "Naturally caffeine-free rooibos shaken with fresh lemon for a bright, citrusy lift over its smooth, earthy base. Not sweet on its own.",
               "price": 6.75,
@@ -4323,7 +4323,7 @@
           ]
         },
         {
-          "name": "Dino Refreshers (Caffeine-Free 🌙)",
+          "name": "Dino Refreshers 🦖 (Caffeine-Free 🌙)",
           "guid": "82c7dcc1-a8cd-43d1-99a2-128c532935c1",
           "description": "",
           "items": [
@@ -4370,28 +4370,28 @@
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005355824029_1758274261.jpg"
             },
             {
-              "name": "Strawberry Mango Dino Freeze 🍓🥭🦖❄️🌙",
+              "name": "Strawberry Mango Dino Freeze 🍓🥭❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of strawberry and mango syrups blended into the ultimate sweet chill.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291571397_1758274306.jpg"
             },
             {
-              "name": "Passion Fruit Mango Dino Freeze 🍍🥭🦖❄️🌙",
+              "name": "Passion Fruit Mango Dino Freeze 🍍🥭❄️🌙",
               "guid": "b000ae43-3e93-4b3b-9922-2e82a208dd05",
               "description": "Tangy passion fruit syrup swirled with tropical mango for a bold, icy refresher.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291571399_1758274354.jpg"
             },
             {
-              "name": "Lychee Guava Dino Freeze 🤍🍈🦖❄️🌙",
+              "name": "Lychee Guava Dino Freeze 🤍🍈❄️🌙",
               "guid": "dce8e115-fb31-4cb8-9559-4d3423040ccc",
               "description": "Smooth lychee and guava syrups blended into a light, floral, tropical freeze.",
               "price": 5.75,
               "imageUrl": "http://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291572851_1758274365.jpg"
             },
             {
-              "name": "Peach Lychee Dino Freeze 🍑🤍🦖❄️🌙",
+              "name": "Peach Lychee Dino Freeze 🍑🤍❄️🌙",
               "guid": "827b9e61-9aba-4ee5-87ff-97523c5a9406",
               "description": "Sweet peach and delicate lychee syrups come together in a frosty, refreshing blend.",
               "price": 5.75,
