@@ -42,4 +42,11 @@ export const QUICK_LINKS: QuickLink[] = [
     target: '_blank',
     rel: 'noopener noreferrer',
   },
+  {
+    label: "Tea-Rek'z",
+    href: 'https://tearekz.cafe',
+    isInternal: false,
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
 ];
