@@ -7,6 +7,7 @@ import {
   faYelp,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 interface SocialMediaLink {
   url: string;
@@ -51,5 +52,11 @@ export const SOCIAL_MEDIA: Record<string, SocialMediaLink> = {
     label: 'X (Twitter)',
     icon: faXTwitter,
     title: 'Follow us on X (Twitter)',
+  },
+  nextdoor: {
+    url: 'https://nextdoor.com/page/skilletz-fremont-ca/',
+    label: 'Nextdoor',
+    icon: faHouse,
+    title: 'Connect with us on Nextdoor',
   },
 } as const;
