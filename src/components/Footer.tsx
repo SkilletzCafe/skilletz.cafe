@@ -2,12 +2,10 @@ import Link from 'next/link';
 
 import { BUSINESS, FULL_ADDRESS, QUICK_LINKS, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTheme } from '@nextjs-htk/core/context';
+import { createGoogleMapsUrl } from '@nextjs-htk/core/utils';
 
 import { margarine } from '@/config/fonts';
-
-import { useTheme } from '@/context/ThemeContext';
-
-import { createGoogleMapsUrl } from '@/utils/urls';
 
 import styles from '@/styles/Layout.module.css';
 

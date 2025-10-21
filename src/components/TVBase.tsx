@@ -3,10 +3,10 @@ import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { MenuItem } from '@/types/menu';
+import { shuffleArray } from '@nextjs-htk/core/utils';
 
 import { margarine } from '@/config/fonts';
 
-import { shuffleArray } from '@/utils/algo';
 import { imageLoader } from '@/utils/menu';
 
 import baseStyles from '@/styles/TVBase.module.css';

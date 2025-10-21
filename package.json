@@ -2,6 +2,10 @@
   "name": "skilletz.cafe",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build && tsx src/scripts/generate_sitemap.ts",
@@ -26,10 +30,11 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@nextjs-htk/core": "file:../../nextjs-htk/packages/core",
     "gray-matter": "^4.0.3",
     "next": "15.2.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },

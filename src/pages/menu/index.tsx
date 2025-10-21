@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { GetStaticProps } from 'next';
 
 import { MenuData, MenuItemState, MenuOptionGroupsData } from '@/types/menu';
+import { getUrlParam } from '@nextjs-htk/core/utils';
 
 import { margarine } from '@/config/fonts';
 import { MenuTab } from '@/config/menuTabs';
@@ -17,7 +18,6 @@ import { MenuTabNavigation } from '@/components/menu/MenuTabNavigation';
 
 import { getMainMenus, imageLoader } from '@/utils/menu';
 import { loadMenuData, loadMenuOptionGroupsData } from '@/utils/menu_static';
-import { getUrlParam } from '@/utils/urls';
 
 import styles from '@/styles/Menu.module.css';
 

@@ -1,11 +1,10 @@
 import { BUSINESS, FULL_ADDRESS } from '@/config';
 import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createGoogleMapsUrl, createPhoneUrl } from '@nextjs-htk/core/utils';
+import { emailUtils } from '@nextjs-htk/core/utils';
 
 import { BasicPageLayout } from '@/components/BasicPageLayout';
-
-import { emailUtils } from '@/utils/email';
-import { createGoogleMapsUrl, createPhoneUrl } from '@/utils/urls';
 
 import styles from '@/styles/BasicPage.module.css';
 

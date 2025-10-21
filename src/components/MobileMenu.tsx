@@ -5,10 +5,9 @@ import Link from 'next/link';
 import { BUSINESS, FULL_ADDRESS, PAGES, SOCIAL_MEDIA } from '@/config';
 import { faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { createGoogleMapsUrl, createPhoneUrl } from '@nextjs-htk/core/utils';
 
 import { geist, margarine } from '@/config/fonts';
-
-import { createGoogleMapsUrl, createPhoneUrl } from '@/utils/urls';
 
 import styles from '@/styles/MobileMenu.module.css';
 
