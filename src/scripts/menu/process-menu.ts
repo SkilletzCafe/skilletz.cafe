@@ -91,6 +91,12 @@ interface ProcessedOptionGroupsData {
  * Process the raw Toast menu export into an optimized format for the website
  */
 
+// Helper function to convert HTTP URLs to HTTPS
+function ensureHttps(url: string | null): string | null {
+  if (!url) return null;
+  return url.replace(/^http:\/\//i, 'https://');
+}
+
 // Helper function to recursively extract option groups from menu items
 function extractOptionGroups(
   items: ToastMenuItem[],
@@ -171,7 +177,7 @@ async function processMenu() {
               guid: item.guid,
               description: item.description,
               price: item.price,
-              imageUrl: item.imageLink, // Use the imageLink directly from Toast
+              imageUrl: ensureHttps(item.imageLink), // Convert HTTP to HTTPS
             })),
         })),
       })),

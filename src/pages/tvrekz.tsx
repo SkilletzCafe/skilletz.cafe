@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 
 import { MenuItem } from '@/types/menu';
 
@@ -13,16 +14,21 @@ interface TVRekzPageProps {
 
 export default function TVRekz({ featuredItems }: TVRekzPageProps) {
   return (
-    <TVBase
-      items={featuredItems}
-      logoPath="/images/logos/tearekz_logo.png"
-      logoAlt="Tea-Rek'z Logo"
-      logoWidth={240}
-      logoHeight={70}
-      minDelayMillis={5000}
-      maxDelayMillis={30000}
-      defaultDelayMillis={8000}
-    />
+    <>
+      <Head>
+        <title>Tea-Rek&apos;z TV Display at Skillet&apos;z Cafe | Featured Boba Tea & Drinks</title>
+      </Head>
+      <TVBase
+        items={featuredItems}
+        logoPath="/images/logos/tearekz_logo.png"
+        logoAlt="Tea-Rek'z Logo"
+        logoWidth={240}
+        logoHeight={70}
+        minDelayMillis={5000}
+        maxDelayMillis={30000}
+        defaultDelayMillis={8000}
+      />
+    </>
   );
 }
 

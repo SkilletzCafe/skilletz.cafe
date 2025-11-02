@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 
 import { MenuItem } from '@/types/menu';
 
@@ -13,13 +14,18 @@ interface TVPageProps {
 
 export default function TV({ featuredItems }: TVPageProps) {
   return (
-    <TVBase
-      items={featuredItems}
-      logoPath="/images/logos/skilletz_logo_dark_mode_blue_flame_transparent.png"
-      logoAlt="Skilletz Logo"
-      logoWidth={240}
-      logoHeight={70}
-    />
+    <>
+      <Head>
+        <title>Skillet&apos;z Cafe TV Display | Featured Menu Items</title>
+      </Head>
+      <TVBase
+        items={featuredItems}
+        logoPath="/images/logos/skilletz_logo_dark_mode_blue_flame_transparent.png"
+        logoAlt="Skilletz Logo"
+        logoWidth={240}
+        logoHeight={70}
+      />
+    </>
   );
 }
 

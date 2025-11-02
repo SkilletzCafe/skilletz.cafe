@@ -1237,6 +1237,43 @@
       ]
     },
     {
+      "name": "Burger & Sandwich Sides",
+      "guid": "ab6aad6d-e775-462f-a2b7-edd3db40957b",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "French Fries",
+          "guid": "03221a6c-e117-46d2-8d31-c1a442a2aaa0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Zuchinni",
+          "guid": "3520358b-c68d-4163-b804-b7641d1911d6",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Onion Rings",
+          "guid": "9f5dc4a4-07c4-4d93-afd8-2c4cdd67b35f",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "No Side",
+          "guid": "6d7f0c42-2ab0-4344-9588-8f812aec331c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Make it Deluxe (Monte Cristo)",
       "guid": "33145e80-a1c4-4d4b-825f-c673a0aca092",
       "minSelections": 0,
@@ -1521,43 +1558,6 @@
         {
           "name": "Salad",
           "guid": "0ea9d6d8-cbbd-4a95-91ad-f3f918879602",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Burger & Sandwich Sides",
-      "guid": "ab6aad6d-e775-462f-a2b7-edd3db40957b",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "French Fries",
-          "guid": "03221a6c-e117-46d2-8d31-c1a442a2aaa0",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Zuchinni",
-          "guid": "3520358b-c68d-4163-b804-b7641d1911d6",
-          "description": "",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Onion Rings",
-          "guid": "9f5dc4a4-07c4-4d93-afd8-2c4cdd67b35f",
-          "description": "",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "No Side",
-          "guid": "6d7f0c42-2ab0-4344-9588-8f812aec331c",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -1997,110 +1997,29 @@
       ]
     },
     {
-      "name": "Ice Level (Tea-Rek'z)",
-      "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
+      "name": "Milk Option (Tea-Rek'z)",
+      "guid": "57043f81-0f04-4fef-ad9f-12e5620b6ab6",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100% ice",
-          "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
+          "name": "Fresh Milk (Dairy)",
+          "guid": "448a1886-1f94-4596-a453-17017277db60",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% ice",
-          "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
+          "name": "Oat Milk",
+          "guid": "1cc82a8b-6c62-4f5b-a9e1-41781dd5a054",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "0% ice",
-          "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Sweetness Level (Cane Sugar)",
-      "guid": "df1b2c56-6a3c-49a4-ae24-d7fbaf11aca7",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% sweet",
-          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet",
-          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet",
-          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet",
-          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "10% sweet",
-          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "0% sweet",
-          "guid": "0f960c7f-4f10-4d4c-af4c-745b98d5128e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Creamer Option (Tea-Rek'z)",
-      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "House Cream (Plant Based)",
-          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Fresh Dairy (Half and Half)",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0.25,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "name": "Organic Coconut Milk",
+          "guid": "1533a63a-4de7-4570-a5f1-f2042bc208e8",
           "description": "",
           "price": 0.75,
           "orderableOnline": "YES"
@@ -2112,10 +2031,10 @@
       "guid": "9145a88a-16f0-4a02-bccd-d227ed2e8f87",
       "minSelections": 0,
       "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
+      "pricingMode": "FIXED_PRICE",
       "items": [
         {
-          "name": "Honey Boba ⚫️",
+          "name": "Boba (tapioca) ⚫️",
           "guid": "9c4c60b3-b0be-4326-93a2-31eedd3e37db",
           "description": "Classic honey-sweetened tapioca pearls",
           "price": 0.75,
@@ -2181,53 +2100,159 @@
           "name": "Pudding 🍮",
           "guid": "a0b49da2-3ecb-432d-afd8-18cb97571f33",
           "description": "Creamy custard pudding",
-          "price": 1,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Sweetness Level (Flavored Drinks)",
-      "guid": "b399d4f7-56fd-4285-86a1-85ecfe79ca69",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% sweet",
-          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
-          "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% sweet",
-          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Milk Option (Tea-Rek'z)",
-      "guid": "57043f81-0f04-4fef-ad9f-12e5620b6ab6",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Fresh Milk (Dairy)",
-          "guid": "448a1886-1f94-4596-a453-17017277db60",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Oat Milk",
-          "guid": "1cc82a8b-6c62-4f5b-a9e1-41781dd5a054",
+          "name": "Dalgona (Honeycomb Toffee)",
+          "guid": "0b7602e4-6cf6-450e-ad19-db6b4b0cd56f",
           "description": "",
           "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "💪 Boosts (Tea-Rek'z)",
+      "guid": "e4d60271-5a33-4444-a9ab-d396be8da5d2",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Grass-Fed Whey Protein 🥛",
+          "guid": "9bd9972f-eb12-46b0-ac93-98045e6b72e2",
+          "description": "Classic dairy protein (~20 g) for a creamy, muscle-friendly upgrade.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Vegan Protein (Pea) 🌱",
+          "guid": "cd0ebdcf-76dd-4200-8a04-246e8395cc82",
+          "description": "Plant-based protein boost (~20 g) that blends smooth and clean.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Creatine ⚡",
+          "guid": "615d6533-10ca-4223-83b2-2299129fac29",
+          "description": "Pure creatine monohydrate (~5 g) — supports strength, focus, and recovery.",
+          "price": 1.25,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "No Boba",
+      "guid": "4e4578e5-241f-4ac2-908a-ffaf9b7db0eb",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Boba",
+          "guid": "e0cbb7d6-429e-4243-9c1d-5514508a4479",
+          "description": "",
+          "price": -0.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Make it blue",
+      "guid": "b8e2b3e2-13cf-410f-9d4c-f253abf5daf7",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Add a splash of Butterfly Pea Tea (caffeine free)",
+          "guid": "0df5482b-61be-4d27-a905-58285df22cf2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Crème Brûlée (iced only)",
+      "guid": "d2e73248-2395-4b3b-bc5c-3fe8407475c2",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Add Crème Brûlée",
+          "guid": "885cf17d-2b88-4030-913a-01883674ff38",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Creamer Option (Thai Tea)",
+      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Organic Half and Half",
+          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer",
+          "guid": "08ed8031-d51f-476b-9628-d811d1b16d88",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced/Hot (Tea-Rek'z)",
+      "guid": "68d37fe4-ccac-48d7-b359-c92319b54c16",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% ice",
+          "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% ice",
+          "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "0% ice",
+          "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Hot",
+          "guid": "068885c6-c41b-4978-b5f9-f070b322025f",
+          "description": "",
+          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2263,24 +2288,105 @@
       ]
     },
     {
-      "name": "Creamer Option (Thai Tea)",
-      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
+      "name": "Creamer Option (Tea-Rek'z)",
+      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Fresh Half and Half",
-          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "name": "House Cream (Plant Based)",
+          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Organic Oat Creamer",
-          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
+          "name": "Organic Half and Half",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
           "description": "",
           "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer",
+          "guid": "3e1bc866-11eb-4224-a0ed-d40efff87b56",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "iced Coffee Creamer Options (Tea-Rek'z)",
+      "guid": "02e779fc-1ebc-4224-a22e-3db387fa5b46",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Condensed Milk",
+          "guid": "7ce68ab6-900c-46e0-9361-6776f9235a68",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Half and Half",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "c53f22c5-465b-4ba9-865d-b80cfe5236fc",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer",
+          "guid": "798a0d0d-99db-4778-a33d-f9eabfa87a5f",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Level (Tea-Rek'z)",
+      "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% ice",
+          "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% ice",
+          "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "0% ice",
+          "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
+          "description": "",
+          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2290,76 +2396,62 @@
       "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
       "minSelections": 0,
       "maxSelections": 1,
-      "pricingMode": "INCLUDED",
+      "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
           "name": "No Jasmine Tea",
           "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
           "description": "",
-          "price": 0,
+          "price": -1,
           "orderableOnline": "YES"
         }
       ]
     },
     {
-      "name": "Choose a Flavor (Tea-Rek'z)",
-      "guid": "b5c04508-4892-4f9f-9188-c0e61d5bf601",
+      "name": "Sweetness Level (Cane Sugar)",
+      "guid": "df1b2c56-6a3c-49a4-ae24-d7fbaf11aca7",
       "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Original",
-          "guid": "7c451b4e-ac4c-4814-96b5-22c51a427e81",
+          "name": "100% sweet",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Brown Sugar",
-          "guid": "1718168d-9692-4122-b003-358a3ba8c5a4",
+          "name": "75% sweet",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Strawberry",
-          "guid": "6dbf0f8f-cbbb-41a9-ae3a-786a1a21aafa",
+          "name": "50% sweet",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Mango",
-          "guid": "4bb9807f-b785-494d-b35d-abfef13ad8e4",
+          "name": "25% sweet",
+          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee",
-          "guid": "a26d14d2-b2f5-404c-99d0-d04e39076bc0",
+          "name": "10% sweet",
+          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Peach",
-          "guid": "ed5e2626-580d-4c9f-a80a-f5f2bfca34b7",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Passion Fruit",
-          "guid": "5daa4413-601e-4c64-890e-9134d30f4fd6",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Guava",
-          "guid": "b3bff0cc-0557-4f04-9540-271dcee3b9c4",
+          "name": "0% sweet",
+          "guid": "0f960c7f-4f10-4d4c-af4c-745b98d5128e",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2367,71 +2459,101 @@
       ]
     },
     {
-      "name": "Choose a Tea (Bubble Tea)",
-      "guid": "40bf70c3-ccaf-4fe2-9ace-71336bb2ba63",
+      "name": "Sweetness Level (Flavored Drinks)",
+      "guid": "b399d4f7-56fd-4285-86a1-85ecfe79ca69",
       "minSelections": 1,
       "maxSelections": 1,
-      "pricingMode": "INCLUDED",
+      "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Assam Black",
-          "guid": "3d7ea7fa-bc9d-4067-b8a7-928752befbb3",
+          "name": "100% sweet",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Earl Grey Black",
-          "guid": "6dfbd281-f515-4ffa-8ee6-ec478b2966d8",
+          "name": "50% sweet",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
-        },
-        {
-          "name": "Lychee Black",
-          "guid": "42223723-e60c-4cb0-90c0-4a7e3caea7a5",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Choose a Tea (non-milk Tea)",
+      "guid": "c2164949-3ddc-4520-b7cb-79b3672bdc37",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "FIXED_PRICE",
+      "items": [
         {
           "name": "Jasmine Green",
-          "guid": "a441e2f1-f7c4-49ca-8bad-1b33621be035",
+          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Four Seasons Jade",
-          "guid": "583216b9-c605-4d86-8927-7569e7461092",
+          "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Assam Black",
+          "guid": "f09ac219-9499-4fd1-aab9-e38a88f07edc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Earl Grey",
+          "guid": "7c0de323-1cab-4a20-b132-53499c605fd6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee Black",
+          "guid": "8fd830d4-c377-47ce-bd31-ae9c4bc3025c",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Roasted Oolong",
-          "guid": "46dfeb9d-a47b-4a68-b1b8-2ffe33f31f4a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "White Peach Oolong",
-          "guid": "8d9d96f8-3498-449a-b0da-3c59e61e83ec",
+          "guid": "e27fbf26-321c-4597-83f8-5bfdb2ab3639",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "White Grape Oolong",
-          "guid": "5e976dd8-e5f0-4a34-a770-61a2ed006bb2",
+          "guid": "de1d290f-cef5-4346-bd14-3f8656cbdd4e",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Rooibos",
-          "guid": "b70c5983-31fa-436c-a04f-8c244c8ca880",
+          "name": "White Peach Oolong",
+          "guid": "bbcb6673-6f06-4b89-9a2d-aa70cba2bf16",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rooibos 🌙",
+          "guid": "9236fc13-1227-4174-a68a-415dc34d635c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rose Garden 🌙",
+          "guid": "fc4a5e9c-314c-435d-b4a6-bff2dd06cb6c",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2439,22 +2561,307 @@
       ]
     },
     {
-      "name": "Ice Level (Smash Lemon)",
-      "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
+      "name": "Choose a Tea (Milk Tea)",
+      "guid": "a6e5d3f0-41d4-425b-8c85-d096cd90199e",
       "minSelections": 1,
       "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
+      "pricingMode": "FIXED_PRICE",
       "items": [
         {
-          "name": "100% ice",
-          "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
+          "name": "Jasmine Green",
+          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% ice",
-          "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
+          "name": "Four Seasons Jade",
+          "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Assam Black",
+          "guid": "f09ac219-9499-4fd1-aab9-e38a88f07edc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Earl Grey",
+          "guid": "7c0de323-1cab-4a20-b132-53499c605fd6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee Black",
+          "guid": "8fd830d4-c377-47ce-bd31-ae9c4bc3025c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Roasted Oolong",
+          "guid": "e27fbf26-321c-4597-83f8-5bfdb2ab3639",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "White Grape Oolong",
+          "guid": "de1d290f-cef5-4346-bd14-3f8656cbdd4e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "White Peach Oolong",
+          "guid": "bbcb6673-6f06-4b89-9a2d-aa70cba2bf16",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Rooibos 🌙",
+          "guid": "9236fc13-1227-4174-a68a-415dc34d635c",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose a Fruit (Tea-Rek'z)",
+      "guid": "532cbf0c-e453-4f0d-9759-05a68fbfefde",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Strawberry 🍓",
+          "guid": "9224056f-3461-4da6-ac74-3aceb321c3cf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango 🥭",
+          "guid": "ba3b9935-6374-4d35-8dad-987a66971e4f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee 🤍",
+          "guid": "12bdddcd-4b45-4bb3-9d64-db779b2591ba",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Peach 🍑",
+          "guid": "ee9cf2ee-3bc3-4a1d-bdb9-6be8177973f0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Passion Fruit 💛",
+          "guid": "ee1ecb9b-4f61-411b-9b4d-071f9ffdf28d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Guava 🍈",
+          "guid": "a0c08534-8682-4813-86cf-64022ee8a7cd",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "(optional) Add Creamer",
+      "guid": "10496734-5dc9-4d53-86e1-437ec9a230c0",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "House Cream (Plant Based)",
+          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Half and Half",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer",
+          "guid": "3e1bc866-11eb-4224-a0ed-d40efff87b56",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced/Hot (Tea-Rek'z coffee)",
+      "guid": "0033a743-dc16-4231-b282-2508857704ac",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Iced (2 espresso shots)",
+          "guid": "1072692f-71db-47bc-bb9e-c925177516e7",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Iced (4 espresso shots)",
+          "guid": "8750173c-ddf1-4291-9d34-6756aea9417e",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Hot (4 espresso shots)",
+          "guid": "8037aeb4-782f-4710-9aa6-006fce864f9c",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Coffee Creamer Options (Tea-Rek'z)",
+      "guid": "eb465fcb-e1f0-4b2c-8cc1-3799f86a8a03",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Condensed Milk",
+          "guid": "7ce68ab6-900c-46e0-9361-6776f9235a68",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "House Cream (Plant Based)",
+          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Half and Half",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Oat Creamer",
+          "guid": "c53f22c5-465b-4ba9-865d-b80cfe5236fc",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer",
+          "guid": "798a0d0d-99db-4778-a33d-f9eabfa87a5f",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Fruit Choices (up to 2) (Dino Freeze)",
+      "guid": "6764bc69-e93d-48c6-a49b-78627b992b23",
+      "minSelections": 1,
+      "maxSelections": 2,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Strawberry 🍓",
+          "guid": "9224056f-3461-4da6-ac74-3aceb321c3cf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango 🥭",
+          "guid": "ba3b9935-6374-4d35-8dad-987a66971e4f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee 🤍",
+          "guid": "12bdddcd-4b45-4bb3-9d64-db779b2591ba",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Peach 🍑",
+          "guid": "ee9cf2ee-3bc3-4a1d-bdb9-6be8177973f0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Passion Fruit 💛",
+          "guid": "ee1ecb9b-4f61-411b-9b4d-071f9ffdf28d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Guava 🍈",
+          "guid": "a0c08534-8682-4813-86cf-64022ee8a7cd",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose Color (Mini Rex Stuffie Keychain)",
+      "guid": "41420ab0-663c-464d-9eaa-c7c25c71f90c",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Green",
+          "guid": "eaaed2e9-f094-4643-8c60-c5794f1a66d7",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Blue",
+          "guid": "b04778a1-49c3-481a-a898-9c9bfe3a7842",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"

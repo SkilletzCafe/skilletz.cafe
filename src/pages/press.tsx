@@ -44,14 +44,13 @@ export default function Press() {
           <h3 className={styles.cardTitle}>KQED&#39;s Check, Please! Bay Area</h3>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <iframe
-              width="100%"
+              width="560"
               height="315"
               src="https://www.youtube.com/embed/3ThD2idf0n0"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{ borderRadius: 8 }}
+              style={{ border: 0, borderRadius: 8, width: '100%' }}
             ></iframe>
           </div>
         </div>
@@ -63,12 +62,10 @@ export default function Press() {
               src="https://www.instagram.com/p/DIjVR1iJWyM/embed"
               width="320"
               height="440"
-              frameBorder="0"
-              scrolling="no"
               allowTransparency={true}
               allow="encrypted-media"
               title="Instagram embed"
-              style={{ border: 0, borderRadius: 8 }}
+              style={{ border: 0, borderRadius: 8, overflow: 'hidden' }}
             ></iframe>
           </div>
         </div>

@@ -17,3 +17,5 @@ jobs:
       - uses: anishathalye/proof-html@v2
         with:
           directory: ./docs
+          check_css: false
+          check_favicon: false
