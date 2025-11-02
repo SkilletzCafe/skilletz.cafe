@@ -12,6 +12,7 @@ interface MenuItemProps {
   onImageLoad: (itemId: string) => void;
   onKeyDown: (e: React.KeyboardEvent, index: number, totalItems: number) => void;
   setRef?: (el: HTMLDivElement | null) => void;
+  sectionGuid?: string;
 }
 
 export function MenuItem({
@@ -22,13 +23,15 @@ export function MenuItem({
   onImageLoad,
   onKeyDown,
   setRef,
+  sectionGuid,
 }: MenuItemProps) {
+  const uniqueId = sectionGuid ? `${sectionGuid}-${item.guid}` : item.guid;
   return (
     <div
       key={item.guid}
       className={`${styles.menuItem} ${itemState.isLoaded ? styles.loaded : ''}`}
       role="article"
-      aria-labelledby={`item-name-${item.guid}`}
+      aria-labelledby={`item-name-${uniqueId}`}
       tabIndex={0}
       ref={setRef}
       data-item-id={item.guid}
@@ -64,7 +67,7 @@ export function MenuItem({
       </div>
       <div className={styles.itemDetails}>
         <div className={styles.itemHeader}>
-          <h3 id={`item-name-${item.guid}`} className={styles.itemName}>
+          <h3 id={`item-name-${uniqueId}`} className={styles.itemName}>
             {item.name}
           </h3>
           <span className={styles.price} aria-label={`Price: $${item.price.toFixed(2)}`}>
