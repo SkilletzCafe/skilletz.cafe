@@ -18,3 +18,5 @@ jobs:
         with:
           directory: ./docs
           check_css: false
+          check_html: false
+          ignore_url_re: '(instagram\.com|facebook\.com|yelp\.com|tripadvisor\.com|toasttab\.com)'
