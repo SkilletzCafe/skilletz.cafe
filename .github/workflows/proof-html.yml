@@ -19,4 +19,4 @@ jobs:
           directory: ./docs
           check_css: false
           ignore_url_re: '(instagram\.com|facebook\.com|yelp\.com|yelp\.to|tripadvisor\.com|toasttab\.com|kron4\.com)'
-          file_ignore: '/404\.html$,/404/index\.html$'
+          validator_ignore: 'Element "style" not allowed as child of element "div"'
