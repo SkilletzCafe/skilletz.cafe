@@ -518,14 +518,14 @@
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
               "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 13.95,
+              "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
               "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 14.95,
+              "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
@@ -903,14 +903,14 @@
               "name": "Greek Chicken Salad",
               "guid": "b04da2b2-5368-4d23-b00a-765d729a149e",
               "description": "Grilled chicken, bacon, avocado, tomatoes, cucumbers, strawberries, blueberries, feta cheese, and croutons.",
-              "price": 16.95,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353183282_1734991656.jpg"
             },
             {
               "name": "Grilled Chicken Caesar Salad",
               "guid": "6704ed50-9cac-43e5-a2f3-09fa2a4914d5",
               "description": "Romaine, grilled chicken, bacon, avocado, parmesan cheese, and croutons.",
-              "price": 17,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353183284_1734991668.jpg"
             }
           ]
@@ -1596,14 +1596,14 @@
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
               "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 13.95,
+              "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
               "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 14.95,
+              "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
@@ -1981,14 +1981,14 @@
               "name": "Greek Chicken Salad",
               "guid": "b04da2b2-5368-4d23-b00a-765d729a149e",
               "description": "Grilled chicken, bacon, avocado, tomatoes, cucumbers, strawberries, blueberries, feta cheese, and croutons.",
-              "price": 16.95,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353183282_1734991656.jpg"
             },
             {
               "name": "Grilled Chicken Caesar Salad",
               "guid": "6704ed50-9cac-43e5-a2f3-09fa2a4914d5",
               "description": "Romaine, grilled chicken, bacon, avocado, parmesan cheese, and croutons.",
-              "price": 17,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353183284_1734991668.jpg"
             }
           ]
@@ -2688,14 +2688,14 @@
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
               "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 13.95,
+              "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
               "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
-              "price": 14.95,
+              "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
@@ -3073,14 +3073,14 @@
               "name": "Greek Chicken Salad",
               "guid": "b04da2b2-5368-4d23-b00a-765d729a149e",
               "description": "Grilled chicken, bacon, avocado, tomatoes, cucumbers, strawberries, blueberries, feta cheese, and croutons.",
-              "price": 16.95,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000353183282_1734991656.jpg"
             },
             {
               "name": "Grilled Chicken Caesar Salad",
               "guid": "6704ed50-9cac-43e5-a2f3-09fa2a4914d5",
               "description": "Romaine, grilled chicken, bacon, avocado, parmesan cheese, and croutons.",
-              "price": 17,
+              "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000353183284_1734991668.jpg"
             }
           ]
@@ -3879,6 +3879,13 @@
               "description": "",
               "price": 6,
               "imageUrl": null
+            },
+            {
+              "name": "Hot Water",
+              "guid": "e21e0659-d547-4cb2-80cc-1ee357e938d7",
+              "description": "",
+              "price": 0,
+              "imageUrl": null
             }
           ]
         }
@@ -3908,14 +3915,14 @@
           "description": "",
           "items": [
             {
-              "name": "Tiger (Brown Sugar) Milk Tea with Boba 🐯🌙",
+              "name": "Tiger Milk Tea with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Velvety fresh milk with bold brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1760857058.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/02044fa6-5ed5-492c-81f7-1accbfe28045.png"
             },
             {
-              "name": "Classic Thai Tea (with organic half & half) with Boba 🇹🇭🫖",
+              "name": "Classic Thai Tea with Boba 🇹🇭🫖",
               "guid": "8b1c97f9-f4ef-460a-a2b4-121b2ebf915e",
               "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness. Served with boba.",
               "price": 8.25,
@@ -3925,50 +3932,50 @@
               "name": "Taro Milk Tea with Boba 🍠🍯🌙",
               "guid": "694b51e6-58d9-4fea-9505-b159610b2d91",
               "description": "Nutty, creamy taro blended into a purple classic, finished with boba. Caffeine-free 🌙 (minimum sweetness 50%).",
-              "price": 7.5,
+              "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005096538623_1757105862.jpg"
             },
             {
               "name": "Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
-              "description": "Crafted with special house blend authentic Vietnamese Robusta beans.",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans. ",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005140172475_1757105826.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/11e3b92b-1011-48ca-a418-b80075ea7bea.png"
             },
             {
               "name": "Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
               "description": "Organic mango blended with jasmine green tea, layered with organic coconut milk, with agar crystal boba inside and a bright scoop of grapefruit pulp on top.",
               "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1758396666.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/70be9723-852e-4ec9-a276-691e40408c07.png"
             },
             {
               "name": "Assam Black Milk Tea with Boba 🧋🍯",
               "guid": "e53f98bd-b769-472f-8eee-a9d974f2f0bf",
               "description": "Bold and malty Assam black tea swirled with creamy milk and chewy boba.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992583830_1756746756.jpg"
             },
             {
               "name": "Matcha Milk Tea with Boba 🍵🍯",
               "guid": "5adb7b74-f31b-48d0-b275-c2d8be976295",
               "description": "Earthy Japanese matcha balanced with smooth milk and boba.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000004993326748_1756746771.jpg"
             },
             {
               "name": "Mango Jasmine Green Tea with Mango Star Jelly 🥭⭐️",
               "guid": "9b1893d1-b802-4f64-9ffe-d9fc0ed20015",
               "description": "Fragrant jasmine green tea brightened with juicy mango and fun star-shaped jelly.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
               "name": "Strawberry Jasmine Green Tea with Strawberry Heart Jelly 🍓❤️",
               "guid": "24e24331-ab10-44c3-9c56-6c864aa8b8b5",
               "description": "Fragrant jasmine tea blended with sweet strawberry and heart-shaped jelly.",
-              "price": 7.75,
-              "imageUrl": null
+              "price": 8.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006212470826_1762925510.jpg"
             },
             {
               "name": "Roasted Oolong Tea with Lychee Jelly",
@@ -3981,14 +3988,14 @@
               "name": "Strawberry Dino Smash Lemonade 🍓🌙",
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/f885eb1f-5056-4f95-aac5-388e287932b4.png"
             },
             {
               "name": "Passion Fruit Mango Dino Freeze  🦖❄️🌙",
               "guid": "b000ae43-3e93-4b3b-9922-2e82a208dd05",
               "description": "Tangy passion fruit swirled with tropical mango for a bold, icy refresher.",
-              "price": 5.75,
+              "price": 6.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291571399_1758274354.jpg"
             },
             {
@@ -3996,7 +4003,7 @@
               "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
               "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup! Try adding toppings!",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000342011410_1757105877.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
             },
             {
               "name": "Boba Sundae 🧋🍨🌙",
@@ -4004,6 +4011,48 @@
               "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1760918512.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Shake",
+              "guid": "2544abf8-0b56-4143-8c5e-163504802ca1",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/73766992-6185-41f0-8a19-1b840612a6f0.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Pistachio Milk",
+              "guid": "acddc81e-239b-420a-be5b-e9dce3734d37",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/47413523-742e-44ef-a094-0761a794bd6e.png"
+            },
+            {
+              "name": "Crème Brûlée Thai Tea",
+              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
+              "description": "",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1758274678.jpg"
+            },
+            {
+              "name": "Crème Brûlée Taro Milk Tea (Iced) 🌙",
+              "guid": "fbb72129-b5eb-47fe-8ba8-ba203a7911cf",
+              "description": "",
+              "price": 8.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005291464000_1758274588.jpg"
+            },
+            {
+              "name": "Crème Brûlée Vietnamese Iced Coffee",
+              "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Crème Brûlée 🍮",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005291458123_1758274537.jpg"
+            },
+            {
+              "name": "Crème Brûlée Matcha Milk Tea (Iced)",
+              "guid": "3564507e-b274-4326-9adf-c47e1231b330",
+              "description": "Made with top grade Japanese Royal matcha",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9e82db47-e1a6-4155-80f2-f0f6424edac4.jpg"
             }
           ]
         },
@@ -4020,18 +4069,18 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000006111354491_1760850696.jpg"
             },
             {
-              "name": "Freshly Brewed Milk Tea  🧋",
-              "guid": "ef59e645-898b-4fa0-98e1-1802fef909a1",
-              "description": "Pure tea leaves, freshly brewed and blended with creamy milk — 100% natural, never from powder or syrup. Smooth, rich, and authentically satisfying. 🌿🥛🧋",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111384845_1760850736.jpg"
-            },
-            {
               "name": "Freshly Brewed Fruit Tea  🍓🌱",
               "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "Pure tea leaves, freshly brewed and infused with real fruit syrup — bright, juicy, and perfectly balanced for a naturally refreshing taste. 🍓🍋🍵",
-              "price": 7,
+              "price": 7.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111381575_1760850807.jpg"
+            },
+            {
+              "name": "Freshly Brewed Milk Tea  🧋",
+              "guid": "ef59e645-898b-4fa0-98e1-1802fef909a1",
+              "description": "Pure tea leaves, freshly brewed and blended with creamy milk — 100% natural, never from powder or syrup. Smooth, rich, and authentically satisfying. 🌿🥛🧋",
+              "price": 7.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111384845_1760850736.jpg"
             },
             {
               "name": "Dino Smash Fresh Lemon Tea 🍋🌱",
@@ -4039,41 +4088,6 @@
               "description": "Pure tea leaves, freshly brewed and shaken with freshly smashed lemon for a bold, citrusy kick. Bright, tangy, and wildly refreshing. 🍋🦖🍵✨",
               "price": 7.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000006111397260_1760850851.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Matcha 🍵",
-          "guid": "43a1d2f7-f0ab-4941-8831-a1e1228edb5c",
-          "description": "",
-          "items": [
-            {
-              "name": "Original Matcha Milk Tea",
-              "guid": "38020157-0819-4e45-bda3-b1f8e98e6bd7",
-              "description": "Earthy, vibrant Japanese matcha whisked into creamy perfection.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000004994025828_1757105941.jpg"
-            },
-            {
-              "name": "Brown Sugar Matcha Milk Tea",
-              "guid": "5cf93bf6-076d-418d-b601-a55609743f40",
-              "description": "Creamy matcha swirled with rich brown sugar syrup for an earthy, sweet, and toasty blend.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005129736630_1757235243.jpg"
-            },
-            {
-              "name": "Strawberry Matcha Milk Tea",
-              "guid": "9f638a67-3997-4db2-892a-1a94f2f0d8fb",
-              "description": "Creamy matcha balanced with real strawberry jam for a refreshing blend of earthy and fruity flavors.",
-              "price": 7.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005129662068_1757235285.jpg"
-            },
-            {
-              "name": "Mango Matcha Milk Tea",
-              "guid": "1124c118-18f6-4148-aefe-bdaccf56313f",
-              "description": "Creamy matcha blended with mango jam for a smooth, tropical twist that balances earthy depth with fruity sweetness.",
-              "price": 7.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005129667205_1757235331.jpg"
             }
           ]
         },
@@ -4107,34 +4121,48 @@
               "name": "Assam Masala Chai Tea 🇮🇳☕",
               "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
               "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
-              "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000006111234047_1760848591.jpg"
+              "price": 7.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
             }
           ]
         },
         {
-          "name": "Coffee Drinks ☕",
-          "guid": "243e77e0-0c28-4541-b17f-a51daf9a9d92",
+          "name": "Matcha 🍵",
+          "guid": "43a1d2f7-f0ab-4941-8831-a1e1228edb5c",
           "description": "",
           "items": [
             {
-              "name": "Vietnamese Coffee 🇻🇳☕️",
-              "guid": "ca78141b-77ba-4f33-b5f9-b1b62b31abe9",
-              "description": "Special house blend of double shot espresso. Choose iced or hot, black or latte with creamer choices.",
+              "name": "Original Matcha Milk Tea",
+              "guid": "38020157-0819-4e45-bda3-b1f8e98e6bd7",
+              "description": "Top grade Japanese Royal matcha, RO filtered and remineralized water. ",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005140172475_1757105826.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e1fd77d1-e1a7-4ad7-98f2-36e884cc4e69.png"
             },
             {
-              "name": "Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
-              "guid": "a842bbf8-69e7-4683-a3de-69e8186c5b51",
-              "description": "Also called \"Dirty Thai Tea\", smooth Thai milk tea blended with double shots of espresso for a perfect mix of sweetness, spice, and caffeine kick. Ice and sweetness level are fixed.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111243964_1760848995.jpg"
+              "name": "Brown Sugar Matcha Milk Tea",
+              "guid": "5cf93bf6-076d-418d-b601-a55609743f40",
+              "description": "Top grade Japanese Royal matcha and handcrafted top grade brown sugar.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/3551964c-2a95-4587-bb17-446f438f8932.png"
+            },
+            {
+              "name": "Strawberry Matcha Milk Tea",
+              "guid": "9f638a67-3997-4db2-892a-1a94f2f0d8fb",
+              "description": "Top grade Japanese Royal matcha, organic strawberries",
+              "price": 7.75,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e7b9194f-b34e-4fe4-9661-22e8a6f3443e.png"
+            },
+            {
+              "name": "Mango Matcha Milk Tea",
+              "guid": "1124c118-18f6-4148-aefe-bdaccf56313f",
+              "description": "Top grade Japanese Royal matcha, organic mangos",
+              "price": 7.75,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             }
           ]
         },
         {
-          "name": "Tropical & Dessert Series 🌴🍯",
+          "name": "Tropical & Dessert 🌴🍯",
           "guid": "82c7dcc1-a8cd-43d1-99a2-128c532935c1",
           "description": "",
           "items": [
@@ -4143,21 +4171,28 @@
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
               "description": "Organic mango blended with jasmine green tea, layered with organic coconut milk, with agar crystal boba inside and a bright scoop of grapefruit pulp on top.",
               "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1758396666.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/70be9723-852e-4ec9-a276-691e40408c07.png"
             },
             {
-              "name": "Piña Colada (non-alcoholic) 🍍🥥🌙",
+              "name": "Piña Colada 🍍🥥🌙",
               "guid": "8def647a-26b4-488c-ab75-b0a0f9f0c7a1",
-              "description": "Seasonal!\r\nMade with real pineapple 🍍 and organic coconut milk 🥥 — a smooth, tropical blend that’s bright, refreshing, and naturally sweet.",
+              "description": "Made with real pineapple 🍍 and organic coconut milk 🥥 — a smooth, tropical blend that’s bright, refreshing, and naturally sweet.",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005645490073_1760918352.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/b3b1dc3a-22a9-4f54-a88f-ab48d0fdddc0.png"
             },
             {
-              "name": "Hot Passion Yuzu Honey Tea 🍯🍋✨(🌙)",
-              "guid": "76d0f704-6ff6-4ca3-803c-8458457ff33b",
-              "description": "Sweet honey and fragrant yuzu meet tropical passionfruit in this comforting hot citrus tea.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000006142091198_1760848865.jpg"
+              "name": "Dubai Chocolate Shake",
+              "guid": "2544abf8-0b56-4143-8c5e-163504802ca1",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/73766992-6185-41f0-8a19-1b840612a6f0.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Pistachio Milk",
+              "guid": "acddc81e-239b-420a-be5b-e9dce3734d37",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/47413523-742e-44ef-a094-0761a794bd6e.png"
             },
             {
               "name": "Taro Milk Tea 🌙",
@@ -4167,18 +4202,18 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025832_1760918345.jpg"
             },
             {
-              "name": "Tiger (Brown Sugar) Milk Tea with Boba 🐯🌙",
+              "name": "Tiger Milk Tea with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Velvety fresh milk with bold brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1760857058.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/02044fa6-5ed5-492c-81f7-1accbfe28045.png"
             },
             {
               "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
-              "description": "A frosty slush of your choices of fruits blended into the ultimate sweet chill.",
-              "price": 5.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291571397_1758274306.jpg"
+              "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
+              "price": 6.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/ee481775-1408-4e3a-9574-5b1dfc8958fa.png"
             },
             {
               "name": "Boba Sundae 🧋🍨🌙",
@@ -4186,6 +4221,27 @@
               "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1760918512.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Coffee Drinks ☕",
+          "guid": "243e77e0-0c28-4541-b17f-a51daf9a9d92",
+          "description": "",
+          "items": [
+            {
+              "name": "Vietnamese Iced Coffee 🇻🇳❄️☕️",
+              "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans. ",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/11e3b92b-1011-48ca-a418-b80075ea7bea.png"
+            },
+            {
+              "name": "Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
+              "guid": "a842bbf8-69e7-4683-a3de-69e8186c5b51",
+              "description": "Also called \"Dirty Thai Tea\", smooth Thai milk tea blended with double shots of espresso for a perfect mix of sweetness, spice, and caffeine kick. Ice and sweetness level are fixed.",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/03073a79-49c4-42cf-a6a0-c777f8d49006.png"
             }
           ]
         },
@@ -4199,7 +4255,7 @@
               "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
               "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup! Try adding toppings!",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000342011410_1757105877.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
             },
             {
               "name": "Dino Smash Lemonade 🍋🌙",
@@ -4212,50 +4268,43 @@
               "name": "Strawberry Dino Smash Lemonade 🍓🌙",
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/f885eb1f-5056-4f95-aac5-388e287932b4.png"
             },
             {
               "name": "Mango Dino Smash Lemonade 🥭🌙",
               "guid": "21e5141b-a3ec-4df9-a367-7d0aa7b9ea2a",
               "description": "Tropical mango blended with zesty smashed lemons for sunshine in every sip.",
-              "price": 6.75,
+              "price": 7.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355804257_1758274181.jpg"
             },
             {
-              "name": "Passion Fruit Dino Smash Lemonade 🍍🌙",
+              "name": "Passionfruit Dino Smash Lemonade 🍍🌙",
               "guid": "eb3d2a9c-ae85-4319-b895-688a8b8f3f1b",
               "description": "Tangy passion fruit syrup and fresh lemon collide for a bold, exotic smash.",
-              "price": 6.75,
+              "price": 7.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-              "name": "Peach Dino Smash Lemonade 🍑🌙",
-              "guid": "4b2ee7b3-a3ba-4ddd-a2ec-a3e8681565e2",
-              "description": "Juicy peach shaken with smashed lemons for a smooth, summery refresher.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355824027_1758274241.jpg"
+              "name": "Raspberry Dino Smash Lemonade 🌙",
+              "guid": "d96faa9d-6365-4114-8fcf-556832c05225",
+              "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
             },
             {
-              "name": "Guava Dino Smash Lemonade 🍈🌙",
-              "guid": "47e23461-6358-4a0b-9b0a-744323fe57d3",
-              "description": "Guava meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111290584_1760848780.jpg"
-            },
-            {
-              "name": "Lychee Dino Smash Lemonade 🤍🌙",
-              "guid": "ca7febdb-1224-43fc-b2c0-c2984f3820d9",
-              "description": "Delicate lychee paired with citrusy smashed lemons for a floral, refreshing twist.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005355824029_1758274261.jpg"
+              "name": "Pineapple Dino Smash Lemonade 🍍🌙",
+              "guid": "10eb664c-f0e0-45b9-aa71-1b6b91fc96cc",
+              "description": "Tropical pineapple meets freshly smashed lemon slices for a bright, fruity burst.",
+              "price": 7.25,
+              "imageUrl": null
             },
             {
               "name": "Dino Smash Purple Lemonade 🔮🍋🌙",
               "guid": "38106a34-9d29-4d18-a28c-2e4cda6143bd",
               "description": "A color-changing twist of fresh lemonade + passionfruit, and butterfly pea tea — bright, tangy, and magically purple! 🦖🍋💜✨",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006111297916_1760848813.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9c8b25c6-c3fc-46b1-b4d7-4a25d4b6dd8c.png"
             }
           ]
         },
@@ -4268,22 +4317,22 @@
               "name": "Crème Brûlée Milk Tea (Iced)",
               "guid": "47f61471-6087-4b52-930e-d54bf6c19ed9",
               "description": "",
-              "price": 8.5,
+              "price": 9,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291450187_1758274532.jpg"
             },
             {
               "name": "Crème Brûlée Vietnamese Iced Coffee",
               "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
-              "description": "Special house blend of double shot espresso shaken with sweet condensed milk and ice for a bold, creamy, energizing classic ☕❄ +  Crème Brûlée 🍮",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Crème Brûlée 🍮",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005291458123_1758274537.jpg"
             },
             {
               "name": "Crème Brûlée Matcha Milk Tea (Iced)",
               "guid": "3564507e-b274-4326-9adf-c47e1231b330",
-              "description": "",
-              "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005291461628_1758274577.jpg"
+              "description": "Made with top grade Japanese Royal matcha",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9e82db47-e1a6-4155-80f2-f0f6424edac4.jpg"
             },
             {
               "name": "Crème Brûlée Taro Milk Tea (Iced) 🌙",
@@ -4300,7 +4349,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291465639_1758274611.jpg"
             },
             {
-              "name": "Crème Brûlée Thai Tea (with organic half & half)",
+              "name": "Crème Brûlée Thai Tea",
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "",
               "price": 9,
@@ -4430,7 +4479,7 @@
               "guid": "3c795435-d7be-4ca9-a5d1-aedbfe4e5b6c",
               "description": "",
               "price": 6.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e6758abb-6037-46fb-ac9a-43f654bbbe30.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/72671ee5-d216-4bcc-ab33-81899a002bad.jpg"
             }
           ]
         }
@@ -4443,18 +4492,18 @@
       "groups": [
         {
           "name": "Tea-Rek'z Signatures 💖",
-          "guid": "44189fd5-f89d-4c0c-be8c-4a183fee2596",
+          "guid": "b990f22d-287f-47cb-9cf7-02f96092bc10",
           "description": "",
           "items": [
             {
-              "name": "Tiger (Brown Sugar) Milk Tea with Boba 🐯🌙",
+              "name": "Tiger Milk Tea with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Velvety fresh milk with bold brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1760857058.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/02044fa6-5ed5-492c-81f7-1accbfe28045.png"
             },
             {
-              "name": "Classic Thai Tea (with organic half & half) with Boba 🇹🇭🫖",
+              "name": "Classic Thai Tea with Boba 🇹🇭🫖",
               "guid": "8b1c97f9-f4ef-460a-a2b4-121b2ebf915e",
               "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness. Served with boba.",
               "price": 8.25,
@@ -4464,50 +4513,50 @@
               "name": "Taro Milk Tea with Boba 🍠🍯🌙",
               "guid": "694b51e6-58d9-4fea-9505-b159610b2d91",
               "description": "Nutty, creamy taro blended into a purple classic, finished with boba. Caffeine-free 🌙 (minimum sweetness 50%).",
-              "price": 7.5,
+              "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005096538623_1757105862.jpg"
             },
             {
               "name": "Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
-              "description": "Crafted with special house blend authentic Vietnamese Robusta beans.",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans. ",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005140172475_1757105826.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/11e3b92b-1011-48ca-a418-b80075ea7bea.png"
             },
             {
               "name": "Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
               "description": "Organic mango blended with jasmine green tea, layered with organic coconut milk, with agar crystal boba inside and a bright scoop of grapefruit pulp on top.",
               "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1758396666.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/70be9723-852e-4ec9-a276-691e40408c07.png"
             },
             {
               "name": "Assam Black Milk Tea with Boba 🧋🍯",
               "guid": "e53f98bd-b769-472f-8eee-a9d974f2f0bf",
               "description": "Bold and malty Assam black tea swirled with creamy milk and chewy boba.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992583830_1756746756.jpg"
             },
             {
               "name": "Matcha Milk Tea with Boba 🍵🍯",
               "guid": "5adb7b74-f31b-48d0-b275-c2d8be976295",
               "description": "Earthy Japanese matcha balanced with smooth milk and boba.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000004993326748_1756746771.jpg"
             },
             {
               "name": "Mango Jasmine Green Tea with Mango Star Jelly 🥭⭐️",
               "guid": "9b1893d1-b802-4f64-9ffe-d9fc0ed20015",
               "description": "Fragrant jasmine green tea brightened with juicy mango and fun star-shaped jelly.",
-              "price": 7.75,
+              "price": 8.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
               "name": "Strawberry Jasmine Green Tea with Strawberry Heart Jelly 🍓❤️",
               "guid": "24e24331-ab10-44c3-9c56-6c864aa8b8b5",
               "description": "Fragrant jasmine tea blended with sweet strawberry and heart-shaped jelly.",
-              "price": 7.75,
-              "imageUrl": null
+              "price": 8.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006212470826_1762925510.jpg"
             },
             {
               "name": "Roasted Oolong Tea with Lychee Jelly",
@@ -4520,14 +4569,14 @@
               "name": "Strawberry Dino Smash Lemonade 🍓🌙",
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/f885eb1f-5056-4f95-aac5-388e287932b4.png"
             },
             {
               "name": "Passion Fruit Mango Dino Freeze  🦖❄️🌙",
               "guid": "b000ae43-3e93-4b3b-9922-2e82a208dd05",
               "description": "Tangy passion fruit swirled with tropical mango for a bold, icy refresher.",
-              "price": 5.75,
+              "price": 6.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291571399_1758274354.jpg"
             },
             {
@@ -4535,7 +4584,7 @@
               "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
               "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup! Try adding toppings!",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000342011410_1757105877.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
             },
             {
               "name": "Boba Sundae 🧋🍨🌙",
@@ -4543,6 +4592,48 @@
               "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1760918512.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Shake",
+              "guid": "2544abf8-0b56-4143-8c5e-163504802ca1",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/73766992-6185-41f0-8a19-1b840612a6f0.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Pistachio Milk",
+              "guid": "acddc81e-239b-420a-be5b-e9dce3734d37",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/47413523-742e-44ef-a094-0761a794bd6e.png"
+            },
+            {
+              "name": "Crème Brûlée Thai Tea",
+              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
+              "description": "",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1758274678.jpg"
+            },
+            {
+              "name": "Crème Brûlée Taro Milk Tea (Iced) 🌙",
+              "guid": "fbb72129-b5eb-47fe-8ba8-ba203a7911cf",
+              "description": "",
+              "price": 8.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005291464000_1758274588.jpg"
+            },
+            {
+              "name": "Crème Brûlée Vietnamese Iced Coffee",
+              "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Crème Brûlée 🍮",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005291458123_1758274537.jpg"
+            },
+            {
+              "name": "Crème Brûlée Matcha Milk Tea (Iced)",
+              "guid": "3564507e-b274-4326-9adf-c47e1231b330",
+              "description": "Made with top grade Japanese Royal matcha",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9e82db47-e1a6-4155-80f2-f0f6424edac4.jpg"
             }
           ]
         },
@@ -4559,18 +4650,18 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000006111354491_1760850696.jpg"
             },
             {
-              "name": "Freshly Brewed Milk Tea  🧋",
-              "guid": "ef59e645-898b-4fa0-98e1-1802fef909a1",
-              "description": "Pure tea leaves, freshly brewed and blended with creamy milk — 100% natural, never from powder or syrup. Smooth, rich, and authentically satisfying. 🌿🥛🧋",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111384845_1760850736.jpg"
-            },
-            {
               "name": "Freshly Brewed Fruit Tea  🍓🌱",
               "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "Pure tea leaves, freshly brewed and infused with real fruit syrup — bright, juicy, and perfectly balanced for a naturally refreshing taste. 🍓🍋🍵",
-              "price": 7,
+              "price": 7.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111381575_1760850807.jpg"
+            },
+            {
+              "name": "Freshly Brewed Milk Tea  🧋",
+              "guid": "ef59e645-898b-4fa0-98e1-1802fef909a1",
+              "description": "Pure tea leaves, freshly brewed and blended with creamy milk — 100% natural, never from powder or syrup. Smooth, rich, and authentically satisfying. 🌿🥛🧋",
+              "price": 7.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006111384845_1760850736.jpg"
             },
             {
               "name": "Dino Smash Fresh Lemon Tea 🍋🌱",
@@ -4589,30 +4680,30 @@
             {
               "name": "Original Matcha Milk Tea",
               "guid": "38020157-0819-4e45-bda3-b1f8e98e6bd7",
-              "description": "Earthy, vibrant Japanese matcha whisked into creamy perfection.",
+              "description": "Top grade Japanese Royal matcha, RO filtered and remineralized water. ",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000004994025828_1757105941.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e1fd77d1-e1a7-4ad7-98f2-36e884cc4e69.png"
             },
             {
               "name": "Brown Sugar Matcha Milk Tea",
               "guid": "5cf93bf6-076d-418d-b601-a55609743f40",
-              "description": "Creamy matcha swirled with rich brown sugar syrup for an earthy, sweet, and toasty blend.",
+              "description": "Top grade Japanese Royal matcha and handcrafted top grade brown sugar.",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005129736630_1757235243.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/3551964c-2a95-4587-bb17-446f438f8932.png"
             },
             {
               "name": "Strawberry Matcha Milk Tea",
               "guid": "9f638a67-3997-4db2-892a-1a94f2f0d8fb",
-              "description": "Creamy matcha balanced with real strawberry jam for a refreshing blend of earthy and fruity flavors.",
+              "description": "Top grade Japanese Royal matcha, organic strawberries",
               "price": 7.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005129662068_1757235285.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e7b9194f-b34e-4fe4-9661-22e8a6f3443e.png"
             },
             {
               "name": "Mango Matcha Milk Tea",
               "guid": "1124c118-18f6-4148-aefe-bdaccf56313f",
-              "description": "Creamy matcha blended with mango jam for a smooth, tropical twist that balances earthy depth with fruity sweetness.",
+              "description": "Top grade Japanese Royal matcha, organic mangos",
               "price": 7.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005129667205_1757235331.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             }
           ]
         },
@@ -4646,8 +4737,8 @@
               "name": "Assam Masala Chai Tea 🇮🇳☕",
               "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
               "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
-              "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000006111234047_1760848591.jpg"
+              "price": 7.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
             }
           ]
         },
@@ -4657,23 +4748,23 @@
           "description": "",
           "items": [
             {
-              "name": "Vietnamese Coffee 🇻🇳☕️",
-              "guid": "ca78141b-77ba-4f33-b5f9-b1b62b31abe9",
-              "description": "Special house blend of double shot espresso. Choose iced or hot, black or latte with creamer choices.",
+              "name": "Vietnamese Iced Coffee 🇻🇳❄️☕️",
+              "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans. ",
               "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005140172475_1757105826.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/11e3b92b-1011-48ca-a418-b80075ea7bea.png"
             },
             {
               "name": "Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
               "guid": "a842bbf8-69e7-4683-a3de-69e8186c5b51",
               "description": "Also called \"Dirty Thai Tea\", smooth Thai milk tea blended with double shots of espresso for a perfect mix of sweetness, spice, and caffeine kick. Ice and sweetness level are fixed.",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111243964_1760848995.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/03073a79-49c4-42cf-a6a0-c777f8d49006.png"
             }
           ]
         },
         {
-          "name": "Tropical & Dessert Series 🌴🍯",
+          "name": "Tropical & Dessert 🌴🍯",
           "guid": "18bf951f-dc2b-4536-a22f-c4087bcbc5f9",
           "description": "",
           "items": [
@@ -4682,21 +4773,14 @@
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
               "description": "Organic mango blended with jasmine green tea, layered with organic coconut milk, with agar crystal boba inside and a bright scoop of grapefruit pulp on top.",
               "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1758396666.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/70be9723-852e-4ec9-a276-691e40408c07.png"
             },
             {
-              "name": "Piña Colada (non-alcoholic) 🍍🥥🌙",
+              "name": "Piña Colada 🍍🥥🌙",
               "guid": "8def647a-26b4-488c-ab75-b0a0f9f0c7a1",
-              "description": "Seasonal!\r\nMade with real pineapple 🍍 and organic coconut milk 🥥 — a smooth, tropical blend that’s bright, refreshing, and naturally sweet.",
+              "description": "Made with real pineapple 🍍 and organic coconut milk 🥥 — a smooth, tropical blend that’s bright, refreshing, and naturally sweet.",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005645490073_1760918352.jpg"
-            },
-            {
-              "name": "Hot Passion Yuzu Honey Tea 🍯🍋✨(🌙)",
-              "guid": "76d0f704-6ff6-4ca3-803c-8458457ff33b",
-              "description": "Sweet honey and fragrant yuzu meet tropical passionfruit in this comforting hot citrus tea.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000006142091198_1760848865.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/b3b1dc3a-22a9-4f54-a88f-ab48d0fdddc0.png"
             },
             {
               "name": "Taro Milk Tea 🌙",
@@ -4706,18 +4790,18 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025832_1760918345.jpg"
             },
             {
-              "name": "Tiger (Brown Sugar) Milk Tea with Boba 🐯🌙",
+              "name": "Tiger Milk Tea with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Velvety fresh milk with bold brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Try making it blue by adding a splash of all natural Butterfly Pea tea (caffeine free).",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1760857058.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/02044fa6-5ed5-492c-81f7-1accbfe28045.png"
             },
             {
               "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
-              "description": "A frosty slush of your choices of fruits blended into the ultimate sweet chill.",
-              "price": 5.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291571397_1758274306.jpg"
+              "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
+              "price": 6.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/ee481775-1408-4e3a-9574-5b1dfc8958fa.png"
             },
             {
               "name": "Boba Sundae 🧋🍨🌙",
@@ -4725,6 +4809,20 @@
               "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1760918512.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Shake",
+              "guid": "2544abf8-0b56-4143-8c5e-163504802ca1",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/73766992-6185-41f0-8a19-1b840612a6f0.jpg"
+            },
+            {
+              "name": "Dubai Chocolate Pistachio Milk",
+              "guid": "acddc81e-239b-420a-be5b-e9dce3734d37",
+              "description": "Made with real pistachios, free of any additives. Topped with our signature pistachio cream and roasted Kataifi.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/47413523-742e-44ef-a094-0761a794bd6e.png"
             }
           ]
         },
@@ -4738,7 +4836,7 @@
               "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
               "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup! Try adding toppings!",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000342011410_1757105877.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
             },
             {
               "name": "Dino Smash Lemonade 🍋🌙",
@@ -4751,50 +4849,43 @@
               "name": "Strawberry Dino Smash Lemonade 🍓🌙",
               "guid": "a139d893-5fd8-41b1-8cfc-75a414b02ce9",
               "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/f885eb1f-5056-4f95-aac5-388e287932b4.png"
             },
             {
               "name": "Mango Dino Smash Lemonade 🥭🌙",
               "guid": "21e5141b-a3ec-4df9-a367-7d0aa7b9ea2a",
               "description": "Tropical mango blended with zesty smashed lemons for sunshine in every sip.",
-              "price": 6.75,
+              "price": 7.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355804257_1758274181.jpg"
             },
             {
-              "name": "Passion Fruit Dino Smash Lemonade 🍍🌙",
+              "name": "Passionfruit Dino Smash Lemonade 🍍🌙",
               "guid": "eb3d2a9c-ae85-4319-b895-688a8b8f3f1b",
               "description": "Tangy passion fruit syrup and fresh lemon collide for a bold, exotic smash.",
-              "price": 6.75,
+              "price": 7.25,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-              "name": "Peach Dino Smash Lemonade 🍑🌙",
-              "guid": "4b2ee7b3-a3ba-4ddd-a2ec-a3e8681565e2",
-              "description": "Juicy peach shaken with smashed lemons for a smooth, summery refresher.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005355824027_1758274241.jpg"
+              "name": "Raspberry Dino Smash Lemonade 🌙",
+              "guid": "d96faa9d-6365-4114-8fcf-556832c05225",
+              "description": "Sweet strawberry meets freshly smashed lemon slices for a bright, fruity burst.",
+              "price": 7.25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355791508_1758274147.jpg"
             },
             {
-              "name": "Guava Dino Smash Lemonade 🍈🌙",
-              "guid": "47e23461-6358-4a0b-9b0a-744323fe57d3",
-              "description": "Guava meets freshly smashed lemon slices for a bright, fruity burst.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111290584_1760848780.jpg"
-            },
-            {
-              "name": "Lychee Dino Smash Lemonade 🤍🌙",
-              "guid": "ca7febdb-1224-43fc-b2c0-c2984f3820d9",
-              "description": "Delicate lychee paired with citrusy smashed lemons for a floral, refreshing twist.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005355824029_1758274261.jpg"
+              "name": "Pineapple Dino Smash Lemonade 🍍🌙",
+              "guid": "10eb664c-f0e0-45b9-aa71-1b6b91fc96cc",
+              "description": "Tropical pineapple meets freshly smashed lemon slices for a bright, fruity burst.",
+              "price": 7.25,
+              "imageUrl": null
             },
             {
               "name": "Dino Smash Purple Lemonade 🔮🍋🌙",
               "guid": "38106a34-9d29-4d18-a28c-2e4cda6143bd",
               "description": "A color-changing twist of fresh lemonade + passionfruit, and butterfly pea tea — bright, tangy, and magically purple! 🦖🍋💜✨",
               "price": 7.25,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006111297916_1760848813.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9c8b25c6-c3fc-46b1-b4d7-4a25d4b6dd8c.png"
             }
           ]
         },
@@ -4807,22 +4898,22 @@
               "name": "Crème Brûlée Milk Tea (Iced)",
               "guid": "47f61471-6087-4b52-930e-d54bf6c19ed9",
               "description": "",
-              "price": 8.5,
+              "price": 9,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005291450187_1758274532.jpg"
             },
             {
               "name": "Crème Brûlée Vietnamese Iced Coffee",
               "guid": "77529224-ee41-4ca5-af0d-fd7abe5d4e8c",
-              "description": "Special house blend of double shot espresso shaken with sweet condensed milk and ice for a bold, creamy, energizing classic ☕❄ +  Crème Brûlée 🍮",
+              "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Crème Brûlée 🍮",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000005291458123_1758274537.jpg"
             },
             {
               "name": "Crème Brûlée Matcha Milk Tea (Iced)",
               "guid": "3564507e-b274-4326-9adf-c47e1231b330",
-              "description": "",
-              "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005291461628_1758274577.jpg"
+              "description": "Made with top grade Japanese Royal matcha",
+              "price": 9,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/9e82db47-e1a6-4155-80f2-f0f6424edac4.jpg"
             },
             {
               "name": "Crème Brûlée Taro Milk Tea (Iced) 🌙",
@@ -4839,7 +4930,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005291465639_1758274611.jpg"
             },
             {
-              "name": "Crème Brûlée Thai Tea (with organic half & half)",
+              "name": "Crème Brûlée Thai Tea",
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "",
               "price": 9,
@@ -4969,7 +5060,7 @@
               "guid": "3c795435-d7be-4ca9-a5d1-aedbfe4e5b6c",
               "description": "",
               "price": 6.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e6758abb-6037-46fb-ac9a-43f654bbbe30.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/72671ee5-d216-4bcc-ab33-81899a002bad.jpg"
             }
           ]
         }

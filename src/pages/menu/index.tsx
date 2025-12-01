@@ -69,7 +69,9 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
   const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
-  const teaRekzMenu = menuData.menus.find((menu) => menu.name === "Tea-Rek'z 🧋🦖");
+  const teaRekzMenu =
+    menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z") && menu.name.includes('Sun')) ||
+    menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z"));
 
   // Create a special "Toppings" group for Tea-Rek'z if we have the data
   const createTeaRekzWithToppings = () => {
