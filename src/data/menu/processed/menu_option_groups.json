@@ -2030,13 +2030,6 @@
           "description": "",
           "price": 0.75,
           "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Coconut Milk",
-          "guid": "1533a63a-4de7-4570-a5f1-f2042bc208e8",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
         }
       ]
     },
@@ -2045,7 +2038,7 @@
       "guid": "9145a88a-16f0-4a02-bccd-d227ed2e8f87",
       "minSelections": 0,
       "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
+      "pricingMode": "FIXED_PRICE",
       "items": [
         {
           "name": "Boba (tapioca) ⚫️",
@@ -2121,44 +2114,65 @@
           "name": "Grapefruit Pulp",
           "guid": "57294a4b-463d-47f5-87b6-4159568d9ee4",
           "description": "",
-          "price": 1,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
-          "name": "Crème Brûlée (on iced drinks only)",
-          "guid": "b2c0969f-fbd0-49fb-a384-367b444837e9",
+          "name": "Diced Mango",
+          "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
           "description": "",
-          "price": 1.5,
+          "price": 0.75,
           "orderableOnline": "YES"
         }
       ]
     },
     {
-      "name": "💪 Boosts (Tea-Rek'z)",
-      "guid": "e4d60271-5a33-4444-a9ab-d396be8da5d2",
+      "name": "Add A Cream Top  (Tea-Rek'z)",
+      "guid": "8876b8d5-0d83-4d63-9495-ff08b0ccc15c",
       "minSelections": 0,
-      "maxSelections": null,
+      "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Grass-Fed Whey Protein 🥛",
-          "guid": "9bd9972f-eb12-46b0-ac93-98045e6b72e2",
-          "description": "Classic dairy protein (~20 g) for a creamy, muscle-friendly upgrade.",
+          "name": "Crème Brûlée (on cold drinks only)",
+          "guid": "dc91fc61-c0b8-4293-96bf-18f7e68f0ea1",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Sea Salt Cheese Cream",
+          "guid": "261ceea7-cd61-4274-a7d5-b35a5ad588d5",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Matcha Cream",
+          "guid": "d5315bd4-9532-4e55-86b6-904ef19174a8",
+          "description": "",
           "price": 2,
           "orderableOnline": "YES"
         },
         {
-          "name": "Vegan Protein (Pea) 🌱",
-          "guid": "cd0ebdcf-76dd-4200-8a04-246e8395cc82",
-          "description": "Plant-based protein boost (~20 g) that blends smooth and clean.",
+          "name": "Pistachio Cream (Kataifi Optional)",
+          "guid": "7c98905a-5124-4274-86d3-416c9ad23e55",
+          "description": "",
           "price": 2,
           "orderableOnline": "YES"
         },
         {
-          "name": "Creatine ⚡",
-          "guid": "615d6533-10ca-4223-83b2-2299129fac29",
-          "description": "Pure creatine monohydrate (~5 g) — supports strength, focus, and recovery.",
-          "price": 1.25,
+          "name": "Raspberry Cream",
+          "guid": "7c9e7eca-c052-45ab-9f75-f90f55491315",
+          "description": "",
+          "price": 1.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Jasmine Cream (Whipped)",
+          "guid": "39dca51b-99ee-4cb4-aa93-dd5788f8ae8c",
+          "description": "",
+          "price": 1.5,
           "orderableOnline": "YES"
         }
       ]
@@ -2180,63 +2194,124 @@
       ]
     },
     {
-      "name": "Make it blue",
-      "guid": "b8e2b3e2-13cf-410f-9d4c-f253abf5daf7",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Add a splash of Butterfly Pea Tea (caffeine free)",
-          "guid": "0df5482b-61be-4d27-a905-58285df22cf2",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Creamer Option (Thai Tea)",
-      "guid": "d780c65e-7aec-4495-a90e-83026128a195",
+      "name": "Coffee Creamer Options (Tea-Rek'z)",
+      "guid": "eb465fcb-e1f0-4b2c-8cc1-3799f86a8a03",
       "minSelections": 1,
       "maxSelections": 1,
-      "pricingMode": "INCLUDED",
+      "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Organic Half and Half",
-          "guid": "1b1d183d-0aff-4ea7-8b3c-2efed7ec96e4",
+          "name": "Condensed Milk",
+          "guid": "7ce68ab6-900c-46e0-9361-6776f9235a68",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Organic Oat Creamer",
-          "guid": "db4e3a9d-572c-4ee4-bec3-30dddb232ee8",
+          "name": "Half and Half (coffee)",
+          "guid": "b526023d-a26b-4350-b124-6f56e42604ed",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "Organic Coconut Creamer",
-          "guid": "08ed8031-d51f-476b-9628-d811d1b16d88",
+          "name": "Organic Oat Creamer (coffee)",
+          "guid": "434ac70e-cd2e-42ac-a559-b794529f2e3d",
           "description": "",
-          "price": 0,
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Organic Coconut Creamer (coffee)",
+          "guid": "8f6b920c-0305-4e12-a42f-38aa14133118",
+          "description": "",
+          "price": 0.75,
           "orderableOnline": "YES"
         }
       ]
     },
     {
-      "name": "Crème Brûlée (iced only)",
-      "guid": "d2e73248-2395-4b3b-bc5c-3fe8407475c2",
-      "minSelections": 0,
+      "name": "Coffee Sugar Options",
+      "guid": "561a87fc-cb78-4adc-86ce-ef8a46a2783b",
+      "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "Add Crème Brûlée",
-          "guid": "885cf17d-2b88-4030-913a-01883674ff38",
+          "name": "100% sweet (cane sugar, already included with condensed milk)",
+          "guid": "e372683a-31bc-4299-9a74-96e501a73285",
           "description": "",
-          "price": 1.5,
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar, not available with condensed milk)",
+          "guid": "d91062cd-55af-4c1b-8804-1d7e9f30b6bc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar, not available with condensed milk)",
+          "guid": "9ecfc17c-50e7-4768-8b84-a538f723f13d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (cane sugar, not available with condensed milk)",
+          "guid": "31087d9f-e981-4a33-bbfd-0b76501fcbba",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "10% sweet (cane sugar, not available with condensed milk)",
+          "guid": "ccfbaa98-99ff-4232-900f-841d65642ca5",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "0% sweet (cane sugar, not available with condensed milk)",
+          "guid": "22829255-4f0e-452a-b033-4c393d0b8354",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (allulose + monk fruit, not available with condensed milk)",
+          "guid": "68d05d6e-8b57-4c08-b9a5-21eb318101da",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (allulose + monk fruit, not available with condensed milk)",
+          "guid": "2a2e5919-b8f4-4df7-82b4-41918436965a",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (allulose + monk fruit, not available with condensed milk)",
+          "guid": "d0775323-18d7-442b-9a72-6dd05660b870",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (allulose + monk fruit, not available with condensed milk)",
+          "guid": "bc1fea85-850e-417a-bbe2-5a45cbb3dfdd",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "10% sweet (allulose, not available with condensed milk)",
+          "guid": "4c9807b8-8498-499a-8b29-d89987117964",
+          "description": "",
+          "price": 0.5,
           "orderableOnline": "YES"
         }
       ]
@@ -2246,7 +2321,7 @@
       "guid": "68d37fe4-ccac-48d7-b359-c92319b54c16",
       "minSelections": 1,
       "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
+      "pricingMode": "INCLUDED",
       "items": [
         {
           "name": "100% ice",
@@ -2279,200 +2354,6 @@
       ]
     },
     {
-      "name": "Sweetness Level (Taro)",
-      "guid": "751bfa68-5e64-4bbf-8f1a-b4072c4d997d",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% sweet",
-          "guid": "029da031-0b3a-4b37-bab6-1649442edefa",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet",
-          "guid": "95e4347e-302b-419e-aa49-5e00d3e00634",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet",
-          "guid": "c4abd138-ec07-4065-b79e-a8a3b9c77fb4",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Creamer Option (Tea-Rek'z)",
-      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "INCLUDED",
-      "items": [
-        {
-          "name": "Organic Half and Half",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Coconut Creamer",
-          "guid": "3e1bc866-11eb-4224-a0ed-d40efff87b56",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "iced Coffee Creamer Options (Tea-Rek'z)",
-      "guid": "02e779fc-1ebc-4224-a22e-3db387fa5b46",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Condensed Milk",
-          "guid": "7ce68ab6-900c-46e0-9361-6776f9235a68",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Half and Half",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "c53f22c5-465b-4ba9-865d-b80cfe5236fc",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Coconut Creamer",
-          "guid": "798a0d0d-99db-4778-a33d-f9eabfa87a5f",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Ice Level (Tea-Rek'z)",
-      "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% ice",
-          "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% ice",
-          "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "0% ice",
-          "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Caffeine Free",
-      "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "No Jasmine Tea",
-          "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
-          "description": "",
-          "price": -1,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Sweetness Level (Cane Sugar)",
-      "guid": "df1b2c56-6a3c-49a4-ae24-d7fbaf11aca7",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% sweet",
-          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet",
-          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet",
-          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet",
-          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "10% sweet",
-          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "0% sweet",
-          "guid": "0f960c7f-4f10-4d4c-af4c-745b98d5128e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
       "name": "Sweetness Level (Flavored Drinks)",
       "guid": "b399d4f7-56fd-4285-86a1-85ecfe79ca69",
       "minSelections": 1,
@@ -2480,316 +2361,52 @@
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100% sweet",
+          "name": "100% sweet (cane sugar)",
           "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "75% sweet",
+          "name": "75% sweet (cane sugar)",
           "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% sweet",
+          "name": "50% sweet (cane sugar)",
           "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "25% sweet",
+          "name": "25% sweet (built-in cane sugar)",
           "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Strawberry Purée Swirl",
-      "guid": "c5ed7ea1-3d0d-46e6-9564-5ee1161ecb36",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
+        },
         {
-          "name": "Add Strawberry Purée Swirl",
-          "guid": "e7fcb987-e1be-4ff3-b522-937a2bc597f5",
+          "name": "100% sweet (monk fruit added)",
+          "guid": "6fdd0235-1908-4118-96a4-a022e09e36c2",
           "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Coffee Creamer Options (Tea-Rek'z)",
-      "guid": "eb465fcb-e1f0-4b2c-8cc1-3799f86a8a03",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Condensed Milk",
-          "guid": "7ce68ab6-900c-46e0-9361-6776f9235a68",
-          "description": "",
-          "price": 0,
+          "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "House Cream (Plant Based)",
-          "guid": "084b55c7-ca6e-4d14-b8bc-1a4c6a5b4093",
+          "name": "75% sweet (monk fruit added)",
+          "guid": "69aac531-a317-4204-a92a-eac1dea7b8a3",
           "description": "",
-          "price": 0,
+          "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "Organic Half and Half",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "name": "50% sweet (monk fruit added)",
+          "guid": "f87200d6-a036-4cd0-916c-7afaed93ae70",
           "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "c53f22c5-465b-4ba9-865d-b80cfe5236fc",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Coconut Creamer",
-          "guid": "798a0d0d-99db-4778-a33d-f9eabfa87a5f",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choose a Tea (non-milk Tea)",
-      "guid": "c2164949-3ddc-4520-b7cb-79b3672bdc37",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "FIXED_PRICE",
-      "items": [
-        {
-          "name": "Jasmine Green",
-          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Four Seasons Jade",
-          "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Assam Black",
-          "guid": "f09ac219-9499-4fd1-aab9-e38a88f07edc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Earl Grey",
-          "guid": "7c0de323-1cab-4a20-b132-53499c605fd6",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Lychee Black",
-          "guid": "8fd830d4-c377-47ce-bd31-ae9c4bc3025c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Roasted Oolong",
-          "guid": "e27fbf26-321c-4597-83f8-5bfdb2ab3639",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "White Grape Oolong",
-          "guid": "de1d290f-cef5-4346-bd14-3f8656cbdd4e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "White Peach Oolong",
-          "guid": "bbcb6673-6f06-4b89-9a2d-aa70cba2bf16",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Rooibos 🌙",
-          "guid": "9236fc13-1227-4174-a68a-415dc34d635c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Rose Garden 🌙",
-          "guid": "fc4a5e9c-314c-435d-b4a6-bff2dd06cb6c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choose a Fruit (Tea-Rek'z)",
-      "guid": "532cbf0c-e453-4f0d-9759-05a68fbfefde",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Strawberry 🍓",
-          "guid": "9224056f-3461-4da6-ac74-3aceb321c3cf",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Mango 🥭",
-          "guid": "ba3b9935-6374-4d35-8dad-987a66971e4f",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Passionfruit 💛",
-          "guid": "ee1ecb9b-4f61-411b-9b4d-071f9ffdf28d",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Raspberry ❤️",
-          "guid": "85adfbdb-7a60-48f4-90c3-6f3ba0159542",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Pineapple 🍍",
-          "guid": "c3089b74-0457-47f2-aa46-a3fd302c3901",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choose a Tea (Milk Tea)",
-      "guid": "a6e5d3f0-41d4-425b-8c85-d096cd90199e",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "FIXED_PRICE",
-      "items": [
-        {
-          "name": "Jasmine Green",
-          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Four Seasons Jade",
-          "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Assam Black",
-          "guid": "f09ac219-9499-4fd1-aab9-e38a88f07edc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Earl Grey",
-          "guid": "7c0de323-1cab-4a20-b132-53499c605fd6",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Lychee Black",
-          "guid": "8fd830d4-c377-47ce-bd31-ae9c4bc3025c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Roasted Oolong",
-          "guid": "e27fbf26-321c-4597-83f8-5bfdb2ab3639",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "White Grape Oolong",
-          "guid": "de1d290f-cef5-4346-bd14-3f8656cbdd4e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "White Peach Oolong",
-          "guid": "bbcb6673-6f06-4b89-9a2d-aa70cba2bf16",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Rooibos 🌙",
-          "guid": "9236fc13-1227-4174-a68a-415dc34d635c",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "(optional) Add Creamer",
-      "guid": "10496734-5dc9-4d53-86e1-437ec9a230c0",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "FIXED_PRICE",
-      "items": [
-        {
-          "name": "Organic Half and Half",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Oat Creamer",
-          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Organic Coconut Creamer",
-          "guid": "3e1bc866-11eb-4224-a0ed-d40efff87b56",
-          "description": "",
-          "price": 0.75,
+          "price": 0.5,
           "orderableOnline": "YES"
         }
       ]
@@ -2827,6 +2444,376 @@
           "guid": "85adfbdb-7a60-48f4-90c3-6f3ba0159542",
           "description": "",
           "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Sweetness Level (25% minimum)",
+      "guid": "142cd2ef-2ab6-46be-b01d-434039dcb9d6",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% sweet (cane sugar)",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar)",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar)",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (cane sugar)",
+          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (allulose + monk fruit)",
+          "guid": "f24ac51d-611b-4445-a0d8-6b7be819f5b3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (allulose + monk fruit)",
+          "guid": "aaefa0fb-f405-41e0-a16b-5377c30453c2",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (allulose + monk fruit)",
+          "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (allulose + monk fruit)",
+          "guid": "29281777-e2b7-4c1b-9152-704e91bbf4d3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Caffeine Free",
+      "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Jasmine Tea",
+          "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "💪 Boosts (Tea-Rek'z)",
+      "guid": "e4d60271-5a33-4444-a9ab-d396be8da5d2",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Grass-Fed Whey Protein 🥛",
+          "guid": "9bd9972f-eb12-46b0-ac93-98045e6b72e2",
+          "description": "Classic dairy protein (~20 g) for a creamy, muscle-friendly upgrade.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Vegan Protein (Pea) 🌱",
+          "guid": "cd0ebdcf-76dd-4200-8a04-246e8395cc82",
+          "description": "Plant-based protein boost (~20 g) that blends smooth and clean.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Creatine ⚡",
+          "guid": "615d6533-10ca-4223-83b2-2299129fac29",
+          "description": "Pure creatine monohydrate (~5 g) — supports strength, focus, and recovery.",
+          "price": 1.25,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Level (Smash Lemon)",
+      "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "100% ice",
+          "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% ice",
+          "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Sweetness Level",
+      "guid": "df1b2c56-6a3c-49a4-ae24-d7fbaf11aca7",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% sweet (cane sugar)",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar)",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar)",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (cane sugar)",
+          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "10% sweet (cane sugar)",
+          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "0% sweet",
+          "guid": "0f960c7f-4f10-4d4c-af4c-745b98d5128e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (allulose + monk fruit)",
+          "guid": "f24ac51d-611b-4445-a0d8-6b7be819f5b3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (allulose + monk fruit)",
+          "guid": "aaefa0fb-f405-41e0-a16b-5377c30453c2",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (allulose + monk fruit)",
+          "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (allulose + monk fruit)",
+          "guid": "29281777-e2b7-4c1b-9152-704e91bbf4d3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "10% sweet (allulose)",
+          "guid": "a193d915-6e5d-47d9-a490-7822c12844e3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Milk Option (Milk Tea)",
+      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Dairy",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oat",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Level (Tea-Rek'z)",
+      "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% ice",
+          "guid": "47fcfee4-64eb-4541-8b2c-59d9d7949f64",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% ice",
+          "guid": "b078dc1d-2afb-4a2d-aba5-0264300e73c2",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "0% ice",
+          "guid": "90bc7d25-63b2-4a1e-9b4a-d883d208a738",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Sweetness Level (50% minimum)",
+      "guid": "1a9b6a47-b4be-435a-998c-4fe5bf8ba52b",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% sweet (cane sugar)",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar)",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar)",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (allulose + monk fruit)",
+          "guid": "f24ac51d-611b-4445-a0d8-6b7be819f5b3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (allulose + monk fruit)",
+          "guid": "aaefa0fb-f405-41e0-a16b-5377c30453c2",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (allulose + monk fruit)",
+          "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Kataifi",
+      "guid": "fba96742-2f42-4519-9aa2-b1463ba141e3",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Add kataifi on pistachio cream",
+          "guid": "da6059db-5c6b-4531-9d5b-92e85fb0fad3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced/Hot (Tea-Rek'z coffee)",
+      "guid": "0033a743-dc16-4231-b282-2508857704ac",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Iced (2 espresso shots)",
+          "guid": "1072692f-71db-47bc-bb9e-c925177516e7",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Iced (4 espresso shots)",
+          "guid": "8750173c-ddf1-4291-9d34-6756aea9417e",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Hot (4 espresso shots)",
+          "guid": "8037aeb4-782f-4710-9aa6-006fce864f9c",
+          "description": "",
+          "price": 2,
           "orderableOnline": "YES"
         }
       ]
@@ -2883,6 +2870,36 @@
         {
           "name": "Lime Green",
           "guid": "4d152b1a-0185-491c-9fc0-9fd73b65828d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "guid": "7f87da81-1cd3-4a43-a45b-a05a5ade21f7",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "M",
+          "guid": "917c95ef-0aef-40ed-9cf1-8393f4c1b281",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "L",
+          "guid": "229f8cdb-dec5-4aad-9102-619d2bcdd4b0",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "XL",
+          "guid": "9a93ce89-9870-4e12-a5ef-bb579cdd4d55",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
