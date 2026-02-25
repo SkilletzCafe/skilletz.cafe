@@ -1,4 +1,4 @@
-import { buildFullAddress } from '@/utils/address';
+import { buildFullAddress } from '@hacktoolkit/nextjs-htk/utils';
 
 export const BUSINESS = {
   domain: 'skilletz.cafe',

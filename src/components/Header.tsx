@@ -4,12 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { BUSINESS, PAGES, SERVICES } from '@/config';
+import { useTheme } from '@hacktoolkit/nextjs-htk/context';
+import { createPhoneUrl } from '@hacktoolkit/nextjs-htk/utils';
 
 import { geist, margarine } from '@/config/fonts';
-
-import { useTheme } from '@/context/ThemeContext';
-
-import { createPhoneUrl } from '@/utils/urls';
 
 import styles from '@/styles/Layout.module.css';
 
