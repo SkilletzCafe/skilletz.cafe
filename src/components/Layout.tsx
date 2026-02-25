@@ -3,7 +3,7 @@
 import Head from 'next/head';
 
 import { SEO } from '@/config';
-import { ThemeProvider } from '@nextjs-htk/core/context';
+import { ThemeProvider } from '@hacktoolkit/nextjs-htk/context';
 
 import { geist } from '@/config/fonts';
 

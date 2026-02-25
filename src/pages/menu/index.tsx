@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { GetStaticProps } from 'next';
 
 import { MenuData, MenuItemState, MenuOptionGroupsData } from '@/types/menu';
-import { getUrlParam } from '@nextjs-htk/core/utils';
+import { getUrlParam } from '@hacktoolkit/nextjs-htk/utils';
 
 import { margarine } from '@/config/fonts';
 import { MenuTab } from '@/config/menuTabs';

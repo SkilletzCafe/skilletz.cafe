@@ -1,5 +1,5 @@
 import { ANALYTICS, BUSINESS, PAGES, QUICK_LINKS, SEO, SOCIAL_MEDIA } from '@/config';
-import { defineConfig } from '@nextjs-htk/core';
+import { defineConfig } from '@hacktoolkit/nextjs-htk';
 
 const LOCATION = `${BUSINESS.location.neighborhood}, ${BUSINESS.location.city}, ${BUSINESS.location.state}, ${BUSINESS.location.country_abbrev}`;
 

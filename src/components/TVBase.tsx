@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { MenuItem } from '@/types/menu';
-import { shuffleArray } from '@nextjs-htk/core/utils';
+import { shuffleArray } from '@hacktoolkit/nextjs-htk/utils';
 
 import { margarine } from '@/config/fonts';
 
