@@ -2188,6 +2188,13 @@
           "description": "",
           "items": [
             {
+              "name": "Restaurant Week Special",
+              "guid": "78053742-26b4-4ef3-ad53-547ab8186bb0",
+              "description": "Our Popular Oreo Pancakes, Served with 2 Eggs, Crispy Hash Browns, and Bacon or Sausage",
+              "price": 25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000009307010436_1772821212.jpg"
+            },
+            {
               "name": "Chicken and Waffles 🐥🧇",
               "guid": "91e0cb9b-5ef9-47a4-887c-614cdf63f72e",
               "description": "Honey stung chicken with waffle, delicious homemade mac & cheese, bacon, potatoes. Available Tuesdays!",
@@ -3759,7 +3766,7 @@
       ]
     },
     {
-      "name": "Drinks 🥤",
+      "name": "Drinks 🥤M-W",
       "guid": "1d94cd15-3761-4d77-9b81-2715164a3496",
       "description": "",
       "groups": [
@@ -3899,13 +3906,166 @@
       ]
     },
     {
-      "name": "Alcoholic Beverages 🍻",
+      "name": "Drinks 🥤 Thu-Sun",
+      "guid": "14aa2e41-82f8-4cb5-b42d-3d29266347c5",
+      "description": "",
+      "groups": [
+        {
+          "name": "Drinks 🥤",
+          "guid": "11b1fffa-d176-4ee5-b9e1-f412ab2fc8f0",
+          "description": "",
+          "items": [
+            {
+              "name": "Fresh Squeezed Orange Juice 🍊",
+              "guid": "af05ded3-0876-4201-b8b0-59c37d609db3",
+              "description": "",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000341599580_1734991284.jpg"
+            },
+            {
+              "name": "Cranberry Juice",
+              "guid": "d721585a-4171-45db-8946-eb5997348f11",
+              "description": "",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000000341599581_1734991305.jpg"
+            },
+            {
+              "name": "Apple Juice 🍎",
+              "guid": "f42bf73b-2d8b-49f9-8efa-358b688659f2",
+              "description": "",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000000341599582_1734991314.jpg"
+            },
+            {
+              "name": "Iced Coffee 🧊☕️",
+              "guid": "96e390f3-c590-4ccb-bf66-278286238dd2",
+              "description": "Flavors: Vanilla 🤍, Mocha 🤎, Caramel 🧡, Oreo 🖤",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000000341599583_1734991349.jpg"
+            },
+            {
+              "name": "Milkshake 🍨",
+              "guid": "da2ed00c-1044-4487-94ba-63319e0b3992",
+              "description": "Our delicious milkshakes come in a variety of flavors: Vanilla 🍦, Chocolate 🍫, Oreo, Banana 🍌, Strawberry 🍓, Matcha 🍵, Strawberry Matcha 🍓🍵, and Banana Matcha 🍌🍵",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000000341599584_1734991360.jpg"
+            },
+            {
+              "name": "Hot Coffee ☕️",
+              "guid": "006f87d9-72c8-4b0e-8592-85f207d7b1bb",
+              "description": "",
+              "price": 4,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000000341599585_1734991434.jpg"
+            },
+            {
+              "name": "Decaf Hot Coffee ☕️",
+              "guid": "ed85e393-1805-4f78-8c31-c1f81bc23844",
+              "description": "",
+              "price": 4,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000561434908_1742080227.jpg"
+            },
+            {
+              "name": "Hot Chocolate ☕️🍫",
+              "guid": "ff5bf8bd-9ba1-4075-9354-4e814faf9341",
+              "description": "",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000341599586_1734991383.jpg"
+            },
+            {
+              "name": "Hot Tea 🫖",
+              "guid": "f130d026-e865-40c7-9c66-5241f7542926",
+              "description": "",
+              "price": 4,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000000341599587_1734991454.jpg"
+            },
+            {
+              "name": "Iced Tea 🧊🌿",
+              "guid": "7278398a-9de6-4104-b432-d32dad30f1e2",
+              "description": "Refreshing freshly brewed black tea with lemon wedge. Customizations: Make it an Arnold Palmer (with lemonade!)",
+              "price": 4,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000561456150_1742140394.jpg"
+            },
+            {
+              "name": "Fountain Soda 🫧 (24 oz)",
+              "guid": "30552090-64ab-4322-8bd1-0ea7861ff251",
+              "description": "Refreshing fountain soda served ice-cold. Choose from your favorite Pepsi products, including Pepsi, Diet Pepsi, Tropicana Lemonade, Crush Orange, and Dr. Pepper.",
+              "price": 4,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000341599589_1734991417.jpg"
+            },
+            {
+              "name": "Special Drink",
+              "guid": "7df43f04-6725-469d-b1c4-86023ae9b9d6",
+              "description": "Our rotating special drink of the day! Pictured: Oreo Latte",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000000561438109_1742080202.jpg"
+            },
+            {
+              "name": "Milk",
+              "guid": "84fa1e58-811b-4897-a021-2ae821728afa",
+              "description": "",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000584607818_1742080177.jpg"
+            },
+            {
+              "name": "Chocolate Milk",
+              "guid": "87e4a2ba-2557-4782-8df4-cd85a1c9c262",
+              "description": "",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000584610570_1742080130.jpg"
+            },
+            {
+              "name": "Banana Matcha",
+              "guid": "1811fba9-9e6f-4f56-b549-793a2474dd83",
+              "description": "",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000001279682597_1742080291.jpg"
+            },
+            {
+              "name": "Kid's Soda 🫧",
+              "guid": "53943cb0-1caf-4f7f-af2f-18c1ef523c9f",
+              "description": "",
+              "price": 2.95,
+              "imageUrl": null
+            },
+            {
+              "name": "Cold Brew",
+              "guid": "d78d2dcc-d8fe-4291-b17e-308d5873e425",
+              "description": "",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "Hot Water",
+              "guid": "e21e0659-d547-4cb2-80cc-1ee357e938d7",
+              "description": "",
+              "price": 0,
+              "imageUrl": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alcoholic Beverages 🍻 M-W",
       "guid": "be788865-d741-4845-bb47-d8d95779e6f5",
       "description": "",
       "groups": [
         {
           "name": "Alcoholic Beverages 🍻",
           "guid": "a6b39ea2-9fa0-4239-a771-80e6b3fed319",
+          "description": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Alcoholic Beverages 🍻 Thu-Sun",
+      "guid": "35e0ed68-cc5b-45f3-ab46-fa568f0c72f6",
+      "description": "",
+      "groups": [
+        {
+          "name": "Alcoholic Beverages 🍻",
+          "guid": "9b0f4b56-b96f-434e-986d-728df8cdbaa8",
           "description": "",
           "items": []
         }
@@ -3924,7 +4084,7 @@
             {
               "name": "Tiger Milk with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba.",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Our tapioca boba is made from scratch in Hayward with simple ingredients — no preservatives.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1766999024.png"
             },
@@ -3950,32 +4110,25 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
-              "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
+              "name": "Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/ee481775-1408-4e3a-9574-5b1dfc8958fa.png"
             },
             {
-              "name": "Strawberry Jasmine Tea",
+              "name": "Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
-              "description": "freshly brewed jasmine tea + strawberry puree",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
-            },
-            {
-              "name": "Mango Jasmine Tea",
-              "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
-              "description": "freshly brewed jasmine tea + mango puree",
+              "description": "jasmine green tea + lychee puree",
               "price": 6.75,
               "imageUrl": null
             },
             {
-              "name": "Matcha Latte 🍵",
-              "guid": "38020157-0819-4e45-bda3-b1f8e98e6bd7",
-              "description": "Top grade Japanese Royal matcha",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e1fd77d1-e1a7-4ad7-98f2-36e884cc4e69.png"
+              "name": "Mango Passionfruit Jasmine Green",
+              "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
+              "description": "jasmine green tea + mango and passionfruit puree",
+              "price": 6.75,
+              "imageUrl": null
             },
             {
               "name": "Ube Taro Milk with Boba 🍠🍯🌙",
@@ -4150,14 +4303,14 @@
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "Classic Thai Tea + Crème Brûlée",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
             },
             {
-              "name": "Green Thai Tea 🇹🇭🫖",
+              "name": "White Peach Oolong Milk Tea",
               "guid": "247193a1-42f6-4dc0-a41a-7cb4776981f6",
-              "description": "Bright, jade-green Thai tea with a subtle sweetness and floral aroma",
+              "description": "",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000006111232563_1766831532.jpg"
+              "imageUrl": null
             },
             {
               "name": "Assam Masala Chai Tea 🇮🇳☕",
@@ -4206,7 +4359,7 @@
               "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
               "description": "Top grade Japanese Royal matcha, real taro and ube.",
               "price": 8.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008109510341_1772013412.jpg"
             },
             {
               "name": "Double Matcha 🍵🍵",
@@ -4232,7 +4385,7 @@
             {
               "name": "Tiger Milk with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba.",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Our tapioca boba is made from scratch in Hayward with simple ingredients — no preservatives.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1766999024.png"
             },
@@ -4276,7 +4429,7 @@
               "guid": "50f1ea8a-b89b-4c45-be62-b15826e553b2",
               "description": "organic mango and fresh milk",
               "price": 7,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000009018273524_1772013435.jpg"
             },
             {
               "name": "Horchata de Avena 🍂🥛🌙",
@@ -4293,50 +4446,29 @@
           "description": "",
           "items": [
             {
-              "name": "Strawberry Jasmine Tea",
+              "name": "Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
-              "description": "freshly brewed jasmine tea + strawberry puree",
+              "description": "jasmine green tea + lychee puree",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
+              "imageUrl": null
             },
             {
-              "name": "Strawberry Four Seasons Jade",
+              "name": "Strawberry Peach Jade Oolong",
               "guid": "fea5b79b-9c7e-42e6-b860-960a218b071e",
-              "description": "freshly brewed jasmine tea + strawberry puree",
+              "description": "freshly brewed four seasons jade oolong + strawberry and peach puree",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
+              "imageUrl": null
             },
             {
-              "name": "Mango Jasmine Tea",
+              "name": "Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
-              "description": "freshly brewed jasmine tea + mango puree",
+              "description": "jasmine green tea + mango and passionfruit puree",
               "price": 6.75,
               "imageUrl": null
             },
             {
-              "name": "Mango Four Seasons Jade",
-              "guid": "76701b9b-2d16-4fbb-9839-a97dfef2eb0e",
-              "description": "freshly brewed jasmine tea + mango puree",
-              "price": 6.75,
-              "imageUrl": null
-            },
-            {
-              "name": "Passionfruit Jasmine Tea",
-              "guid": "66d5ea96-30ef-4b51-a278-cd71c8752085",
-              "description": "freshly brewed jasmine tea + passionfruit puree",
-              "price": 6.75,
-              "imageUrl": null
-            },
-            {
-              "name": "Raspberry Four Seasons Jade",
-              "guid": "a0d5d65e-9cff-41e0-9bad-305118da6925",
-              "description": "freshly brewed Ceylon black tea + raspberry puree",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000007708563697_1766832494.png"
-            },
-            {
-              "name": "Peach Four Seasons Jade",
-              "guid": "97f82404-2345-4fad-b64b-28d22f75b56b",
+              "name": "Build Your Own Fruit Tea  🍓🌱",
+              "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "",
               "price": 6.75,
               "imageUrl": null
@@ -4375,20 +4507,6 @@
               "description": "Made to order with fresh lemons, cane sugar, passionfruit puree and purified mineral water — never pre-made.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
-            },
-            {
-              "name": "Raspberry Lemonade 🍋🌙",
-              "guid": "d96faa9d-6365-4114-8fcf-556832c05225",
-              "description": "Made to order with fresh lemons, cane sugar, raspberry puree and purified mineral water — never pre-made.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000006713665697_1766216238.png"
-            },
-            {
-              "name": "Pineapple Lemonade 🍍🍋🌙",
-              "guid": "10eb664c-f0e0-45b9-aa71-1b6b91fc96cc",
-              "description": "Made to order with fresh lemons, cane sugar, pineapple puree and purified mineral water — never pre-made.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006753429005_1766216205.png"
             },
             {
               "name": "Purple Lemonade 🔮🍋🌙",
@@ -4447,7 +4565,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
             {
-              "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
+              "name": "Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -4479,7 +4597,7 @@
               "guid": "df813baf-d827-4490-8bb6-5f1f1b450f2f",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Pistachio Cream.",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1768452389.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1772013562.jpg"
             },
             {
               "name": "Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
@@ -4624,7 +4742,7 @@
             {
               "name": "Tiger Milk with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba.",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Our tapioca boba is made from scratch in Hayward with simple ingredients — no preservatives.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1766999024.png"
             },
@@ -4650,32 +4768,25 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
-              "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
+              "name": "Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/ee481775-1408-4e3a-9574-5b1dfc8958fa.png"
             },
             {
-              "name": "Strawberry Jasmine Tea",
+              "name": "Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
-              "description": "freshly brewed jasmine tea + strawberry puree",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
-            },
-            {
-              "name": "Mango Jasmine Tea",
-              "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
-              "description": "freshly brewed jasmine tea + mango puree",
+              "description": "jasmine green tea + lychee puree",
               "price": 6.75,
               "imageUrl": null
             },
             {
-              "name": "Matcha Latte 🍵",
-              "guid": "38020157-0819-4e45-bda3-b1f8e98e6bd7",
-              "description": "Top grade Japanese Royal matcha",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/e1fd77d1-e1a7-4ad7-98f2-36e884cc4e69.png"
+              "name": "Mango Passionfruit Jasmine Green",
+              "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
+              "description": "jasmine green tea + mango and passionfruit puree",
+              "price": 6.75,
+              "imageUrl": null
             },
             {
               "name": "Ube Taro Milk with Boba 🍠🍯🌙",
@@ -4850,14 +4961,14 @@
               "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
               "description": "Classic Thai Tea + Crème Brûlée",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
             },
             {
-              "name": "Green Thai Tea 🇹🇭🫖",
+              "name": "White Peach Oolong Milk Tea",
               "guid": "247193a1-42f6-4dc0-a41a-7cb4776981f6",
-              "description": "Bright, jade-green Thai tea with a subtle sweetness and floral aroma",
+              "description": "",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000006111232563_1766831532.jpg"
+              "imageUrl": null
             },
             {
               "name": "Assam Masala Chai Tea 🇮🇳☕",
@@ -4906,7 +5017,7 @@
               "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
               "description": "Top grade Japanese Royal matcha, real taro and ube.",
               "price": 8.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008109510341_1772013412.jpg"
             },
             {
               "name": "Double Matcha 🍵🍵",
@@ -4932,7 +5043,7 @@
             {
               "name": "Tiger Milk with Boba 🐯🌙",
               "guid": "397c74f4-dd53-42ab-8d93-547792bb6f31",
-              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba.",
+              "description": "Fresh milk with handcrafted top grade brown sugar stripes — rich, creamy, and naturally caffeine-free 🌙 Served with boba. Our tapioca boba is made from scratch in Hayward with simple ingredients — no preservatives.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000004994025826_1766999024.png"
             },
@@ -4976,7 +5087,7 @@
               "guid": "50f1ea8a-b89b-4c45-be62-b15826e553b2",
               "description": "organic mango and fresh milk",
               "price": 7,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000009018273524_1772013435.jpg"
             },
             {
               "name": "Horchata de Avena 🍂🥛🌙",
@@ -4993,50 +5104,29 @@
           "description": "",
           "items": [
             {
-              "name": "Strawberry Jasmine Tea",
+              "name": "Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
-              "description": "freshly brewed jasmine tea + strawberry puree",
+              "description": "jasmine green tea + lychee puree",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
+              "imageUrl": null
             },
             {
-              "name": "Strawberry Four Seasons Jade",
+              "name": "Strawberry Peach Jade Oolong",
               "guid": "fea5b79b-9c7e-42e6-b860-960a218b071e",
-              "description": "freshly brewed jasmine tea + strawberry puree",
+              "description": "freshly brewed four seasons jade oolong + strawberry and peach puree",
               "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/3/item-1300000007708563693_1768258915.jpg"
+              "imageUrl": null
             },
             {
-              "name": "Mango Jasmine Tea",
+              "name": "Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
-              "description": "freshly brewed jasmine tea + mango puree",
+              "description": "jasmine green tea + mango and passionfruit puree",
               "price": 6.75,
               "imageUrl": null
             },
             {
-              "name": "Mango Four Seasons Jade",
-              "guid": "76701b9b-2d16-4fbb-9839-a97dfef2eb0e",
-              "description": "freshly brewed jasmine tea + mango puree",
-              "price": 6.75,
-              "imageUrl": null
-            },
-            {
-              "name": "Passionfruit Jasmine Tea",
-              "guid": "66d5ea96-30ef-4b51-a278-cd71c8752085",
-              "description": "freshly brewed jasmine tea + passionfruit puree",
-              "price": 6.75,
-              "imageUrl": null
-            },
-            {
-              "name": "Raspberry Four Seasons Jade",
-              "guid": "a0d5d65e-9cff-41e0-9bad-305118da6925",
-              "description": "freshly brewed Ceylon black tea + raspberry puree",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000007708563697_1766832494.png"
-            },
-            {
-              "name": "Peach Four Seasons Jade",
-              "guid": "97f82404-2345-4fad-b64b-28d22f75b56b",
+              "name": "Build Your Own Fruit Tea  🍓🌱",
+              "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "",
               "price": 6.75,
               "imageUrl": null
@@ -5075,20 +5165,6 @@
               "description": "Made to order with fresh lemons, cane sugar, passionfruit puree and purified mineral water — never pre-made.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
-            },
-            {
-              "name": "Raspberry Lemonade 🍋🌙",
-              "guid": "d96faa9d-6365-4114-8fcf-556832c05225",
-              "description": "Made to order with fresh lemons, cane sugar, raspberry puree and purified mineral water — never pre-made.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000006713665697_1766216238.png"
-            },
-            {
-              "name": "Pineapple Lemonade 🍍🍋🌙",
-              "guid": "10eb664c-f0e0-45b9-aa71-1b6b91fc96cc",
-              "description": "Made to order with fresh lemons, cane sugar, pineapple puree and purified mineral water — never pre-made.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000006753429005_1766216205.png"
             },
             {
               "name": "Purple Lemonade 🔮🍋🌙",
@@ -5147,7 +5223,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
             {
-              "name": "Dino Freeze 🍓🍋🍍🍎🍑🦖❄️🌙",
+              "name": "Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -5179,7 +5255,7 @@
               "guid": "df813baf-d827-4490-8bb6-5f1f1b450f2f",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans ☕❄ +  Pistachio Cream.",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1768452389.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1772013562.jpg"
             },
             {
               "name": "Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
