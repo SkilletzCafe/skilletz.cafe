@@ -1,67 +1,7 @@
 {
-  "item_images": {
-    "af05ded3-0876-4201-b8b0-59c37d609db3": {
-      "images": ["images/menu/hd/drinks/fresh_squeezed_orange_juice.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Fresh Squeezed Orange Juice 🍊"
-    },
-    "d721585a-4171-45db-8946-eb5997348f11": {
-      "images": ["images/menu/hd/drinks/cranberry_juice.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Cranberry Juice"
-    },
-    "f42bf73b-2d8b-49f9-8efa-358b688659f2": {
-      "images": ["images/menu/hd/drinks/apple_juice.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Apple Juice 🍎"
-    },
-    "96e390f3-c590-4ccb-bf66-278286238dd2": {
-      "images": ["images/menu/hd/drinks/iced_coffee_caramel_latte.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Iced Coffee 🧊☕️"
-    },
-    "ff5bf8bd-9ba1-4075-9354-4e814faf9341": {
-      "images": [
-        "images/menu/hd/drinks/hot_chocolate_3.jpg",
-        "images/menu/hd/drinks/hot_chocolate_1.jpg",
-        "images/menu/hd/drinks/hot_chocolate_2.jpg"
-      ],
-      "category": "Drinks 🥤",
-      "item_name": "Hot Chocolate ☕️🍫"
-    },
-    "f130d026-e865-40c7-9c66-5241f7542926": {
-      "images": ["images/menu/hd/drinks/hot_tea.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Hot Tea 🫖"
-    },
-    "30552090-64ab-4322-8bd1-0ea7861ff251": {
-      "images": ["images/menu/hd/drinks/fountain_soda.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Fountain Soda 🫧 (24 oz)"
-    },
-    "da2ed00c-1044-4487-94ba-63319e0b3992": {
-      "images": ["images/menu/hd/drinks/oreo_milkshake.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Milkshake 🍨"
-    },
-    "006f87d9-72c8-4b0e-8592-85f207d7b1bb": {
-      "images": ["images/menu/hd/drinks/hot_coffee.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Hot Coffee ☕️"
-    },
-    "ed85e393-1805-4f78-8c31-c1f81bc23844": {
-      "images": ["images/menu/hd/drinks/hot_coffee.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Decaf Hot Coffee ☕️"
-    },
-    "84fa1e58-811b-4897-a021-2ae821728afa": {
-      "images": ["images/menu/hd/drinks/milk_shakes.jpg"],
-      "category": "Drinks 🥤",
-      "item_name": "Milk"
-    }
-  },
+  "item_images": {},
   "metadata": {
-    "last_updated": "2026-02-22",
+    "last_updated": "2026-03-19",
     "version": "1.0",
     "image_root": "/images/menu/hd"
   }

@@ -2044,84 +2044,84 @@
           "name": "Boba (tapioca) ⚫️",
           "guid": "9c4c60b3-b0be-4326-93a2-31eedd3e37db",
           "description": "Classic honey-sweetened tapioca pearls",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Mango Popping Boba 🟠",
           "guid": "523809b3-a4f8-4cfc-8061-175bd38c601c",
           "description": "Bursting mango-flavored boba",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Strawberry Popping Boba 🔴",
           "guid": "1684ef1f-2f3f-409d-bba6-ead4d692ce59",
           "description": "Bursting strawberry-flavored boba",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Lychee Popping Boba ⚪️",
           "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
           "description": "Bursting lychee-flavored boba",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Mango Star Jelly ⭐️",
           "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
           "description": "Star-shaped mango jelly",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Strawberry Heart Jelly ❤️",
           "guid": "125f5ecb-0668-412d-8458-b62652de53b1",
           "description": "Heart-shaped strawberry jelly",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Lychee Jelly 🤍",
           "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
           "description": "Delicate lychee jelly",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Agar Crystal Boba 💎",
           "guid": "aa42fe8c-a3f7-4dbe-8950-5d7799e2b227",
           "description": "",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Agar Brown Sugar Boba 🍯",
           "guid": "53b21d05-a78f-4af0-9bc7-c4f5f2ed10b4",
           "description": "",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Dalgona (Honeycomb Toffee)",
           "guid": "0b7602e4-6cf6-450e-ad19-db6b4b0cd56f",
           "description": "",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Grapefruit Pulp",
           "guid": "57294a4b-463d-47f5-87b6-4159568d9ee4",
           "description": "",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         },
         {
           "name": "Diced Mango",
           "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
           "description": "",
-          "price": 0.75,
+          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2141,8 +2141,15 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Sea Salt Cheese Cream",
-          "guid": "261ceea7-cd61-4274-a7d5-b35a5ad588d5",
+          "name": "Vanilla Ice Cream Float (on cold drinks only)",
+          "guid": "051a2cc7-ba35-4a4a-9cde-5a41590929d3",
+          "description": "",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Jasmine Cream (Whipped)",
+          "guid": "39dca51b-99ee-4cb4-aa93-dd5788f8ae8c",
           "description": "",
           "price": 1.5,
           "orderableOnline": "YES"
@@ -2169,8 +2176,8 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Jasmine Cream (Whipped)",
-          "guid": "39dca51b-99ee-4cb4-aa93-dd5788f8ae8c",
+          "name": "Sea Salt Cheese Cream",
+          "guid": "261ceea7-cd61-4274-a7d5-b35a5ad588d5",
           "description": "",
           "price": 1.5,
           "orderableOnline": "YES"
@@ -2188,7 +2195,7 @@
           "name": "No Boba",
           "guid": "e0cbb7d6-429e-4243-9c1d-5514508a4479",
           "description": "",
-          "price": -0.5,
+          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2412,11 +2419,11 @@
       ]
     },
     {
-      "name": "Fruit Choices (up to 2) (Dino Freeze)",
-      "guid": "6764bc69-e93d-48c6-a49b-78627b992b23",
+      "name": "Choose up to 2 fruits",
+      "guid": "532cbf0c-e453-4f0d-9759-05a68fbfefde",
       "minSelections": 1,
       "maxSelections": 2,
-      "pricingMode": "ADJUSTS_PRICE",
+      "pricingMode": "INCLUDED",
       "items": [
         {
           "name": "Strawberry 🍓",
@@ -2440,10 +2447,89 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Raspberry ❤️",
+          "name": "Peach 🍑",
           "guid": "85adfbdb-7a60-48f4-90c3-6f3ba0159542",
           "description": "",
           "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee",
+          "guid": "c3089b74-0457-47f2-aa46-a3fd302c3901",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Sweetness Level (10% minimum)",
+      "guid": "96b9e7c6-dd56-4aa4-be66-0195f31d58ca",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% sweet (cane sugar)",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar)",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar)",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (cane sugar)",
+          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "10% sweet (built in cane sugar)",
+          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (monk fruit added)",
+          "guid": "6fdd0235-1908-4118-96a4-a022e09e36c2",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (monk fruit added)",
+          "guid": "69aac531-a317-4204-a92a-eac1dea7b8a3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (monk fruit added)",
+          "guid": "f87200d6-a036-4cd0-916c-7afaed93ae70",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (monk fruit added)",
+          "guid": "f87200d6-a036-4cd0-916c-7afaed93ae70",
+          "description": "",
+          "price": 0.5,
           "orderableOnline": "YES"
         }
       ]
@@ -2722,6 +2808,29 @@
       ]
     },
     {
+      "name": "Choose a tea",
+      "guid": "c2164949-3ddc-4520-b7cb-79b3672bdc37",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Jasmine Green",
+          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Four Seasons Jade Oolong",
+          "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Sweetness Level (50% minimum)",
       "guid": "1a9b6a47-b4be-435a-998c-4fe5bf8ba52b",
       "minSelections": 1,
@@ -2784,36 +2893,6 @@
           "guid": "da6059db-5c6b-4531-9d5b-92e85fb0fad3",
           "description": "",
           "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Iced/Hot (Tea-Rek'z coffee)",
-      "guid": "0033a743-dc16-4231-b282-2508857704ac",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Iced (2 espresso shots)",
-          "guid": "1072692f-71db-47bc-bb9e-c925177516e7",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Iced (4 espresso shots)",
-          "guid": "8750173c-ddf1-4291-9d34-6756aea9417e",
-          "description": "",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Hot (4 espresso shots)",
-          "guid": "8037aeb4-782f-4710-9aa6-006fce864f9c",
-          "description": "",
-          "price": 2,
           "orderableOnline": "YES"
         }
       ]
