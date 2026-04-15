@@ -63,7 +63,14 @@ npm run dev
 npm run build
 ```
 
-### Features
+## Contributor and agent guidance
+
+This project uses editor-agnostic contributor docs so the same repository guidance works across multiple AI tools and human workflows.
+
+- Start with `AGENTS.md`
+- See `docs/agents/` for repo-specific guidance and learnings
+
+## Features
 
 - 🏠 Homepage with restaurant information
 - 🍽️ Menu page with DoorDash integration
