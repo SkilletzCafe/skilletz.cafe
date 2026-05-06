@@ -41,7 +41,7 @@ export default function Press() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
         {/* YouTube Feature */}
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>KQED&#39;s Check, Please! Bay Area</h2>
+          <h2>KQED&#39;s Check, Please! Bay Area</h2>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <iframe
               width="560"
@@ -56,7 +56,7 @@ export default function Press() {
         </div>
         {/* Instagram Feature */}
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Instagram Feature</h2>
+          <h2>Instagram Feature</h2>
           <div style={{ maxWidth: 320, margin: '0 auto' }}>
             <iframe
               src="https://www.instagram.com/p/DIjVR1iJWyM/embed"
@@ -71,7 +71,7 @@ export default function Press() {
         </div>
         {/* Fremont Bank Article */}
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Fremont Bank: Partnership in Action</h2>
+          <h2>Fremont Bank: Partnership in Action</h2>
           <p style={{ margin: 0, fontSize: '0.95rem', color: '#666' }}>
             This 2020 article from Fremont Bank highlights Skillet&#39;z Cafe&#39;s founding story
             and community roots.
@@ -88,7 +88,7 @@ export default function Press() {
         </div>
         {/* Community Resilience Section */}
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Community Resilience: March 2024 Burglary</h2>
+          <h2>Community Resilience: March 2024 Burglary</h2>
           <p style={{ margin: 0, fontSize: '0.95rem', color: '#666' }}>
             In March 2024, Skillet&#39;z Cafe was burglarized. We are grateful for the outpouring of
             support from our community and the coverage from local media.
