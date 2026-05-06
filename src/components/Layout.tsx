@@ -9,7 +9,6 @@ import { geist } from '@/config/fonts';
 
 import styles from '@/styles/Layout.module.css';
 
-import DoorDashSmartButton from './DoorDashSmartButton';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -35,7 +34,6 @@ export default function Layout({ children, title, description }: LayoutProps) {
         <Header />
         <main className={styles.main}>{children}</main>
         <Footer />
-        <DoorDashSmartButton />
       </div>
     </ThemeProvider>
   );
