@@ -46,7 +46,7 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 npm run dev      # local development server
 npm run lint     # lint checks
 make build       # production build into docs/
-make deploy      # build and stage deploy output
+make deploy      # production deploy: build docs/, commit them, and push to origin master
 ```
 
 ## Before you commit

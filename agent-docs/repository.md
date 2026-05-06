@@ -18,7 +18,7 @@ Do not hand-edit `docs/` unless you are intentionally fixing generated output as
 - `master` is production
 - GitHub Pages serves the generated `docs/` directory
 - `docs/.nojekyll` is required for GitHub Pages to serve Next.js output correctly
-- `make deploy` handles the normal build-and-stage deploy workflow
+- `make deploy` is a production deploy command: it builds `docs/`, commits the generated output, and pushes to `origin master`
 
 ## Key config files
 
