@@ -1,16 +1,27 @@
+interface OutboundClickGtagParams {
+  event_category: 'outbound';
+  event_label: string;
+  link_url: string;
+  link_domain: string | null;
+  page_location: string;
+  transport_type: 'beacon';
+}
+
+type Gtag = (command: 'event', eventName: 'click', params: OutboundClickGtagParams) => void;
+
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
+    gtag?: Gtag;
   }
 }
 
 interface TrackOutboundClickParams {
   destination: string;
   label: string;
-  location: string;
+  pageLocation?: string;
 }
 
-export function trackOutboundClick({ destination, label, location }: TrackOutboundClickParams) {
+export function trackOutboundClick({ destination, label, pageLocation }: TrackOutboundClickParams) {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
     return;
   }
@@ -26,7 +37,7 @@ export function trackOutboundClick({ destination, label, location }: TrackOutbou
         return null;
       }
     })(),
-    page_location: location,
+    page_location: pageLocation ?? window.location.href,
     transport_type: 'beacon',
   });
 }

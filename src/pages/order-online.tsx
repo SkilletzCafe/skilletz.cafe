@@ -2,6 +2,8 @@ import { ORDERING_PARTNERS } from '@/config';
 
 import { BasicPageLayout } from '@/components/BasicPageLayout';
 
+import { trackOutboundClick } from '@/utils/analytics';
+
 import styles from '@/styles/BasicPage.module.css';
 
 export default function OrderOnline() {
@@ -22,6 +24,12 @@ export default function OrderOnline() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
+            onClick={() =>
+              trackOutboundClick({
+                destination: partner.url,
+                label: `order_online:${partner.key}`,
+              })
+            }
             style={{
               fontSize: '1.25rem',
               padding: '1rem 2rem',
