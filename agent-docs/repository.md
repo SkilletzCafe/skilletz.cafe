@@ -19,6 +19,8 @@ Do not hand-edit `docs/` unless you are intentionally fixing generated output as
 - GitHub Pages serves the generated `docs/` directory
 - `docs/.nojekyll` is required for GitHub Pages to serve Next.js output correctly
 - `make deploy` is a production deploy command: it builds `docs/`, commits the generated output, and pushes to `origin master`
+- Do not merge to `master` or run `make deploy` without explicit maintainer approval in the same conversation
+- Treat implementation/fix requests as approval to prepare a PR only, not approval to ship production changes
 
 ## Key config files
 
@@ -42,6 +44,7 @@ When changing configuration, keep docs concise and avoid duplicating file conten
 - Open a PR for review
 - Keep commits focused
 - Review generated output before shipping it
+- Stop at the PR until Jonathan/maintainer explicitly approves merge/deploy
 
 ## Public-repo security
 
