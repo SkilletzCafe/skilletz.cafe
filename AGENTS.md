@@ -67,10 +67,10 @@ make deploy      # build and stage deploy output
 
 - `CONTRIBUTING.md` — human contributor workflow and PR checklist
 - `SECURITY.md` — public-repository security policy and incident expectations
-- `docs/agents/repository.md` — repository structure, deployment, config, and git expectations
-- `docs/agents/frontend.md` — TypeScript, React, CSS, accessibility, and testing guidance
-- `docs/agents/menu-system.md` — menu data pipeline and menu/TV-specific patterns
-- `docs/agents/learnings.md` — project-specific lessons and pitfalls worth preserving
+- `agent-docs/repository.md` — repository structure, deployment, config, and git expectations
+- `agent-docs/frontend.md` — TypeScript, React, CSS, accessibility, and testing guidance
+- `agent-docs/menu-system.md` — menu data pipeline and menu/TV-specific patterns
+- `agent-docs/learnings.md` — project-specific lessons and pitfalls worth preserving
 
 ## Default engineering expectations
 
@@ -90,4 +90,4 @@ make deploy      # build and stage deploy output
 
 ## Deleting old editor-specific rules
 
-This repository intentionally moved away from `.cursor/**` as the source of truth for agent guidance. If you find stale editor-specific rules, migrate any still-useful content into `AGENTS.md` or `docs/agents/*.md` instead of creating another tool-specific ruleset.
+This repository intentionally moved away from `.cursor/**` as the source of truth for agent guidance. If you find stale editor-specific rules, migrate any still-useful content into `AGENTS.md` or `agent-docs/*.md` instead of creating another tool-specific ruleset.

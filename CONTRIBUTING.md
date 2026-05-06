@@ -9,7 +9,7 @@ Before making changes, read:
 - `README.md` for project setup and context
 - `AGENTS.md` for contributor and AI-agent workflow rules
 - `SECURITY.md` for public-repository safety expectations
-- `docs/agents/` for focused repo, frontend, menu-system, and project-learning guidance
+- `agent-docs/` for focused repo, frontend, menu-system, and project-learning guidance
 
 ## Development workflow
 

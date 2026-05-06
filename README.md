@@ -70,7 +70,7 @@ This project uses editor-agnostic contributor docs so the same repository guidan
 - Start with `CONTRIBUTING.md`
 - Follow `SECURITY.md` for public-repository safety expectations
 - Use `AGENTS.md` for AI-agent workflow rules
-- See `docs/agents/` for repo-specific guidance and learnings
+- See `agent-docs/` for repo-specific guidance and learnings
 
 ## Features
 

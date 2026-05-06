@@ -21,4 +21,4 @@ Capture durable, repo-specific lessons here when they would help future contribu
 
 ## Documentation rule
 
-When you learn something durable about this repo, add it here or to a more specific `docs/agents/*.md` file. Keep it concise and practical.
+When you learn something durable about this repo, add it here or to a more specific `agent-docs/*.md` file. Keep it concise and practical.
