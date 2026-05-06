@@ -2,6 +2,7 @@ export * from './analytics';
 export * from './build';
 export * from './business';
 export * from './fonts';
+export * from './doordash';
 export * from './orderingPartners';
 export * from './pages';
 export * from './quickLinks';
