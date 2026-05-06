@@ -188,7 +188,7 @@
   line-height: 2;
 }
 
-.footerSection h3 {
+.footerSection h2 {
   color: var(--footer-heading);
   margin-bottom: 0.5rem;
   transition: color var(--theme-transition-duration) var(--theme-transition-timing);

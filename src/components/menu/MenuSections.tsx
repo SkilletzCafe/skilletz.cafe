@@ -59,15 +59,8 @@ export const MenuSections: React.FC<MenuSectionsProps> = ({
           {section.name}
           <span className={styles.categoryDecoration}>✦</span>
         </h2>
-        {section.description && (
-          <p
-            className={styles.categoryDescription}
-            aria-label={`${section.name} category description`}
-          >
-            {section.description}
-          </p>
-        )}
-        <div className={styles.menuGrid} role="list" aria-label={`${section.name} menu items`}>
+        {section.description && <p className={styles.categoryDescription}>{section.description}</p>}
+        <div className={styles.menuGrid}>
           {getItems(section).map((item, itemIndex) => {
             const itemState = itemStates[item.guid] || {
               isVisible: false,

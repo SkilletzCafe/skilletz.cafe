@@ -114,7 +114,7 @@
   border: 1px solid var(--border-color);
 }
 
-.postTags h3 {
+.postTags h2 {
   margin-bottom: 1rem;
   color: var(--text-color);
   font-size: 1.1rem;
