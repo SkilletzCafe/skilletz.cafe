@@ -1,161 +1,93 @@
-# AGENTS.md - AI Agent Guidelines for Skillet'z Cafe Website
+# AGENTS.md - Multi-agent contributor guide for skilletz.cafe
 
-## ⚠️ This is a PUBLIC Repository
+This repository is used by humans and multiple AI coding tools (OpenClaw, Codex, Claude Code, Cursor, and others). These instructions are editor-agnostic on purpose.
 
-This repository is publicly visible on the internet. **Never commit:**
+## ⚠️ Public repository safety
+
+This repo is public. Never commit:
 
 - API keys, tokens, or secrets
 - Passwords or credentials
-- Private business information
+- Private business information that should not be public
 - Customer data
-- Internal URLs or endpoints
+- Internal-only URLs, endpoints, or operational notes
 
-If you accidentally commit sensitive data, alert the maintainer immediately. The data is already exposed - a force push doesn't remove it from GitHub's servers or anyone who cloned/forked.
+If sensitive data is committed, notify the maintainer immediately. Force-pushing does not make exposed data safe again.
 
----
+## Deployment model
 
-## 🚀 Deployment Architecture
+- Production is hosted on GitHub Pages at <https://skilletz.cafe>
+- `docs/` is the built static output
+- Any push to `master` deploys production
+- There is no staging environment in this repo
 
-### How It Works
+### Golden rule
 
-1. **GitHub Pages** hosts the production site at [skilletz.cafe](https://skilletz.cafe)
-2. The `docs/` directory contains the static build output
-3. **Any push to `master` automatically deploys to production**
-4. There is no staging environment - master IS production
+> Never push directly to `master` without explicit maintainer approval.
 
-### The Golden Rule
+## Required workflow
 
-> **Never push directly to `master` without explicit approval.**
+1. Create a feature branch
+2. Make source changes in `src/` (and other source/config files)
+3. Test locally
+4. Build before handing off for review
+5. Open a PR
+6. Merge to `master` only after approval
 
-Changes pushed to master go live immediately. This includes:
+## Source of truth
 
-- Source code changes (`src/`)
-- Build artifacts (`docs/`)
-- Configuration files
+- Edit `src/`, not `docs/`
+- Treat `docs/` as generated output
+- If business data/config changes, prefer centralized config files over repeating values inline
 
----
-
-## 🔄 Deployment Workflow
-
-### For Testing/Development
-
-1. Create a feature branch: `git checkout -b feature/my-change`
-2. Make changes to source files in `src/`
-3. Test locally with `npm run dev`
-4. Build with `make build` to verify the build succeeds
-5. **Do NOT push to master** - create a PR for review
-
-### For Production Deployment
-
-1. Get explicit approval from the maintainer
-2. Merge the approved PR to master
-3. GitHub Pages automatically deploys the `docs/` folder
-
-### Build Commands
+## Commands
 
 ```bash
-npm run dev      # Local development server
-make build       # Production build (outputs to docs/)
-make deploy      # Build and stage deployment commit
-npm run lint     # Check for errors
+npm run dev      # local development server
+npm run lint     # lint checks
+make build       # production build into docs/
+make deploy      # production deploy: build docs/, commit them, and push to origin master
 ```
 
----
+## Before you commit
 
-## 🛡️ Security Guidelines
+- Confirm you are not on `master`
+- Review the diff for secrets and accidental public disclosure
+- Run the smallest relevant validation for the files you changed
+- If source files changed, verify the project still builds
 
-### DO ✅
+## Before you push
 
-- Use environment variables for any secrets (local dev only)
-- Keep sensitive config in `.env` files (gitignored)
-- Review diffs before committing
-- Ask before making external-facing changes
+- `npm run lint`
+- `make build`
+- Confirm changes belong in source files, not accidental edits to generated output only
+- Confirm the branch is intended for PR review, not direct production deploy
 
-### DON'T ❌
+## Project guidance index
 
-- Commit `.env` files or any secrets
-- Hardcode API keys, tokens, or passwords
-- Include internal business data in code or comments
-- Push directly to master without approval
-- Create scripts that scan for sensitive strings (anti-pattern - the script itself exposes what you're trying to hide)
+- `CONTRIBUTING.md` — human contributor workflow and PR checklist
+- `SECURITY.md` — public-repository security policy and incident expectations
+- `agent-docs/repository.md` — repository structure, deployment, config, and git expectations
+- `agent-docs/frontend.md` — TypeScript, React, CSS, accessibility, and testing guidance
+- `agent-docs/menu-system.md` — menu data pipeline and menu/TV-specific patterns
+- `agent-docs/learnings.md` — project-specific lessons and pitfalls worth preserving
 
-### Anti-Pattern Warning
+## Default engineering expectations
 
-Never create scripts that contain lists of sensitive strings to scrub or detect. By including the sensitive values in the script, you've already exposed them. If you need to scan for secrets, use external tools like `git-secrets` or `trufflehog` that use pattern matching, not literal values.
+- Keep components focused and single-purpose
+- Prefer semantic naming over reusing near-matching components/styles
+- Keep data processing separate from presentation
+- Preserve accessibility: keyboard access, contrast, semantic HTML, alt/fallback states
+- Build mobile-first and verify layouts at narrow widths
+- Add comments only when they explain non-obvious decisions or workarounds
 
----
+## Repository-specific reminders
 
-## 📁 Repository Structure
+- External links should use `target="_blank"` where that is the project convention
+- Typography should use the project font utilities/config rather than ad hoc font-family declarations
+- Missing images must degrade gracefully without hiding content
+- Avoid horizontal overflow on mobile
 
-```
-skilletz.cafe/
-├── src/                  # Source code (React/Next.js)
-│   ├── pages/           # Page components
-│   ├── components/      # Reusable components
-│   ├── config/          # Site configuration
-│   └── styles/          # CSS modules
-├── docs/                 # Built static site (auto-generated)
-├── public/              # Static assets
-└── package.json         # Dependencies
-```
+## Deleting old editor-specific rules
 
-### Important: Source vs Build
-
-- **`src/`** - Make ALL changes here. This is the source of truth.
-- **`docs/`** - NEVER edit directly. This is auto-generated by `make build`.
-
-### Key Files
-
-- `src/config/business.ts` - Business info (hours, address, etc.)
-- `src/pages/index.tsx` - Homepage
-- `Makefile` - Build automation
-
----
-
-## 🤖 AI Agent Checklist
-
-Before making any changes:
-
-1. [ ] Is this a public repo? (Yes - don't include secrets)
-2. [ ] Am I on a feature branch? (Don't work on master)
-3. [ ] Do I have explicit approval to deploy?
-4. [ ] Have I reviewed the diff for sensitive data?
-
-Before pushing:
-
-1. [ ] Run `npm run lint` - no errors?
-2. [ ] Run `make build` - build succeeds?
-3. [ ] Am I editing files in `src/`, not `docs/`?
-4. [ ] Is this going to master? (If yes, STOP - need approval)
-
-After approval to deploy:
-
-1. [ ] Run `make deploy` to build and stage
-2. [ ] Review the staged changes
-3. [ ] Push to master
-
----
-
-## ⚠️ Common Pitfalls
-
-### Don't Forget `.nojekyll`
-
-The `make build` command automatically creates `docs/.nojekyll`. This file is **required** for GitHub Pages to serve files starting with underscores (like `_next/`). Never delete it manually.
-
-### Don't Edit `docs/` Directly
-
-Changes to `docs/` will be overwritten on the next build. Always edit `src/` and rebuild.
-
-### Don't Skip the Build Step
-
-Running `make deploy` ensures:
-- Clean build from source
-- CNAME file is copied
-- `.nojekyll` file is created
-- Build artifacts are properly staged
-
----
-
-## 📞 Contact
-
-For questions about deployment or access, contact the repository maintainer.
+This repository intentionally moved away from `.cursor/**` as the source of truth for agent guidance. If you find stale editor-specific rules, migrate any still-useful content into `AGENTS.md` or `agent-docs/*.md` instead of creating another tool-specific ruleset.
