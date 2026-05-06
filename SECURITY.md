@@ -16,7 +16,7 @@ Do not commit:
 
 If you find a vulnerability or accidentally expose sensitive data:
 
-1. Stop and notify the repository maintainer immediately.
+1. Stop and notify the repository maintainer immediately at <hello@skilletz.cafe>.
 2. Do not open a public issue containing the secret or exploit details.
 3. Do not assume a force-push fully removes the data. Once pushed to GitHub, the data may have been copied, cached, or forked.
 4. Rotate any exposed credential through the owning service before relying on the repository history cleanup.

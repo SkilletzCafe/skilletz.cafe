@@ -57,13 +57,19 @@ npm install
 npm run dev
 ```
 
-4. Build for production
+4. Build the app locally
 
 ```bash
 npm run build
 ```
 
-For local production verification, use `make build`. Do **not** run `make deploy` unless you intend to deploy production: it builds `docs/`, commits the generated output, and pushes to `origin master`.
+5. Verify the GitHub Pages production build
+
+```bash
+make build
+```
+
+Do **not** run `make deploy` unless you intend to deploy production: it builds `docs/`, commits the generated output, and pushes to `origin master`.
 
 ## Contributor and agent guidance
 
