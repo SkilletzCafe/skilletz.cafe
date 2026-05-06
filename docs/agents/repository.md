@@ -46,3 +46,9 @@ When changing configuration, keep docs concise and avoid duplicating file conten
 ## Public-repo security
 
 Never put secrets, internal-only operational notes, or sensitive customer/business data in tracked files, examples, comments, tests, or screenshots.
+
+Use `SECURITY.md` as the source of truth for reporting exposed secrets, security concerns, and dependency/supply-chain expectations.
+
+## Contributing workflow
+
+Use `CONTRIBUTING.md` as the human-readable workflow and PR checklist. Keep this agent guide focused on repository-specific implementation details rather than duplicating the full contributor guide.

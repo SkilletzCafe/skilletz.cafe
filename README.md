@@ -67,7 +67,9 @@ npm run build
 
 This project uses editor-agnostic contributor docs so the same repository guidance works across multiple AI tools and human workflows.
 
-- Start with `AGENTS.md`
+- Start with `CONTRIBUTING.md`
+- Follow `SECURITY.md` for public-repository safety expectations
+- Use `AGENTS.md` for AI-agent workflow rules
 - See `docs/agents/` for repo-specific guidance and learnings
 
 ## Features

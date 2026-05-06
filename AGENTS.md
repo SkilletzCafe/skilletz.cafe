@@ -65,6 +65,8 @@ make deploy      # build and stage deploy output
 
 ## Project guidance index
 
+- `CONTRIBUTING.md` — human contributor workflow and PR checklist
+- `SECURITY.md` — public-repository security policy and incident expectations
 - `docs/agents/repository.md` — repository structure, deployment, config, and git expectations
 - `docs/agents/frontend.md` — TypeScript, React, CSS, accessibility, and testing guidance
 - `docs/agents/menu-system.md` — menu data pipeline and menu/TV-specific patterns
