@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
-          <h3 className={margarine.className}>Location & Hours</h3>
+          <h2 className={margarine.className}>Location & Hours</h2>
           <p>
             <a
               href={createGoogleMapsUrl(BUSINESS.name, FULL_ADDRESS)}
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerSection}>
-          <h3 className={margarine.className}>Connect With Us</h3>
+          <h2 className={margarine.className}>Connect With Us</h2>
           <div className={styles.socialLinks}>
             {socialMediaEntries.map(([key, { url, label, icon, title }]) => (
               <a
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerSection}>
-          <h3 className={margarine.className}>Quick Links</h3>
+          <h2 className={margarine.className}>Quick Links</h2>
           {QUICK_LINKS.map((link) => {
             const LinkComponent = link.isInternal ? Link : 'a';
             return (

@@ -71,7 +71,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
             <div className={styles.postTags}>
-              <h3>Tags:</h3>
+              <h2>Tags:</h2>
               <div className={styles.tags}>
                 {post.tags.map((tag: any) => (
                   <Link key={tag.id} href={`/blog/tag/${tag.id}`} className={styles.tag}>

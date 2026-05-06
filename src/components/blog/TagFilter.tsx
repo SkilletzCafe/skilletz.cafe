@@ -5,7 +5,7 @@ import styles from '@/styles/Blog.module.css';
 export function TagFilter({ tags, activeTagId }: { tags: any[]; activeTagId?: string }) {
   return (
     <div className={styles.tagsContainer}>
-      <h3>Filter by topic:</h3>
+      <h2>Filter by topic:</h2>
       <div className={styles.tags}>
         <Link
           href="/blog"

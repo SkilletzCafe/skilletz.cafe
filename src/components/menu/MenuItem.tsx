@@ -37,11 +37,7 @@ export function MenuItem({
       data-item-id={item.guid}
       onKeyDown={(e) => onKeyDown(e, index, totalItems)}
     >
-      {item.isPopular && (
-        <div className={styles.itemBadge} aria-label="Popular item">
-          Popular
-        </div>
-      )}
+      {item.isPopular && <div className={styles.itemBadge}>Popular</div>}
       <div className={styles.imageContainer}>
         {item.imageUrl ? (
           <>
@@ -58,7 +54,7 @@ export function MenuItem({
             />
           </>
         ) : (
-          <div className={styles.imagePlaceholder} aria-label="No image available">
+          <div className={styles.imagePlaceholder}>
             <div className={styles.noImageIcon}>
               <span>No image available</span>
             </div>
@@ -70,15 +66,9 @@ export function MenuItem({
           <h3 id={`item-name-${uniqueId}`} className={styles.itemName}>
             {item.name}
           </h3>
-          <span className={styles.price} aria-label={`Price: $${item.price.toFixed(2)}`}>
-            ${item.price.toFixed(2)}
-          </span>
+          <span className={styles.price}>${item.price.toFixed(2)}</span>
         </div>
-        {item.description && (
-          <p className={styles.description} aria-label={`Description: ${item.description}`}>
-            {item.description}
-          </p>
-        )}
+        {item.description && <p className={styles.description}>{item.description}</p>}
       </div>
     </div>
   );
