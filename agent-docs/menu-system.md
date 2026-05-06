@@ -4,7 +4,8 @@
 
 Use this guide when working on:
 
-- `src/pages/menu.tsx`
+- `src/pages/menu/index.tsx`
+- `src/pages/menu/*`
 - `src/scripts/menu/**/*.ts`
 - `src/styles/Menu.module.css`
 - `src/data/menu/**/*`

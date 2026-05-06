@@ -29,7 +29,7 @@ Dependency changes should be intentional and reviewed. For package updates:
 
 - Prefer the smallest change that solves the problem.
 - Keep `package-lock.json` in sync with `package.json`.
-- Run the relevant validation command before handoff, usually `npm run lint` and `npm run build`.
+- Run the relevant validation command before handoff, usually `npm run lint` and `make build` for GitHub Pages production-build verification.
 - Explain why the dependency is needed if adding something new.
 
 ## Local development secrets
