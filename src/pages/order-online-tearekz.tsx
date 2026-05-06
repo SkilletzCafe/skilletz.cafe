@@ -13,11 +13,45 @@ export default function OrderOnlineTeaRekz() {
   const orderUrl = toastPartner?.url || 'https://order.toasttab.com/online/skilletz-cafe';
 
   useEffect(() => {
-    trackOutboundClick({
+    let fallbackId: number | undefined;
+    let hasRedirected = false;
+
+    const redirectToOrdering = () => {
+      if (fallbackId !== undefined) {
+        window.clearTimeout(fallbackId);
+      }
+
+      if (hasRedirected) {
+        return;
+      }
+
+      hasRedirected = true;
+      window.location.href = orderUrl;
+    };
+
+    const isTracked = trackOutboundClick({
       destination: orderUrl,
+      eventTimeout: 1000,
       label: 'order_online:tearekz_redirect',
+      onComplete: redirectToOrdering,
     });
-    window.location.href = orderUrl;
+
+    if (!isTracked) {
+      redirectToOrdering();
+      return undefined;
+    }
+
+    if (hasRedirected) {
+      return undefined;
+    }
+
+    fallbackId = window.setTimeout(redirectToOrdering, 1200);
+
+    return () => {
+      if (fallbackId !== undefined) {
+        window.clearTimeout(fallbackId);
+      }
+    };
   }, [orderUrl]);
 
   return (
