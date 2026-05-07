@@ -21,9 +21,10 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 - Any push to `master` deploys production
 - There is no staging environment in this repo
 
-### Golden rule
+### Golden rules
 
 > Never push directly to `master` without explicit maintainer approval.
+> Never merge a PR or run `make deploy` without explicit maintainer approval in the same conversation. A request to implement, fix, add, or prepare a change is approval to open a PR only; it is not approval to merge or deploy.
 
 ## Required workflow
 
@@ -32,7 +33,8 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 3. Test locally
 4. Build before handing off for review
 5. Open a PR
-6. Merge to `master` only after approval
+6. Stop and wait for explicit maintainer approval before merging or deploying
+7. Merge to `master` or run `make deploy` only after that explicit approval
 
 ## Source of truth
 
@@ -62,6 +64,13 @@ make deploy      # production deploy: build docs/, commit them, and push to orig
 - `make build`
 - Confirm changes belong in source files, not accidental edits to generated output only
 - Confirm the branch is intended for PR review, not direct production deploy
+
+## Before you merge or deploy
+
+- Confirm the maintainer explicitly approved the merge or deploy in the current conversation
+- Do not infer merge/deploy approval from a request to implement, test, fix, add, or open a PR
+- If approval is unclear, ask once and wait
+- Rollbacks require explicit rollback authorization; rollback permission does not authorize unrelated merges/deploys
 
 ## Project guidance index
 

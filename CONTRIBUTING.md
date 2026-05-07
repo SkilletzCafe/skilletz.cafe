@@ -19,7 +19,7 @@ Before making changes, read:
 4. Run the smallest validation that matches your change.
 5. Open a pull request with a short summary and the validation you ran.
 
-`master` deploys directly to production through GitHub Pages, so merges should be deliberate and reviewed.
+`master` deploys directly to production through GitHub Pages, so merges should be deliberate, reviewed, and explicitly approved. Implementation requests authorize preparing a branch/PR only; they do not authorize merging or deploying.
 
 ## Common commands
 
@@ -43,6 +43,7 @@ Before requesting review, confirm:
 - Generated output changes are intentional.
 - Relevant validation passed, or any blocker is clearly documented in the PR.
 - The PR description explains what changed and how it was tested.
+- Maintainer approval to merge/deploy is explicit in the current conversation; if not, stop at the PR.
 
 ## Style expectations
 
