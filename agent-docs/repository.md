@@ -44,7 +44,7 @@ When changing configuration, keep docs concise and avoid duplicating file conten
 - Open a PR for review
 - Keep commits focused
 - Review generated output before shipping it
-- Stop at the PR until Jonathan/maintainer explicitly approves merge/deploy
+- Stop at the PR until the maintainer explicitly approves merge/deploy
 
 ## Public-repo security
 

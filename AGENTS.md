@@ -67,7 +67,7 @@ make deploy      # production deploy: build docs/, commit them, and push to orig
 
 ## Before you merge or deploy
 
-- Confirm Jonathan/maintainer explicitly approved the merge or deploy in the current conversation
+- Confirm the maintainer explicitly approved the merge or deploy in the current conversation
 - Do not infer merge/deploy approval from a request to implement, test, fix, add, or open a PR
 - If approval is unclear, ask once and wait
 - Rollbacks require explicit rollback authorization; rollback permission does not authorize unrelated merges/deploys
