@@ -2044,84 +2044,84 @@
           "name": "Boba (tapioca) ⚫️",
           "guid": "9c4c60b3-b0be-4326-93a2-31eedd3e37db",
           "description": "Classic honey-sweetened tapioca pearls",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Mango Popping Boba 🟠",
           "guid": "523809b3-a4f8-4cfc-8061-175bd38c601c",
           "description": "Bursting mango-flavored boba",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Strawberry Popping Boba 🔴",
           "guid": "1684ef1f-2f3f-409d-bba6-ead4d692ce59",
           "description": "Bursting strawberry-flavored boba",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Lychee Popping Boba ⚪️",
           "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
           "description": "Bursting lychee-flavored boba",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Mango Star Jelly ⭐️",
           "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
           "description": "Star-shaped mango jelly",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Strawberry Heart Jelly ❤️",
           "guid": "125f5ecb-0668-412d-8458-b62652de53b1",
           "description": "Heart-shaped strawberry jelly",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Lychee Jelly 🤍",
           "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
           "description": "Delicate lychee jelly",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Agar Crystal Boba 💎",
           "guid": "aa42fe8c-a3f7-4dbe-8950-5d7799e2b227",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Agar Brown Sugar Boba 🍯",
           "guid": "53b21d05-a78f-4af0-9bc7-c4f5f2ed10b4",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Dalgona (Honeycomb Toffee)",
           "guid": "0b7602e4-6cf6-450e-ad19-db6b4b0cd56f",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Grapefruit Pulp",
           "guid": "57294a4b-463d-47f5-87b6-4159568d9ee4",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         },
         {
           "name": "Diced Mango",
           "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
           "description": "",
-          "price": 0,
+          "price": 0.75,
           "orderableOnline": "YES"
         }
       ]
@@ -2459,77 +2459,19 @@
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Sweetness Level (10% minimum)",
-      "guid": "96b9e7c6-dd56-4aa4-be66-0195f31d58ca",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
+        },
         {
-          "name": "100% sweet (cane sugar)",
-          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "name": "Raspberry",
+          "guid": "46ce2b0b-f0e3-400e-96f7-34674de24aaf",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "75% sweet (cane sugar)",
-          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "name": "Pineapple",
+          "guid": "c2203e23-7af4-4341-8a79-90bf3cdbc7a5",
           "description": "",
           "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet (cane sugar)",
-          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet (cane sugar)",
-          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "10% sweet (built in cane sugar)",
-          "guid": "1f57c949-6a81-4715-a609-6fef9081caed",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "100% sweet (monk fruit added)",
-          "guid": "6fdd0235-1908-4118-96a4-a022e09e36c2",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet (monk fruit added)",
-          "guid": "69aac531-a317-4204-a92a-eac1dea7b8a3",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet (monk fruit added)",
-          "guid": "f87200d6-a036-4cd0-916c-7afaed93ae70",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet (monk fruit added)",
-          "guid": "f87200d6-a036-4cd0-916c-7afaed93ae70",
-          "description": "",
-          "price": 0.5,
           "orderableOnline": "YES"
         }
       ]
@@ -2755,29 +2697,6 @@
       ]
     },
     {
-      "name": "Milk Option (Milk Tea)",
-      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Dairy",
-          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Oat",
-          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
       "name": "Ice Level (Tea-Rek'z)",
       "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
       "minSelections": 1,
@@ -2808,17 +2727,63 @@
       ]
     },
     {
+      "name": "Add Kataifi",
+      "guid": "fba96742-2f42-4519-9aa2-b1463ba141e3",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Add kataifi on pistachio cream",
+          "guid": "da6059db-5c6b-4531-9d5b-92e85fb0fad3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Milk Option (Milk Tea)",
+      "guid": "f9ecab33-4021-4084-8590-8730f783928d",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Dairy",
+          "guid": "7e22e8d2-a77a-4cb8-8911-094f56ab6c5e",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Oat",
+          "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Choose a tea",
       "guid": "c2164949-3ddc-4520-b7cb-79b3672bdc37",
       "minSelections": 1,
       "maxSelections": 1,
-      "pricingMode": "INCLUDED",
+      "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
           "name": "Jasmine Green",
           "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
           "description": "",
           "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Magnolia Green",
+          "guid": "e0061c54-f6ba-4c9a-abd4-9ca0b5a75993",
+          "description": "",
+          "price": 0.25,
           "orderableOnline": "YES"
         },
         {
@@ -2882,15 +2847,182 @@
       ]
     },
     {
-      "name": "Add Kataifi",
-      "guid": "fba96742-2f42-4519-9aa2-b1463ba141e3",
-      "minSelections": 0,
+      "name": "Choose a tea",
+      "guid": "62b9e0c1-1601-4d45-be4a-3b47225e88b3",
+      "minSelections": 1,
       "maxSelections": 1,
       "pricingMode": "INCLUDED",
       "items": [
         {
-          "name": "Add kataifi on pistachio cream",
-          "guid": "da6059db-5c6b-4531-9d5b-92e85fb0fad3",
+          "name": "Jasmine Green",
+          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Magnolia Green",
+          "guid": "e0061c54-f6ba-4c9a-abd4-9ca0b5a75993",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "No Condensed Milk",
+      "guid": "30762107-c554-4585-831b-0c12fdb4de9b",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Condensed Milk",
+          "guid": "aba63ee0-b626-4e8a-ae5d-dbc7e161c1ab",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose a base flavor",
+      "guid": "b518bcab-1704-423b-8a76-6d4bc28e8089",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Strawberry 🍓",
+          "guid": "9224056f-3461-4da6-ac74-3aceb321c3cf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango 🥭",
+          "guid": "ba3b9935-6374-4d35-8dad-987a66971e4f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Passionfruit 💛",
+          "guid": "ee1ecb9b-4f61-411b-9b4d-071f9ffdf28d",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Peach 🍑",
+          "guid": "85adfbdb-7a60-48f4-90c3-6f3ba0159542",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee",
+          "guid": "c3089b74-0457-47f2-aa46-a3fd302c3901",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Raspberry",
+          "guid": "46ce2b0b-f0e3-400e-96f7-34674de24aaf",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Pineapple",
+          "guid": "c2203e23-7af4-4341-8a79-90bf3cdbc7a5",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Add Toppings (shaved ice)",
+      "guid": "0d09c8b3-6860-4cc1-bfb6-0b5fc7795dcb",
+      "minSelections": 0,
+      "maxSelections": 3,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Fresh Strawberries",
+          "guid": "624a7631-f897-4924-836e-696d15a37129",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Diced Mango",
+          "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Grapefruit Pulp",
+          "guid": "57294a4b-463d-47f5-87b6-4159568d9ee4",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango Popping Boba 🟠",
+          "guid": "523809b3-a4f8-4cfc-8061-175bd38c601c",
+          "description": "Bursting mango-flavored boba",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Strawberry Popping Boba 🔴",
+          "guid": "1684ef1f-2f3f-409d-bba6-ead4d692ce59",
+          "description": "Bursting strawberry-flavored boba",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee Popping Boba ⚪️",
+          "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
+          "description": "Bursting lychee-flavored boba",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Mango Star Jelly ⭐️",
+          "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
+          "description": "Star-shaped mango jelly",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Strawberry Heart Jelly ❤️",
+          "guid": "125f5ecb-0668-412d-8458-b62652de53b1",
+          "description": "Heart-shaped strawberry jelly",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Lychee Jelly 🤍",
+          "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
+          "description": "Delicate lychee jelly",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Agar Crystal Boba 💎",
+          "guid": "aa42fe8c-a3f7-4dbe-8950-5d7799e2b227",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Agar Brown Sugar Boba 🍯",
+          "guid": "53b21d05-a78f-4af0-9bc7-c4f5f2ed10b4",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
