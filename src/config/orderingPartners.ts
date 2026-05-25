@@ -10,17 +10,17 @@ export interface OrderingPartner {
 
 export const ORDERING_PARTNERS: OrderingPartner[] = [
   {
-    key: 'toast',
-    label: 'Order Pickup (Toast)',
-    url: 'https://order.toasttab.com/online/skilletz-cafe',
+    key: 'pickup',
+    label: 'Order Pickup',
+    url: DOORDASH_STOREFRONT.orderOnlineUrl,
     type: 'pickup',
-    bgColor: '#f5a623',
+    bgColor: DOORDASH_STOREFRONT.brandColor,
   },
   {
-    key: 'doordash',
-    label: 'Order Delivery (DoorDash)',
+    key: 'delivery',
+    label: 'Order Delivery',
     url: DOORDASH_STOREFRONT.orderOnlineUrl,
     type: 'delivery',
-    bgColor: '#e60023',
+    bgColor: DOORDASH_STOREFRONT.brandColor,
   },
 ];

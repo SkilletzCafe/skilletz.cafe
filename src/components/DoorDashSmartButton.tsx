@@ -1,19 +1,62 @@
-import Script from 'next/script';
+'use client';
+
+import { useEffect } from 'react';
 
 import { DOORDASH_SMART_BUTTON_CONFIG, DOORDASH_STOREFRONT } from '@/config/doordash';
 
-const doorDashSmartButtonScript = `
-  !function(e,t,r,n){var o,c,s;o=e.document,c=t.children[0],s=o.createElement("script"),e.StorefrontSDKObject="StorefrontSDK",e[e.StorefrontSDKObject]={executeCommand:function(t,r){e[e.StorefrontSDKObject].buffer.push([t,r])},buffer:[]},s.async=1,s.src="${DOORDASH_STOREFRONT.sdkUrl}",t.insertBefore(s,c)}(window,document.head);
+type DoorDashSmartButtonConfig = typeof DOORDASH_SMART_BUTTON_CONFIG;
+type StorefrontSDKCommand = 'renderFloatingButton';
 
-  StorefrontSDK.executeCommand('renderFloatingButton', ${JSON.stringify(DOORDASH_SMART_BUTTON_CONFIG)});
-`;
+type StorefrontSDK = {
+  executeCommand: (command: StorefrontSDKCommand, config: DoorDashSmartButtonConfig) => void;
+  buffer?: [StorefrontSDKCommand, DoorDashSmartButtonConfig][];
+};
+
+declare global {
+  interface Window {
+    StorefrontSDK?: StorefrontSDK;
+    StorefrontSDKObject?: 'StorefrontSDK';
+  }
+}
+
+function queueDoorDashSmartButton() {
+  window.StorefrontSDK?.executeCommand('renderFloatingButton', DOORDASH_SMART_BUTTON_CONFIG);
+}
+
+function initializeDoorDashSDK() {
+  if (window.StorefrontSDK) {
+    return;
+  }
+
+  window.StorefrontSDKObject = 'StorefrontSDK';
+  window.StorefrontSDK = {
+    executeCommand(command, config) {
+      window.StorefrontSDK?.buffer?.push([command, config]);
+    },
+    buffer: [],
+  };
+}
+
+function loadDoorDashSDK() {
+  if (document.getElementById('doordash-storefront-sdk')) {
+    return;
+  }
+
+  const firstHeadChild = document.head.children[0];
+  const script = document.createElement('script');
+  script.id = 'doordash-storefront-sdk';
+  script.async = true;
+  script.src = DOORDASH_STOREFRONT.sdkUrl;
+
+  document.head.insertBefore(script, firstHeadChild);
+}
 
 export default function DoorDashSmartButton() {
-  return (
-    <Script
-      id="doordash-smart-button"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{ __html: doorDashSmartButtonScript }}
-    />
-  );
+  useEffect(() => {
+    initializeDoorDashSDK();
+    queueDoorDashSmartButton();
+    loadDoorDashSDK();
+  }, []);
+
+  return null;
 }

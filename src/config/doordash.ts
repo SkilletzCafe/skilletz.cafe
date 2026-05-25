@@ -3,6 +3,8 @@ export const DOORDASH_STOREFRONT = {
   businessSlug: "Skillet'zCafe",
   sdkUrl: 'https://web-assets.cdn4dd.com/prod/storefront-sdk/latest/app.js',
   orderOnlineUrl: 'https://order.online/store/~31854517/?hideModal=true',
+  marketplaceUrl: "https://www.doordash.com/store/skillet'z-cafe-fremont-31854517/",
+  brandColor: '#eb1700',
 } as const;
 
 export const DOORDASH_SMART_BUTTON_CONFIG = {
@@ -10,9 +12,9 @@ export const DOORDASH_SMART_BUTTON_CONFIG = {
   businessSlug: DOORDASH_STOREFRONT.businessSlug,
   floatingBar: true,
   position: 'bottom',
-  buttonAlignment: 'center',
+  buttonAlignment: 'right',
   backgroundColor: 'transparent',
-  buttonBackgroundColor: '#ff7f50',
+  buttonBackgroundColor: DOORDASH_STOREFRONT.brandColor,
   buttonRadius: '0px',
   borderColor: 'transparent',
   buttonText: 'ORDER ONLINE',

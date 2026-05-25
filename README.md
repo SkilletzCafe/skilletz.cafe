@@ -24,7 +24,7 @@ Skillet'z Cafe is a family-owned restaurant proudly serving the Fremont communit
   - Thursday-Sunday: 8am - 8pm
 - **Address:** 37378 Niles Blvd, Fremont, CA 94536
 - **Phone:** (510) 793-8161
-- **Online Ordering:** Available through [DoorDash](https://order.online/store/~31854517/?hideModal=true)
+- **Online Ordering:** Available through [DoorDash Storefront](https://order.online/store/~31854517/?hideModal=true) ([DoorDash marketplace profile](https://www.doordash.com/store/skillet'z-cafe-fremont-31854517/))
 
 ## Website Technical Details
 
