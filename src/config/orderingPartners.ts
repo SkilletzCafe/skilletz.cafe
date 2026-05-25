@@ -14,14 +14,14 @@ export const ORDERING_PARTNERS: OrderingPartner[] = [
   {
     key: 'pickup',
     label: 'Order Pickup',
-    url: DOORDASH_STOREFRONT.orderOnlineUrl,
+    url: DOORDASH_STOREFRONT.pickupUrl,
     type: 'pickup',
     bgColor: DOORDASH_STOREFRONT.brandColor,
   },
   {
     key: 'delivery',
     label: 'Order Delivery',
-    url: DOORDASH_STOREFRONT.orderOnlineUrl,
+    url: DOORDASH_STOREFRONT.deliveryUrl,
     type: 'delivery',
     bgColor: DOORDASH_STOREFRONT.brandColor,
   },
