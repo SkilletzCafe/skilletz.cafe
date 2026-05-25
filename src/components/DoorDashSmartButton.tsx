@@ -6,9 +6,14 @@ import { DOORDASH_SMART_BUTTON_CONFIG, DOORDASH_STOREFRONT } from '@/config/door
 
 type DoorDashSmartButtonConfig = typeof DOORDASH_SMART_BUTTON_CONFIG;
 type StorefrontSDKCommand = 'renderFloatingButton';
+type StorefrontSDKCommandHandler = (
+  command: StorefrontSDKCommand,
+  config: DoorDashSmartButtonConfig
+) => void;
 
 type StorefrontSDK = {
-  executeCommand: (command: StorefrontSDKCommand, config: DoorDashSmartButtonConfig) => void;
+  executeCommand?: StorefrontSDKCommandHandler;
+  executeCmd?: StorefrontSDKCommandHandler;
   buffer?: [StorefrontSDKCommand, DoorDashSmartButtonConfig][];
 };
 
@@ -19,8 +24,17 @@ declare global {
   }
 }
 
-function queueDoorDashSmartButton() {
-  window.StorefrontSDK?.executeCommand('renderFloatingButton', DOORDASH_SMART_BUTTON_CONFIG);
+function renderDoorDashSmartButton() {
+  const sdk = window.StorefrontSDK;
+
+  if (typeof sdk?.executeCommand === 'function') {
+    sdk.executeCommand('renderFloatingButton', DOORDASH_SMART_BUTTON_CONFIG);
+    return;
+  }
+
+  if (typeof sdk?.executeCmd === 'function') {
+    sdk.executeCmd('renderFloatingButton', DOORDASH_SMART_BUTTON_CONFIG);
+  }
 }
 
 function initializeDoorDashSDK() {
@@ -54,7 +68,7 @@ function loadDoorDashSDK() {
 export default function DoorDashSmartButton() {
   useEffect(() => {
     initializeDoorDashSDK();
-    queueDoorDashSmartButton();
+    renderDoorDashSmartButton();
     loadDoorDashSDK();
   }, []);
 
