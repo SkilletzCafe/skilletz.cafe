@@ -15,7 +15,7 @@ export const DOORDASH_SMART_BUTTON_CONFIG = {
   buttonAlignment: 'right',
   backgroundColor: 'transparent',
   buttonBackgroundColor: DOORDASH_STOREFRONT.brandColor,
-  buttonRadius: '0px',
+  buttonRadius: '8px',
   borderColor: 'transparent',
   buttonText: 'ORDER ONLINE',
   fontFamily: 'KOROLEV',
