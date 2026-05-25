@@ -8,6 +8,8 @@ export interface OrderingPartner {
   bgColor: string;
 }
 
+export const TOAST_ONLINE_ORDERING_URL = 'https://order.toasttab.com/online/skilletz-cafe';
+
 export const ORDERING_PARTNERS: OrderingPartner[] = [
   {
     key: 'pickup',

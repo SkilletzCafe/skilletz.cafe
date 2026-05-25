@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { ORDERING_PARTNERS } from '@/config/orderingPartners';
+import { TOAST_ONLINE_ORDERING_URL } from '@/config/orderingPartners';
 
 import { BasicPageLayout } from '@/components/BasicPageLayout';
 
@@ -9,8 +9,7 @@ import { trackOutboundClick } from '@/utils/analytics';
 import styles from '@/styles/BasicPage.module.css';
 
 export default function OrderOnlineTeaRekz() {
-  const toastPartner = ORDERING_PARTNERS.find((partner) => partner.key === 'toast');
-  const orderUrl = toastPartner?.url || 'https://order.toasttab.com/online/skilletz-cafe';
+  const orderUrl = TOAST_ONLINE_ORDERING_URL;
 
   useEffect(() => {
     let fallbackId: number | undefined;
