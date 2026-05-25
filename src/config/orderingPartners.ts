@@ -1,3 +1,5 @@
+import { DOORDASH_STOREFRONT } from './doordash';
+
 export interface OrderingPartner {
   key: string;
   label: string;
@@ -6,19 +8,21 @@ export interface OrderingPartner {
   bgColor: string;
 }
 
+export const TOAST_ONLINE_ORDERING_URL = 'https://order.toasttab.com/online/skilletz-cafe';
+
 export const ORDERING_PARTNERS: OrderingPartner[] = [
   {
-    key: 'toast',
-    label: 'Order Pickup (Toast)',
-    url: 'https://order.toasttab.com/online/skilletz-cafe',
+    key: 'pickup',
+    label: 'Order Pickup',
+    url: DOORDASH_STOREFRONT.orderOnlineUrl,
     type: 'pickup',
-    bgColor: '#f5a623',
+    bgColor: DOORDASH_STOREFRONT.brandColor,
   },
   {
-    key: 'doordash',
-    label: 'Order Delivery (DoorDash)',
-    url: "https://www.doordash.com/store/skillet'z-cafe-fremont-31854517/",
+    key: 'delivery',
+    label: 'Order Delivery',
+    url: DOORDASH_STOREFRONT.orderOnlineUrl,
     type: 'delivery',
-    bgColor: '#e60023',
+    bgColor: DOORDASH_STOREFRONT.brandColor,
   },
 ];

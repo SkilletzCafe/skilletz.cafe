@@ -8,3 +8,4 @@ export * from './quickLinks';
 export * from './seo';
 export * from './services';
 export * from './social';
+export * from './doordash';
