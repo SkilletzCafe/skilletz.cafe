@@ -11,7 +11,7 @@ export default function OrderOnline() {
     <BasicPageLayout
       title="Order Online"
       heading="Order Online"
-      intro="Choose how you'd like to order:"
+      intro="Track and manage your order online."
     >
       <div
         className={styles.card}
