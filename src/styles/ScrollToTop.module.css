@@ -1,6 +1,6 @@
 .scrollToTop {
   position: fixed;
-  bottom: 2rem;
+  bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
   right: 2rem;
   background: rgba(0, 0, 0, 0.7);
   color: white;
@@ -43,7 +43,7 @@
 
 @media (max-width: 768px) {
   .scrollToTop {
-    bottom: 1.5rem;
+    bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
     right: 1.5rem;
     width: 3.5rem;
     height: 3.5rem;
