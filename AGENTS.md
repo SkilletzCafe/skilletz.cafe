@@ -18,7 +18,8 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 
 - Production is hosted on GitHub Pages at <https://skilletz.cafe>
 - `docs/` is the built static output
-- The `Deploy GitHub Pages` workflow uploads the committed `docs/` folder
+- The `Deploy GitHub Pages` workflow builds the static site from source and uploads the generated `docs/` artifact
+- GitHub Pages repository settings must use **GitHub Actions** as the Pages source for that workflow to become the production deploy path
 - Any push to `master` deploys production
 - There is no staging environment in this repo
 

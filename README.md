@@ -69,7 +69,9 @@ npm run build
 make build
 ```
 
-The static site is generated in the `docs/` directory. Production deploys use the `Deploy GitHub Pages` workflow, which uploads the committed `docs/` folder.
+The static site is generated in the `docs/` directory. Production deploys use the `Deploy GitHub Pages` workflow, which builds from source and uploads the generated `docs/` artifact.
+
+GitHub Pages repository settings must use **GitHub Actions** as the Pages source for that workflow to become the production deploy path. Until that setting is changed, the legacy `master`/`docs` Pages source remains active.
 
 Do **not** run `make deploy` unless you intend to deploy production: it builds `docs/`, commits the generated output, and pushes to `origin master`.
 
