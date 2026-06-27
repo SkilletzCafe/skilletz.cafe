@@ -18,6 +18,7 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 
 - Production is hosted on GitHub Pages at <https://skilletz.cafe>
 - `docs/` is the built static output
+- The `Deploy GitHub Pages` workflow uploads the committed `docs/` folder
 - Any push to `master` deploys production
 - There is no staging environment in this repo
 
@@ -35,6 +36,7 @@ If sensitive data is committed, notify the maintainer immediately. Force-pushing
 5. Open a PR
 6. Stop and wait for explicit maintainer approval before merging or deploying
 7. Merge to `master` or run `make deploy` only after that explicit approval
+8. After merge/deploy, verify the `Deploy GitHub Pages` workflow succeeds
 
 ## Source of truth
 
