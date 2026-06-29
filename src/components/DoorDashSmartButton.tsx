@@ -17,6 +17,8 @@ type StorefrontSDK = {
   buffer?: [StorefrontSDKCommand, DoorDashSmartButtonConfig][];
 };
 
+type SmartButtonLocation = Pick<Location, 'pathname' | 'search'>;
+
 declare global {
   interface Window {
     StorefrontSDK?: StorefrontSDK;
@@ -65,8 +67,31 @@ function loadDoorDashSDK() {
   document.head.insertBefore(script, firstHeadChild);
 }
 
+export function shouldSuppressDoorDashSmartButton(location: SmartButtonLocation) {
+  const normalizedPath = location.pathname.replace(/\/+$/, '') || '/';
+
+  if (normalizedPath !== '/menu') {
+    return false;
+  }
+
+  const searchParams = new URLSearchParams(location.search);
+  const utmSources = searchParams.getAll('utm_source');
+  const utmMediums = searchParams.getAll('utm_medium');
+  const utmCampaigns = searchParams.getAll('utm_campaign');
+
+  return (
+    utmSources.some((utmSource) => utmSource === 'in_store' || utmSource.includes('store')) ||
+    utmMediums.some((utmMedium) => utmMedium === 'qr') ||
+    utmCampaigns.some((utmCampaign) => utmCampaign === 'table_menu')
+  );
+}
+
 export default function DoorDashSmartButton() {
   useEffect(() => {
+    if (shouldSuppressDoorDashSmartButton(window.location)) {
+      return;
+    }
+
     initializeDoorDashSDK();
     renderDoorDashSmartButton();
     loadDoorDashSDK();
