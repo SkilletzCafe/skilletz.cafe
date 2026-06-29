@@ -63,6 +63,16 @@ export const PAGES: Record<string, Page> = {
     name: 'Reservations',
     showInNav: false,
   },
+  privacyPolicy: {
+    path: '/policy/privacy',
+    name: 'Privacy Policy',
+    showInNav: false,
+  },
+  termsOfService: {
+    path: '/policy/tos',
+    name: 'Terms of Service',
+    showInNav: false,
+  },
   tvrekz: {
     path: '/tvrekz',
     name: "TV Rek'z",
