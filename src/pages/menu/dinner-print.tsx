@@ -33,7 +33,7 @@ const GRID_ORDER = [
   // Page 2
   [
     ['Sandwiches 🥪'], // Left column
-    ['Drinks 🥤', 'Kids/Niños 👶', 'Desserts 🍰'], // Right column
+    ['Drinks 🥤', 'Kids/Niños 👶', 'Desserts 🍩✨'], // Right column
   ],
 ];
 

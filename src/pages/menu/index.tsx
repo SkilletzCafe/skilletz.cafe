@@ -231,7 +231,12 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
 
   const menus = getCurrentMenu();
   const totalMenuItems = menus.reduce((total, menu) => {
-    return total + menu.groups.reduce((groupTotal, group) => groupTotal + group.items.length, 0);
+    return (
+      total +
+      menu.groups
+        .filter((group) => !isMenuGroupHidden(selectedTab, group.name))
+        .reduce((groupTotal, group) => groupTotal + group.items.length, 0)
+    );
   }, 0);
 
   // Get category options for MenuCategorySwitcher
