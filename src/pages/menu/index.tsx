@@ -6,7 +6,7 @@ import { MenuData, MenuItemState, MenuOptionGroupsData } from '@/types/menu';
 import { getUrlParam } from '@hacktoolkit/nextjs-htk/utils';
 
 import { margarine } from '@/config/fonts';
-import { MenuTab } from '@/config/menuTabs';
+import { MenuTab, isMenuGroupHidden } from '@/config/menuTabs';
 
 import { BasicPageLayout } from '@/components/BasicPageLayout';
 import { RestaurantSchema } from '@/components/RestaurantSchema';
@@ -106,12 +106,6 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   };
 
   const teaRekzMenuWithToppings = createTeaRekzWithToppings();
-
-  // Define excluded menu groups by selected tab
-  const excludedGroups: Partial<Record<MenuTab, string[]>> = {
-    "Tea-Rek'z": ['Grab n Go', 'Archived Items (Not Displayed)'],
-    // Add other exclusions as needed
-  };
 
   // Set up intersection observer
   useEffect(() => {
@@ -245,11 +239,9 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     const currentMenu = menus[0];
     if (!currentMenu) return [];
 
-    const excludedGroupNames = excludedGroups[selectedTab] || [];
-
     const groups = currentMenu.groups
       .filter((g) => g.items && g.items.length > 0)
-      .filter((g) => !excludedGroupNames.includes(g.name));
+      .filter((g) => !isMenuGroupHidden(selectedTab, g.name));
 
     return groups.map((g) => ({ key: g.guid, label: g.name }));
   };
@@ -261,22 +253,12 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     const currentMenu = menus[0];
     if (!currentMenu) return [];
 
-    const excludedGroupNames = excludedGroups[selectedTab] || [];
-
-    return currentMenu.groups.filter((g) => !excludedGroupNames.includes(g.name));
+    return currentMenu.groups.filter((g) => !isMenuGroupHidden(selectedTab, g.name));
   };
 
   const sections = getSections();
-  // Get items for a group with special handling for Dinner menu
-  const getItems = (g: any) => {
-    // Special case for Dinner menu - filter Daily Specials to only show Soup of the Day
-    if (selectedTab === 'Dinner' && g.name && g.name.startsWith('Daily Specials')) {
-      return g.items.filter((item: any) => item.name.startsWith('Soup of the Day'));
-    }
 
-    // Default case - return all items
-    return g.items;
-  };
+  const getItems = (g: any) => g.items;
 
   const handleTabChange = (tab: MenuTab) => {
     setSelectedTab(tab);

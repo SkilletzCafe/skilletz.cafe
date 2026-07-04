@@ -7,6 +7,7 @@ import { MenuData, MenuGroup, MenuItem } from '@/types/menu';
 
 import { BUSINESS, FULL_ADDRESS } from '@/config/business';
 import { geist, margarine } from '@/config/fonts';
+import { isMenuGroupHidden } from '@/config/menuTabs';
 import { LETTER_HEIGHT_SAFE_IN, printMenuStyles } from '@/config/printMenu';
 
 import { PrintMenuFooter } from '@/components/menu/PrintMenuFooter';
@@ -26,7 +27,7 @@ interface DinnerPrintProps {
 const GRID_ORDER = [
   // Page 1
   [
-    ['Appetizers 🧀', 'Daily Specials 🌟', 'Burgers 🍔'], // Left column
+    ['Appetizers 🧀', 'Burgers 🍔'], // Left column
     ['Salads 🥗', 'From the Grill 🔥', 'Comfort Favorites 🍽️'], // Right column
   ],
   // Page 2
@@ -37,6 +38,8 @@ const GRID_ORDER = [
 ];
 
 function getGroupByName(groups: MenuGroup[], name: string): MenuGroup | null {
+  if (isMenuGroupHidden('Dinner', name)) return null;
+
   return groups.find((g) => g.name === name && g.items.length > 0) || null;
 }
 
@@ -47,10 +50,7 @@ const DinnerPrint: React.FC<DinnerPrintProps> = ({ dinnerMenu }) => {
       {sectionNames.map((groupName) => {
         const group = getGroupByName(dinnerMenu.groups, groupName);
         if (!group) return null;
-        // Only show 'Soup of the Day' for Daily Specials
-        const items = groupName.startsWith('Daily Specials')
-          ? group.items.filter((item) => item.name.startsWith('Soup of the Day'))
-          : group.items;
+        const items = group.items;
         if (items.length === 0) return null;
         return (
           <div className="menu-section" key={group.guid} style={{ breakInside: 'avoid' }}>
