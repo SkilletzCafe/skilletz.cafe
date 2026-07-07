@@ -39,20 +39,33 @@ export default function Press() {
       intro="Skillet'z Cafe has been featured in local media! Check out some of our recent appearances:"
     >
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
-        {/* YouTube Feature */}
+        {/* KQED Feature */}
         <div className={styles.card}>
           <h2>KQED&#39;s Check, Please! Bay Area</h2>
+          <p style={{ margin: '0 0 1rem', fontSize: '0.95rem', color: '#666' }}>
+            KQED&#39;s Check, Please! Bay Area featured Skillet&#39;z Cafe alongside Peony Seafood
+            and Le Papillon.
+          </p>
           <div style={{ maxWidth: 560, margin: '0 auto' }}>
             <iframe
               width="560"
               height="315"
               src="https://www.youtube.com/embed/3ThD2idf0n0"
-              title="YouTube video player"
+              title="KQED Check, Please! Bay Area Skillet'z Cafe segment"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               style={{ border: 0, borderRadius: 8, width: '100%' }}
             ></iframe>
           </div>
+          <a
+            href="https://www.kqed.org/checkplease/23446/check-please-bay-area-reviews-skilletz-cafe-peony-seafood-le-papillon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+            style={{ marginTop: 12, display: 'inline-block', fontWeight: 500 }}
+          >
+            Read the KQED article
+          </a>
         </div>
         {/* Instagram Feature */}
         <div className={styles.card}>
