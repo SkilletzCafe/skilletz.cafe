@@ -4288,7 +4288,7 @@
               "name": "1 Jasmine Green Tea",
               "guid": "6636abcc-be69-4fe1-9fd1-85b03e597b55",
               "description": "",
-              "price": 5.75,
+              "price": 6,
               "imageUrl": null
             },
             {
@@ -4372,7 +4372,7 @@
               "name": "27 Jasmine Green Milk Tea",
               "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
               "description": "Fragrant, floral, and refreshing with a light creamy finish.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             },
             {
@@ -4974,7 +4974,7 @@
               "name": "1 Jasmine Green Tea",
               "guid": "6636abcc-be69-4fe1-9fd1-85b03e597b55",
               "description": "",
-              "price": 5.75,
+              "price": 6,
               "imageUrl": null
             },
             {
@@ -5058,7 +5058,7 @@
               "name": "27 Jasmine Green Milk Tea",
               "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
               "description": "Fragrant, floral, and refreshing with a light creamy finish.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             },
             {
