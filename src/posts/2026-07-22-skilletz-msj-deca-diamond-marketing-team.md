@@ -3,7 +3,7 @@ title: "Skillet'z Cafe Partners with MSJ DECA's Diamond Marketing Team"
 excerpt: "How a flyer, a pitch, and two Mission San Jose High School DECA student leaders grew into a new local marketing partnership at Skillet'z Cafe."
 author: "The Skillet'z Team"
 tags: 'community, fremont, niles, students, deca, marketing, partnership'
-featuredImage: '/images/blog/msj-deca-diamond-marketing-team/pitch-flyer.jpg'
+featuredImage: '/images/blog/msj-deca-diamond-marketing-team/dmt-overview.jpg'
 isPublished: true
 readingTime: 4
 ---
