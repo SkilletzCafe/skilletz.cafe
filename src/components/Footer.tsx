@@ -76,13 +76,13 @@ export default function Footer() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={DOORDASH_STOREFRONT.mobileAppQrImagePath}
-              alt="QR code to download the Skillet'z Cafe mobile app"
+              alt="QR code to order Skillet'z Cafe in the DoorDash app"
               className={styles.mobileAppQr}
               loading="lazy"
             />
             <span className={styles.mobileAppCopy}>
-              <strong>Get the Skillet&apos;z app</strong>
-              <span>Order faster on iOS or Android</span>
+              <strong>Order in the DoorDash app</strong>
+              <span>Get Skillet&apos;z faster on iOS or Android</span>
             </span>
           </a>
         </div>

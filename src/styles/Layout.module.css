@@ -226,8 +226,8 @@
 }
 
 .mobileAppQr {
-  width: 72px;
-  height: 72px;
+  width: 112px;
+  height: 112px;
   flex: 0 0 auto;
   border-radius: 8px;
   background: #fff;
