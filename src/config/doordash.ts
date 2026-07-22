@@ -5,6 +5,9 @@ export const DOORDASH_STOREFRONT = {
   orderOnlineUrl: "https://order.online/business/Skillet'zCafe-13659103",
   pickupUrl: "https://order.online/business/Skillet'zCafe-13659103?pickup=true",
   deliveryUrl: "https://order.online/business/Skillet'zCafe-13659103?delivery=true",
+  mobileAppUrl:
+    'https://order.online/mobile-app-unified-link?integration_id=13659103&integration_type=business',
+  mobileAppQrImagePath: '/images/doordash/skilletz-mobile-app-qr.png',
   marketplaceUrl: "https://www.doordash.com/store/skillet'z-cafe-fremont-31854517/",
   brandColor: '#eb1700',
 } as const;

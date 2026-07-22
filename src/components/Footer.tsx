@@ -1,11 +1,13 @@
 import Link from 'next/link';
 
-import { BUSINESS, FULL_ADDRESS, QUICK_LINKS, SOCIAL_MEDIA } from '@/config';
+import { BUSINESS, DOORDASH_STOREFRONT, FULL_ADDRESS, QUICK_LINKS, SOCIAL_MEDIA } from '@/config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTheme } from '@hacktoolkit/nextjs-htk/context';
 import { createGoogleMapsUrl } from '@hacktoolkit/nextjs-htk/utils';
 
 import { margarine } from '@/config/fonts';
+
+import { trackOutboundClick } from '@/utils/analytics';
 
 import styles from '@/styles/Layout.module.css';
 
@@ -59,6 +61,30 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          <a
+            href={DOORDASH_STOREFRONT.mobileAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.mobileAppCard}
+            onClick={() =>
+              trackOutboundClick({
+                destination: DOORDASH_STOREFRONT.mobileAppUrl,
+                label: 'footer:mobile_app',
+              })
+            }
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={DOORDASH_STOREFRONT.mobileAppQrImagePath}
+              alt="QR code to order Skillet'z Cafe in the DoorDash app"
+              className={styles.mobileAppQr}
+              loading="lazy"
+            />
+            <span className={styles.mobileAppCopy}>
+              <strong>Order in the DoorDash app</strong>
+              <span>Get Skillet&apos;z faster on iOS or Android</span>
+            </span>
+          </a>
         </div>
 
         <div className={styles.footerSection}>
