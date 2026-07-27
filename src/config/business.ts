@@ -26,6 +26,7 @@ export const BUSINESS = {
   },
   contact: {
     email: 'hello@skilletz.cafe',
+    careersEmail: 'hr@skilletz.cafe',
   },
   hours: {
     weekday: {

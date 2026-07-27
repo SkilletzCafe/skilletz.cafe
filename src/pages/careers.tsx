@@ -161,9 +161,9 @@ export default function Careers() {
           <div className={styles.applyActions}>
             <a
               className={styles.primaryButton}
-              href={`mailto:${BUSINESS.contact.email}?subject=${emailSubject}&body=${emailBody}`}
+              href={`mailto:${BUSINESS.contact.careersEmail}?subject=${emailSubject}&body=${emailBody}`}
             >
-              Email {BUSINESS.contact.email}
+              Email {BUSINESS.contact.careersEmail}
             </a>
             <a
               className={styles.secondaryButton}
