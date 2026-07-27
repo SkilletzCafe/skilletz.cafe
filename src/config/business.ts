@@ -43,4 +43,17 @@ export const BUSINESS = {
   },
 } as const;
 
+export const TEAREKZ_BUSINESS = {
+  name: "Tea-Rek'z",
+  location: {
+    address: '37390 Niles Blvd',
+    city: 'Fremont',
+    state: 'CA',
+    zip: '94536',
+    neighborhood: 'Niles',
+    country_abbrev: 'US',
+  },
+} as const;
+
 export const FULL_ADDRESS = buildFullAddress(BUSINESS.location);
+export const TEAREKZ_FULL_ADDRESS = buildFullAddress(TEAREKZ_BUSINESS.location);
