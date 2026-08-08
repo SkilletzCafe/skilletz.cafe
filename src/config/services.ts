@@ -1,5 +1,5 @@
 export const SERVICES = {
-  reservations: 'https://yelp.to/2WkMWZOf0j',
+  reservations: 'https://www.sevenrooms.com/reservations/skilletz',
   careers: 'https://zippyapp.com/biz/skilletz',
   tripadvisor:
     'https://www.tripadvisor.com/Restaurant_Review-g32411-d14979469-Reviews-Skillet_z_Cafe-Fremont_California.html',
