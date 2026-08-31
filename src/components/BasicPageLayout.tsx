@@ -10,12 +10,19 @@ interface BasicPageLayoutProps {
   title: string;
   heading: string;
   intro?: string | ReactNode;
+  description?: string;
   children?: ReactNode;
 }
 
-export const BasicPageLayout = ({ title, heading, intro, children }: BasicPageLayoutProps) => {
+export const BasicPageLayout = ({
+  title,
+  heading,
+  intro,
+  description,
+  children,
+}: BasicPageLayoutProps) => {
   return (
-    <Layout title={title}>
+    <Layout title={title} description={description}>
       <div className={styles.page}>
         <div className={styles.container}>
           <h1 className={margarine.className}>{heading}</h1>

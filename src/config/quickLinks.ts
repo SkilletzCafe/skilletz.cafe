@@ -1,5 +1,3 @@
-import { SERVICES } from './services';
-
 interface QuickLink {
   label: string;
   href: string;
@@ -27,26 +25,5 @@ export const QUICK_LINKS: QuickLink[] = [
     isInternal: true,
     target: '_blank',
     rel: 'noopener',
-  },
-  {
-    label: 'Careers',
-    href: '/careers',
-    isInternal: true,
-    target: '_blank',
-    rel: 'noopener',
-  },
-  {
-    label: 'TripAdvisor',
-    href: SERVICES.tripadvisor,
-    isInternal: false,
-    target: '_blank',
-    rel: 'noopener noreferrer',
-  },
-  {
-    label: "Tea-Rek'z",
-    href: 'https://tearekz.cafe',
-    isInternal: false,
-    target: '_blank',
-    rel: 'noopener noreferrer',
   },
 ];

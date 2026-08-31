@@ -27,6 +27,17 @@ export const PAGES: Record<string, Page> = {
     name: 'Blog',
     showInNav: true,
   },
+  schoolFundraisers: {
+    path: '/school-fundraisers',
+    name: 'School Fundraisers',
+    showInNav: false,
+  },
+  schoolFundraiserBooking: {
+    path: '/school-fundraisers/book',
+    name: 'Book a School Fundraiser',
+    showInNav: false,
+    openInNewTab: true,
+  },
   ourStory: {
     path: '/our-story',
     name: 'Our Story',
