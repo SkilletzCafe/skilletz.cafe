@@ -2,6 +2,7 @@
 title: "School Fundraiser Nights at Skillet'z Cafe"
 excerpt: "Skillet'z Spirit Night helps local schools, PTAs, clubs, and student groups raise money with a simple Thursday or Friday dinner fundraiser in Historic Niles."
 author: "The Skillet'z Team"
+featuredImage: '/images/blog/school-fundraiser-nights/shared-table-unsplash.jpg'
 tags: 'community, fremont, niles, schools, fundraiser, students, pta'
 isPublished: true
 readingTime: 3
