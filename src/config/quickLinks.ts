@@ -29,6 +29,11 @@ export const QUICK_LINKS: QuickLink[] = [
     rel: 'noopener',
   },
   {
+    label: 'School Fundraisers',
+    href: '/school-fundraisers',
+    isInternal: true,
+  },
+  {
     label: 'Careers',
     href: '/careers',
     isInternal: true,

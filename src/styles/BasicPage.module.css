@@ -126,3 +126,65 @@
     grid-template-columns: 1fr;
   }
 }
+
+.featureCard {
+  grid-column: 1 / -1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, rgba(244, 181, 57, 0.14), rgba(177, 74, 35, 0.1));
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--box-shadow);
+  color: var(--text-color);
+  line-height: 1.65;
+  text-align: center;
+}
+
+.featureCard h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.featureCard p {
+  margin-bottom: 1.25rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.95rem 1.4rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.checkList {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  text-align: left;
+  color: var(--text-color);
+  line-height: 1.65;
+}
+
+.checkList li {
+  margin-bottom: 0.75rem;
+}
+
+.smallNote {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
