@@ -368,6 +368,13 @@
           "orderableOnline": "YES"
         },
         {
+          "name": "NO Eggs",
+          "guid": "8d3e7770-fa89-4034-977b-d6c19fb7faca",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
           "name": "NO Queso",
           "guid": "3b50439a-6f5a-4a7a-95d4-0d65e4009e64",
           "description": "",
@@ -1612,7 +1619,7 @@
       "name": "Burger Add Ons",
       "guid": "39af49fc-3e9a-47f5-ae8b-d65e44e07b71",
       "minSelections": 0,
-      "maxSelections": 1,
+      "maxSelections": null,
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
@@ -1768,6 +1775,126 @@
         {
           "name": "Rainbow Sprinkles",
           "guid": "168029f9-f7d0-4702-91b7-e089035c4abd",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Protein Choice (Flautas & Nachitos)",
+      "guid": "8ad7e38a-a6c4-4216-b259-e855b4b849cc",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Beef",
+          "guid": "759bbd4b-a77b-49ed-bd61-cc40ae8fe49a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chicken",
+          "guid": "3cccaf3c-b27b-4342-9fea-5243eaa80bfa",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Protein Choice (Burrito)",
+      "guid": "d35142f9-3920-4131-bd14-22a710d3e545",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Steak",
+          "guid": "dfe34ee7-172a-4c59-bcc8-193e3aac0f53",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chicken",
+          "guid": "78e69183-a1a0-41d4-926d-41629c4fce47",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Birria",
+          "guid": "1c1af4ed-c124-41d1-989c-9fbd8af9423f",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Shredded Beef",
+          "guid": "82c0bfbd-7437-4abd-b57a-989f87cae3ed",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Veggie",
+          "guid": "d72d2336-79cc-42a0-ad55-7b87b2b24a30",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Tortilla Choice",
+      "guid": "6b58a78e-5229-4b34-a89a-7109d367161c",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Corn",
+          "guid": "f6ad988a-49ad-450c-b14a-5229a4ded44b",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Flour",
+          "guid": "29ec9657-15e3-476b-9753-d116d4025315",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Protein Choice (Chimichanga)",
+      "guid": "1806d893-ed1a-4ec0-a4c3-d872b86e2fa6",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Steak",
+          "guid": "8919ef87-5c5d-4334-be8e-15189fcc824a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Chicken",
+          "guid": "191faeec-03a7-4b2b-a53a-7387f2d5a4ad",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Veggie",
+          "guid": "a7d5ed52-974c-4c60-83ab-e501343fe7ba",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2062,13 +2189,6 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Popping Boba ⚪️",
-          "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
-          "description": "Bursting lychee-flavored boba",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
           "name": "Mango Star Jelly ⭐️",
           "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
           "description": "Star-shaped mango jelly",
@@ -2083,7 +2203,7 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Jelly 🤍",
+          "name": "Lychee Star Jelly ☆",
           "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
           "description": "Delicate lychee jelly",
           "price": 0.75,
@@ -2104,13 +2224,6 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Dalgona (Honeycomb Toffee)",
-          "guid": "0b7602e4-6cf6-450e-ad19-db6b4b0cd56f",
-          "description": "",
-          "price": 0.75,
-          "orderableOnline": "YES"
-        },
-        {
           "name": "Grapefruit Pulp",
           "guid": "57294a4b-463d-47f5-87b6-4159568d9ee4",
           "description": "",
@@ -2118,8 +2231,15 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Diced Mango",
+          "name": "Diced Mango 🥭",
           "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
+          "description": "",
+          "price": 0.75,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Taro 🍠",
+          "guid": "33d03b68-672c-48a6-b80d-90901d3df5d3",
           "description": "",
           "price": 0.75,
           "orderableOnline": "YES"
@@ -2185,6 +2305,36 @@
       ]
     },
     {
+      "name": "💪 Boosts (Tea-Rek'z)",
+      "guid": "e4d60271-5a33-4444-a9ab-d396be8da5d2",
+      "minSelections": 0,
+      "maxSelections": null,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "Grass-Fed Whey Protein 🥛",
+          "guid": "9bd9972f-eb12-46b0-ac93-98045e6b72e2",
+          "description": "Classic dairy protein (~20 g) for a creamy, muscle-friendly upgrade.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Vegan Protein (Pea) 🌱",
+          "guid": "cd0ebdcf-76dd-4200-8a04-246e8395cc82",
+          "description": "Plant-based protein boost (~20 g) that blends smooth and clean.",
+          "price": 2,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Creatine ⚡",
+          "guid": "615d6533-10ca-4223-83b2-2299129fac29",
+          "description": "Pure creatine monohydrate (~5 g) — supports strength, focus, and recovery.",
+          "price": 1,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "No Boba",
       "guid": "4e4578e5-241f-4ac2-908a-ffaf9b7db0eb",
       "minSelections": 0,
@@ -2215,7 +2365,7 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Half and Half (coffee)",
+          "name": "Dairy Creamer (coffee)",
           "guid": "b526023d-a26b-4350-b124-6f56e42604ed",
           "description": "",
           "price": 0,
@@ -2229,7 +2379,7 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Organic Coconut Creamer (coffee)",
+          "name": "Coconut Creamer (coffee)",
           "guid": "8f6b920c-0305-4e12-a42f-38aa14133118",
           "description": "",
           "price": 0.75,
@@ -2245,77 +2395,77 @@
       "pricingMode": "ADJUSTS_PRICE",
       "items": [
         {
-          "name": "100% sweet (cane sugar, already included with condensed milk)",
+          "name": "100% sweet (cane sugar, default with condensed milk)",
           "guid": "e372683a-31bc-4299-9a74-96e501a73285",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "75% sweet (cane sugar, not available with condensed milk)",
+          "name": "75% sweet (cane sugar, N/A with condensed milk)",
           "guid": "d91062cd-55af-4c1b-8804-1d7e9f30b6bc",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% sweet (cane sugar, not available with condensed milk)",
+          "name": "50% sweet (cane sugar, N/A with condensed milk)",
           "guid": "9ecfc17c-50e7-4768-8b84-a538f723f13d",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "25% sweet (cane sugar, not available with condensed milk)",
+          "name": "25% sweet (cane sugar,  N/A with condensed milk)",
           "guid": "31087d9f-e981-4a33-bbfd-0b76501fcbba",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "10% sweet (cane sugar, not available with condensed milk)",
+          "name": "10% sweet (cane sugar, N/A with condensed milk)",
           "guid": "ccfbaa98-99ff-4232-900f-841d65642ca5",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "0% sweet (cane sugar, not available with condensed milk)",
+          "name": "0% sweet (cane sugar,  N/A with condensed milk)",
           "guid": "22829255-4f0e-452a-b033-4c393d0b8354",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
         },
         {
-          "name": "100% sweet (allulose + monk fruit, not available with condensed milk)",
+          "name": "100% sweet (allulose + monk fruit,  N/A with condensed milk)",
           "guid": "68d05d6e-8b57-4c08-b9a5-21eb318101da",
           "description": "",
           "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "75% sweet (allulose + monk fruit, not available with condensed milk)",
+          "name": "75% sweet (allulose + monk fruit, N/A with condensed milk)",
           "guid": "2a2e5919-b8f4-4df7-82b4-41918436965a",
           "description": "",
           "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "50% sweet (allulose + monk fruit, not available with condensed milk)",
+          "name": "50% sweet (allulose + monk fruit, N/A with condensed milk)",
           "guid": "d0775323-18d7-442b-9a72-6dd05660b870",
           "description": "",
           "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "25% sweet (allulose + monk fruit, not available with condensed milk)",
+          "name": "25% sweet (allulose + monk fruit, N/A with condensed milk)",
           "guid": "bc1fea85-850e-417a-bbe2-5a45cbb3dfdd",
           "description": "",
           "price": 0.5,
           "orderableOnline": "YES"
         },
         {
-          "name": "10% sweet (allulose, not available with condensed milk)",
+          "name": "10% sweet (allulose, N/A with condensed milk)",
           "guid": "4c9807b8-8498-499a-8b29-d89987117964",
           "description": "",
           "price": 0.5,
@@ -2468,142 +2618,8 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Pineapple",
-          "guid": "c2203e23-7af4-4341-8a79-90bf3cdbc7a5",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Sweetness Level (25% minimum)",
-      "guid": "142cd2ef-2ab6-46be-b01d-434039dcb9d6",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "100% sweet (cane sugar)",
-          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet (cane sugar)",
-          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet (cane sugar)",
-          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet (cane sugar)",
-          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "100% sweet (allulose + monk fruit)",
-          "guid": "f24ac51d-611b-4445-a0d8-6b7be819f5b3",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "75% sweet (allulose + monk fruit)",
-          "guid": "aaefa0fb-f405-41e0-a16b-5377c30453c2",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% sweet (allulose + monk fruit)",
-          "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "25% sweet (allulose + monk fruit)",
-          "guid": "29281777-e2b7-4c1b-9152-704e91bbf4d3",
-          "description": "",
-          "price": 0.5,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Caffeine Free",
-      "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "No Jasmine Tea",
-          "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "💪 Boosts (Tea-Rek'z)",
-      "guid": "e4d60271-5a33-4444-a9ab-d396be8da5d2",
-      "minSelections": 0,
-      "maxSelections": null,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "Grass-Fed Whey Protein 🥛",
-          "guid": "9bd9972f-eb12-46b0-ac93-98045e6b72e2",
-          "description": "Classic dairy protein (~20 g) for a creamy, muscle-friendly upgrade.",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Vegan Protein (Pea) 🌱",
-          "guid": "cd0ebdcf-76dd-4200-8a04-246e8395cc82",
-          "description": "Plant-based protein boost (~20 g) that blends smooth and clean.",
-          "price": 2,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Creatine ⚡",
-          "guid": "615d6533-10ca-4223-83b2-2299129fac29",
-          "description": "Pure creatine monohydrate (~5 g) — supports strength, focus, and recovery.",
-          "price": 1.25,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Ice Level (Smash Lemon)",
-      "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "INCLUDED",
-      "items": [
-        {
-          "name": "100% ice",
-          "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "50% ice",
-          "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
+          "name": "Coconut 🥥",
+          "guid": "6b6bd741-7528-4ee8-8354-7e929bc698f0",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2697,6 +2713,45 @@
       ]
     },
     {
+      "name": "Caffeine Free",
+      "guid": "7f0898c4-e8b2-42f2-90a7-fa0c1510ad21",
+      "minSelections": 0,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "No Jasmine Tea",
+          "guid": "7e529b17-ecc3-4004-8132-7c81b63284c6",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Ice Level (Smash Lemon)",
+      "guid": "e44c20dc-47ae-44b4-a013-69ab6e0cb8d2",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "100% ice",
+          "guid": "c14374a3-47e9-46d6-8c04-1fe1e75164a3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% ice",
+          "guid": "2fe2aa66-7421-45ef-a415-fecb776bc7f3",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Ice Level (Tea-Rek'z)",
       "guid": "5804ddfa-f01e-4d62-ac39-677d735b5fc3",
       "minSelections": 1,
@@ -2743,6 +2798,71 @@
       ]
     },
     {
+      "name": "Sweetness Level (25% minimum)",
+      "guid": "142cd2ef-2ab6-46be-b01d-434039dcb9d6",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "ADJUSTS_PRICE",
+      "items": [
+        {
+          "name": "100% sweet (cane sugar)",
+          "guid": "6533c0bd-89f0-4f76-8ca7-9d628b021e36",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (cane sugar)",
+          "guid": "670184fa-613b-4c94-8c39-e1c6bcb164ef",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (cane sugar)",
+          "guid": "44bb65ae-8510-47e8-bd7c-88b39c57353a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (cane sugar)",
+          "guid": "7eea4f77-f3b2-4fe8-a247-e6b62b648319",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "100% sweet (allulose + monk fruit)",
+          "guid": "f24ac51d-611b-4445-a0d8-6b7be819f5b3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "75% sweet (allulose + monk fruit)",
+          "guid": "aaefa0fb-f405-41e0-a16b-5377c30453c2",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "50% sweet (allulose + monk fruit)",
+          "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "25% sweet (allulose + monk fruit)",
+          "guid": "29281777-e2b7-4c1b-9152-704e91bbf4d3",
+          "description": "",
+          "price": 0.5,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
       "name": "Milk Option (Milk Tea)",
       "guid": "f9ecab33-4021-4084-8590-8730f783928d",
       "minSelections": 1,
@@ -2761,6 +2881,29 @@
           "guid": "a5dbce3f-1eb0-4036-b362-d3d31f4568c6",
           "description": "",
           "price": 0.75,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Iced/Hot (fixed ice)",
+      "guid": "d900b94b-b630-46f5-a2d5-54717bd6cd72",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Iced",
+          "guid": "5e673b1e-bf5b-44c1-94d2-04f30a227131",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Hot",
+          "guid": "068885c6-c41b-4978-b5f9-f070b322025f",
+          "description": "",
+          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2789,6 +2932,29 @@
         {
           "name": "Four Seasons Jade Oolong",
           "guid": "cf5bfc23-795c-4cc9-a05f-490f6584f23a",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        }
+      ]
+    },
+    {
+      "name": "Choose a tea",
+      "guid": "62b9e0c1-1601-4d45-be4a-3b47225e88b3",
+      "minSelections": 1,
+      "maxSelections": 1,
+      "pricingMode": "INCLUDED",
+      "items": [
+        {
+          "name": "Jasmine Green",
+          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
+          "description": "",
+          "price": 0,
+          "orderableOnline": "YES"
+        },
+        {
+          "name": "Magnolia Green",
+          "guid": "e0061c54-f6ba-4c9a-abd4-9ca0b5a75993",
           "description": "",
           "price": 0,
           "orderableOnline": "YES"
@@ -2842,45 +3008,6 @@
           "guid": "1460be53-d93c-47d8-b682-61607d41fc92",
           "description": "",
           "price": 0.5,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "Choose a tea",
-      "guid": "62b9e0c1-1601-4d45-be4a-3b47225e88b3",
-      "minSelections": 1,
-      "maxSelections": 1,
-      "pricingMode": "INCLUDED",
-      "items": [
-        {
-          "name": "Jasmine Green",
-          "guid": "9f38673b-1a9e-4215-bb6f-e8ccae0c64bc",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Magnolia Green",
-          "guid": "e0061c54-f6ba-4c9a-abd4-9ca0b5a75993",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        }
-      ]
-    },
-    {
-      "name": "No Condensed Milk",
-      "guid": "30762107-c554-4585-831b-0c12fdb4de9b",
-      "minSelections": 0,
-      "maxSelections": 1,
-      "pricingMode": "ADJUSTS_PRICE",
-      "items": [
-        {
-          "name": "No Condensed Milk",
-          "guid": "aba63ee0-b626-4e8a-ae5d-dbc7e161c1ab",
-          "description": "",
-          "price": 0,
           "orderableOnline": "YES"
         }
       ]
@@ -2948,17 +3075,10 @@
       "guid": "0d09c8b3-6860-4cc1-bfb6-0b5fc7795dcb",
       "minSelections": 0,
       "maxSelections": 3,
-      "pricingMode": "INCLUDED",
+      "pricingMode": "FIXED_PRICE",
       "items": [
         {
-          "name": "Fresh Strawberries",
-          "guid": "624a7631-f897-4924-836e-696d15a37129",
-          "description": "",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
-          "name": "Diced Mango",
+          "name": "Diced Mango 🥭",
           "guid": "072343dd-6e83-46f9-bbf5-ad502226921a",
           "description": "",
           "price": 0,
@@ -2986,13 +3106,6 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Popping Boba ⚪️",
-          "guid": "9d1063c9-acde-4988-bea1-1612e28607fe",
-          "description": "Bursting lychee-flavored boba",
-          "price": 0,
-          "orderableOnline": "YES"
-        },
-        {
           "name": "Mango Star Jelly ⭐️",
           "guid": "0f46f70c-ff24-4650-97aa-72cac7215a2e",
           "description": "Star-shaped mango jelly",
@@ -3007,7 +3120,7 @@
           "orderableOnline": "YES"
         },
         {
-          "name": "Lychee Jelly 🤍",
+          "name": "Lychee Star Jelly ☆",
           "guid": "dacfef9b-5a8b-4c94-b0e2-398d2f9c2f31",
           "description": "Delicate lychee jelly",
           "price": 0,
