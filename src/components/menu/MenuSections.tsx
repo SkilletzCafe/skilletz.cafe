@@ -24,6 +24,7 @@ interface MenuSectionsProps {
   handleMenuItemKeyDown: (e: React.KeyboardEvent, index: number, totalItems: number) => void;
   totalMenuItems: number;
   categoryRefs: React.MutableRefObject<(HTMLHeadingElement | null)[]>;
+  categoryIndexOffset?: number;
 }
 
 export const MenuSections: React.FC<MenuSectionsProps> = ({
@@ -37,6 +38,7 @@ export const MenuSections: React.FC<MenuSectionsProps> = ({
   handleMenuItemKeyDown,
   totalMenuItems,
   categoryRefs,
+  categoryIndexOffset = 0,
 }) =>
   sections
     .filter((section) => !selected || section.name === selected)
@@ -52,7 +54,7 @@ export const MenuSections: React.FC<MenuSectionsProps> = ({
           id={`category-${section.guid}`}
           className={`${styles.categoryTitle} ${margarine.className}`}
           ref={(el) => {
-            categoryRefs.current[index] = el;
+            categoryRefs.current[categoryIndexOffset + index] = el;
           }}
         >
           <span className={styles.categoryDecoration}>✦</span>

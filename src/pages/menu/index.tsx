@@ -68,6 +68,9 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
+  const mexicanDinnerMenu = menuData.menus.find((menu) =>
+    menu.name.startsWith('Nuestra Cocina Tu Casa')
+  );
   const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
   const teaRekzMenu =
     menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z") && menu.name.includes('Sun')) ||
@@ -217,6 +220,10 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
 
   // Get the current menu based on selected tab
   const getCurrentMenu = () => {
+    if (selectedTab === 'Dinner') {
+      return [dinnerMenu, mexicanDinnerMenu].filter((menu) => menu !== undefined);
+    }
+
     const menuMap = {
       Brunch: brunchMenu,
       'Happy Hour': happyHourMenu,
@@ -241,10 +248,8 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
 
   // Get category options for MenuCategorySwitcher
   const getCategoryOptions = () => {
-    const currentMenu = menus[0];
-    if (!currentMenu) return [];
-
-    const groups = currentMenu.groups
+    const groups = menus
+      .flatMap((menu) => menu.groups)
       .filter((g) => g.items && g.items.length > 0)
       .filter((g) => !isMenuGroupHidden(selectedTab, g.name));
 
@@ -252,16 +257,6 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   };
 
   const categoryOptions = getCategoryOptions();
-
-  // Get sections for MenuSections
-  const getSections = () => {
-    const currentMenu = menus[0];
-    if (!currentMenu) return [];
-
-    return currentMenu.groups.filter((g) => !isMenuGroupHidden(selectedTab, g.name));
-  };
-
-  const sections = getSections();
 
   const getItems = (g: any) => g.items;
 
@@ -284,18 +279,39 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
           onKeyDown={handleKeyDown}
         />
         <div id="menu-items" className={styles.menuContent} role="tabpanel" aria-label="Menu items">
-          <MenuSections
-            sections={sections}
-            selected={selectedCategory}
-            getItems={getItems}
-            itemStates={itemStates}
-            menuItemsRef={menuItemsRef}
-            observerRef={observerRef}
-            handleImageLoad={handleImageLoad}
-            handleMenuItemKeyDown={handleMenuItemKeyDown}
-            totalMenuItems={totalMenuItems}
-            categoryRefs={categoryRefs}
-          />
+          {menus.map((menu, menuIndex) => {
+            const sections = menu.groups
+              .filter((group) => !isMenuGroupHidden(selectedTab, group.name))
+              .filter((group) => group.items.length > 0)
+              .filter((group) => !selectedCategory || group.name === selectedCategory);
+            if (sections.length === 0) return null;
+
+            return (
+              <div key={menu.guid}>
+                {selectedTab === 'Dinner' && menu.guid === mexicanDinnerMenu?.guid && (
+                  <header className={styles.dinnerMenuHeader}>
+                    <h2 className={margarine.className}>{menu.name}</h2>
+                    {menu.description && <p>{menu.description}</p>}
+                  </header>
+                )}
+                <MenuSections
+                  sections={sections}
+                  selected={selectedCategory}
+                  getItems={getItems}
+                  itemStates={itemStates}
+                  menuItemsRef={menuItemsRef}
+                  observerRef={observerRef}
+                  handleImageLoad={handleImageLoad}
+                  handleMenuItemKeyDown={handleMenuItemKeyDown}
+                  totalMenuItems={totalMenuItems}
+                  categoryRefs={categoryRefs}
+                  categoryIndexOffset={menus
+                    .slice(0, menuIndex)
+                    .reduce((total, previousMenu) => total + previousMenu.groups.length, 0)}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
       <ScrollToTop />
