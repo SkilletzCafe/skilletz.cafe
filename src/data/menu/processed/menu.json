@@ -517,21 +517,21 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
-              "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "All veggies, cheese, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
               "name": "Tupac Wrap",
               "guid": "aa3256eb-2a6c-44d6-86f9-1311ea1741c3",
-              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352567940_1735409122.jpg"
             }
@@ -1602,21 +1602,21 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
-              "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "All veggies, cheese, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
               "name": "Tupac Wrap",
               "guid": "aa3256eb-2a6c-44d6-86f9-1311ea1741c3",
-              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352567940_1735409122.jpg"
             }
@@ -2701,21 +2701,21 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
             {
               "name": "Veggie Burrito",
               "guid": "41a9f616-1343-4a0d-bba1-d7a8e4fdbe0f",
-              "description": "All veggies and cheese.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "All veggies, cheese, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 16.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000000352567938_1734992710.jpg"
             },
             {
               "name": "Tupac Wrap",
               "guid": "aa3256eb-2a6c-44d6-86f9-1311ea1741c3",
-              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Chicken, chorizo, bacon, avocado, bell peppers, spinach, jalapeño, eggs.\r\n\r\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
               "price": 18.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000000352567940_1735409122.jpg"
             }
@@ -3815,6 +3815,258 @@
       ]
     },
     {
+      "name": "Nuestra Cocina Tu Casa 🇲🇽",
+      "guid": "fae7ee60-8515-449d-b248-71c18239c222",
+      "description": "",
+      "groups": [
+        {
+          "name": "Appetizers",
+          "guid": "2bb10fa6-6ee0-48ca-a039-91f211b0307e",
+          "description": "",
+          "items": [
+            {
+              "name": "Guacamole and Chips 🥑🫓",
+              "guid": "3c9bc9c9-ba36-4a44-b934-fe2a7656a24a",
+              "description": "Fresh guacamole, tortilla chips",
+              "price": 12,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000002960527784_1749274917.jpg"
+            },
+            {
+              "name": "Skillet'z Platter",
+              "guid": "30207017-a137-4d7a-80e7-cd027bf21efe",
+              "description": "A delicious sampler featuring 2 flautas, 2 steak tacos, 2 enchilads.",
+              "price": 20,
+              "imageUrl": null
+            },
+            {
+              "name": "Chips & Salsa",
+              "guid": "9b1db7aa-1539-472d-a3ba-6faab55a6681",
+              "description": "Crispy tortilla chips served with our house salsa.",
+              "price": 6,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000014708873096_1788764847.jpg"
+            },
+            {
+              "name": "Nachitos",
+              "guid": "8caabe14-7a2b-47ab-a1e8-9686b6858a9d",
+              "description": "Crispy tortilla chips loaded with flavorful toppings and melted cheese. (Choice of beef or chicken)",
+              "price": 16,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000014708873098_1788764855.jpg"
+            },
+            {
+              "name": "Cheese Quesadilla",
+              "guid": "7244fef0-190d-4bf5-83ae-ce0b0f81d52c",
+              "description": "",
+              "price": 14,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014708873750_1788764863.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Street Tacos",
+          "guid": "8095f5f2-ea94-40f4-a7dc-fd64b43906f3",
+          "description": "",
+          "items": [
+            {
+              "name": "Street Tacos",
+              "guid": "d0e967af-16db-4a85-b109-40fd7d606146",
+              "description": "Three tacos served with rice and refried beans.\r\n\r\nChoose from Steak, Chicken, Birria or Shredded Beef.",
+              "price": 18,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Burritos",
+          "guid": "c2d31d5f-60b7-4345-b56f-bd46c3671fd2",
+          "description": "",
+          "items": [
+            {
+              "name": "Classic Burrito",
+              "guid": "3964c8ce-6368-4cc4-aa24-8d50223512a5",
+              "description": "A hearty burrito served with rice and beans. Choose from Steak, Chicken, Birria, Shredded Beef, or Veggie.",
+              "price": 15,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014708897900_1788764792.jpg"
+            },
+            {
+              "name": "Super Burrito",
+              "guid": "97f5c915-cf33-4925-b7a6-cef7e8e578bf",
+              "description": "",
+              "price": 18,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000014708897902_1788764800.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Fajitas",
+          "guid": "3a5f98a1-6df3-479b-b932-35114d96d107",
+          "description": "",
+          "items": [
+            {
+              "name": "Shrimp Fajitas",
+              "guid": "864555e4-2fdf-4339-ad13-c22fdfd5c68e",
+              "description": "Seasoned shrimp grilled with fresh fajita vegetables.",
+              "price": 27,
+              "imageUrl": null
+            },
+            {
+              "name": "New York Steak Fajitas",
+              "guid": "ead6cbfe-88a6-4b4c-82b9-3d2d0fe40012",
+              "description": "Tender New York steak grilled with sizzling fajita vegetables.",
+              "price": 26,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000014709240946_1788764445.jpg"
+            },
+            {
+              "name": "Chicken Fajitas",
+              "guid": "f7cda81c-83b5-4530-8968-304caa97e1ca",
+              "description": "Seasoned grilled chicken with fresh fajita vegetables.",
+              "price": 25,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000014709240948_1788764457.jpg"
+            },
+            {
+              "name": "Ultimate Fajitas",
+              "guid": "7d697590-a23d-47f9-afd7-6ca084a8810e",
+              "description": "The ultimate combination of steak, shrimp, and chicken, grilled with fajita vegetables.",
+              "price": 29,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014709242100_1788764474.jpg"
+            },
+            {
+              "name": "Veggie Fajitas",
+              "guid": "39924951-ae16-4456-964c-7aab42bdb629",
+              "description": "A flavorful combination of fresh grilled vegetables.",
+              "price": 22,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000014709242102_1788764485.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Soup",
+          "guid": "e110e8af-1c41-4e8e-ba67-67d3f81fe7ff",
+          "description": "",
+          "items": [
+            {
+              "name": "Chicken Tortilla Soup",
+              "guid": "49ae74ad-d5a4-4a4a-9aba-2dd6f5b4f0e6",
+              "description": "A comforting Mexican-style soup featuring tender chicken, flavorful broth, and crispy tortilla strips.",
+              "price": 10.95,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000014709337197_1788764516.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Salads",
+          "guid": "2e5f8411-a296-41b6-a282-6e917bcd6b2c",
+          "description": "All salads are served in a crispy tortilla bowl.",
+          "items": [
+            {
+              "name": "Shrimp Salad",
+              "guid": "750304ec-0444-41f9-b5b4-e6fbb8d62cf3",
+              "description": "Fresh salad topped with seasoned grilled shrimp.",
+              "price": 18,
+              "imageUrl": null
+            },
+            {
+              "name": "Grilled Chicken Salad",
+              "guid": "c240608a-f338-41be-bfb2-f4bb022c306a",
+              "description": "Fresh greens topped with tender grilled chicken.",
+              "price": 16,
+              "imageUrl": null
+            },
+            {
+              "name": "Caesar Salad",
+              "guid": "a7f88740-b7ff-43bb-a243-f5b57549a272",
+              "description": "Crisp romaine lettuce tossed with classic Caesar dressing.",
+              "price": 19.95,
+              "imageUrl": null
+            },
+            {
+              "name": "Steak Fajita Salad",
+              "guid": "dcbd4a88-fb9b-410f-a467-d77cd0b89f39",
+              "description": "Fresh greens topped with sizzling seasoned steak and fajita-style vegetables.",
+              "price": 23,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000014709380568_1788764557.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Combinations",
+          "guid": "3395280d-e6db-40fd-b67a-07423fa5a6cd",
+          "description": "All combinations are served with rice and refried beans.",
+          "items": [
+            {
+              "name": "Chile Relleno & Two Enchiladas",
+              "guid": "9275b811-407b-4d40-92ba-186c4c814f16",
+              "description": "A classic chile relleno served with two flavorful enchiladas.",
+              "price": 22,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014709456030_1788764600.jpg"
+            },
+            {
+              "name": "Flautas & Enchiladas",
+              "guid": "a83f4177-f8fd-4e0a-b3ac-32d696a98d6f",
+              "description": "Crispy flautas paired with savory enchiladas.",
+              "price": 22,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000014709456032_1788764611.jpg"
+            },
+            {
+              "name": "Two Tacos & Chile Relleno",
+              "guid": "a1ece028-03ba-42a6-8253-5671c9584fe6",
+              "description": "Two flavorful tacos served alongside a traditional chile relleno.",
+              "price": 22,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Special Platillos",
+          "guid": "92df2c9e-c401-458e-993c-316af1606971",
+          "description": "All special platillos are served with rice, beans, guacamole, and sour cream.",
+          "items": [
+            {
+              "name": "Flautas Platter",
+              "guid": "2648d64b-b27c-4e6d-afd0-431e16fd702f",
+              "description": "Crispy, golden flautas served with our traditional accompaniments. (Choice of chicken or beef)",
+              "price": 22,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014709541220_1788764646.jpg"
+            },
+            {
+              "name": "Molcajete",
+              "guid": "3a7ffa1d-7591-45c3-95f5-7e6602585ef5",
+              "description": "A sizzling Mexican specialty combo with steak, shrimp, chicken chorizo and cactus served in a traditional stone molcajete.",
+              "price": 32,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000014709541222_1788764656.jpg"
+            },
+            {
+              "name": "Momias - Bacon-Wrapped Shrimp",
+              "guid": "f8406bde-9f12-45a2-85bf-4e2d062b6aa8",
+              "description": "Juicy shrimp wrapped in bacon and cooked to perfection.",
+              "price": 27,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000014709541224_1788764677.jpg"
+            },
+            {
+              "name": "Birria Platter",
+              "guid": "dad2b47c-1722-4048-affc-d217635d8a9f",
+              "description": "Tender, slow-cooked birria served with rice, beans, guacamole, and sour cream.",
+              "price": 27,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000014709541226_1788764703.jpg"
+            },
+            {
+              "name": "Chimichanga",
+              "guid": "63760fdc-c86f-48e4-af54-f156b305f525",
+              "description": "A crispy, golden-fried burrito. Choose Chicken, Veggie, or Steak.",
+              "price": 19,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000014709541228_1788764714.jpg"
+            },
+            {
+              "name": "Carne Asada Platter",
+              "guid": "0b56ed55-0b75-46a4-bf0b-7747828041b6",
+              "description": "Grilled carne asada served with rice, beans, guacamole, and sour cream.",
+              "price": 27,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000014709541230_1788764724.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Drinks 🥤M-W",
       "guid": "1d94cd15-3761-4d77-9b81-2715164a3496",
       "description": "",
@@ -4103,7 +4355,15 @@
           "name": "Alcoholic Beverages 🍻",
           "guid": "a6b39ea2-9fa0-4239-a771-80e6b3fed319",
           "description": "",
-          "items": []
+          "items": [
+            {
+              "name": "House Margarita",
+              "guid": "a57ce62c-24ab-4001-a474-285adc1e7821",
+              "description": "Our refreshing house-style margarita made with agave wine.",
+              "price": 12,
+              "imageUrl": null
+            }
+          ]
         }
       ]
     },
@@ -4116,12 +4376,20 @@
           "name": "Alcoholic Beverages 🍻",
           "guid": "9b0f4b56-b96f-434e-986d-728df8cdbaa8",
           "description": "",
-          "items": []
+          "items": [
+            {
+              "name": "House Margarita",
+              "guid": "a57ce62c-24ab-4001-a474-285adc1e7821",
+              "description": "Our refreshing house-style margarita made with agave wine.",
+              "price": 12,
+              "imageUrl": null
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Tea-Rek'z 🧋🦖 M-W 9am-7pm",
+      "name": "Tea-Rek'z 🧋🦖 M-W 12pm-7pm",
       "guid": "de80e974-0904-4e05-a3e7-6e5e7b535c47",
       "description": "Boba tea and fresh tea selections",
       "groups": [
@@ -4159,7 +4427,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
-              "name": "75 Dino Freeze 🍓🥭🍑🦖❄️🌙",
+              "name": "76 Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -4180,9 +4448,9 @@
               "imageUrl": null
             },
             {
-              "name": "74 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
+              "name": "75 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
-              "description": "organic mangos, jasmine tea, organic coconut milk, grapefruit pulp and crystal boba",
+              "description": "organic mangos, jasmine tea, coconut cream, grapefruit pulp and crystal boba",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
@@ -4210,7 +4478,7 @@
           ]
         },
         {
-          "name": "🆕 Tea-Rek’z Signatures 🦖",
+          "name": "Tea-Rek’z Signatures 🦖",
           "guid": "eb79ad18-9f60-4a3d-bcc2-61b6f67b9082",
           "description": "Featuring rare drinks like our cold brewed magnolia green tea creations, fresh cream toppings made without artificial creamers, and all-natural fruit ingredients for a cleaner, more premium drink experience.",
           "items": [
@@ -4268,14 +4536,14 @@
               "guid": "9afbd0f0-4641-4db4-a981-5e2bab4aa0fa",
               "description": "Organic strawberries, fresh milk, and naturally colored strawberry popping boba",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561184_1783060789.png"
             },
             {
               "name": "S9 Mango Pop Milk",
               "guid": "c11fa717-2877-4b32-a43d-fe7bce021e36",
               "description": "Organic mango, fresh milk, and naturally colored mango popping boba",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000011091561186_1783060822.png"
             }
           ]
         },
@@ -4287,14 +4555,14 @@
             {
               "name": "1 Jasmine Green Tea",
               "guid": "6636abcc-be69-4fe1-9fd1-85b03e597b55",
-              "description": "",
+              "description": "Brewed with premium Chafolio jasmine green tea leaves, this pure tea offers an enchanting floral aroma and a clean, refreshing finish—cold-brewed when served iced and freshly hot-brewed when served hot.",
               "price": 6,
               "imageUrl": null
             },
             {
               "name": "2 Magnolia Green Tea",
               "guid": "1c375b46-e404-4632-9428-f5914ae23cf4",
-              "description": "Cold brewed green tea scented with magnolia flowers for a smooth, floral, naturally sweet, zero-bitterness finish.",
+              "description": "Cold-brewed with premium Chafolio magnolia green tea leaves, this pure tea is exceptionally fragrant, crisp, and refreshing, with a delicate floral aroma and naturally smooth finish.",
               "price": 6,
               "imageUrl": null
             },
@@ -4310,13 +4578,6 @@
               "guid": "85a64a76-cc44-4db5-b85c-47314a48cdda",
               "description": "A smooth, floral oolong with a natural white peach aroma. Light and refreshing with a subtle fruit fragrance, not sweet on its own.",
               "price": 6,
-              "imageUrl": null
-            },
-            {
-              "name": "5 Rooibos Tea 🌙",
-              "guid": "47d3cd45-c531-4553-a20a-7054195b565b",
-              "description": "Naturally caffeine-free 🌙 herbal tea from South Africa, with a smooth, earthy flavor and gentle notes of honey and vanilla.",
-              "price": 5.75,
               "imageUrl": null
             }
           ]
@@ -4371,7 +4632,7 @@
             {
               "name": "27 Jasmine Green Milk Tea",
               "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
-              "description": "Fragrant, floral, and refreshing with a light creamy finish.",
+              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             },
@@ -4383,11 +4644,11 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000005129626884_1757235096.jpg"
             },
             {
-              "name": "29 Rooibos Milk Tea🌙",
-              "guid": "b694a634-dfb5-40fb-a28a-accf27351324",
-              "description": "Naturally caffeine-free rooibos blended with creamy milk for a smooth, earthy cup with gentle notes of honey and vanilla.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005129626888_1757235175.jpg"
+              "name": "29 Magnolia Green Milk Tea",
+              "guid": "bee5cd8b-b9f9-4590-8e98-6532397d5eec",
+              "description": "Tea-Rek’z Exclusive — Crafted with premium Chafolio magnolia green tea leaves, this refreshingly smooth milk tea blooms with an exceptionally fragrant floral aroma in every sip.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             }
           ]
         },
@@ -4420,7 +4681,7 @@
             {
               "name": "34 Mango Matcha Latte 🥭🍵",
               "guid": "1124c118-18f6-4148-aefe-bdaccf56313f",
-              "description": "Top grade Japanese Royal matcha, organic mangos",
+              "description": "",
               "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             },
@@ -4428,15 +4689,8 @@
               "name": "35 Taro Matcha Latte 🍠🍵",
               "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
               "description": "Top grade Japanese Royal matcha, real taro and ube.",
-              "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008109510341_1772013412.jpg"
-            },
-            {
-              "name": "36 Dalgona Matcha Latte 🍯🍵",
-              "guid": "4a78efb8-8262-4ec5-a583-083c33d7793a",
-              "description": "Creamy matcha with honeycomb toffee-like dalgona crumbles for a sweet, toasty crunch, inspired by the Korean street treat in Squid Game.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005129655599_1757106017.jpg"
+              "price": 8,
+              "imageUrl": null
             }
           ]
         },
@@ -4460,11 +4714,11 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008087959751_1768258758.png"
             },
             {
-              "name": "43 Ube Taro Milk 🍠🌙",
+              "name": "43 Taro Milk 🍠🌙",
               "guid": "29ed0bdd-c183-4b76-8a6e-0b9861d806e9",
-              "description": "Real taro and real Ube blended with milk — naturally creamy, with no artificial colors or flavors.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025832_1766816106.png"
+              "description": "Real taro blended with milk — naturally creamy, with no artificial colors or flavors.",
+              "price": 7,
+              "imageUrl": null
             },
             {
               "name": "44 Strawberry Milk 🍓🥛🌙",
@@ -4600,7 +4854,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000007709137801_1770463661.png"
             },
             {
-              "name": "72 Jasmine / Magnolia Mango 🫖🥭",
+              "name": "72 (Blended) Jasmine / Magnolia Mango 🫖🥭",
               "guid": "6c07b946-0cf5-4384-8c46-5ad9a70f5fdc",
               "description": "Over half a pound organic mangos + golden cane sugar + jasmine tea.",
               "price": 8,
@@ -4609,19 +4863,26 @@
             {
               "name": "73 Coco Mango 🥥🥭🌙",
               "guid": "b0212c8a-b50f-40a0-8ca7-f0d23d06d144",
-              "description": "Over half a pound organic mangos + golden cane sugar + pistachios.",
+              "description": "organic mangos + coconut cream",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000007709137805_1770463698.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000007709137805_1783595759.png"
             },
             {
-              "name": "74 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
+              "name": "74 Mangonada 🥭🌶️🌙",
+              "guid": "4a6f8396-9710-42f0-833f-d0a4bad0ec9e",
+              "description": "Over half a pound of organic mangoes with chamoy and Tajín.\r\n\r\nNo artificial flavors, artificial colors, or high-fructose corn syrup.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000012376016682_1781947263.png"
+            },
+            {
+              "name": "75 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
-              "description": "organic mangos, jasmine tea, organic coconut milk, grapefruit pulp and crystal boba",
+              "description": "organic mangos, jasmine tea, coconut cream, grapefruit pulp and crystal boba",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
             {
-              "name": "75 Dino Freeze 🍓🥭🍑🦖❄️🌙",
+              "name": "76 Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -4668,13 +4929,6 @@
               "description": "Oat milk Horchata + Vietnamese coffee.",
               "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000008620842186_1770420855.png"
-            },
-            {
-              "name": "86 Vietnamese Mocha 🇻🇳🍫☕️",
-              "guid": "ca78141b-77ba-4f33-b5f9-b1b62b31abe9",
-              "description": "Crafted with organic cocoa, fresh milk, and traditional butter-roasted Vietnamese coffee for a mocha that’s intense, velvety, and unforgettable.",
-              "price": 8,
-              "imageUrl": null
             }
           ]
         },
@@ -4688,13 +4942,6 @@
               "guid": "ed047973-c0cd-4bb7-8309-a6344a3260d4",
               "description": "Crafted with organic cocoa, fresh milk, and roasted hazelnut for a luxuriously smooth, deeply chocolatey experience.",
               "price": 6,
-              "imageUrl": null
-            },
-            {
-              "name": "92 Jasmine Hot Chocolate 🍫☕🌙",
-              "guid": "03c70935-3d44-46fc-91c5-e30104278a23",
-              "description": "Deep organic cocoa meets a whisper of jasmine tea for a refined twist on classic hot chocolate — rich, smooth, and lightly floral.",
-              "price": 7,
               "imageUrl": null
             },
             {
@@ -4721,65 +4968,16 @@
           ]
         },
         {
-          "name": "Extras 🍨",
-          "guid": "2aecb540-4289-4d49-bca5-29385b87b371",
-          "description": "",
-          "items": [
-            {
-              "name": "98 Fresh Squeezed Orange Juice 🍊🌙",
-              "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
-              "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup!",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
-            },
-            {
-              "name": "99 Boba Sundae 🧋🍨🌙",
-              "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
-              "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
-              "price": 6,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1767168964.png"
-            }
-          ]
-        },
-        {
           "name": "Hawaiian Hand-Shaved Ice 🍧",
           "guid": "28769591-81ff-4560-898e-4c7bc5d9a646",
           "description": "",
           "items": [
             {
-              "name": "H1 Strawberry Shaved Ice 🍧",
-              "guid": "d51a98da-68d7-4b30-8f74-516e5e3d874e",
-              "description": "Fresh strawberries, all-natural strawberry puree, condensed milk",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/2136a41d-7063-4dd2-9629-b40403f66456.png"
-            },
-            {
               "name": "H2 Build You Own Shaved Ice 🍧",
               "guid": "918649b1-5ca3-4588-8c58-f61aa793654e",
-              "description": "",
+              "description": "Choose up to 3 free toppings!",
               "price": 8,
               "imageUrl": null
-            }
-          ]
-        },
-        {
-          "name": "Warm Add-Ons 🍜",
-          "guid": "ea0b4b0b-557b-4668-8ea7-ef2e67bbc7e5",
-          "description": "",
-          "items": [
-            {
-              "name": "Nongshim Gourmet Spicy (Red)",
-              "guid": "5a65a0c3-a7ba-4e4e-9da2-924d54cde66c",
-              "description": "Please open lid halfway, add packets, and give to barista for hot water — RO-filtered & multi-remineralized.",
-              "price": 5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000008636419186_1770462286.jpg"
-            },
-            {
-              "name": "Nongshim Tonkotsu",
-              "guid": "4d1dd9ee-1d18-452e-8073-836fb83eeb91",
-              "description": "Please open lid halfway, add packets, and give to barista for hot water — RO-filtered & multi-remineralized.",
-              "price": 5.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000008636419188_1770462305.jpg"
             }
           ]
         },
@@ -4803,11 +5001,25 @@
               "imageUrl": null
             }
           ]
+        },
+        {
+          "name": "Barista Add-Ons",
+          "guid": "67aa7b68-818e-45a6-ad28-413674171825",
+          "description": null,
+          "items": [
+            {
+              "name": "Boba",
+              "guid": "af8cf2b1-3b4e-46a1-8c18-44396b9e9801",
+              "description": "",
+              "price": 0.75,
+              "imageUrl": null
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Tea-Rek'z 🧋🦖 Th-Sun 9am-8pm",
+      "name": "Tea-Rek'z 🧋🦖 Th-Sun 9am-9pm",
       "guid": "0ea2b5b6-5e34-47ee-aacd-89e846056c77",
       "description": "Boba tea and fresh tea selections",
       "groups": [
@@ -4845,7 +5057,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004993398070_1757106176.jpg"
             },
             {
-              "name": "75 Dino Freeze 🍓🥭🍑🦖❄️🌙",
+              "name": "76 Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -4866,9 +5078,9 @@
               "imageUrl": null
             },
             {
-              "name": "74 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
+              "name": "75 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
-              "description": "organic mangos, jasmine tea, organic coconut milk, grapefruit pulp and crystal boba",
+              "description": "organic mangos, jasmine tea, coconut cream, grapefruit pulp and crystal boba",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
@@ -4954,14 +5166,14 @@
               "guid": "9afbd0f0-4641-4db4-a981-5e2bab4aa0fa",
               "description": "Organic strawberries, fresh milk, and naturally colored strawberry popping boba",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561184_1783060789.png"
             },
             {
               "name": "S9 Mango Pop Milk",
               "guid": "c11fa717-2877-4b32-a43d-fe7bce021e36",
               "description": "Organic mango, fresh milk, and naturally colored mango popping boba",
               "price": 7.5,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000011091561186_1783060822.png"
             }
           ]
         },
@@ -4973,14 +5185,14 @@
             {
               "name": "1 Jasmine Green Tea",
               "guid": "6636abcc-be69-4fe1-9fd1-85b03e597b55",
-              "description": "",
+              "description": "Brewed with premium Chafolio jasmine green tea leaves, this pure tea offers an enchanting floral aroma and a clean, refreshing finish—cold-brewed when served iced and freshly hot-brewed when served hot.",
               "price": 6,
               "imageUrl": null
             },
             {
               "name": "2 Magnolia Green Tea",
               "guid": "1c375b46-e404-4632-9428-f5914ae23cf4",
-              "description": "Cold brewed green tea scented with magnolia flowers for a smooth, floral, naturally sweet, zero-bitterness finish.",
+              "description": "Cold-brewed with premium Chafolio magnolia green tea leaves, this pure tea is exceptionally fragrant, crisp, and refreshing, with a delicate floral aroma and naturally smooth finish.",
               "price": 6,
               "imageUrl": null
             },
@@ -4996,13 +5208,6 @@
               "guid": "85a64a76-cc44-4db5-b85c-47314a48cdda",
               "description": "A smooth, floral oolong with a natural white peach aroma. Light and refreshing with a subtle fruit fragrance, not sweet on its own.",
               "price": 6,
-              "imageUrl": null
-            },
-            {
-              "name": "5 Rooibos Tea 🌙",
-              "guid": "47d3cd45-c531-4553-a20a-7054195b565b",
-              "description": "Naturally caffeine-free 🌙 herbal tea from South Africa, with a smooth, earthy flavor and gentle notes of honey and vanilla.",
-              "price": 5.75,
               "imageUrl": null
             }
           ]
@@ -5057,7 +5262,7 @@
             {
               "name": "27 Jasmine Green Milk Tea",
               "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
-              "description": "Fragrant, floral, and refreshing with a light creamy finish.",
+              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             },
@@ -5069,11 +5274,11 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000005129626884_1757235096.jpg"
             },
             {
-              "name": "29 Rooibos Milk Tea🌙",
-              "guid": "b694a634-dfb5-40fb-a28a-accf27351324",
-              "description": "Naturally caffeine-free rooibos blended with creamy milk for a smooth, earthy cup with gentle notes of honey and vanilla.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005129626888_1757235175.jpg"
+              "name": "29 Magnolia Green Milk Tea",
+              "guid": "bee5cd8b-b9f9-4590-8e98-6532397d5eec",
+              "description": "Tea-Rek’z Exclusive — Crafted with premium Chafolio magnolia green tea leaves, this refreshingly smooth milk tea blooms with an exceptionally fragrant floral aroma in every sip.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
             }
           ]
         },
@@ -5106,7 +5311,7 @@
             {
               "name": "34 Mango Matcha Latte 🥭🍵",
               "guid": "1124c118-18f6-4148-aefe-bdaccf56313f",
-              "description": "Top grade Japanese Royal matcha, organic mangos",
+              "description": "",
               "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             },
@@ -5114,15 +5319,8 @@
               "name": "35 Taro Matcha Latte 🍠🍵",
               "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
               "description": "Top grade Japanese Royal matcha, real taro and ube.",
-              "price": 8.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008109510341_1772013412.jpg"
-            },
-            {
-              "name": "36 Dalgona Matcha Latte 🍯🍵",
-              "guid": "4a78efb8-8262-4ec5-a583-083c33d7793a",
-              "description": "Creamy matcha with honeycomb toffee-like dalgona crumbles for a sweet, toasty crunch, inspired by the Korean street treat in Squid Game.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000005129655599_1757106017.jpg"
+              "price": 8,
+              "imageUrl": null
             }
           ]
         },
@@ -5146,11 +5344,11 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008087959751_1768258758.png"
             },
             {
-              "name": "43 Ube Taro Milk 🍠🌙",
+              "name": "43 Taro Milk 🍠🌙",
               "guid": "29ed0bdd-c183-4b76-8a6e-0b9861d806e9",
-              "description": "Real taro and real Ube blended with milk — naturally creamy, with no artificial colors or flavors.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025832_1766816106.png"
+              "description": "Real taro blended with milk — naturally creamy, with no artificial colors or flavors.",
+              "price": 7,
+              "imageUrl": null
             },
             {
               "name": "44 Strawberry Milk 🍓🥛🌙",
@@ -5286,7 +5484,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000007709137801_1770463661.png"
             },
             {
-              "name": "72 Jasmine / Magnolia Mango 🫖🥭",
+              "name": "72 (Blended) Jasmine / Magnolia Mango 🫖🥭",
               "guid": "6c07b946-0cf5-4384-8c46-5ad9a70f5fdc",
               "description": "Over half a pound organic mangos + golden cane sugar + jasmine tea.",
               "price": 8,
@@ -5295,19 +5493,26 @@
             {
               "name": "73 Coco Mango 🥥🥭🌙",
               "guid": "b0212c8a-b50f-40a0-8ca7-f0d23d06d144",
-              "description": "Over half a pound organic mangos + golden cane sugar + pistachios.",
+              "description": "organic mangos + coconut cream",
               "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000007709137805_1770463698.png"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000007709137805_1783595759.png"
             },
             {
-              "name": "74 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
+              "name": "74 Mangonada 🥭🌶️🌙",
+              "guid": "4a6f8396-9710-42f0-833f-d0a4bad0ec9e",
+              "description": "Over half a pound of organic mangoes with chamoy and Tajín.\r\n\r\nNo artificial flavors, artificial colors, or high-fructose corn syrup.",
+              "price": 8.5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000012376016682_1781947263.png"
+            },
+            {
+              "name": "75 Mango Grapefruit Crystal 🥭🥥💎(🌙)",
               "guid": "47908528-b0f5-4977-ae65-e72fdfb14edc",
-              "description": "organic mangos, jasmine tea, organic coconut milk, grapefruit pulp and crystal boba",
+              "description": "organic mangos, jasmine tea, coconut cream, grapefruit pulp and crystal boba",
               "price": 8.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/5/item-1300000005355541035_1770463715.png"
             },
             {
-              "name": "75 Dino Freeze 🍓🥭🍑🦖❄️🌙",
+              "name": "76 Dino Freeze 🍓🥭🍑🦖❄️🌙",
               "guid": "f65e8ad8-357e-4cac-be70-685d9dc414c8",
               "description": "A frosty slush of your choices of real fruit purees blended into the ultimate sweet chill.",
               "price": 6.5,
@@ -5354,13 +5559,6 @@
               "description": "Oat milk Horchata + Vietnamese coffee.",
               "price": 8,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000008620842186_1770420855.png"
-            },
-            {
-              "name": "86 Vietnamese Mocha 🇻🇳🍫☕️",
-              "guid": "ca78141b-77ba-4f33-b5f9-b1b62b31abe9",
-              "description": "Crafted with organic cocoa, fresh milk, and traditional butter-roasted Vietnamese coffee for a mocha that’s intense, velvety, and unforgettable.",
-              "price": 8,
-              "imageUrl": null
             }
           ]
         },
@@ -5374,13 +5572,6 @@
               "guid": "ed047973-c0cd-4bb7-8309-a6344a3260d4",
               "description": "Crafted with organic cocoa, fresh milk, and roasted hazelnut for a luxuriously smooth, deeply chocolatey experience.",
               "price": 6,
-              "imageUrl": null
-            },
-            {
-              "name": "92 Jasmine Hot Chocolate 🍫☕🌙",
-              "guid": "03c70935-3d44-46fc-91c5-e30104278a23",
-              "description": "Deep organic cocoa meets a whisper of jasmine tea for a refined twist on classic hot chocolate — rich, smooth, and lightly floral.",
-              "price": 7,
               "imageUrl": null
             },
             {
@@ -5407,65 +5598,16 @@
           ]
         },
         {
-          "name": "Extras 🍨",
-          "guid": "5984bf53-f83e-4a22-accf-2416d44c73da",
-          "description": "",
-          "items": [
-            {
-              "name": "98 Fresh Squeezed Orange Juice 🍊🌙",
-              "guid": "d8f92398-3afc-40cb-94c0-201ef8540dcb",
-              "description": "Our most loved fresh squeezed orange juice from Skillet'z in a boba cup!",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/db883614-824a-46fa-b18c-b285af488d7f.png"
-            },
-            {
-              "name": "99 Boba Sundae 🧋🍨🌙",
-              "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
-              "description": "Two large scoops of vanilla ice cream, topped with brown sugar syrup and boba.",
-              "price": 6,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1767168964.png"
-            }
-          ]
-        },
-        {
           "name": "Hawaiian Hand-Shaved Ice 🍧",
           "guid": "0b41f464-02a9-4682-9ff9-ca0762cd352f",
           "description": "",
           "items": [
             {
-              "name": "H1 Strawberry Shaved Ice 🍧",
-              "guid": "d51a98da-68d7-4b30-8f74-516e5e3d874e",
-              "description": "Fresh strawberries, all-natural strawberry puree, condensed milk",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/2136a41d-7063-4dd2-9629-b40403f66456.png"
-            },
-            {
               "name": "H2 Build You Own Shaved Ice 🍧",
               "guid": "918649b1-5ca3-4588-8c58-f61aa793654e",
-              "description": "",
+              "description": "Choose up to 3 free toppings!",
               "price": 8,
               "imageUrl": null
-            }
-          ]
-        },
-        {
-          "name": "Warm Add-Ons 🍜",
-          "guid": "a39af5bc-c4ef-4c94-bf5d-0070bdeb743f",
-          "description": "",
-          "items": [
-            {
-              "name": "Nongshim Gourmet Spicy (Red)",
-              "guid": "5a65a0c3-a7ba-4e4e-9da2-924d54cde66c",
-              "description": "Please open lid halfway, add packets, and give to barista for hot water — RO-filtered & multi-remineralized.",
-              "price": 5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000008636419186_1770462286.jpg"
-            },
-            {
-              "name": "Nongshim Tonkotsu",
-              "guid": "4d1dd9ee-1d18-452e-8073-836fb83eeb91",
-              "description": "Please open lid halfway, add packets, and give to barista for hot water — RO-filtered & multi-remineralized.",
-              "price": 5.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000008636419188_1770462305.jpg"
             }
           ]
         },
@@ -5486,6 +5628,20 @@
               "guid": "c1e2776c-2244-447d-870d-2ef84e7a77a0",
               "description": "",
               "price": 20,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Barista Add-Ons",
+          "guid": "c4ffbc19-4240-436f-80cf-5ea145674b04",
+          "description": "",
+          "items": [
+            {
+              "name": "Boba",
+              "guid": "af8cf2b1-3b4e-46a1-8c18-44396b9e9801",
+              "description": "",
+              "price": 0.75,
               "imageUrl": null
             }
           ]
@@ -5626,7 +5782,7 @@
       ]
     },
     {
-      "name": "Dino Bites Th-Sun (12-8pm)",
+      "name": "Dino Bites Th-Sun (10am-8pm)",
       "guid": "33695567-03d7-42a0-a4db-39d0c817a626",
       "description": "",
       "groups": [
@@ -5768,76 +5924,6 @@
           "guid": "73cc821d-1572-4a26-b747-9586df70349b",
           "description": "",
           "items": []
-        }
-      ]
-    },
-    {
-      "name": "Tea-Rek'z Rainy Day Specials 🌧️🧋🦖 M-W 9am-7pm",
-      "guid": "c5efd52f-70dd-4575-bc74-972733871c21",
-      "description": "Available while it’s raining and while the streets are still wet",
-      "groups": [
-        {
-          "name": "Rainy Day Specials 🌧️",
-          "guid": "d11af501-4cbe-45c6-b458-16b6d3307e70",
-          "description": "",
-          "items": [
-            {
-              "name": "White Peach Oolong (Hot) 🌧️",
-              "guid": "37c53db6-b928-49d5-ac39-80fc766a611d",
-              "description": "A smooth, floral oolong with a natural white peach aroma. Light and refreshing with a subtle fruit fragrance, not sweet on its own.",
-              "price": 4.5,
-              "imageUrl": null
-            },
-            {
-              "name": "Earl Grey (Hot) 🌧️",
-              "guid": "9801e0be-ac2f-4184-a9b6-b1ce8f81c725",
-              "description": "Bold black tea infused with fragrant bergamot citrus for a smooth, aromatic finish.",
-              "price": 4.5,
-              "imageUrl": null
-            },
-            {
-              "name": "Four Seasons Jade (Hot) 🌧️",
-              "guid": "ac714215-d924-49ed-83bb-7481b5b76a78",
-              "description": "A lightly roasted Taiwanese oolong with a bright, floral aroma and smooth, refreshing finish. Balanced between green and oolong, it’s crisp yet delicate.",
-              "price": 4.5,
-              "imageUrl": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Tea-Rek'z Rainy Day Specials 🌧️🧋🦖 Th-Sun 10am-8pm",
-      "guid": "dde16204-2773-4684-9cbd-124bc428d790",
-      "description": "Available while it’s raining and while the streets are still wet",
-      "groups": [
-        {
-          "name": "Rainy Day Specials 🌧️",
-          "guid": "70e814da-1fef-4ded-9d9b-c793adde8eab",
-          "description": "",
-          "items": [
-            {
-              "name": "White Peach Oolong (Hot) 🌧️",
-              "guid": "37c53db6-b928-49d5-ac39-80fc766a611d",
-              "description": "A smooth, floral oolong with a natural white peach aroma. Light and refreshing with a subtle fruit fragrance, not sweet on its own.",
-              "price": 4.5,
-              "imageUrl": null
-            },
-            {
-              "name": "Earl Grey (Hot) 🌧️",
-              "guid": "9801e0be-ac2f-4184-a9b6-b1ce8f81c725",
-              "description": "Bold black tea infused with fragrant bergamot citrus for a smooth, aromatic finish.",
-              "price": 4.5,
-              "imageUrl": null
-            },
-            {
-              "name": "Four Seasons Jade (Hot) 🌧️",
-              "guid": "ac714215-d924-49ed-83bb-7481b5b76a78",
-              "description": "A lightly roasted Taiwanese oolong with a bright, floral aroma and smooth, refreshing finish. Balanced between green and oolong, it’s crisp yet delicate.",
-              "price": 4.5,
-              "imageUrl": null
-            }
-          ]
         }
       ]
     }
