@@ -55,9 +55,9 @@ export default function SchoolFundraiserBookingRedirect() {
 
   return (
     <BasicPageLayout
-      title="Book a School Fundraiser Night"
-      heading="Book a School Fundraiser Night"
-      intro="Redirecting you to our school fundraiser booking calendar..."
+      title="Dine with Skillet'z | Request a Fundraiser Date"
+      heading="Dine with Skillet'z"
+      intro="Redirecting you to the school fundraiser booking calendar for Dine with Skillet'z, part of Skillet'z Cares..."
     >
       <div className={styles.card}>
         <p>If you are not redirected automatically, use the button below.</p>
