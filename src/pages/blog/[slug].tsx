@@ -30,7 +30,11 @@ export default function BlogPost({ post }: BlogPostProps) {
         {post.meta.featuredImage && <meta property="og:image" content={post.meta.featuredImage} />}
       </Head>
 
-      <BasicPageLayout title={post.meta.title} heading={post.meta.title}>
+      <BasicPageLayout
+        title={post.meta.title}
+        heading={post.meta.title}
+        description={post.meta.excerpt}
+      >
         <article className={styles.post}>
           {/* Featured Image */}
           {post.meta.featuredImage && (

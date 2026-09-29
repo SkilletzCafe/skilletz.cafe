@@ -8,35 +8,38 @@ import styles from '@/styles/BasicPage.module.css';
 
 const bookingPath = PAGES.schoolFundraiserBooking.path;
 const pageDescription =
-  "Plan a Skillet'z Spirit Night school fundraiser in Fremont. Local schools can book Thursday or Friday dinner fundraiser nights and receive 15% of eligible in-store sales from participating guests.";
+  "Dine with Skillet'z, part of Skillet'z Cares: school fundraisers in Fremont with 15% of eligible participating in-store sales donated to your group, excluding tax and tip.";
 
 export default function SchoolFundraisers() {
   return (
     <BasicPageLayout
-      title="School Fundraiser Nights"
-      heading="School Fundraiser Nights"
-      intro="Bring your school community together for dinner in Historic Niles while raising money for students."
+      title="Skillet'z Cares | School Fundraisers"
+      heading="Skillet'z Cares"
+      intro="Dine with Skillet'z. Support local students."
       description={pageDescription}
     >
       <section className={styles.featureCard}>
+        <p>A welcoming table. A shared meal. A practical way to help our neighbors.</p>
         <p>
-          Skillet&apos;z Spirit Night is our local dine-to-donate fundraiser program for schools,
-          PTAs, student groups, clubs, and teams in Fremont and the surrounding community.
+          At Skillet&apos;z, we believe hospitality means caring for people—both at our tables and
+          beyond our doors. Dine with Skillet&apos;z, part of Skillet&apos;z Cares, brings local
+          families together over dinner while helping schools and student groups raise funds for the
+          opportunities they want to give their students.
         </p>
         <p>
           Pick an available Thursday or Friday evening, invite your families to dine in with us, and
           we&apos;ll donate <strong>15% of eligible in-store sales</strong> from participating
-          fundraiser guests back to your group.
+          fundraiser guests to your group, excluding tax and tip.
         </p>
         <Link href={bookingPath} className={styles.ctaButton}>
-          Book a School Fundraiser Night
+          Request a Fundraiser Date
         </Link>
       </section>
 
       <section className={styles.card}>
         <h2>How It Works</h2>
         <ul className={styles.checkList}>
-          <li>Book an available Thursday or Friday evening.</li>
+          <li>Request an available Thursday or Friday evening.</li>
           <li>Your fundraiser runs during dinner from 5:00 PM to 8:00 PM.</li>
           <li>Families dine in at Skillet&apos;z and mention your fundraiser when ordering.</li>
           <li>
@@ -61,10 +64,14 @@ export default function SchoolFundraisers() {
       <section className={styles.card}>
         <h2>Why Skillet&apos;z?</h2>
         <p>
-          We&apos;re a family-owned breakfast, brunch, and dinner restaurant in the Niles District,
-          and we love supporting local students. Fundraiser nights are designed to be simple for
-          organizers, fun for families, and sustainable for our dining room so regular guests can
-          still enjoy a great visit.
+          We&apos;re a family-owned restaurant in the Niles District, grateful for the families who
+          make Skillet&apos;z part of their lives. We want that gratitude to take practical shape:
+          welcoming people, doing our work with care, and using what we have to serve our neighbors.
+        </p>
+        <p>
+          We welcome inquiries from schools, PTAs, student groups, clubs, and teams across Fremont,
+          Union City, Newark, and neighboring communities. We host one fundraising group per evening
+          so our team can care well for your supporters and our other guests.
         </p>
         <p>
           Skillet&apos;z Cafe is located at <strong>{FULL_ADDRESS}</strong>. Dinner service is
@@ -76,12 +83,12 @@ export default function SchoolFundraisers() {
       <section className={styles.featureCard}>
         <h2>Ready to Pick a Date?</h2>
         <p>
-          Use the booking link below to request your fundraiser night. After you book, our team will
-          follow up with confirmation details and simple language your school can share with
-          families.
+          Tell us what your students are working toward. Use the booking link below to request a
+          fundraiser date, and our team will follow up to confirm the details and provide wording
+          you can share with families.
         </p>
         <Link href={bookingPath} className={styles.ctaButton}>
-          Schedule Your Fundraiser
+          Request a Fundraiser Date
         </Link>
         <p className={styles.smallNote}>
           Questions first? Email us at{' '}
