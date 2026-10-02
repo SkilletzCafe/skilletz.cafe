@@ -64,11 +64,17 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
     (group) => group.guid === '9145a88a-16f0-4a02-bccd-d227ed2e8f87'
   );
 
-  // Separate menus in semantic order: Brunch, Happy Hour, Dinner, Drinks, Tea-Rek'z
+  // Keep each top-level tab tied to its corresponding Toast menu.
   const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
-  const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
+  const nuestraCocinaMenu = menuData.menus.find(
+    (menu) => menu.guid === 'fae7ee60-8515-449d-b248-71c18239c222'
+  );
+  // Toast adds day ranges to menu names; prefer Thu-Sun, as with Brunch and Tea-Rek'z.
+  const drinksMenu =
+    menuData.menus.find((menu) => menu.name.startsWith('Drinks 🥤') && menu.name.includes('Sun')) ||
+    menuData.menus.find((menu) => menu.name.startsWith('Drinks 🥤'));
   const teaRekzMenu =
     menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z") && menu.name.includes('Sun')) ||
     menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z"));
@@ -221,6 +227,7 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
       Brunch: brunchMenu,
       'Happy Hour': happyHourMenu,
       Dinner: dinnerMenu,
+      'Nuestra Cocina Tu Casa': nuestraCocinaMenu,
       Drinks: drinksMenu,
       "Tea-Rek'z": teaRekzMenuWithToppings,
     };

@@ -1,4 +1,10 @@
-export type MenuTab = 'Brunch' | 'Happy Hour' | 'Dinner' | 'Drinks' | "Tea-Rek'z";
+export type MenuTab =
+  | 'Brunch'
+  | 'Happy Hour'
+  | 'Dinner'
+  | 'Nuestra Cocina Tu Casa'
+  | 'Drinks'
+  | "Tea-Rek'z";
 
 export interface TabConfig {
   key: MenuTab;
@@ -9,13 +15,14 @@ export const MENU_TAB_CONFIG: TabConfig[] = [
   { key: 'Brunch', label: 'Brunch' },
   { key: 'Happy Hour', label: 'Happy Hour' },
   { key: 'Dinner', label: 'Dinner' },
+  { key: 'Nuestra Cocina Tu Casa', label: 'Nuestra Cocina Tu Casa 🇲🇽' },
   { key: 'Drinks', label: 'Drinks 🥤' },
   { key: "Tea-Rek'z", label: "Tea-Rek'z 🧋🦖" },
 ];
 
 export const HIDDEN_MENU_GROUPS_BY_TAB: Partial<Record<MenuTab, string[]>> = {
   Dinner: ['Daily Specials 🌟'],
-  "Tea-Rek'z": ['Grab n Go', 'Archived Items (Not Displayed)'],
+  "Tea-Rek'z": ['Grab n Go', 'Archived Items (Not Displayed)', 'Barista Add-Ons'],
 };
 
 export function isMenuGroupHidden(tab: MenuTab, groupName: string): boolean {
