@@ -68,7 +68,10 @@ export default function Menu({ menuData, menuOptionGroupsData }: MenuPageProps) 
   const brunchMenu = menuData.menus.find((menu) => menu.name === 'Brunch Thu-Sun');
   const happyHourMenu = menuData.menus.find((menu) => menu.name === 'Happy Hour');
   const dinnerMenu = menuData.menus.find((menu) => menu.name === 'Dinner');
-  const drinksMenu = menuData.menus.find((menu) => menu.name === 'Drinks 🥤');
+  // Toast adds day ranges to menu names; prefer Thu-Sun, as with Brunch and Tea-Rek'z.
+  const drinksMenu =
+    menuData.menus.find((menu) => menu.name.startsWith('Drinks 🥤') && menu.name.includes('Sun')) ||
+    menuData.menus.find((menu) => menu.name.startsWith('Drinks 🥤'));
   const teaRekzMenu =
     menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z") && menu.name.includes('Sun')) ||
     menuData.menus.find((menu) => menu.name.startsWith("Tea-Rek'z"));
