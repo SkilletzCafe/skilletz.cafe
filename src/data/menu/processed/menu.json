@@ -517,7 +517,7 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!\n\nAbdelrahman favorite ",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
@@ -1602,7 +1602,7 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!\n\nAbdelrahman favorite ",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
@@ -2701,7 +2701,7 @@
             {
               "name": "Charlie's Burrito",
               "guid": "0d7f001e-dd7f-40d6-b17a-8c28cbd719fb",
-              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!",
+              "description": "Choice of protein, cheese, and potatoes. Includes eggs.\n\nNOTE: For our burritos, potatoes (choice of french fries, skillet potatoes, or hash browns) are wrapped INTO the burrito, because it tastes THA BOMB!\n\nAbdelrahman favorite ",
               "price": 14.95,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000000352567936_1734992702.jpg"
             },
@@ -4409,7 +4409,7 @@
               "name": "81 Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000006208598079_1766829504.png"
             },
             {
@@ -4437,14 +4437,14 @@
               "name": "51 Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
               "description": "jasmine green tea + lychee puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "53 Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
               "description": "jasmine green tea + mango and passionfruit puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
@@ -4478,79 +4478,9 @@
           ]
         },
         {
-          "name": "Tea-Rek’z Signatures 🦖",
-          "guid": "eb79ad18-9f60-4a3d-bcc2-61b6f67b9082",
-          "description": "Featuring rare drinks like our cold brewed magnolia green tea creations, fresh cream toppings made without artificial creamers, and all-natural fruit ingredients for a cleaner, more premium drink experience.",
-          "items": [
-            {
-              "name": "S1 Magnolia Cloud",
-              "guid": "ef9f74db-5f45-412a-9451-5ffee16b85c3",
-              "description": "Magnolia Green Tea with Jasmine Cream. Best enjoyed without boba.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/19c63b47-b769-4dc8-b248-f3c071e3a731.png"
-            },
-            {
-              "name": "S2 Magnolia Velvet",
-              "guid": "c3832cb2-69af-45c7-8cb3-1bf38ba123c3",
-              "description": "Magnolia Green Tea with Sea Salt Cheese Cream. Best enjoyed without boba.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561172_1778489973.png"
-            },
-            {
-              "name": "S3 Magnolia Matcha Cloud",
-              "guid": "d7e18553-ed9e-4048-bfb2-7c61465b9c93",
-              "description": "Magnolia Green Tea with Matcha Cream. Best enjoyed without boba.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561174_1778490002.png"
-            },
-            {
-              "name": "S4 Magnolia Orchard",
-              "guid": "be2f0cab-d4fe-4f70-bba6-951c8435f2fa",
-              "description": "Lychee and Peach Magnolia Green Tea with Jasmine Cream. Best enjoyed without boba.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/6a335c51-2baf-4041-95b6-ce57dcf4cc73.png"
-            },
-            {
-              "name": "S5 Lychee Blossom",
-              "guid": "0da520c1-3aa2-4b8a-8ae6-1897e83b09ad",
-              "description": "Lychee Jasmine Green Tea with Jasmine Cream",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000011091561178_1778490072.png"
-            },
-            {
-              "name": "S6 Pistachio Cream Coffee",
-              "guid": "f5ad4454-05d8-45f8-848a-a9ad018d5045",
-              "description": "Vietnamese Iced Coffee with Pistachio Cream",
-              "price": 8,
-              "imageUrl": null
-            },
-            {
-              "name": "S7 Matcha Blossom",
-              "guid": "d454ff49-5c40-4dab-a3d8-4d7118b8e057",
-              "description": "Matcha Latte with Raspberry Cream",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561182_1778490107.jpg"
-            },
-            {
-              "name": "S8 Strawberry Pop Milk",
-              "guid": "9afbd0f0-4641-4db4-a981-5e2bab4aa0fa",
-              "description": "Organic strawberries, fresh milk, and naturally colored strawberry popping boba",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561184_1783060789.png"
-            },
-            {
-              "name": "S9 Mango Pop Milk",
-              "guid": "c11fa717-2877-4b32-a43d-fe7bce021e36",
-              "description": "Organic mango, fresh milk, and naturally colored mango popping boba",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000011091561186_1783060822.png"
-            }
-          ]
-        },
-        {
-          "name": "Pure Teas 🫖",
-          "guid": "abfe846e-6fa1-49ad-8906-72e1af054595",
-          "description": "Freshly brewed with purified mineral water.",
+          "name": "Iced Teas 🧊🫖",
+          "guid": "f0bb1b61-a762-47b0-8d79-05b310263c2c",
+          "description": "Freshly brewed or cold brewed with purified mineral water.",
           "items": [
             {
               "name": "1 Jasmine Green Tea",
@@ -4570,7 +4500,7 @@
               "name": "3 Lychee Black Tea",
               "guid": "cc2821e8-c4f0-4d80-8bc7-0f59fbfa37d9",
               "description": "A fragrant black tea with natural lychee aroma, smooth and floral with a subtle fruity finish. Refreshing on its own, without added sweetness.",
-              "price": 5.75,
+              "price": 6,
               "imageUrl": null
             },
             {
@@ -4583,78 +4513,134 @@
           ]
         },
         {
-          "name": "Milk Teas 🧋",
-          "guid": "f331262f-fcdf-400a-9ef7-57d51d47a412",
-          "description": "Rich, creamy, and bold tea-forward milk teas",
+          "name": "Hot Teas 🔥🫖",
+          "guid": "65a8c18f-e742-40c0-86e6-4a91c600dbfa",
+          "description": "Freshly brewed with purified mineral water.",
           "items": [
             {
-              "name": "21 Lychee Black Milk Tea",
-              "guid": "6fd9f266-9d5e-44aa-8284-665b1b5e52fd",
-              "description": "Smooth black tea with a natural lychee fragrance, blended with creamy milk for a floral, subtly fruity cup. Light and aromatic, not sweet on its own.",
-              "price": 6.75,
+              "name": "11 Hot Black Tea",
+              "guid": "16247dd6-ec22-4beb-a49a-a70c2b0ea059",
+              "description": "Full-bodied black tea from Assam, or choose decaf.",
+              "price": 6,
               "imageUrl": null
             },
             {
-              "name": "22 Assam Black Milk Tea",
+              "name": "12 Hot Lychee Black Tea",
+              "guid": "ce90403a-de15-4615-93d4-f736f18305ed",
+              "description": "A fragrant black tea with natural lychee aroma, smooth and floral with a subtle fruity finish. Refreshing on its own, without added sweetness.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "13 Hot Roasted Oolong Tea",
+              "guid": "ebee739b-c3d6-4d81-a96d-8d6a971d8717",
+              "description": "Smooth and aromatic roasted oolong",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "14 Hot Four Seasons Jade Oolong",
+              "guid": "e9224a1d-12a8-4591-b3a4-7bc2b98604de",
+              "description": "A lightly roasted Taiwanese oolong with a bright, floral aroma and smooth, refreshing finish. Balanced between green and oolong, it’s crisp yet delicate.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "15 Hot Jasmine Green Tea",
+              "guid": "24946d24-7a7e-4c7e-89ed-315abc26b882",
+              "description": "Brewed with premium Chafolio jasmine green tea leaves, this pure tea offers an enchanting floral aroma and a clean, refreshing finish—cold-brewed when served iced and freshly hot-brewed when served hot.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "16 Hot Magnolia Green Tea",
+              "guid": "f45460f8-ef83-48d5-8e29-7013094a37c3",
+              "description": "Freshly brewed with premium Chafolio magnolia green tea leaves, this pure tea is exceptionally fragrant, crisp, and refreshing, with a delicate floral aroma and naturally smooth finish.",
+              "price": 6,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
+          "name": "Milk Teas 🧋",
+          "guid": "eb68e8ed-691c-4428-a976-fbf271749603",
+          "description": "",
+          "items": [
+            {
+              "name": "20 Brown Sugar Milk Tea",
+              "guid": "886fe792-5767-48b7-a95e-3ea62a9f5cd5",
+              "description": "Black milk tea with brown sugar swirl (tiger style)",
+              "price": 7.5,
+              "imageUrl": null
+            },
+            {
+              "name": "21 Black Milk Tea",
               "guid": "e41b7556-b795-4f70-b6c8-4ffbd9773bba",
               "description": "Bold, malty, and robust — the classic milk tea taste.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025820_1766831402.png"
+            },
+            {
+              "name": "22 Lychee Black Milk Tea",
+              "guid": "6fd9f266-9d5e-44aa-8284-665b1b5e52fd",
+              "description": "Smooth black tea with a natural lychee fragrance, blended with creamy milk for a floral, subtly fruity cup. Light and aromatic, not sweet on its own.",
+              "price": 7,
+              "imageUrl": null
             },
             {
               "name": "23 Roasted Oolong Milk Tea",
               "guid": "e6851d44-4c4d-4cbd-a394-bdb066872406",
               "description": "Toasty, nutty, and smooth with balanced depth.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025822_1757106082.jpg"
             },
             {
-              "name": "24 Classic Thai Tea 🇹🇭🫖",
-              "guid": "5b5e969a-bf1d-44f2-a67c-69fd5f704731",
-              "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1766817442.png"
-            },
-            {
-              "name": "25 Crème Brûlée Classic Thai Tea",
-              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
-              "description": "Classic Thai Tea + Crème Brûlée",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
-            },
-            {
-              "name": "26 Assam Masala Chai Tea 🇮🇳☕",
-              "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
-              "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
-            },
-            {
-              "name": "27 Jasmine Green Milk Tea",
-              "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
-              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
-            },
-            {
-              "name": "28 White Peach Oolong Milk Tea",
+              "name": "24 White Peach Oolong Milk Tea",
               "guid": "ac06f7df-2155-4d3a-af8d-6e0f8faaa0f9",
               "description": "Fragrant oolong tea with a delicate white peach aroma, blended with creamy milk for a smooth, floral, and subtly fruity taste. Naturally not sweet on its own.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000005129626884_1757235096.jpg"
             },
             {
-              "name": "29 Magnolia Green Milk Tea",
+              "name": "25 Jasmine Green Milk Tea",
+              "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
+              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
+            },
+            {
+              "name": "26 Magnolia Green Milk Tea",
               "guid": "bee5cd8b-b9f9-4590-8e98-6532397d5eec",
               "description": "Tea-Rek’z Exclusive — Crafted with premium Chafolio magnolia green tea leaves, this refreshingly smooth milk tea blooms with an exceptionally fragrant floral aroma in every sip.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
+            },
+            {
+              "name": "27 Classic Thai Tea 🇹🇭🫖",
+              "guid": "5b5e969a-bf1d-44f2-a67c-69fd5f704731",
+              "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1766817442.png"
+            },
+            {
+              "name": "28 Crème Brûlée Thai Tea",
+              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
+              "description": "Classic Thai Tea + Crème Brûlée",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
+            },
+            {
+              "name": "29 Masala Chai Tea 🇮🇳☕",
+              "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
+              "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
             }
           ]
         },
         {
           "name": "Matcha 🍵",
-          "guid": "5424017d-0e5d-4c09-943f-94dbfc1dd718",
+          "guid": "55bff1a6-d153-45aa-b637-abde877f1544",
           "description": "Made with royal Japanese matcha and fresh milk.",
           "items": [
             {
@@ -4668,7 +4654,7 @@
               "name": "32 Brown Sugar Matcha Latte 🍵",
               "guid": "5cf93bf6-076d-418d-b601-a55609743f40",
               "description": "Top grade Japanese Royal matcha and handcrafted top grade brown sugar.",
-              "price": 7.25,
+              "price": 7.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005129736630_1766830179.png"
             },
             {
@@ -4686,17 +4672,17 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             },
             {
-              "name": "35 Taro Matcha Latte 🍠🍵",
-              "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
-              "description": "Top grade Japanese Royal matcha, real taro and ube.",
+              "name": "35 Raspberry Cream Matcha Latte",
+              "guid": "d454ff49-5c40-4dab-a3d8-4d7118b8e057",
+              "description": "Matcha Latte with Raspberry Cream",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561182_1778490107.jpg"
             }
           ]
         },
         {
           "name": "Milk Drinks 🥛",
-          "guid": "e24c37c8-8944-4e43-bf3e-99e92ca70783",
+          "guid": "ceb3e415-3c7b-4ca4-87ab-0601f04787a4",
           "description": "",
           "items": [
             {
@@ -4714,28 +4700,21 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008087959751_1768258758.png"
             },
             {
-              "name": "43 Taro Milk 🍠🌙",
-              "guid": "29ed0bdd-c183-4b76-8a6e-0b9861d806e9",
-              "description": "Real taro blended with milk — naturally creamy, with no artificial colors or flavors.",
-              "price": 7,
-              "imageUrl": null
-            },
-            {
-              "name": "44 Strawberry Milk 🍓🥛🌙",
+              "name": "43 Strawberry Milk 🍓🥛🌙",
               "guid": "6d16adff-8a04-4f07-a599-ae2645ce50a5",
               "description": "organic strawberries and fresh milk",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000008620469457_1770420574.png"
             },
             {
-              "name": "45 Korean Mango Milk 🥭🥛🌙",
+              "name": "44 Korean Mango Milk 🥭🥛🌙",
               "guid": "50f1ea8a-b89b-4c45-be62-b15826e553b2",
               "description": "organic mango and fresh milk",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000009018273524_1772013435.jpg"
             },
             {
-              "name": "46 Horchata de Avena 🍂🥛🌙",
+              "name": "45 Horchata de Avena 🍂🥛🌙",
               "guid": "b32f9dfb-6c88-44f4-b91a-69d12e08ff0e",
               "description": "oat milk horchata",
               "price": 7,
@@ -4745,28 +4724,28 @@
         },
         {
           "name": "Fruit Teas 🍓🫖",
-          "guid": "1901bf68-ad44-4f71-ae87-abbd03fa25a6",
+          "guid": "3425c354-3f90-4325-ac39-bbc71a1a2ab7",
           "description": "",
           "items": [
             {
               "name": "51 Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
               "description": "jasmine green tea + lychee puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "52 Strawberry Peach Jade Oolong",
               "guid": "fea5b79b-9c7e-42e6-b860-960a218b071e",
               "description": "freshly brewed four seasons jade oolong + strawberry and peach puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "53 Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
               "description": "jasmine green tea + mango and passionfruit puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
@@ -4780,14 +4759,14 @@
               "name": "55 Build Your Own Fruit Tea  🍓🌱",
               "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             }
           ]
         },
         {
           "name": "Smash Lemonades 🍋🌙",
-          "guid": "0c221461-2f72-4a28-8320-9a9256af1d60",
+          "guid": "ce5d35d1-9ee5-4397-b115-b91160f315b6",
           "description": "",
           "items": [
             {
@@ -4819,21 +4798,14 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-              "name": "65 Purple Lemonade 🔮🍋🌙",
-              "guid": "38106a34-9d29-4d18-a28c-2e4cda6143bd",
-              "description": "A color-changing twist of fresh lemonade + passionfruit, and butterfly pea tea — bright, tangy, and magically purple! 🦖🍋💜✨",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006111297916_1766828237.png"
-            },
-            {
-              "name": "66 Rose Hibiscus Lemonade 🌹🌺🍋🌙",
+              "name": "65 Rose Hibiscus Lemonade 🌹🌺🍋🌙",
               "guid": "04963db2-a9f9-4908-8fcd-5f28fdd2b0b8",
               "description": "",
               "price": 7,
               "imageUrl": null
             },
             {
-              "name": "67 Ginger Lemonade 🫚🍋🌙",
+              "name": "66 Ginger Lemonade 🫚🍋🌙",
               "guid": "a23a33e3-a783-4542-9622-4380aeb4b987",
               "description": "Made to order with fresh lemons, cane sugar, ginger puree and purified mineral water — never pre-made.",
               "price": 7,
@@ -4854,7 +4826,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000007709137801_1770463661.png"
             },
             {
-              "name": "72 (Blended) Jasmine / Magnolia Mango 🫖🥭",
+              "name": "72 (Blended) Jasmine Mango 🫖🥭",
               "guid": "6c07b946-0cf5-4384-8c46-5ad9a70f5fdc",
               "description": "Over half a pound organic mangos + golden cane sugar + jasmine tea.",
               "price": 8,
@@ -4891,15 +4863,15 @@
           ]
         },
         {
-          "name": "Coffee Drinks ☕",
-          "guid": "243e77e0-0c28-4541-b17f-a51daf9a9d92",
+          "name": "Vietnamese Coffee☕",
+          "guid": "157283c5-6fb6-4f18-b874-d150b316d5dc",
           "description": "",
           "items": [
             {
               "name": "81 Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000006208598079_1766829504.png"
             },
             {
@@ -4917,14 +4889,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1772013562.jpg"
             },
             {
-              "name": "84 Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
-              "guid": "a842bbf8-69e7-4683-a3de-69e8186c5b51",
-              "description": "Also called \"Dirty Thai Tea\", smooth Thai milk tea blended with double shots of espresso for a perfect mix of sweetness, spice, and caffeine kick. Ice and sweetness level are fixed.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111243964_1766829653.png"
-            },
-            {
-              "name": "85 Dirty Horchata de Avena 🍂🥛☕️",
+              "name": "84 Dirty Horchata de Avena 🍂🥛☕️",
               "guid": "4e68814f-c46c-413f-914e-f259e35f0a40",
               "description": "Oat milk Horchata + Vietnamese coffee.",
               "price": 8,
@@ -4945,39 +4910,53 @@
               "imageUrl": null
             },
             {
-              "name": "93 Masala Chai Hot Chocolate 🍫☕🌙",
+              "name": "92 Masala Chai Hot Chocolate 🍫☕🌙",
               "guid": "5e81bce7-e5b9-4773-9ec2-3b2dbd771a79",
               "description": "Organic cocoa blended with steamed milk, warm chai spices, and a subtle touch of Assam tea. Rich, aromatic, and gently spiced.",
-              "price": 8,
+              "price": 7,
               "imageUrl": null
             },
             {
-              "name": "94 Hot Honey Yuzu Tea 🍋🍯🌙",
+              "name": "93 Hot Honey Yuzu Tea 🍋🍯🌙",
               "guid": "1bf35892-edda-481c-b34c-e4628cc49ab4",
               "description": "A comforting blend of honey and yuzu citrus, served hot for a soothing, lightly sweet and tangy cup.",
               "price": 5,
               "imageUrl": null
             },
             {
-              "name": "95 Hot Ginger Honey Yuzu Tea 🍋🍯🫚🌙",
+              "name": "94 Hot Ginger Honey Yuzu Tea 🍋🍯🫚🌙",
               "guid": "c333b873-5dfe-40f7-9384-50cb1e38ed99",
               "description": "Fragrant yuzu citrus blended with honey and fresh ginger for a warm, soothing cup with bright citrus and gentle spice.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "95 Spiced Apple Cider 🍎🍂",
+              "guid": "8a6c3af0-634e-4c34-8859-58e2266520b2",
+              "description": "Made from freshly pressed apples and a traditional blend of mulling spices. No added sugar.",
+              "price": 5,
+              "imageUrl": null
+            },
+            {
+              "name": "96 Caramel Apple Cider 🍯🍎🍂",
+              "guid": "29ae1d12-52df-46b8-968d-4cd38ae39fb0",
+              "description": "Made from freshly pressed apples and a traditional blend of mulling spices, with rich caramel sauce for a warm, buttery sweetness.",
               "price": 6,
               "imageUrl": null
             }
           ]
         },
         {
-          "name": "Hawaiian Hand-Shaved Ice 🍧",
-          "guid": "28769591-81ff-4560-898e-4c7bc5d9a646",
+          "name": "Ice Cream",
+          "guid": "1fe33115-7fba-42b2-9368-eee57b4258e4",
           "description": "",
           "items": [
             {
-              "name": "H2 Build You Own Shaved Ice 🍧",
-              "guid": "918649b1-5ca3-4588-8c58-f61aa793654e",
-              "description": "Choose up to 3 free toppings!",
-              "price": 8,
-              "imageUrl": null
+              "name": "Build Your Own Sundae 🍨",
+              "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
+              "description": "Start with a generous scoop of vanilla ice cream, then choose from our all-natural sauces. Our fruit purées are low in added sugar, and all sauces are free of artificial colors and flavors. Finish it with your favorite toppings.",
+              "price": 5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1790244140.png"
             }
           ]
         },
@@ -5019,13 +4998,13 @@
       ]
     },
     {
-      "name": "Tea-Rek'z 🧋🦖 Th-Sun 9am-9pm",
+      "name": "Tea-Rek'z 🧋🦖 Th-Sun 9am-8pm",
       "guid": "0ea2b5b6-5e34-47ee-aacd-89e846056c77",
       "description": "Boba tea and fresh tea selections",
       "groups": [
         {
           "name": "Tea-Rek'z Favorites 💖",
-          "guid": "89329c01-d8ca-4990-9a13-c8a69ccbb34b",
+          "guid": "df6d76ef-c0bc-487b-beb3-2017e5f5ddde",
           "description": "",
           "items": [
             {
@@ -5039,7 +5018,7 @@
               "name": "81 Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000006208598079_1766829504.png"
             },
             {
@@ -5067,14 +5046,14 @@
               "name": "51 Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
               "description": "jasmine green tea + lychee puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "53 Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
               "description": "jasmine green tea + mango and passionfruit puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
@@ -5108,79 +5087,9 @@
           ]
         },
         {
-          "name": "🆕 Tea-Rek’z Signatures 🦖",
-          "guid": "8560d500-596f-424d-8b50-3b7fd4264f30",
-          "description": "Featuring rare drinks like our cold brewed magnolia green tea creations, fresh cream toppings made without artificial creamers, and all-natural fruit ingredients for a cleaner, more premium drink experience.",
-          "items": [
-            {
-              "name": "S1 Magnolia Cloud",
-              "guid": "ef9f74db-5f45-412a-9451-5ffee16b85c3",
-              "description": "Magnolia Green Tea with Jasmine Cream. Best enjoyed without boba.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/19c63b47-b769-4dc8-b248-f3c071e3a731.png"
-            },
-            {
-              "name": "S2 Magnolia Velvet",
-              "guid": "c3832cb2-69af-45c7-8cb3-1bf38ba123c3",
-              "description": "Magnolia Green Tea with Sea Salt Cheese Cream. Best enjoyed without boba.",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561172_1778489973.png"
-            },
-            {
-              "name": "S3 Magnolia Matcha Cloud",
-              "guid": "d7e18553-ed9e-4048-bfb2-7c61465b9c93",
-              "description": "Magnolia Green Tea with Matcha Cream. Best enjoyed without boba.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561174_1778490002.png"
-            },
-            {
-              "name": "S4 Magnolia Orchard",
-              "guid": "be2f0cab-d4fe-4f70-bba6-951c8435f2fa",
-              "description": "Lychee and Peach Magnolia Green Tea with Jasmine Cream. Best enjoyed without boba.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/6a335c51-2baf-4041-95b6-ce57dcf4cc73.png"
-            },
-            {
-              "name": "S5 Lychee Blossom",
-              "guid": "0da520c1-3aa2-4b8a-8ae6-1897e83b09ad",
-              "description": "Lychee Jasmine Green Tea with Jasmine Cream",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000011091561178_1778490072.png"
-            },
-            {
-              "name": "S6 Pistachio Cream Coffee",
-              "guid": "f5ad4454-05d8-45f8-848a-a9ad018d5045",
-              "description": "Vietnamese Iced Coffee with Pistachio Cream",
-              "price": 8,
-              "imageUrl": null
-            },
-            {
-              "name": "S7 Matcha Blossom",
-              "guid": "d454ff49-5c40-4dab-a3d8-4d7118b8e057",
-              "description": "Matcha Latte with Raspberry Cream",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561182_1778490107.jpg"
-            },
-            {
-              "name": "S8 Strawberry Pop Milk",
-              "guid": "9afbd0f0-4641-4db4-a981-5e2bab4aa0fa",
-              "description": "Organic strawberries, fresh milk, and naturally colored strawberry popping boba",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000011091561184_1783060789.png"
-            },
-            {
-              "name": "S9 Mango Pop Milk",
-              "guid": "c11fa717-2877-4b32-a43d-fe7bce021e36",
-              "description": "Organic mango, fresh milk, and naturally colored mango popping boba",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000011091561186_1783060822.png"
-            }
-          ]
-        },
-        {
-          "name": "Pure Teas 🫖",
-          "guid": "f4830a58-5197-455b-95ad-dc3f25aa185d",
-          "description": "Freshly brewed with purified mineral water.",
+          "name": "Iced Teas 🧊🫖",
+          "guid": "f51c485a-55ab-488c-a7f5-2cfc16404c8f",
+          "description": "Freshly brewed or cold brewed with purified mineral water.",
           "items": [
             {
               "name": "1 Jasmine Green Tea",
@@ -5200,7 +5109,7 @@
               "name": "3 Lychee Black Tea",
               "guid": "cc2821e8-c4f0-4d80-8bc7-0f59fbfa37d9",
               "description": "A fragrant black tea with natural lychee aroma, smooth and floral with a subtle fruity finish. Refreshing on its own, without added sweetness.",
-              "price": 5.75,
+              "price": 6,
               "imageUrl": null
             },
             {
@@ -5213,72 +5122,128 @@
           ]
         },
         {
+          "name": "Hot Teas 🔥🫖",
+          "guid": "d17bf4d7-b867-4846-9eb3-797e7211c3de",
+          "description": "Freshly brewed with purified mineral water.",
+          "items": [
+            {
+              "name": "11 Hot Black Tea",
+              "guid": "16247dd6-ec22-4beb-a49a-a70c2b0ea059",
+              "description": "Full-bodied black tea from Assam, or choose decaf.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "12 Hot Lychee Black Tea",
+              "guid": "ce90403a-de15-4615-93d4-f736f18305ed",
+              "description": "A fragrant black tea with natural lychee aroma, smooth and floral with a subtle fruity finish. Refreshing on its own, without added sweetness.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "13 Hot Roasted Oolong Tea",
+              "guid": "ebee739b-c3d6-4d81-a96d-8d6a971d8717",
+              "description": "Smooth and aromatic roasted oolong",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "14 Hot Four Seasons Jade Oolong",
+              "guid": "e9224a1d-12a8-4591-b3a4-7bc2b98604de",
+              "description": "A lightly roasted Taiwanese oolong with a bright, floral aroma and smooth, refreshing finish. Balanced between green and oolong, it’s crisp yet delicate.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "15 Hot Jasmine Green Tea",
+              "guid": "24946d24-7a7e-4c7e-89ed-315abc26b882",
+              "description": "Brewed with premium Chafolio jasmine green tea leaves, this pure tea offers an enchanting floral aroma and a clean, refreshing finish—cold-brewed when served iced and freshly hot-brewed when served hot.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "16 Hot Magnolia Green Tea",
+              "guid": "f45460f8-ef83-48d5-8e29-7013094a37c3",
+              "description": "Freshly brewed with premium Chafolio magnolia green tea leaves, this pure tea is exceptionally fragrant, crisp, and refreshing, with a delicate floral aroma and naturally smooth finish.",
+              "price": 6,
+              "imageUrl": null
+            }
+          ]
+        },
+        {
           "name": "Milk Teas 🧋",
           "guid": "f74d6bec-71fd-4075-835b-f62ef9a38ee8",
           "description": "",
           "items": [
             {
-              "name": "21 Lychee Black Milk Tea",
-              "guid": "6fd9f266-9d5e-44aa-8284-665b1b5e52fd",
-              "description": "Smooth black tea with a natural lychee fragrance, blended with creamy milk for a floral, subtly fruity cup. Light and aromatic, not sweet on its own.",
-              "price": 6.75,
+              "name": "20 Brown Sugar Milk Tea",
+              "guid": "886fe792-5767-48b7-a95e-3ea62a9f5cd5",
+              "description": "Black milk tea with brown sugar swirl (tiger style)",
+              "price": 7.5,
               "imageUrl": null
             },
             {
-              "name": "22 Assam Black Milk Tea",
+              "name": "21 Black Milk Tea",
               "guid": "e41b7556-b795-4f70-b6c8-4ffbd9773bba",
               "description": "Bold, malty, and robust — the classic milk tea taste.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025820_1766831402.png"
+            },
+            {
+              "name": "22 Lychee Black Milk Tea",
+              "guid": "6fd9f266-9d5e-44aa-8284-665b1b5e52fd",
+              "description": "Smooth black tea with a natural lychee fragrance, blended with creamy milk for a floral, subtly fruity cup. Light and aromatic, not sweet on its own.",
+              "price": 7,
+              "imageUrl": null
             },
             {
               "name": "23 Roasted Oolong Milk Tea",
               "guid": "e6851d44-4c4d-4cbd-a394-bdb066872406",
               "description": "Toasty, nutty, and smooth with balanced depth.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000004994025822_1757106082.jpg"
             },
             {
-              "name": "24 Classic Thai Tea 🇹🇭🫖",
-              "guid": "5b5e969a-bf1d-44f2-a67c-69fd5f704731",
-              "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness.",
-              "price": 6.75,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1766817442.png"
-            },
-            {
-              "name": "25 Crème Brûlée Classic Thai Tea",
-              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
-              "description": "Classic Thai Tea + Crème Brûlée",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
-            },
-            {
-              "name": "26 Assam Masala Chai Tea 🇮🇳☕",
-              "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
-              "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
-            },
-            {
-              "name": "27 Jasmine Green Milk Tea",
-              "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
-              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
-              "price": 7,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
-            },
-            {
-              "name": "28 White Peach Oolong Milk Tea",
+              "name": "24 White Peach Oolong Milk Tea",
               "guid": "ac06f7df-2155-4d3a-af8d-6e0f8faaa0f9",
               "description": "Fragrant oolong tea with a delicate white peach aroma, blended with creamy milk for a smooth, floral, and subtly fruity taste. Naturally not sweet on its own.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000005129626884_1757235096.jpg"
             },
             {
-              "name": "29 Magnolia Green Milk Tea",
+              "name": "25 Jasmine Green Milk Tea",
+              "guid": "0f1c0cab-e4aa-4019-86d5-17941569a927",
+              "description": "Crafted with premium Chafolio jasmine green tea leaves, this smooth and refreshing milk tea delights with an enchanting floral aroma and a beautifully delicate finish.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
+            },
+            {
+              "name": "26 Magnolia Green Milk Tea",
               "guid": "bee5cd8b-b9f9-4590-8e98-6532397d5eec",
               "description": "Tea-Rek’z Exclusive — Crafted with premium Chafolio magnolia green tea leaves, this refreshingly smooth milk tea blooms with an exceptionally fragrant floral aroma in every sip.",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004992513670_1766830576.png"
+            },
+            {
+              "name": "27 Classic Thai Tea 🇹🇭🫖",
+              "guid": "5b5e969a-bf1d-44f2-a67c-69fd5f704731",
+              "description": "Bold, spiced Thai black tea layered with organic half & half — smooth, rich, and served at fixed sweetness.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000004994025830_1766817442.png"
+            },
+            {
+              "name": "28 Crème Brûlée Thai Tea",
+              "guid": "6a9c1c33-4329-4399-9279-7eddcb70cfcb",
+              "description": "Classic Thai Tea + Crème Brûlée",
+              "price": 8,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000005291465641_1772013526.jpg"
+            },
+            {
+              "name": "29 Masala Chai Tea 🇮🇳☕",
+              "guid": "dabb98d5-def4-49d1-9b7b-b8e392114945",
+              "description": "Bold Assam black tea with aromatic Indian spices — smooth, spicy, and deeply comforting.",
+              "price": 7,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4627b8d1-96ae-4f78-aefe-50e9491d6f55.jpg"
             }
           ]
         },
@@ -5298,7 +5263,7 @@
               "name": "32 Brown Sugar Matcha Latte 🍵",
               "guid": "5cf93bf6-076d-418d-b601-a55609743f40",
               "description": "Top grade Japanese Royal matcha and handcrafted top grade brown sugar.",
-              "price": 7.25,
+              "price": 7.5,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/0/item-1300000005129736630_1766830179.png"
             },
             {
@@ -5316,11 +5281,11 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/a9066480-ceea-44c8-b5d2-44b07892385e.png"
             },
             {
-              "name": "35 Taro Matcha Latte 🍠🍵",
-              "guid": "c4924a80-f3da-4e0e-bd6c-406f21853eae",
-              "description": "Top grade Japanese Royal matcha, real taro and ube.",
+              "name": "35 Raspberry Cream Matcha Latte",
+              "guid": "d454ff49-5c40-4dab-a3d8-4d7118b8e057",
+              "description": "Matcha Latte with Raspberry Cream",
               "price": 8,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/2/item-1300000011091561182_1778490107.jpg"
             }
           ]
         },
@@ -5344,28 +5309,21 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000008087959751_1768258758.png"
             },
             {
-              "name": "43 Taro Milk 🍠🌙",
-              "guid": "29ed0bdd-c183-4b76-8a6e-0b9861d806e9",
-              "description": "Real taro blended with milk — naturally creamy, with no artificial colors or flavors.",
-              "price": 7,
-              "imageUrl": null
-            },
-            {
-              "name": "44 Strawberry Milk 🍓🥛🌙",
+              "name": "43 Strawberry Milk 🍓🥛🌙",
               "guid": "6d16adff-8a04-4f07-a599-ae2645ce50a5",
               "description": "organic strawberries and fresh milk",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000008620469457_1770420574.png"
             },
             {
-              "name": "45 Korean Mango Milk 🥭🥛🌙",
+              "name": "44 Korean Mango Milk 🥭🥛🌙",
               "guid": "50f1ea8a-b89b-4c45-be62-b15826e553b2",
               "description": "organic mango and fresh milk",
               "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000009018273524_1772013435.jpg"
             },
             {
-              "name": "46 Horchata de Avena 🍂🥛🌙",
+              "name": "45 Horchata de Avena 🍂🥛🌙",
               "guid": "b32f9dfb-6c88-44f4-b91a-69d12e08ff0e",
               "description": "oat milk horchata",
               "price": 7,
@@ -5382,21 +5340,21 @@
               "name": "51 Lychee Jasmine Green",
               "guid": "2a564dd9-bfdf-4478-af12-e9a2f6f961cd",
               "description": "jasmine green tea + lychee puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "52 Strawberry Peach Jade Oolong",
               "guid": "fea5b79b-9c7e-42e6-b860-960a218b071e",
               "description": "freshly brewed four seasons jade oolong + strawberry and peach puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
               "name": "53 Mango Passionfruit Jasmine Green",
               "guid": "39403e9a-36da-4187-9d3b-3ceb1fe5cf53",
               "description": "jasmine green tea + mango and passionfruit puree",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             },
             {
@@ -5410,7 +5368,7 @@
               "name": "55 Build Your Own Fruit Tea  🍓🌱",
               "guid": "81bebd73-204d-4c9e-b333-07c85946cae1",
               "description": "",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": null
             }
           ]
@@ -5449,21 +5407,14 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000005355808498_1758274196.jpg"
             },
             {
-              "name": "65 Purple Lemonade 🔮🍋🌙",
-              "guid": "38106a34-9d29-4d18-a28c-2e4cda6143bd",
-              "description": "A color-changing twist of fresh lemonade + passionfruit, and butterfly pea tea — bright, tangy, and magically purple! 🦖🍋💜✨",
-              "price": 7.5,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/6/item-1300000006111297916_1766828237.png"
-            },
-            {
-              "name": "66 Rose Hibiscus Lemonade 🌹🌺🍋🌙",
+              "name": "65 Rose Hibiscus Lemonade 🌹🌺🍋🌙",
               "guid": "04963db2-a9f9-4908-8fcd-5f28fdd2b0b8",
               "description": "",
               "price": 7,
               "imageUrl": null
             },
             {
-              "name": "67 Ginger Lemonade 🫚🍋🌙",
+              "name": "66 Ginger Lemonade 🫚🍋🌙",
               "guid": "a23a33e3-a783-4542-9622-4380aeb4b987",
               "description": "Made to order with fresh lemons, cane sugar, ginger puree and purified mineral water — never pre-made.",
               "price": 7,
@@ -5484,7 +5435,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/1/item-1300000007709137801_1770463661.png"
             },
             {
-              "name": "72 (Blended) Jasmine / Magnolia Mango 🫖🥭",
+              "name": "72 (Blended) Jasmine Mango 🫖🥭",
               "guid": "6c07b946-0cf5-4384-8c46-5ad9a70f5fdc",
               "description": "Over half a pound organic mangos + golden cane sugar + jasmine tea.",
               "price": 8,
@@ -5521,7 +5472,7 @@
           ]
         },
         {
-          "name": "Coffee Drinks ☕",
+          "name": "Vietnamese Coffee☕",
           "guid": "1c8674ad-abe0-4910-a89a-f94bee4dd4df",
           "description": "",
           "items": [
@@ -5529,7 +5480,7 @@
               "name": "81 Vietnamese Iced Coffee 🇻🇳❄️☕️",
               "guid": "4a43aa3b-d998-4133-b4e4-1f5f09e28cd5",
               "description": "Crafted with freshly ground authentic Vietnamese Robusta beans.",
-              "price": 6.75,
+              "price": 7,
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/9/item-1300000006208598079_1766829504.png"
             },
             {
@@ -5547,14 +5498,7 @@
               "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000007709066774_1772013562.jpg"
             },
             {
-              "name": "84 Dino Fuel (Vietnamese Coffee x Thai Tea) 🇻🇳🇹🇭⚡️",
-              "guid": "a842bbf8-69e7-4683-a3de-69e8186c5b51",
-              "description": "Also called \"Dirty Thai Tea\", smooth Thai milk tea blended with double shots of espresso for a perfect mix of sweetness, spice, and caffeine kick. Ice and sweetness level are fixed.",
-              "price": 8,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/4/item-1300000006111243964_1766829653.png"
-            },
-            {
-              "name": "85 Dirty Horchata de Avena 🍂🥛☕️",
+              "name": "84 Dirty Horchata de Avena 🍂🥛☕️",
               "guid": "4e68814f-c46c-413f-914e-f259e35f0a40",
               "description": "Oat milk Horchata + Vietnamese coffee.",
               "price": 8,
@@ -5575,39 +5519,53 @@
               "imageUrl": null
             },
             {
-              "name": "93 Masala Chai Hot Chocolate 🍫☕🌙",
+              "name": "92 Masala Chai Hot Chocolate 🍫☕🌙",
               "guid": "5e81bce7-e5b9-4773-9ec2-3b2dbd771a79",
               "description": "Organic cocoa blended with steamed milk, warm chai spices, and a subtle touch of Assam tea. Rich, aromatic, and gently spiced.",
-              "price": 8,
+              "price": 7,
               "imageUrl": null
             },
             {
-              "name": "94 Hot Honey Yuzu Tea 🍋🍯🌙",
+              "name": "93 Hot Honey Yuzu Tea 🍋🍯🌙",
               "guid": "1bf35892-edda-481c-b34c-e4628cc49ab4",
               "description": "A comforting blend of honey and yuzu citrus, served hot for a soothing, lightly sweet and tangy cup.",
               "price": 5,
               "imageUrl": null
             },
             {
-              "name": "95 Hot Ginger Honey Yuzu Tea 🍋🍯🫚🌙",
+              "name": "94 Hot Ginger Honey Yuzu Tea 🍋🍯🫚🌙",
               "guid": "c333b873-5dfe-40f7-9384-50cb1e38ed99",
               "description": "Fragrant yuzu citrus blended with honey and fresh ginger for a warm, soothing cup with bright citrus and gentle spice.",
+              "price": 6,
+              "imageUrl": null
+            },
+            {
+              "name": "95 Spiced Apple Cider 🍎🍂",
+              "guid": "8a6c3af0-634e-4c34-8859-58e2266520b2",
+              "description": "Made from freshly pressed apples and a traditional blend of mulling spices. No added sugar.",
+              "price": 5,
+              "imageUrl": null
+            },
+            {
+              "name": "96 Caramel Apple Cider 🍯🍎🍂",
+              "guid": "29ae1d12-52df-46b8-968d-4cd38ae39fb0",
+              "description": "Made from freshly pressed apples and a traditional blend of mulling spices, with rich caramel sauce for a warm, buttery sweetness.",
               "price": 6,
               "imageUrl": null
             }
           ]
         },
         {
-          "name": "Hawaiian Hand-Shaved Ice 🍧",
-          "guid": "0b41f464-02a9-4682-9ff9-ca0762cd352f",
+          "name": "Ice Cream",
+          "guid": "ca6d8ad2-d404-4e47-8854-469b6294c337",
           "description": "",
           "items": [
             {
-              "name": "H2 Build You Own Shaved Ice 🍧",
-              "guid": "918649b1-5ca3-4588-8c58-f61aa793654e",
-              "description": "Choose up to 3 free toppings!",
-              "price": 8,
-              "imageUrl": null
+              "name": "Build Your Own Sundae 🍨",
+              "guid": "66f34a9c-b1e2-469b-be05-94e120b77c9f",
+              "description": "Start with a generous scoop of vanilla ice cream, then choose from our all-natural sauces. Our fruit purées are low in added sugar, and all sauces are free of artificial colors and flavors. Finish it with your favorite toppings.",
+              "price": 5,
+              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/7/item-1300000005400470567_1790244140.png"
             }
           ]
         },
