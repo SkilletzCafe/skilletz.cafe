@@ -10,6 +10,21 @@ This directory contains Skillet'z Cafe's menu data exported from Toast and its p
   - `menu.json` - Cleaned and optimized menu data for the website
   - Additional processed files as needed (e.g., categorized menus, special menus)
 - `image_mappings.json` - Maps menu items to their corresponding images
+- `photo_overrides.json` - Curated, GUID-keyed local photos while Toast exports catch up
+
+## Curated Photo Overrides
+
+`loadMenuData()` applies `photo_overrides.json` at build time. Each entry identifies
+the exact Toast item GUID, its name for review, a local public `imageUrl`, and the
+`previousToastImageUrl` observed when the photo was added (including `null`). The
+local image is used only while the exported URL still matches that previous value.
+A different Toast image URL takes precedence automatically on the next menu refresh.
+
+Keep these entries separate from generated data so `menu:process` and `menu:images`
+cannot overwrite them. Match exact GUIDs, not names: separate menu items can share
+a dish name. Store web-sized photos under `public/images/menu/` with descriptive,
+versioned filenames. Retire an entry and its asset only after confirming that all
+relevant menu occurrences have the replacement Toast image.
 
 ## Processing Scripts
 
