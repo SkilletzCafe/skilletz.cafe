@@ -10,21 +10,19 @@ This directory contains Skillet'z Cafe's menu data exported from Toast and its p
   - `menu.json` - Cleaned and optimized menu data for the website
   - Additional processed files as needed (e.g., categorized menus, special menus)
 - `image_mappings.json` - Maps menu items to their corresponding images
-- `photo_overrides.json` - Curated, GUID-keyed local photos while Toast exports catch up
 
-## Curated Photo Overrides
+## Toast-Hosted Menu Images
 
-`loadMenuData()` applies `photo_overrides.json` at build time. Each entry identifies
-the exact Toast item GUID, its name for review, a local public `imageUrl`, and the
-`previousToastImageUrl` observed when the photo was added (including `null`). The
-local image is used only while the exported URL still matches that previous value.
-A different Toast image URL takes precedence automatically on the next menu refresh.
+The menu processor reads each item's `imageLink` from the raw Toast export and
+writes an HTTPS `imageUrl` to `processed/menu.json`. Menu cards load that URL
+directly from Toast's S3/CDN hosting; this flow does not download those photos into
+`public/`. The separate `menu:images` command maps existing local HD assets and is
+not an S3 downloader.
 
-Keep these entries separate from generated data so `menu:process` and `menu:images`
-cannot overwrite them. Match exact GUIDs, not names: separate menu items can share
-a dish name. Store web-sized photos under `public/images/menu/` with descriptive,
-versioned filenames. Retire an entry and its asset only after confirming that all
-relevant menu occurrences have the replacement Toast image.
+For photo refreshes, use verified Toast image URLs matched by exact item GUID and
+keep the normal processor/loader path. If the latest export lacks a reported photo,
+resolve the upstream data gap before treating the refresh as complete. Do not add
+local photo overrides or change unrelated menu fields to conceal missing source data.
 
 ## Processing Scripts
 
