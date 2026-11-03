@@ -3836,7 +3836,7 @@
               "guid": "30207017-a137-4d7a-80e7-cd027bf21efe",
               "description": "A delicious sampler featuring 2 flautas, 2 steak tacos, 2 enchilads.",
               "price": 20,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/4d260354-483d-4551-84c3-d5827eea2563.jpg"
             },
             {
               "name": "Chips & Salsa",
@@ -3871,7 +3871,7 @@
               "guid": "d0e967af-16db-4a85-b109-40fd7d606146",
               "description": "Three tacos served with rice and refried beans.\r\n\r\nChoose from Steak, Chicken, Birria or Shredded Beef.",
               "price": 18,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/77e33cd9-5265-4c43-b915-d7a80702b651.jpg"
             }
           ]
         },
@@ -3962,28 +3962,28 @@
               "guid": "750304ec-0444-41f9-b5b4-e6fbb8d62cf3",
               "description": "Fresh salad topped with seasoned grilled shrimp.",
               "price": 18,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/765dd581-9eaa-4f04-bd4e-ce1280b5c5e5.jpg"
             },
             {
               "name": "Grilled Chicken Salad",
               "guid": "c240608a-f338-41be-bfb2-f4bb022c306a",
               "description": "Fresh greens topped with tender grilled chicken.",
               "price": 16,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/79b38f44-722e-454d-b664-b8fda2902f6b.jpg"
             },
             {
               "name": "Caesar Salad",
               "guid": "a7f88740-b7ff-43bb-a243-f5b57549a272",
               "description": "Crisp romaine lettuce tossed with classic Caesar dressing.",
               "price": 19.95,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/0dce7c72-7887-4aff-95ba-45f947d8b5bb.jpg"
             },
             {
               "name": "Steak Fajita Salad",
               "guid": "dcbd4a88-fb9b-410f-a467-d77cd0b89f39",
               "description": "Fresh greens topped with sizzling seasoned steak and fajita-style vegetables.",
               "price": 23,
-              "imageUrl": "https://toasttab.s3.amazonaws.com/restaurants/restaurant-244719000000000000/menu/items/8/item-1300000014709380568_1788764557.jpg"
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/7bb4c0a4-833b-4e78-8373-d960377ec8f7.jpg"
             }
           ]
         },
@@ -4011,7 +4011,7 @@
               "guid": "a1ece028-03ba-42a6-8253-5671c9584fe6",
               "description": "Two flavorful tacos served alongside a traditional chile relleno.",
               "price": 22,
-              "imageUrl": null
+              "imageUrl": "https://toasttab.s3.amazonaws.com/menu_service/restaurants/2d838293-2776-4151-b65b-1c9eea686461/MenuItem/8c2f812a-526b-437a-95e2-606ac132fc83.jpg"
             }
           ]
         },

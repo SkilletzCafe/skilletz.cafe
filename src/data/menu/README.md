@@ -11,6 +11,19 @@ This directory contains Skillet'z Cafe's menu data exported from Toast and its p
   - Additional processed files as needed (e.g., categorized menus, special menus)
 - `image_mappings.json` - Maps menu items to their corresponding images
 
+## Toast-Hosted Menu Images
+
+The menu processor reads each item's `imageLink` from the raw Toast export and
+writes an HTTPS `imageUrl` to `processed/menu.json`. Menu cards load that URL
+directly from Toast's S3/CDN hosting; this flow does not download those photos into
+`public/`. The separate `menu:images` command maps existing local HD assets and is
+not an S3 downloader.
+
+For photo refreshes, use verified Toast image URLs matched by exact item GUID and
+keep the normal processor/loader path. If the latest export lacks a reported photo,
+resolve the upstream data gap before treating the refresh as complete. Do not add
+local photo overrides or change unrelated menu fields to conceal missing source data.
+
 ## Processing Scripts
 
 Menu processing scripts are located in `src/scripts/menu/`. These scripts handle:
